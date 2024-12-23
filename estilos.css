@@ -227,7 +227,8 @@
           min-height: 100vh;
           padding: 0px;
           color: var(--page-content-txtColor);
-          background: var(--page-content-bgColor);
+          background: var(--articulo);
+          height: 100%;
         }
 
         .search-and-user {
@@ -338,6 +339,7 @@
           .page-content {
             position: static;
             width: 100%;
+            height: 100%;
           }
 
           .page-header {
@@ -1269,6 +1271,7 @@
 
        .caja_resumen{
         width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1335,4 +1338,8 @@
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
+}
+body{
+    height: 100%;
+    background: var(--articulo);
 }
