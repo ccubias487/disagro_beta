@@ -1254,19 +1254,19 @@
        }
 
        .cuadro_resumen{
-        width: 80%;
-        height: 10rem;
+        width: 90%;
+        height: 12rem;
         background-color: rgb(54, 74, 108, 0.80);
         border-radius: 1.2rem;
         color: white;
-        font-size: xx-large;
+        font-size: 2.5rem;
         font-weight: bold;
         padding: 0.5rem;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-left: 2rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
        }
 
        .caja_resumen{
@@ -1296,6 +1296,9 @@
        .menu_app{
         position: fixed;
         bottom: 0;
+        width: 100%;
+        background-color: rgb(54, 74, 108, 0.80);
+        padding-top: 1rem;
        }
 
        .menu_app_content{
