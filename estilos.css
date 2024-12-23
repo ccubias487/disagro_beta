@@ -720,6 +720,18 @@
         width: 100%;
         }
 
+        #encabezado_notificaciones_ordenes{
+            color: white;
+            font-family: "Font Awesome 5 Pro";
+            font-weight: bold;
+            font-size: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items:center;
+
+            width: 100%;
+            }
         select{
         border-radius: 5px;
         }
@@ -1268,7 +1280,21 @@
         padding-left: 2rem;
         margin-top: 2rem;
        }
+       .cuadro_resumen_ordenes{
+        width: 90%;
+        height: 12rem;
+        background-color: rgb(54, 74, 108, 0.80);
+        border-radius: 1.2rem;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 2rem;
+        margin-top: 2rem;
+       }
        .caja_resumen{
         width: 100%;
         height: auto;
@@ -1287,6 +1313,18 @@
         width: 70%;
         text-align: left;
        }
+       .titulo_resumen_ordenes{
+        text-align: left;
+        font-size: xx-large;
+        width: 100%;
+       }
+.prioridad{
+    width: 2.5rem;
+    border-top-right-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    background:  rgb(175, 8, 5);
+    height: 100%;
+}
 
        .cantidad_resumen{
         width: 10%;
@@ -1345,4 +1383,19 @@
 body{
     height: 100%;
     background: var(--articulo);
+}
+
+.logo_ordenes{
+    background-image: url("https://www.disagro.com.sv/wp-content/uploads/2023/07/logotipo-disagro-verde.png");  
+        background-size:  contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 250px;
+        width: 100%;
+        margin: 0.5rem;
+        margin-top: 1rem;
+}
+
+.logo_titulo{
+    font-size: 2.8rem;
 }
