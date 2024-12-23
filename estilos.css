@@ -1217,9 +1217,12 @@
         }
 
 
+
+        /*inicio */
+
        .boton_menu{
-        width: 5rem;
-        height: 5rem;
+        width: 15rem;
+        height: 15rem;
         background-color: rgb(54, 74, 108, 0.80);
         border-radius: 1.2rem;
         display: flex;
@@ -1229,7 +1232,7 @@
 
        .titulo_menu{
         color: white;    
-        font-size: larger; 
+        font-size: xx-large; 
         text-align: center;  
         font-weight: bold;
        }
@@ -1242,4 +1245,26 @@
 
        .cuadro_menu{
         margin: 0.5rem;
+       }
+
+       .cuadro_resumen{
+        width: 80%;
+        height: 5rem;
+        background-color: rgb(54, 74, 108, 0.80);
+        border-radius: 1.2rem;
+        color: white;
+        font-size: x-large;
+        font-weight: bold;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+       }
+
+       .caja_resumen{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
        }
