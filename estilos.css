@@ -713,7 +713,7 @@
         display: flex;
         justify-content: center;
         align-items:center;
-        height: 75px;
+        height: 150px;
         }
 
         select{
@@ -1080,9 +1080,9 @@
         background-size:  contain;
         background-repeat: no-repeat;
         background-position: center;
-        height: 350px;
-        width: 230px;
-        padding-left: 10%;
+        height: 150px;
+        width: 330px;
+        margin: 0.5rem;
 
 
         }
@@ -1092,6 +1092,7 @@
         display:flex ;
         justify-content: center;
         align-items: center;
+        margin: 0.5rem;
         }
 
 
@@ -1221,8 +1222,8 @@
         /*inicio */
 
        .boton_menu{
-        width: 15rem;
-        height: 15rem;
+        width: 10rem;
+        height: 10rem;
         background-color: rgb(54, 74, 108, 0.80);
         border-radius: 1.2rem;
         display: flex;
@@ -1249,14 +1250,15 @@
 
        .cuadro_resumen{
         width: 80%;
-        height: 5rem;
+        height: 10rem;
         background-color: rgb(54, 74, 108, 0.80);
         border-radius: 1.2rem;
         color: white;
-        font-size: x-large;
+        font-size: xx-large;
         font-weight: bold;
         padding: 0.5rem;
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding-left: 2rem;
        }
@@ -1267,4 +1269,13 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+       }
+
+       .icono_resumen{
+        width: 20%;
+       }
+
+       .titulo_resumen{
+        width: 80%;
+        text-align: center;
        }
