@@ -687,7 +687,7 @@
 
         #contenido_tabla{
         border-radius: 5px;
-        height: auto;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items:center;
@@ -1261,6 +1261,7 @@
         flex-direction: row;
         align-items: center;
         padding-left: 2rem;
+        margin-top: 1rem;
        }
 
        .caja_resumen{
@@ -1269,6 +1270,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-top: 1.5rem;
        }
 
        .icono_resumen{
@@ -1276,6 +1278,28 @@
        }
 
        .titulo_resumen{
-        width: 80%;
+        width: 70%;
+        text-align: left;
+       }
+
+       .cantidad_resumen{
+        width: 10%;
         text-align: center;
+       }
+
+       .menu_app{
+        position: fixed;
+        bottom: 0;
+       }
+
+       .menu_app_content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: centers;
+       }
+
+       .icono_menu_app{
+        padding-left: 3rem;
+        padding-right: 3rem;
        }
