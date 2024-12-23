@@ -711,9 +711,11 @@
         font-weight: bold;
         font-size: 25px;
         display: flex;
+        flex-direction: row;
         justify-content: center;
         align-items:center;
         height: 150px;
+        width: 100%;
         }
 
         select{
@@ -946,7 +948,7 @@
 
         #encabezado_notificaciones{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         }
 
 
@@ -1079,9 +1081,9 @@
         
         background-size:  contain;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: left;
         height: 150px;
-        width: 330px;
+        width: 60%;
         margin: 0.5rem;
 
 
@@ -1093,6 +1095,7 @@
         justify-content: center;
         align-items: center;
         margin: 0.5rem;
+        width: 100%;
         }
 
 
@@ -1303,3 +1306,33 @@
         padding-left: 3rem;
         padding-right: 3rem;
        }
+
+       .bienvenida{
+        width: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        
+       }
+
+       .usuario_name{
+        font-size: xx-large;
+       }
+.usuario_progress{
+    width: 80%;
+    height: 3rem;
+    background-color: rgb(54, 74, 108, 0.80);
+    border-radius: 25px;
+}
+
+.usuario_progress_actual{
+    width: 80%;
+    height: 3rem;
+    border-radius: 25px;
+    background-color: rgb(56, 108, 84, 0.80);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
