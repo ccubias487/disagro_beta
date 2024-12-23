@@ -1169,9 +1169,7 @@
             justify-content: center;
         }
 
-        svg{
-            margin-right: 10px;
-        }
+       
 
         .greeting{
         width: 80px;
@@ -1219,4 +1217,29 @@
         }
 
 
-       
+       .boton_menu{
+        width: 5rem;
+        height: 5rem;
+        background-color: rgb(54, 74, 108, 0.80);
+        border-radius: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+
+       .titulo_menu{
+        color: white;    
+        font-size: larger; 
+        text-align: center;  
+        font-weight: bold;
+       }
+
+       .menu_principal{
+        display: flex;
+        flex-direction: row;
+      
+       }
+
+       .cuadro_menu{
+        margin: 0.5rem;
+       }
