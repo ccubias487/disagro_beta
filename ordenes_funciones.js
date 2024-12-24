@@ -1,3 +1,6 @@
+document.getElementById("inicio").addEventListener("click",function(){
+    window.location.href = "index.html";
+})
 
 fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/database.json")
       .then((response) => {
