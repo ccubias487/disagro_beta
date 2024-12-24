@@ -1,3 +1,6 @@
+document.getElementById("ordenes").addEventListener("click",function(){
+    window.location.href = "ordenes.html";
+})
 
 fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/database.json")
       .then((response) => {
