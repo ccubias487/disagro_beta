@@ -847,12 +847,14 @@
                     0 0 200px rgb(102, 202, 92);
         }
         .boton{
-        border-radius: 5px;
-        width: 75px;
+        border-radius: 15px;
+        width: 175px;
         background: rgb(102, 202, 92);
         color: white;
         border: 2px solid rgb(102, 202, 92);
-        height: 30px;
+        height: 80px;
+        font-size: xx-large;
+        font-weight: bold;
         }
 
         .light-mode .boton{
@@ -1280,6 +1282,38 @@
         padding-left: 2rem;
         margin-top: 2rem;
        }
+
+       .cuadro_resumen_actividades{
+        width: 90%;
+        height: 3.5rem;
+        background-color: rgb(54, 74, 108, 0.80);
+        /*border-radius: 0.2rem;*/
+        border: 1px solid black;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       /* padding-left: 2rem;*/
+        /*margin-top: 2rem;*/
+       }
+
+       .cuadro_resumen_insumos{
+        width: 90%;
+        height: 13rem;
+        background-color: rgb(54, 74, 108, 0.80);
+        border-radius: 1.2rem;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+       /* padding-left: 2rem;*/
+        margin-top: 2rem;
+       }
+
        .cuadro_resumen_ordenes{
         width: 90%;
         height: 12rem;
@@ -1288,14 +1322,40 @@
         color: white;
         font-size: 2.5rem;
         font-weight: bold;
-
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding-left: 2rem;
+       /* padding-left: 2rem;*/
         margin-top: 2rem;
        }
+
+
+       .cuadro_resumen_ordenes_superpuesto{
+        width: 90%;
+        height: 12rem;
+        background-color: rgb(54, 74, 108, 0.10);
+        border-radius: 1.2rem;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        position: absolute;
+       }
+
        .caja_resumen{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+       }
+
+       .caja_resumen_actividades{
         width: 100%;
         height: auto;
         display: flex;
@@ -1317,6 +1377,7 @@
         text-align: left;
         font-size: xx-large;
         width: 100%;
+        margin-left: 2rem;
        }
 .prioridad{
     width: 2.5rem;
@@ -1324,6 +1385,7 @@
     border-bottom-right-radius: 1.2rem;
     background:  rgb(175, 8, 5);
     height: 100%;
+  
 }
 
        .cantidad_resumen{

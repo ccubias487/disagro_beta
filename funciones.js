@@ -8,61 +8,7 @@
         gtag("config", "G-F6HKN8FPNT");
 /* FOCUS DE  INPUTS*/
  
-document.getElementById('orden').addEventListener('keydown', function() {
-if (event.keyCode == 13) {
-document.getElementById('codigo').focus();
-}
-})
 
-document.getElementById('codigo').addEventListener('keydown', function() {
-if (event.keyCode == 13) {
-document.getElementById('estibado').focus();
-}
-})
-
-document.getElementById('estibado').addEventListener('keydown', function() {
-if (event.keyCode == 13) {
-document.getElementById('directo').focus();
-}
-})
-
-document.getElementById('directo').addEventListener('keydown', function() {
-if (event.keyCode == 13) {
-document.getElementById('clave').focus();
-}
-})
-
-document.getElementById('clave').addEventListener('keydown', function() {
-if (event.keyCode == 13) {
-document.getElementById('inicio').focus();
-}
-})
-
-
-//document.getElementById('inicio').addEventListener('keydown', function() {
-//    if ((String(document.getElementById('inicio').value).length==2) && (event.keyCode != 8))   {
-//        document.getElementById('inicio').value=document.getElementById('inicio').value.concat(":");
-//    }
-
-//})
-
-document.getElementById('inicio').addEventListener('keydown', function() {
-if (event.keyCode == 13) {
-document.getElementById('fin').focus();
-}
-})
-
-
-//document.getElementById('fin').addEventListener('keydown', function() {
-//    if ((String(document.getElementById('fin').value).length==2) && (event.keyCode != 8))   {
-//        document.getElementById('fin').value=document.getElementById('fin').value.concat(":");
-//    }if (String(document.getElementById('fin').value).length==5){
-//        const hora_fin = document.getElementById('fin').value.substr(0, document.getElementById('fin').value.length);
-//        console.log(hora_fin)
-//        document.getElementById('fin').value=hora_fin
-//    }
-
-//})
 document.getElementById('fin').addEventListener('keydown', function() {
 if (event.keyCode == 13) {
 document.getElementById('comentario').focus();

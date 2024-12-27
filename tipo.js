@@ -26,3 +26,24 @@ let navegador = navigator.userAgent;
        "https://marchenhaft.s3.us-east-2.amazonaws.com/fragancias.html";
    }
  }
+
+
+ <li>
+            <div class="switch">
+              <input type="checkbox" id="mode" checked="" />
+              <label for="mode">
+                <span></span>
+                <span>Dark</span>
+              </label>
+            </div>
+            <button
+              class="collapse-btn"
+              aria-expanded="true"
+              aria-label="collapse menu"
+            >
+              <svg aria-hidden="true">
+                <use xlink:href="#collapse"></use>
+              </svg>
+              <span>Ocultar</span>
+            </button>
+          </li>

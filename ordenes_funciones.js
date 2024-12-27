@@ -2,6 +2,7 @@ document.getElementById("inicio").addEventListener("click",function(){
     window.location.href = "index.html";
 })
 
+
 fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/database.json")
       .then((response) => {
         return response.json();
@@ -15,11 +16,20 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
         console.log(jsondata)
         const container = document.getElementById('ordenes_asignadas');
         for (let i in jsondata) {
-            console.log(jsondata[i].NOMBRE)           
+            console.log(jsondata[i].NOMBRE)      
+            
+            function iniciar_orden(){
+                localStorage.setItem("iniciar_orden_hr",jsondata[i].HOJARUTA)
+                localStorage.setItem("iniciar_orden",jsondata[i].ORDEN)
+                localStorage.setItem("iniciar_orden_d",jsondata[i].DESCRIPCION)
+                window.location.href="actividades.html"
+            }
+
             if (jsondata[i].NOMBRE== "CARLOS ALEXANDER CUBIAS ORTIZ") {
                 const div = document.createElement('div');
                 div.className = 'cuadro_resumen_ordenes';
-                div.innerHTML='<div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">ORDEN: '+jsondata[i].ORDEN+'</div><div class="titulo_resumen_ordenes">NOMBRE:'+ jsondata[i].NOMBRE+'</div><div class="titulo_resumen_ordenes  ">DESCRIPCION: '+jsondata[i].DESCRIPCION+'</div></div><div class="prioridad" id="prioridad'+i+'"></div>'
+                div.innerHTML='<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">ORDEN: '+jsondata[i].ORDEN+'</div><div class="titulo_resumen_ordenes">NOMBRE:'+ jsondata[i].NOMBRE+'</div><div class="titulo_resumen_ordenes  ">DESCRIPCION: '+jsondata[i].DESCRIPCION+'</div></div><div class="prioridad" id="prioridad'+i+'"></div>'
+                div.onclick=iniciar_orden
                 container.appendChild(div)
                 if (jsondata[i].PRIORIDAD==1){
                     document.getElementById("prioridad"+i).style.backgroundColor= "rgb(175, 8, 5)"

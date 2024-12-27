@@ -9,17 +9,25 @@
         <article id="contenido_tabla" class="articulo">
           <div id="encabezado_notificaciones_ordenes">
             <div class="logo_ordenes"></div>
-            <div class="logo_titulo">LISTADO DE ORDENES ASIGNADAS</div>
+            <div class="logo_titulo" id="titulo_logo">
+              LISTADO DE ORDENES ASIGNADAS
+            </div>
+            <div class="logo_titulo" id="titulo_logo">Listado de insumos</div>
           </div>
 
-          <div class="caja_resumen" id="ordenes_asignadas">
+          <div class="caja_resumen_actividades" id="actividades_asignadas">
+            
+          </div>
+          <div>
+            <button class="boton">Siguiente</button>
+            <style>
+              .boton {
+                margin-top: 30px;
+                margin-bottom: 200px;
+              }
+            </style>
           </div>
 
-          <style> 
-            #ordenes_asignadas{
-              padding-bottom: 200px;
-            }
-          </style>
           <div class="menu_app">
             <div class="menu_app_content">
               <div class="icono_menu_app" id="inicio">
@@ -207,7 +215,7 @@
                 <div class="titulo_menu">Horas</div>
               </div>
 
-              <div class="icono_menu_app" id="cuenta">
+              <div class="icono_menu_app">
                 <svg
                   width="140"
                   height="121"
@@ -277,7 +285,7 @@
         </article>
       </section>
       <footer class="page-footer"></footer>
-      <script src="ordenes_funciones.js"></script>
+      <script src="materiales_funciones.js"></script>
     </section>
   </body>
 </html>
