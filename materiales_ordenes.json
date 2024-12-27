@@ -1,0 +1,122 @@
+[
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901106129",
+        "DESCRIPCION": "FILTRO DE ACEITE C-711-3 ISUZU NPR",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "17",
+        "VALOR_TOTAL": "292.49"
+    },
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901101403",
+        "DESCRIPCION": "WIPPER DE TELA",
+        "CANTIDAD": "2",
+        "EXISTENCIA": "43",
+        "VALOR_TOTAL": "25.16"
+    },
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901106569",
+        "DESCRIPCION": "ACEITE TOTAL RUBIA TIR 7400 15W 40",
+        "CANTIDAD": "3",
+        "EXISTENCIA": "75",
+        "VALOR_TOTAL": "953.18"
+    },
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901106132",
+        "DESCRIPCION": "FILTRO DE COMBUSTIBLE FS-6500T",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "8",
+        "VALOR_TOTAL": "36.5"
+    },
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901106130",
+        "DESCRIPCION": "FILTRO DE AIRE A-6420 ISUZU NPR",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "7",
+        "VALOR_TOTAL": "237.67"
+    },
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901100400",
+        "DESCRIPCION": "COOLANT (REFRIGERANTE PARA RADIADOR)",
+        "CANTIDAD": "3",
+        "EXISTENCIA": "11",
+        "VALOR_TOTAL": "256.52"
+    },
+    {
+        "HOJARUTA": "3062",
+        "CODIGO": "1901106135",
+        "DESCRIPCION": "FLUIDO POWER STEERING ATF",
+        "CANTIDAD": "3",
+        "EXISTENCIA": "18",
+        "VALOR_TOTAL": "52.56"
+    },
+    {
+        "HOJARUTA": "1598",
+        "CODIGO": "1901101277",
+        "DESCRIPCION": "THINNER CORRIENTE",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "8",
+        "VALOR_TOTAL": "68.02"
+    },
+    {
+        "HOJARUTA": "1598",
+        "CODIGO": "1901101403",
+        "DESCRIPCION": "WIPPER DE TELA",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "43",
+        "VALOR_TOTAL": "25.16"
+    },
+    {
+        "HOJARUTA": "1599",
+        "CODIGO": "1901101277",
+        "DESCRIPCION": "THINNER CORRIENTE",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "8",
+        "VALOR_TOTAL": "68.02"
+    },
+    {
+        "HOJARUTA": "1599",
+        "CODIGO": "1901101403",
+        "DESCRIPCION": "WIPPER DE TELA",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "43",
+        "VALOR_TOTAL": "25.16"
+    },
+    {
+        "HOJARUTA": "1600",
+        "CODIGO": "1901101403",
+        "DESCRIPCION": "WIPPER DE TELA",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "43",
+        "VALOR_TOTAL": "25.16"
+    },
+    {
+        "HOJARUTA": "2525",
+        "CODIGO": "1901106151",
+        "DESCRIPCION": "FILTRO DE MOTOR VOE17457469",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "2",
+        "VALOR_TOTAL": "30.59"
+    },
+    {
+        "HOJARUTA": "2525",
+        "CODIGO": "1901106569",
+        "DESCRIPCION": "ACEITE RUBIA TIR 7400 15W 40",
+        "CANTIDAD": "10",
+        "EXISTENCIA": "75",
+        "VALOR_TOTAL": "953.18"
+    },
+    {
+        "HOJARUTA": "2525",
+        "CODIGO": "1901106151",
+        "DESCRIPCION": "FILTRO DE COMBUST VOE11172907",
+        "CANTIDAD": "1",
+        "EXISTENCIA": "2",
+        "VALOR_TOTAL": "30.59"
+    }
+]
