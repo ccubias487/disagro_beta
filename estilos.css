@@ -1461,3 +1461,10 @@ body{
 .logo_titulo{
     font-size: 2.8rem;
 }
+
+.botones_vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

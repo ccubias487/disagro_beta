@@ -43,6 +43,30 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             }
 
         }
+        function numeroAleatorio(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+          }
+
+        if (contador==1){
+
+            let aleatorio_image = "https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/empty"+numeroAleatorio(1, 3)+".png"
+
+            const div = document.getElementById("no_encontrado");
+            const imagen = document.createElement("img");
+           //document.getElementById("no_encontrado").style.backgroundImage = "url('https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/empty2.png')";
+            //imagen.src = "https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/empty2.png"; // URL de la imagen
+            imagen.src = aleatorio_image
+            imagen.alt = "No encontrado"; // Texto alternativo
+            imagen.style.width = "400px"; // Opcional: establecer el ancho de la imagen
+            imagen.style.height = "400px"; // Opcional: establecer la altura de la imagen
+        
+            // Insertar la imagen en el div
+            div.appendChild(imagen);
+            document.getElementById("no_encontrado_texto").innerHTML="NO SE ENCOTRARON INSUMOS PARA ESTA ORDEN"
+            document.getElementById("no_encontrado_texto").style.fontSize="xx-large"
+            document.getElementById("no_encontrado_texto").style.fontWeight="bold"
+            document.getElementById("no_encontrado_texto").style.color="White"
+        }
              //container.appendChild(div)
 
         })
