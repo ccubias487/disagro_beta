@@ -4,45 +4,75 @@
     <link href="estilos.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+
+
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="closeBtn" class="close">&times;</span>
+        <h1>AGREGAR</h2>
+        <h1 id="producto">PRODUCTO</h1>
+        <input type="number" class="input3" name="cantidad" id="cantidad_insumo">
+        <div class="botones_modal">
+        <button class="boton" id="boton_agregar">Agregar</button>
+        <button class="boton" id="boton_agregar">Cancelar</button>
+      </div>
+      </div>
+    </div>
+    
     <section class="page-content">
       <section class="grid">
         <article id="contenido_tabla" class="articulo">
           <div id="encabezado_notificaciones_ordenes">
             <div class="logo_ordenes"></div>
-            <div class="logo_titulo" id="titulo_logo">
-              LISTADO DE ORDENES ASIGNADAS
+            <form class="form-wrapper cf">
+              <input
+                type="text"
+                id="Buscar_string"
+                placeholder="Buscar por codigo..."
+                required
+              />
+              <button type="button" id="boton_buscar">Buscar</button>
+            </form>
+            <div class="switch">
+              <input type="checkbox" id="mode" checked="">
+              <label for="mode">
+                <span></span>
+                <span id="label_buscar">CODIGO</span>
+              </label>
             </div>
-    
-            <div class="logo_titulo" id="titulo_logo">Listado de insumos</div>
           </div>
 
-          <div class="caja_resumen_actividades" id="actividades_asignadas">
-            
-          </div>
+          <div
+            class="caja_resumen_actividades"
+            id="actividades_asignadas"
+          ></div>
           <div class="mascota" id="no_encontrado"></div>
           <div class="mascota" id="no_encontrado_texto"></div>
           <div>
             <div class="botones_vertical">
-            <button class="boton" id="boton_agregar">Agregar</button>
-            <button class="boton" id="boton_siguiente">Enviar a autorizacion</button>
-          </div>
+              <button class="boton" id="boton_agregar">Agregar</button>
+              <button class="boton" id="boton_siguiente">
+                Enviar a autorizacion
+              </button>
+            </div>
             <style>
               #boton_siguiente {
                 margin-top: 30px;
                 margin-bottom: 200px;
                 border-radius: 15px;
-        width: 275px;
-        background: rgb(102, 202, 92);
-        color: white;
-        border: 2px solid rgb(102, 202, 92);
-        height: 80px;
-        font-size: xx-large;
-        font-weight: bold;
+                width: 275px;
+                background: rgb(102, 202, 92);
+                color: white;
+                border: 2px solid rgb(102, 202, 92);
+                height: 80px;
+                font-size: xx-large;
+                font-weight: bold;
               }
               #boton_agregar {
                 margin-top: 30px;
               }
-              #titulo_logo{
+              #titulo_logo {
                 text-align: center;
               }
             </style>
@@ -305,7 +335,7 @@
         </article>
       </section>
       <footer class="page-footer"></footer>
-      <script src="materiales_funciones.js"></script>
+      <script src="bodega_materiales.js"></script>
     </section>
   </body>
 </html>

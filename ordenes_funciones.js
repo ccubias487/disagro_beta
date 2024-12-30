@@ -22,6 +22,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                 localStorage.setItem("iniciar_orden_hr",jsondata[i].HOJARUTA)
                 localStorage.setItem("iniciar_orden",jsondata[i].ORDEN)
                 localStorage.setItem("iniciar_orden_d",jsondata[i].DESCRIPCION)
+                localStorage.removeItem("agregar_material")
                 window.location.href="actividades.html"
             }
 
