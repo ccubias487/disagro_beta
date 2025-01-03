@@ -1670,3 +1670,14 @@ text-decoration:none;
     display: flex;
     flex-direction: row;
   }
+
+  .contador_tiempo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .titulo_parrafo{
+    font-weight: normal;
+  }

@@ -1,16 +1,10 @@
 document.getElementById("inicio").addEventListener("click", function () {
   window.location.href = "index.html";
 })
+document.getElementById("actividades_asignadas").style.paddingBottom="300px"
 
-
-
-document.getElementById("boton_agregar").addEventListener("click", function () {
- // window.location.href = "existencias.html";
-
-
-
-
- const fechaActual = new Date();
+function fecha_actual(){
+  const fechaActual = new Date();
 
       // Obtener fecha y hora formateada
       const dia = fechaActual.getDate().toString().padStart(2, '0');
@@ -22,33 +16,38 @@ document.getElementById("boton_agregar").addEventListener("click", function () {
       const segundos = fechaActual.getSeconds().toString().padStart(2, '0');
 
       // Formatear la fecha y hora
-      const fechaFormateada = `${dia}/${mes}/${año}`;
+      const fechaFormateada = `${año}-${mes}-${dia}`;
       const horaFormateada = `${horas}:${minutos}:${segundos}`;
-      let material = JSON.parse(localStorage.getItem("autorizaciones"))
+      return (`${fechaFormateada} ${horaFormateada}`)
+}
 
-       fechafin= new Date (`${fechaFormateada} ${horaFormateada}`)
-fechainicio= new Date (material[0].INICIO)
+function calcularDiferenciaTiempo(fecha1, fecha2) {
+  // Convertir las fechas a objetos Date
+  const inicio = new Date(fecha1);
+  const fin = new Date(fecha2);
 
-diferenciaMs=fechafin-fechainicio
+  // Calcular la diferencia en milisegundos
+  const diferenciaMilisegundos = fin - inicio;
 
-const totalSegundos = Math.floor(diferenciaMs / 1000);
-const horass = Math.floor(totalSegundos / 3600);
-const minutoss = Math.floor((totalSegundos % 3600) / 60);
-const segundoss = totalSegundos % 60;
+  // Asegurarse de que la diferencia sea positiva
+  if (diferenciaMilisegundos < 0) {
+    return "La segunda fecha debe ser posterior a la primera";
+  }
 
-// Formatear a hh:mm:ss
-const formatoTiempo = `${horass.toString().padStart(2, '0')}:${minutoss.toString().padStart(2, '0')}:${segundoss.toString().padStart(2, '0')}`;
+  // Calcular horas, minutos y segundos
+  const segundosTotales = Math.floor(diferenciaMilisegundos / 1000);
+  const horas = Math.floor(segundosTotales / 3600);
+  const minutos = Math.floor((segundosTotales % 3600) / 60);
+  const segundos = segundosTotales % 60;
+
+  // Formatear el resultado como HH:MM:SS
+  return `${String(horas).padStart(2, '0')}:${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+}
 
 
-console.log(diferenciaMs)
-console.log(formatoTiempo)
-
-      console.log(material[0].INICIO)
-      console.log(`${fechaFormateada} ${horaFormateada}`)
-})
 
 
-document.getElementById("titulo_logo").innerHTML = localStorage.getItem("iniciar_orden_d")
+
 let orden = localStorage.getItem("iniciar_orden")
 
 
@@ -61,28 +60,14 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       return parseInt(a.PRIORIDAD) - parseInt(b.PRIORIDAD);
     });
     function hora(i) {
-      const fechaActual = new Date();
-
-      // Obtener fecha y hora formateada
-      const dia = fechaActual.getDate().toString().padStart(2, '0');
-      const mes = (fechaActual.getMonth() + 1).toString().padStart(2, '0');
-      const año = fechaActual.getFullYear();
-
-      const horas = fechaActual.getHours().toString().padStart(2, '0');
-      const minutos = fechaActual.getMinutes().toString().padStart(2, '0');
-      const segundos = fechaActual.getSeconds().toString().padStart(2, '0');
-
-      // Formatear la fecha y hora
-      const fechaFormateada = `${dia}/${mes}/${año}`;
-      const horaFormateada = `${horas}:${minutos}:${segundos}`;
-
+      const fechayhora= fecha_actual()
       let material = JSON.parse(localStorage.getItem("autorizaciones"))
       
       if ((localStorage.getItem("autorizaciones")) == null) {
         if (material[i].hasOwnProperty("INICIO") == false) {
           
           console.log("aqui1")
-          const nuevoDato = { ORDEN: datosJSON[i].ORDEN, DETALLE: datosJSON[i].DETALLE, STATUS: datosJSON[i].STATUS, INICIO: `${fechaFormateada} ${horaFormateada}` };
+          const nuevoDato = { ORDEN: datosJSON[i].ORDEN, DETALLE: datosJSON[i].DETALLE, STATUS: datosJSON[i].STATUS, INICIO: fechayhora };
           datosJSON = datosJSON.sort((a, b) => {
             return parseInt(a.ORDEN) - parseInt(b.ORDEN);
           });
@@ -91,7 +76,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
         }
       } else {
         if (material[i].hasOwnProperty("INICIO") == false) {
-          const nuevoDato = { ORDEN: material[i].ORDEN, DETALLE: material[i].DETALLE, STATUS: material[i].STATUS, INICIO: `${fechaFormateada} ${horaFormateada}` };
+          const nuevoDato = { ORDEN: material[i].ORDEN, DETALLE: material[i].DETALLE, STATUS: material[i].STATUS, INICIO: fechayhora };
           datosJSON = datosJSON.filter(item => item.ORDEN !== material[i].ORDEN);
           datosJSON.push(nuevoDato);
           datosJSON2 = datosJSON.sort((a, b) => {
@@ -100,6 +85,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
           localStorage.setItem("autorizaciones", JSON.stringify(datosJSON))
         }
       }
+      window.location.href = "ejecutando.html";
 
     }
 
@@ -156,7 +142,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
           localStorage.setItem("autorizaciones", JSON.stringify(datosJSON))
         
       } else {
-        console.log(material)
+   
         //if (material[i].hasOwnProperty("INICIO") == false) {
           const nuevoDato = { ORDEN: jsondata[i].ORDEN, DETALLE: jsondata[i].DETALLE, STATUS: jsondata[i].STATUS };
           datosJSON = datosJSON.filter(item => item.ORDEN !== jsondata[i].ORDEN);
