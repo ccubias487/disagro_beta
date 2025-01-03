@@ -139,7 +139,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
         const div = document.createElement('div');
         div.id = "insumos" + i
         div.className = 'cuadro_resumen_insumos';
-        div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
+        div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
 
         //div.onclick = function(){ventana_flotante(i)}
         //localStorage.setItem("ventana_flotante",i)
@@ -171,7 +171,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               const div = document.createElement('div');
               div.id = "insumos" + i
               div.className = 'cuadro_resumen_insumos';
-              div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
+               div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
               document.getElementById("boton_agregar").removeAttribute('onclick')
               //div.onclick = function(){ventana_flotante(i)}
               container.appendChild(div)
@@ -206,7 +206,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             const div = document.createElement('div');
             div.id = "insumos" + i
             div.className = 'cuadro_resumen_insumos';
-            div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
+             div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
             document.getElementById("boton_agregar").removeAttribute('onclick')
             //div.onclick = function(){ventana_flotante(i)}
             container.appendChild(div)
@@ -245,7 +245,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               const div = document.createElement('div');
               div.id = "insumos" + i
               div.className = 'cuadro_resumen_insumos';
-              div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
+               div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
               document.getElementById("boton_agregar").removeAttribute('onclick')
              // div.onclick = function(){ventana_flotante(i)}
               container.appendChild(div)
@@ -280,7 +280,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             const div = document.createElement('div');
             div.id = "insumos" + i
             div.className = 'cuadro_resumen_insumos';
-            div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
+             div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
             document.getElementById("boton_agregar").removeAttribute('onclick')
            // div.onclick = function(){ventana_flotante(i)}
             container.appendChild(div)
