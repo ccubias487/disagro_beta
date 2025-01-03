@@ -1681,3 +1681,6 @@ text-decoration:none;
   .titulo_parrafo{
     font-weight: normal;
   }
+.producto_descripcion{
+font-weight: bold;
+}
