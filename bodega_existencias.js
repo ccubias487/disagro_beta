@@ -144,7 +144,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
         div.className = 'cuadro_resumen_insumos';
         div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
 
-        div.onclick = function(){ventana_flotante(i)}
+        //div.onclick = function(){ventana_flotante(i)}
         //localStorage.setItem("ventana_flotante",i)
         container.appendChild(div)
         contador = contador + 1
@@ -176,7 +176,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               div.className = 'cuadro_resumen_insumos';
               div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
               document.getElementById("boton_agregar").removeAttribute('onclick')
-              div.onclick = function(){ventana_flotante(i)}
+              //div.onclick = function(){ventana_flotante(i)}
               container.appendChild(div)
               contador = contador + 1
               document.getElementById("no_encontrado").innerHTML = ""
@@ -211,7 +211,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             div.className = 'cuadro_resumen_insumos';
             div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
             document.getElementById("boton_agregar").removeAttribute('onclick')
-            div.onclick = function(){ventana_flotante(i)}
+            //div.onclick = function(){ventana_flotante(i)}
             container.appendChild(div)
             contador = contador + 1
             document.getElementById("no_encontrado").innerHTML = ""
@@ -250,7 +250,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               div.className = 'cuadro_resumen_insumos';
               div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
               document.getElementById("boton_agregar").removeAttribute('onclick')
-              div.onclick = function(){ventana_flotante(i)}
+             // div.onclick = function(){ventana_flotante(i)}
               container.appendChild(div)
               contador = contador + 1
               document.getElementById("no_encontrado").innerHTML = ""
@@ -285,7 +285,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             div.className = 'cuadro_resumen_insumos';
             div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' + jsondata[i].SAP + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + jsondata[i].DESCRIPCION + '</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp' + jsondata[i].EXISTENCIA + '</div></div></div>'
             document.getElementById("boton_agregar").removeAttribute('onclick')
-            div.onclick = function(){ventana_flotante(i)}
+           // div.onclick = function(){ventana_flotante(i)}
             container.appendChild(div)
             contador = contador + 1
             document.getElementById("no_encontrado").innerHTML = ""
