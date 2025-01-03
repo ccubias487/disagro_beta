@@ -23,8 +23,30 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                 localStorage.setItem("iniciar_orden",jsondata[i].ORDEN)
                 localStorage.setItem("iniciar_orden_d",jsondata[i].DESCRIPCION)
                 localStorage.removeItem("agregar_material")
-                window.location.href="actividades.html"
+
+                let material = JSON.parse(localStorage.getItem("autorizaciones"))
+
+                if (material !== null){
+                    
+                    const indice = material.findIndex(item => 
+                        Object.values(item).some(valor => 
+                          typeof valor === "string" && valor.includes(jsondata[i].ORDEN)
+                        )
+                      );
+                      
+                      console.log(material)
+                      console.log(jsondata[i].ORDEN)
+                      console.log(material[i])
+
+                      if (indice !== -1 && material[indice].hasOwnProperty("INICIO") == true) {
+                            window.location.href="ejecutando.html"
+                          
+                      } else {
+                        window.location.href="actividades.html"
+                      }
+        
             }
+        }
 
             if (jsondata[i].NOMBRE== "CARLOS ALEXANDER CUBIAS ORTIZ") {
                 const div = document.createElement('div');

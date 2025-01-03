@@ -2,6 +2,30 @@ document.getElementById("inicio").addEventListener("click", function () {
   window.location.href = "index.html";
 })
 
+
+
+function tiempo_orden() {
+  const ahora = new Date();
+  console.log(`La hora actual es: ${ahora.toLocaleTimeString()}`);
+
+  //return (${ahora.toLocaleTimeString()})
+  orden = (JSON.parse(localStorage.getItem("autorizaciones")))
+
+  for (k in orden){
+  if (orden[k].ORDEN==localStorage.getItem("iniciar_orden")){
+  const diferencia = calcularDiferenciaTiempo(orden[k].INICIO, fecha_actual());
+  document.getElementById("tiempo").innerHTML=diferencia
+  break
+ // console.log("Diferencia de tiempo:", diferencia);
+}
+
+  }
+
+ 
+}
+
+setInterval(tiempo_orden, 1000);
+
 document.getElementById("titulo_logo").innerHTML=localStorage.getItem("iniciar_orden_d")
 document.getElementById("subtitulo_logo").innerHTML="ORDEN "+localStorage.getItem("iniciar_orden")+ " INICIADA"
 document.getElementById("subtitulo_logo").style.fontSize="2.0rem"

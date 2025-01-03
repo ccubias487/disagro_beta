@@ -11,7 +11,52 @@ document.getElementById("boton_agregar").addEventListener("click",function(){
   window.location.href = "existencias.html";
 })
 
+
+
+function fecha_actual(){
+  const fechaActual = new Date();
+
+      // Obtener fecha y hora formateada
+      const dia = fechaActual.getDate().toString().padStart(2, '0');
+      const mes = (fechaActual.getMonth() + 1).toString().padStart(2, '0');
+      const año = fechaActual.getFullYear();
+
+      const horas = fechaActual.getHours().toString().padStart(2, '0');
+      const minutos = fechaActual.getMinutes().toString().padStart(2, '0');
+      const segundos = fechaActual.getSeconds().toString().padStart(2, '0');
+
+      // Formatear la fecha y hora
+      const fechaFormateada = `${año}-${mes}-${dia}`;
+      const horaFormateada = `${horas}:${minutos}:${segundos}`;
+      return (`${fechaFormateada} ${horaFormateada}`)
+}
+
+function calcularDiferenciaTiempo(fecha1, fecha2) {
+  // Convertir las fechas a objetos Date
+  const inicio = new Date(fecha1);
+  const fin = new Date(fecha2);
+
+  // Calcular la diferencia en milisegundos
+  const diferenciaMilisegundos = fin - inicio;
+
+  // Asegurarse de que la diferencia sea positiva
+  if (diferenciaMilisegundos < 0) {
+    return "La segunda fecha debe ser posterior a la primera";
+  }
+
+  // Calcular horas, minutos y segundos
+  const segundosTotales = Math.floor(diferenciaMilisegundos / 1000);
+  const horas = Math.floor(segundosTotales / 3600);
+  const minutos = Math.floor((segundosTotales % 3600) / 60);
+  const segundos = segundosTotales % 60;
+
+  // Formatear el resultado como HH:MM:SS
+  return `${String(horas).padStart(2, '0')}:${String(minutos).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+}
+
+
 document.getElementById("boton_siguiente").addEventListener("click", function(){
+  if (localStorage.getItem("agregar_material")!==null){
   const nuevoDato = {  ORDEN: orden,  DETALLE: localStorage.getItem("iniciar_orden_d"), STATUS: "PROCESO DE AUTORIZACION"};
           
                 let datosJSON=[]
@@ -28,9 +73,35 @@ document.getElementById("boton_siguiente").addEventListener("click", function(){
                 
                 console.log(datosJSON)
                 //localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
+                window.location.href="autorizacion.html"
                 }
+              }else{
 
-  window.location.href="autorizacion.html"
+                const fechayhora= fecha_actual()
+                let datosJSON = JSON.parse(localStorage.getItem("autorizaciones"))
+                
+                if ((localStorage.getItem("autorizaciones")) == null) {     
+                    const nuevoDato = { ORDEN: orden, DETALLE: localStorage.getItem("iniciar_orden_d"), STATUS: "AUTORIZADO", INICIO: fechayhora };
+                    datosJSON.push(nuevoDato);
+                    datosJSON = datosJSON.sort((a, b) => {
+                      return parseInt(a.ORDEN) - parseInt(b.ORDEN);
+                    });
+                    
+                    localStorage.setItem("autorizaciones", JSON.stringify(datosJSON))
+                } else {
+                    const nuevoDato = { ORDEN: orden, DETALLE: localStorage.getItem("iniciar_orden_d"), STATUS: "AUTORIZADO", INICIO: fechayhora };
+                    //datosJSON = datosJSON.filter(item => item.ORDEN !== material[i].ORDEN);
+                    datosJSON.push(nuevoDato);
+                    datosJSON2 = datosJSON.sort((a, b) => {
+                      return Number(a.ORDEN) - Number(b.ORDEN);
+                    });
+                    localStorage.setItem("autorizaciones", JSON.stringify(datosJSON))
+                  
+                }
+                window.location.href = "ejecutando.html";
+
+              }
+  
 })
 
 
