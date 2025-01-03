@@ -1,3 +1,6 @@
+document.getElementById("titulo_logo").innerHTML=localStorage.getItem("iniciar_orden_d")
+let orden= localStorage.getItem("iniciar_orden")
+
 document.getElementById("inicio").addEventListener("click",function(){
     window.location.href = "index.html";
 })
@@ -8,9 +11,29 @@ document.getElementById("boton_agregar").addEventListener("click",function(){
   window.location.href = "existencias.html";
 })
 
+document.getElementById("boton_siguiente").addEventListener("click", function(){
+  const nuevoDato = {  ORDEN: orden,  DETALLE: localStorage.getItem("iniciar_orden_d"), STATUS: "PROCESO DE AUTORIZACION"};
+          
+                let datosJSON=[]
+                let material=localStorage.getItem("autorizaciones")
+                if((localStorage.getItem("autorizaciones"))==null){
+                  datosJSON.push(nuevoDato);
+                  console.log(datosJSON)
+                localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
+                }else{
+                  datosJSON=(JSON.parse(material))
+                  console.log(datosJSON)
+                  //datosJSON = datosJSON.filter(item => item.SAP !== jsondata[i].CODIGO);
+                  datosJSON.push(nuevoDato);
+                
+                console.log(datosJSON)
+                //localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
+                }
 
-document.getElementById("titulo_logo").innerHTML=localStorage.getItem("iniciar_orden_d")
-let orden= localStorage.getItem("iniciar_orden")
+  window.location.href="autorizacion.html"
+})
+
+
 fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/materiales_ordenes.json")
       .then((response) => {
         return response.json();
@@ -21,12 +44,12 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
           });
 
 
-        console.log(jsondata)
+        //console.log(jsondata)
         const container = document.getElementById('actividades_asignadas');
         let contador=1
         let datosJSON = [];
         for (let i in jsondata) {
-            console.log(jsondata[i].HOJARUTA)      
+            //console.log(jsondata[i].HOJARUTA)      
             
             function iniciar_orden(){
                 localStorage.setItem("iniciar_orden_hr",jsondata[i].HOJARUTA)
@@ -34,21 +57,6 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             }
 
             if (jsondata[i].HOJARUTA==localStorage.getItem("iniciar_orden_hr")) {
-                const div = document.createElement('div');
-                div.id="insumos"+i
-                div.className = 'cuadro_resumen_insumos';
-                div.innerHTML='<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp'+jsondata[i].CODIGO+'</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp'+jsondata[i].DESCRIPCION+'</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp'+ jsondata[i].CANTIDAD +'</div><div class="titulo_resumen_ordenes">EXISTENCIA: &nbsp &nbsp'+ jsondata[i].EXISTENCIA +'</div></div></div>'
-
-               
-
-                container.appendChild(div)
-                contador=contador+1
-                if (Number(jsondata[i].CANTIDAD)>Number(jsondata[i].EXISTENCIA)){
-                    document.getElementById("insumos"+i).style.backgroundColor= "rgb(147, 81, 85)"
-                }
-                
-
-
                 
                 const nuevoDato = {  ORDEN: orden, SAP: jsondata[i].CODIGO, DESCRIPCION: jsondata[i].DESCRIPCION, CANTIDAD: jsondata[i].CANTIDAD, EXISTENCIA: jsondata[i].EXISTENCIA, VALOR_TOTAL: jsondata[i].VALOR_TOTAL };
           
@@ -60,11 +68,31 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                 }else{
                   datosJSON=(JSON.parse(material))
                   console.log(datosJSON)
+                  datosJSON = datosJSON.filter(item => item.SAP !== jsondata[i].CODIGO);
                   datosJSON.push(nuevoDato);
+                
+                console.log(datosJSON)
                 localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
                 }
 
+              
+                contador=contador+1
+                if (Number(jsondata[i].CANTIDAD)>Number(jsondata[i].EXISTENCIA)){
+                    document.getElementById("insumos"+i).style.backgroundColor= "rgb(147, 81, 85)"
+                }
+  
+
             }
+
+        }
+        datosJSON=(JSON.parse(localStorage.getItem("agregar_material")))
+        for (let j in datosJSON ) {
+          
+          const div = document.createElement('div');
+          div.id="insumos"+j
+          div.className = 'cuadro_resumen_insumos';
+          div.innerHTML='<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp'+datosJSON[j].SAP+'</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp'+(datosJSON[j].DESCRIPCION).substring(0,28)+'</div><div class="titulo_resumen_ordenes">CANTIDAD: &nbsp &nbsp'+ datosJSON[j].CANTIDAD  +'</div><div class="titulo_resumen_ordenes">EXISTENCIA: &nbsp &nbsp'+ datosJSON[j].EXISTENCIA +'</div></div></div>'
+          container.appendChild(div)
 
         }
         function numeroAleatorio(min, max) {
