@@ -15,25 +15,49 @@ tiemposcambian.GuardandoPNGs = (function() {
     document.getElementById('bt-save').onmouseup = sendToServer;
     document.getElementById('bt-clear').onmouseup = resetCanvas;
 
-    // canvas events
+    // Desktop canvas events
     canvas.onmousedown = function(e) {
-      draw(e.layerX, e.layerY);
+      startDrawing(e.layerX, e.layerY);
       mousePressed = true;
     };
-
     canvas.onmousemove = function(e) {
       if (mousePressed) {
         draw(e.layerX, e.layerY);
       }
     };
+    canvas.onmouseup = function() {
+      mousePressed = false;
+    };
+    canvas.onmouseleave = function() {
+      mousePressed = false;
+    };
 
-    canvas.onmouseup = function(e) {
+    // Touch events for mobile
+    canvas.addEventListener('touchstart', function(e) {
+      const touch = e.touches[0];
+      const rect = canvas.getBoundingClientRect();
+      startDrawing(touch.clientX - rect.left, touch.clientY - rect.top);
+      mousePressed = true;
+      e.preventDefault();
+    });
+
+    canvas.addEventListener('touchmove', function(e) {
+      if (mousePressed) {
+        const touch = e.touches[0];
+        const rect = canvas.getBoundingClientRect();
+        draw(touch.clientX - rect.left, touch.clientY - rect.top);
+      }
+      e.preventDefault();
+    });
+
+    canvas.addEventListener('touchend', function() {
       mousePressed = false;
-    };
-    
-    canvas.onmouseleave = function(e) {
-      mousePressed = false;
-    };
+    });
+  }
+
+  function startDrawing(x, y) {
+    lastX = x;
+    lastY = y;
   }
 
   function draw(x, y) {
@@ -52,14 +76,10 @@ tiemposcambian.GuardandoPNGs = (function() {
 
   function sendToServer() {
     var data = canvas.toDataURL('image/png');
-    var data2 = canvas
-    localStorage.setItem("firma_user",canvas.toDataURL('image/png'))
-    //console.log(data)
-   
+    localStorage.setItem("firma_user", data);
   }
   
   function resetCanvas() {
-    // just repaint canvas white
     ctx.fillStyle = '#EEEEEE';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
@@ -67,9 +87,8 @@ tiemposcambian.GuardandoPNGs = (function() {
   return {
     'init': init
   };
-});
-
+})();
 
 window.onload = function() {
-  new tiemposcambian.GuardandoPNGs().init();
-};
+    tiemposcambian.GuardandoPNGs.init();
+  };
