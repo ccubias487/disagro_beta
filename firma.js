@@ -52,16 +52,10 @@ tiemposcambian.GuardandoPNGs = (function() {
 
   function sendToServer() {
     var data = canvas.toDataURL('image/png');
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-      // request complete
-      if (xhr.readyState == 4) {
-        window.open('http://www.lostiemposcambian.com/blog/posts/guardando-pngs-html5/snapshots/'+xhr.responseText,'_blank');
-      }
-    }
-    xhr.open('POST','http://www.lostiemposcambian.com/blog/posts/guardando-pngs-html5/snapshot.php',true);
-    xhr.setRequestHeader('Content-Type', 'application/upload');
-    xhr.send(data);
+    var data2 = canvas
+    localStorage.setItem("firma_user",canvas.toDataURL('image/png'))
+    //console.log(data)
+   
   }
   
   function resetCanvas() {
