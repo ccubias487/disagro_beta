@@ -2,7 +2,7 @@ document.getElementById("titulo_logo").innerHTML=localStorage.getItem("iniciar_o
 let orden= localStorage.getItem("iniciar_orden")
 
 document.getElementById("inicio").addEventListener("click",function(){
-    window.location.href = "index.html";
+    window.location.href = "principal.html";
 })
 
 window.addEventListener('pageshow', (event) => {

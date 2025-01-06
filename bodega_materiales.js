@@ -1,5 +1,5 @@
 document.getElementById("inicio").addEventListener("click", function () {
-  window.location.href = "index.html";
+  window.location.href = "principal.html";
 })
 
 document.getElementById("Buscar_string").addEventListener("keydown", function (event) {
