@@ -77,6 +77,7 @@ tiemposcambian.GuardandoPNGs = (function() {
   function sendToServer() {
     var data = canvas.toDataURL('image/png');
     localStorage.setItem("firma_user", data);
+    console.log(data)
   }
   
   function resetCanvas() {

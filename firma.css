@@ -100,3 +100,67 @@ body, html {
 #encabezado_notificaciones_ordenes{
     margin-top: 5px;
 }
+
+#imagen_login{
+  background-image: url("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/escribiendo.png");  
+      background-size:  contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 550px;
+      width: 100%;
+      margin: 0.5rem;
+      margin-top: 1rem;
+}
+
+#input_login{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_input{
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  
+}
+
+.titulo_input2{
+  font-size: xx-large;
+  color: white;
+
+  margin-top: 25px;
+  
+}
+
+.input3{
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(102, 202, 92);
+  background: #5C5F5C;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0.1rem;
+  height: 50px;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  }
+
+  #password{
+    margin-top: 25px;
+  }
+
+  #bt-ingresar{
+    margin-top: 35px;
+  }
+
+  #contraseña{
+    margin-top: 35px;
+  }
+
+  body{
+    font-family: sans-serif;
+  }
