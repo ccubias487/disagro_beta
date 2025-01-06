@@ -1,3 +1,7 @@
+if (localStorage.getItem("usuario")== null){
+  window.location.href = "index.html";
+}
+
 var tiemposcambian = tiemposcambian || {};
 
 tiemposcambian.GuardandoPNGs = (function() {
@@ -77,7 +81,7 @@ tiemposcambian.GuardandoPNGs = (function() {
   function sendToServer() {
     var data = canvas.toDataURL('image/png');
     localStorage.setItem("firma_user", data);
-    console.log(data)
+    window.location.href = "principal.html";
   }
   
   function resetCanvas() {

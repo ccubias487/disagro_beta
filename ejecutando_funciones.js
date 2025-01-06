@@ -1,14 +1,69 @@
+if (localStorage.getItem("usuario")== null){
+  window.location.href = "index.html";
+}
+
 document.getElementById("inicio").addEventListener("click", function () {
   window.location.href = "principal.html";
 })
 
+let ejecutando=localStorage.getItem("proceso")
+let ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
 
 
+
+datosJSON=[]
+
+if ((ejecutando_orden) == null) {        
+    const nuevoDato = { ORDEN: localStorage.getItem("iniciar_orden") };
+    datosJSON = datosJSON.sort((a, b) => {
+      return parseInt(a.ORDEN) - parseInt(b.ORDEN);
+    });
+    datosJSON.push(nuevoDato);
+    localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON))
+    ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
+    localStorage.setItem("proceso", ejecutando_orden.length)
+} else {
+  datosJSON=ejecutando_orden
+    const nuevoDato = {  ORDEN: localStorage.getItem("iniciar_orden") };
+    datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
+    datosJSON.push(nuevoDato);
+    datosJSON2 = datosJSON.sort((a, b) => {
+      return Number(a.ORDEN) - Number(b.ORDEN);
+    });
+    localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON))
+    ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
+    localStorage.setItem("proceso", ejecutando_orden.length)
+}
+
+
+
+
+
+document.getElementById("boton_finalizar").addEventListener("click", function(){
+  let ejecutando=localStorage.getItem("realizadas")
+  if (ejecutando==null){
+    localStorage.setItem("realizadas","1")
+  }else{
+  
+  localStorage.setItem("realizadas",Number(ejecutando)+1)
+  }
+
+  datosJSON=JSON.parse(localStorage.getItem("orden_ejecucion"))
+  datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
+  localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON))
+  ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
+  localStorage.setItem("proceso", ejecutando_orden.length)
+
+  autorizar=JSON.parse(localStorage.getItem("autorizaciones"))
+  autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
+  //autorizar = JSON.parse(localStorage.getItem("autorizaciones"))
+  localStorage.setItem("autorizaciones", JSON.stringify(autorizar))
+
+  window.location.href = "principal.html";
+})
 function tiempo_orden() {
   const ahora = new Date();
-  console.log(`La hora actual es: ${ahora.toLocaleTimeString()}`);
 
-  //return (${ahora.toLocaleTimeString()})
   orden = (JSON.parse(localStorage.getItem("autorizaciones")))
 
   for (k in orden){

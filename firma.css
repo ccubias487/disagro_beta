@@ -108,8 +108,7 @@ body, html {
       background-position: center;
       height: 550px;
       width: 100%;
-      margin: 0.5rem;
-      margin-top: 1rem;
+
 }
 
 #input_login{
@@ -128,7 +127,6 @@ body, html {
 .titulo_input2{
   font-size: xx-large;
   color: white;
-
   margin-top: 10px;
   
 }
@@ -155,6 +153,8 @@ body, html {
 
   #bt-ingresar{
     margin-top: 35px;
+    width: 200px;
+    height: 100px;
   }
 
   #contraseña{

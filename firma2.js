@@ -1,3 +1,7 @@
+if (localStorage.getItem("usuario")== null){
+  window.location.href = "index.html";
+}
+
 // Cadena Base64 (debe ser una cadena Base64 válida)
 firma= localStorage.getItem("firma_user")
 if (firma!==null){

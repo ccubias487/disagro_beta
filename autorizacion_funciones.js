@@ -1,6 +1,10 @@
 document.getElementById("inicio").addEventListener("click", function () {
   window.location.href = "principal.html";
 })
+
+if (localStorage.getItem("usuario")== null){
+  window.location.href = "index.html";
+}
 document.getElementById("actividades_asignadas").style.paddingBottom="300px"
 
 function fecha_actual(){
@@ -136,6 +140,8 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
 
       div.className = 'cuadro_resumen_insumos';
       div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">ORDEN : &nbsp &nbsp' + datosJSON[j].ORDEN + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + (datosJSON[j].DETALLE).substring(0, 28) + '</div><div class="titulo_resumen_ordenes">STATUS : &nbsp &nbsp' + datosJSON[j].STATUS + '</div></div></div>'
+      
+      //div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">ORDEN : &nbsp &nbsp' + localStorage.getItem("iniciar_orden") + '</div><div class="titulo_resumen_ordenes">DESCRIPCION: &nbsp &nbsp' + (localStorage.getItem("iniciar_orden_d")).substring(0, 28) + '</div><div class="titulo_resumen_ordenes">STATUS : &nbsp &nbsp AUTORIZADO </div></div></div>'
       div.onclick = function () { hora(j) }
       container.appendChild(div)
       contador=contador+1
