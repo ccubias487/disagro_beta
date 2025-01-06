@@ -1388,7 +1388,7 @@ margin-top: 20px;
         text-align: left;
         font-size: xx-large;
         width: 100%;
-        margin-left: 1rem;
+        margin-left: 2rem;
        }
 .prioridad{
     width: 2.5rem;
@@ -1681,6 +1681,3 @@ text-decoration:none;
   .titulo_parrafo{
     font-weight: normal;
   }
-.producto_descripcion{
-font-weight: bold;
-}

@@ -45,7 +45,9 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                         window.location.href="actividades.html"
                       }
         
-            }
+            }else {
+                window.location.href="actividades.html"
+              }
         }
 
             if (jsondata[i].NOMBRE== "CARLOS ALEXANDER CUBIAS ORTIZ") {

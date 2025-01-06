@@ -5,7 +5,12 @@ document.getElementById("inicio").addEventListener("click",function(){
     window.location.href = "index.html";
 })
 
-
+window.addEventListener('pageshow', (event) => {
+  if (event.persisted) {
+    // La página viene desde la caché, forzar recarga
+    window.location.reload();
+  }
+});
 
 document.getElementById("boton_agregar").addEventListener("click",function(){
   window.location.href = "existencias.html";
@@ -138,11 +143,11 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                 localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
                 }else{
                   datosJSON=(JSON.parse(material))
-                  console.log(datosJSON)
+                  //console.log(datosJSON)
                   datosJSON = datosJSON.filter(item => item.SAP !== jsondata[i].CODIGO);
                   datosJSON.push(nuevoDato);
                 
-                console.log(datosJSON)
+                //console.log(datosJSON)
                 localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
                 }
 
