@@ -244,5 +244,29 @@
         "DESCRIPCION": "LIMPIEZA DE FOSAS DE AGUAS LLUVIAS",
         "ACTIVIDAD": "LIMPIEZA DE FOSA DE AGUAS LLUVIAS",
         "TIEMPO": "107"
+    },
+    {
+        "HOJARUTA": "2525",
+        "DESCRIPCION": "PLAN DE MANTTO VOLVO #3",
+        "ACTIVIDAD": "CAMBIO DE FILTRO DE ACEITE",
+        "TIEMPO": "15"
+    },
+    {
+        "HOJARUTA": "2525",
+        "DESCRIPCION": "PLAN DE MANTTO VOLVO #3",
+        "ACTIVIDAD": "CAMBIO DE ACEITE",
+        "TIEMPO": "30"
+    },
+    {
+        "HOJARUTA": "2525",
+        "DESCRIPCION": "PLAN DE MANTTO VOLVO #3",
+        "ACTIVIDAD": "REVISION DE REFRIGERANTE",
+        "TIEMPO": "5"
+    },
+    {
+        "HOJARUTA": "2525",
+        "DESCRIPCION": "PLAN DE MANTTO VOLVO #3",
+        "ACTIVIDAD": "CAMBIO DE FAJA DE ALTERNADOR",
+        "TIEMPO": "25"
     }
 ]
