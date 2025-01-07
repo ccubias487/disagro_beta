@@ -5,7 +5,16 @@ if (localStorage.getItem("usuario")== null){
   if (localStorage.getItem("firma_user")== null){
     window.location.href = "firma.html";
   }
+document.getElementById("cuenta").addEventListener("click", function(){
+  localStorage.removeItem("firma_user")
+  localStorage.removeItem("nombre")
+  localStorage.removeItem("usuario")
+  localStorage.removeItem("realizadas")
+  localStorage.removeItem("proceso")
 
+    
+  window.location.href = "index.html";
+})
 
   
 function convertirNombrePropio(nombre) {
