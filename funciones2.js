@@ -11,6 +11,8 @@ document.getElementById("cuenta").addEventListener("click", function(){
   localStorage.removeItem("usuario")
   localStorage.removeItem("realizadas")
   localStorage.removeItem("proceso")
+localStorage.removeItem("orden_ejecucion")
+ localStorage.removeItem("autorizaciones")   
 
     
   window.location.href = "index.html";
