@@ -10,8 +10,8 @@ document.getElementById("cuenta").addEventListener("click", function(){
   localStorage.removeItem("firma_user")
   localStorage.removeItem("nombre")
   localStorage.removeItem("usuario")
-  localStorage.removeItem("realizadas")
-  localStorage.removeItem("proceso")
+  //localStorage.removeItem("realizadas")
+  //localStorage.removeItem("proceso")
 
     
   window.location.href = "index.html";
