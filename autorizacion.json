@@ -1,0 +1,38 @@
+[
+    {
+        "ORDEN": "3002008719",
+        "CODIGO": "1901104958",
+        "DESCRIPCION": "BOLSA DE CEMENTO",
+        "CANTIDAD": "1",
+        "DETALLE": "PLAN DE MANNTO ELEVADOR 1 F1",
+        "STATUS": "AUTORIZADO",
+        "SOLICITANTE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "AUTORIZADO": "",
+        "REQUISICION": "3.00201E+23",
+        "VALIDADOR": "3.00201E+19"
+    },
+    {
+        "ORDEN": "3002008718",
+        "CODIGO": "1901104221",
+        "DESCRIPCION": "DISCO LIJA EN SECO MAC/AUTO 6P 400 MAXFI",
+        "CANTIDAD": "2",
+        "DETALLE": "PLAN DE MANNTO ELEVADOR 1 F1",
+        "STATUS": "AUTORIZADO",
+        "SOLICITANTE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "AUTORIZADO": "",
+        "REQUISICION": "3.00201E+23",
+        "VALIDADOR": "3.00201E+19"
+    },
+    {
+        "ORDEN": "3002009076",
+        "CODIGO": "1901104958",
+        "DESCRIPCION": "BOLSA DE CEMENTO",
+        "CANTIDAD": "1",
+        "DETALLE": "LIMPIEZA DE FOSAS DE AGUAS LLUVIAS",
+        "STATUS": "AUTORIZADO",
+        "SOLICITANTE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "AUTORIZADO": "",
+        "REQUISICION": "3.00201E+23",
+        "VALIDADOR": "3.00201E+19"
+    }
+]

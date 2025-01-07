@@ -1,0 +1,14 @@
+  let datosJSON = [];
+            const nuevoDato = {  ORDEN: jsondata[i].ORDEN, SAP: jsondata[i].SAP, DESCRIPCION: jsondata[i].DESCRIPCION, CANTIDAD: jsondata[i].CANTIDAD, EXISTENCIA: jsondata[i].EXISTENCIA, VALOR_TOTAL: jsondata[i].VALOR_TOTAL };
+            
+            let material=localStorage.getItem("agregar_material")
+            if((localStorage.getItem("agregar_material"))==null){
+              datosJSON.push(nuevoDato);
+              console.log(datosJSON)
+            localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
+            }else{
+              datosJSON=(JSON.parse(material))
+              console.log(datosJSON)
+              datosJSON.push(nuevoDato);
+            localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
+            }
