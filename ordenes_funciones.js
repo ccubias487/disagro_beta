@@ -54,7 +54,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               }
         }
 
-            if (jsondata[i].NOMBRE== "CARLOS ALEXANDER CUBIAS ORTIZ") {
+            if (jsondata[i].NOMBRE== localStorage.getItem("nombre")) {
                 const div = document.createElement('div');
                 div.className = 'cuadro_resumen_ordenes';
                 div.innerHTML='<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">ORDEN: '+jsondata[i].ORDEN+'</div><div class="titulo_resumen_ordenes">NOMBRE:'+ jsondata[i].NOMBRE+'</div><div class="titulo_resumen_ordenes  ">DESCRIPCION: '+jsondata[i].DESCRIPCION+'</div></div><div class="prioridad" id="prioridad'+i+'"></div>'
