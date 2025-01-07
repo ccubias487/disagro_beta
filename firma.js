@@ -68,7 +68,7 @@ tiemposcambian.GuardandoPNGs = (function() {
     if (mousePressed) {
       ctx.beginPath();
       ctx.strokeStyle = document.getElementById('color').value;
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 2;
       ctx.lineJoin = 'round';
       ctx.moveTo(lastX, lastY);
       ctx.lineTo(x, y);
