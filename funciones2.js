@@ -6,6 +6,11 @@ document.getElementById("inventario").addEventListener("click", function(){
     
     window.location.href = "existencias_disagro.html";
 })
+
+document.getElementById("equipos").addEventListener("click", function(){
+    
+    window.location.href = "equipos.html";
+})
   
 
   if (localStorage.getItem("firma_user")== null){
