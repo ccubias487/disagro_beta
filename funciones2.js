@@ -16,6 +16,11 @@ document.getElementById("cuenta").addEventListener("click", function(){
     
   window.location.href = "index.html";
 })
+
+document.getElementById("inventario").addEventListener("click", function(){
+
+  window.location.href = "existencias_disagro.html";
+})
   
 function convertirNombrePropio(nombre) {
     return nombre
