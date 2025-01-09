@@ -2,6 +2,10 @@ if (localStorage.getItem("usuario")== null){
     window.location.href = "index.html";
   }
 
+if (localStorage.getItem("inventario")== null){
+    window.location.href = "existencias_disagro.html";
+  }
+
   if (localStorage.getItem("firma_user")== null){
     window.location.href = "firma.html";
   }
