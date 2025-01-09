@@ -8,6 +8,10 @@ if (localStorage.getItem("usuario")== null){
     window.location.href = "index.html";
   }
 
+document.getElementById("inicio").addEventListener("click", function(){
+    window.location.href = "principal.html";
+})
+
 function numeroAleatorio(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
