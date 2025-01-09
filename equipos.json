@@ -1,0 +1,2792 @@
+[
+    {
+        "CODIGO": "10005667",
+        "EQUIPO": "TOLVA DE DESCARGA 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005668",
+        "EQUIPO": "ELEVADOR 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005-002",
+        "NOMBRE_UBICACION": "ELEVADOR 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005669",
+        "EQUIPO": "BANDA GRANELERA N°1 SIST RECEP",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005670",
+        "EQUIPO": "MEZCLADOR  N°1 (F1)",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005671",
+        "EQUIPO": "AC BATCHELOR",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B2-008-009",
+        "NOMBRE_UBICACION": "OFICINA DE BATCHELOR F1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005672",
+        "EQUIPO": "BIN AEREO 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005673",
+        "EQUIPO": "BIN AEREO 2 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005674",
+        "EQUIPO": "BIN AEREO 3 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005675",
+        "EQUIPO": "BIN AEREO 4 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005676",
+        "EQUIPO": "BIN AEREO 5 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005677",
+        "EQUIPO": "BIN AEREO 6 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005678",
+        "EQUIPO": "TOLVA ENSACADO MEZCLADORA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005679",
+        "EQUIPO": "COMPRESOR 5HP N° 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005680",
+        "EQUIPO": "TRANS HORIZONTAL SACOS N° 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005681",
+        "EQUIPO": "COSEDORA PEDESTAL N°1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005682",
+        "EQUIPO": "BASCULA PORTATIL N° 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005683",
+        "EQUIPO": "BASCULA PORTATIL N° 2 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005684",
+        "EQUIPO": "MOTOR COSEDORA N°1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005685",
+        "EQUIPO": "BULKTOTER FORMULADORA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005686",
+        "EQUIPO": "TRANS CARGA AJUSTABLE N°1 - F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005687",
+        "EQUIPO": "TRANS CARGA AJUSTABLE N°2 - F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005688",
+        "EQUIPO": "TRANS CARGA AJUSTABLE N°3 F1/MONOPRODUCT",
+        "CECO": "3000000083",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005689",
+        "EQUIPO": "SISTEMA DE ANVOL  F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005690",
+        "EQUIPO": "TRANS AJUSTABLE CARGA N°4 F1/MONOPRODUCT",
+        "CECO": "3000000083",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005691",
+        "EQUIPO": "PAYLODER  NEW  HOLLAND 12 B EQ17",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005692",
+        "EQUIPO": "PAYLODER  CATERPILLA CAT 918F EQ5",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005693",
+        "EQUIPO": "BANDA GRANELERA N°2 SIST RECEP",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005694",
+        "EQUIPO": "TOLVA MOVIL MONOPRODUCTO 31421 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005695",
+        "EQUIPO": "TRANS HORIZONTAL SACOS 30811 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005696",
+        "EQUIPO": "COSEDORA PEDESTAL 30402",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005697",
+        "EQUIPO": "TRANS CARGA AJUSTABLE 31607 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005698",
+        "EQUIPO": "BASCULA PORTATIL 3113 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005699",
+        "EQUIPO": "BASCULA PORTATIL N° 4 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005700",
+        "EQUIPO": "PAYLODER CATERPILLA EQ16 CAT914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005701",
+        "EQUIPO": "PAYLODER EQ15CATERPILLA 914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005702",
+        "EQUIPO": "MEZCLADOR  N°2 (F2 / 31204)",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005703",
+        "EQUIPO": "AC BATCHELOR 2 A1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B2-010-004",
+        "NOMBRE_UBICACION": "OFICINA DE BATCHELOR F2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005704",
+        "EQUIPO": "BANDA GRANELERA N° 1 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005705",
+        "EQUIPO": "BANDA GRANELERA N° 2 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005706",
+        "EQUIPO": "TOLVA ENSACADO MEZCLADORA 2 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005707",
+        "EQUIPO": "SISTEMA DE AGROTAIN F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010-002",
+        "NOMBRE_UBICACION": "NIVEL 2 LINEA DE MEZCLADO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005708",
+        "EQUIPO": "COMPRESOR 7.5 HP N° 2(CENTURION) F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005709",
+        "EQUIPO": "PAYLODER  CATERPILLA 928G 20108 EQ8",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005710",
+        "EQUIPO": "CATERPILLA CAT 914G 20101 EQ 1",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005711",
+        "EQUIPO": "MONTACARGA YALE AGROQUIMICO",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005712",
+        "EQUIPO": "TOLVA DE DESCARGA 2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005713",
+        "EQUIPO": "ELEVADOR 2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012-002",
+        "NOMBRE_UBICACION": "ELEVADOR 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005714",
+        "EQUIPO": "SILO CARBONATO DE CALCIO #1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005715",
+        "EQUIPO": "SILO CARBONATO DE CALCIO #2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-002",
+        "NOMBRE_UBICACION": "SILO 2 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005716",
+        "EQUIPO": "TANQUE MELAZA GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-004",
+        "NOMBRE_UBICACION": "SILO DE MELAZA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005717",
+        "EQUIPO": "TANQUE AGUA GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005718",
+        "EQUIPO": "TANQUE BINDER N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-009",
+        "NOMBRE_UBICACION": "TANQUE DE BINDER 1 GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005719",
+        "EQUIPO": "TANQUE BINDER N°2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-010",
+        "NOMBRE_UBICACION": "TANQUE  DE BINDER 2 GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005720",
+        "EQUIPO": "TANQUE BUNKER GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-006",
+        "NOMBRE_UBICACION": "TANQUE DE BUNKER GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005721",
+        "EQUIPO": "TRANS HELICOIDAL N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005722",
+        "EQUIPO": "TRANS HELICOIDAL N°2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005723",
+        "EQUIPO": "ELEVADOR N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005724",
+        "EQUIPO": "MEZCLADOR  N°3 (CAL HIDRAT) GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005725",
+        "EQUIPO": "MEZCLADOR  N°4 (PLATO GRANULADORA)",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005726",
+        "EQUIPO": "BANDA GRANELERA N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005727",
+        "EQUIPO": "SECADOR GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005728",
+        "EQUIPO": "ELEVADOR N°2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005729",
+        "EQUIPO": "ELEVADOR N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005730",
+        "EQUIPO": "CLASIFICADORA N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005731",
+        "EQUIPO": "TRANS HELICOIDAL N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005732",
+        "EQUIPO": "TRANS HELICOIDAL N°4 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005733",
+        "EQUIPO": "MOLINO GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005734",
+        "EQUIPO": "BANDA GRANELERA N°4 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3",
+        "NOMBRE_UBICACION": "GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005735",
+        "EQUIPO": "BANDA GRANELERA N°5 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005736",
+        "EQUIPO": "BANDA GRANELERA N° 6 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005737",
+        "EQUIPO": "BLOWER DESCARGA CAL 50 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005738",
+        "EQUIPO": "VENTILADOR AIRE SECUND 50 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005739",
+        "EQUIPO": "VENTILADOR AIRE FRIO 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005740",
+        "EQUIPO": "COLECTOR DE POLVO GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005741",
+        "EQUIPO": "BANDA AJUSTABLE N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005742",
+        "EQUIPO": "TOLVA CAÑON ACUMULADOR GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005743",
+        "EQUIPO": "TRANS HELICOIDAL N°5 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005744",
+        "EQUIPO": "TRANS HELICOIDAL N°6 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005745",
+        "EQUIPO": "TRANS HELICOIDAL N°7 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005746",
+        "EQUIPO": "COMPRESOR TORNILLO 25 HP N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005747",
+        "EQUIPO": "HORNO CALEFACCION (QUEMADOR) GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005748",
+        "EQUIPO": "BANDA GRANELERA N° 7 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005749",
+        "EQUIPO": "MOTOR DE 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005750",
+        "EQUIPO": "AC GRANULADORA (UNIDAD CENTRAL)",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B3-014",
+        "NOMBRE_UBICACION": "CUARTO ELECTRICO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005751",
+        "EQUIPO": "AC OFICINAS VARIAS GRANULADORA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B3-013",
+        "NOMBRE_UBICACION": "OFICINA VARIOS GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005752",
+        "EQUIPO": "CODIFICADORA DE SACOS N°1 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005753",
+        "EQUIPO": "TRANS PARA MARCADO N°1 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005754",
+        "EQUIPO": "CODIFICADORA  N°2 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005755",
+        "EQUIPO": "TRANS PARA MARCADO N°2 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005756",
+        "EQUIPO": "AC  N°1 BODEGA DE MATERIAL DE EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005757",
+        "EQUIPO": "AC  N°2 BODEGA DE MATERIAL DE EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005758",
+        "EQUIPO": "COMPRESOR 5HP TALLER",
+        "CECO": "3000000063",
+        "UBICACIÓN": "3002-0A1-T1-001",
+        "NOMBRE_UBICACION": "TALLER MANTENIMIENTO INDUSTRIAL",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005759",
+        "EQUIPO": "AC MANTTO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1",
+        "NOMBRE_UBICACION": "OFICINA DE MANTENIMIENTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005760",
+        "EQUIPO": "AC BODEGA SUMINISTROS",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B5-002",
+        "NOMBRE_UBICACION": "OFICINA DE BODEGA DE SUMINISTROS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005761",
+        "EQUIPO": "COSEDORA DE PEDESTAL  N°3",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005762",
+        "EQUIPO": "COSEDORA DE PEDESTAL  N°4",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005763",
+        "EQUIPO": "COSEDORA DE PEDESTAL  N°5",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005764",
+        "EQUIPO": "COSEDORA DE PEDESTAL  N°6",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005765",
+        "EQUIPO": "COSEDORA DE MANO N° 1",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005766",
+        "EQUIPO": "COSEDORA DE MANO N° 2",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005767",
+        "EQUIPO": "COSEDORA DE MANO N° 3",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005768",
+        "EQUIPO": "COSEDORA DE MANO N° 5",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005769",
+        "EQUIPO": "SUBESTACION PRINCIPAL",
+        "CECO": "3000000025",
+        "UBICACIÓN": "3002-0A1-S1",
+        "NOMBRE_UBICACION": "SUBESTACION PRINCIPAL A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005770",
+        "EQUIPO": "PLANTA DE EMERGENCIA PRINCIPAL",
+        "CECO": "3000000025",
+        "UBICACIÓN": "3002-0A1-S1",
+        "NOMBRE_UBICACION": "SUBESTACION PRINCIPAL A-1",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005771",
+        "EQUIPO": "SUBESTACION DE GRAN Y LINEA DE MEZCLA",
+        "CECO": "3000000017",
+        "UBICACIÓN": "3002-0A1-S2",
+        "NOMBRE_UBICACION": "SUBESTACION DE GRAN Y LINEA DE MEZCLA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005772",
+        "EQUIPO": "PLANTA DE EMERGENCIA GRAN",
+        "CECO": "3000000017",
+        "UBICACIÓN": "3002-0A1-S2",
+        "NOMBRE_UBICACION": "SUBESTACION DE GRAN Y LINEA DE MEZCLA",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005773",
+        "EQUIPO": "BASCULA ENTRADA",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005774",
+        "EQUIPO": "BASCULA SALIDA",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005775",
+        "EQUIPO": "AC DESPACHO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005776",
+        "EQUIPO": "AC RRHH",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-002",
+        "NOMBRE_UBICACION": "OFICINA RECURSOS HUMANOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005777",
+        "EQUIPO": "AC SALA REUNIONES",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-006",
+        "NOMBRE_UBICACION": "SALA DE REUNIONES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005778",
+        "EQUIPO": "AC SUPERINTENDENCIA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-004",
+        "NOMBRE_UBICACION": "OFICINA SUPERINTENDENTE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005779",
+        "EQUIPO": "AC FACTURACION A1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-001",
+        "NOMBRE_UBICACION": "OFICINA DE FACTURACION",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005780",
+        "EQUIPO": "TOYOTA DINA P-245-240",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005781",
+        "EQUIPO": "PICK UP P-329910 NISSAN FRONTIER 4X2",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005782",
+        "EQUIPO": "PICK UP P554-087",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005783",
+        "EQUIPO": "PICK UP P581-783",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005784",
+        "EQUIPO": "CAMION KIA P110519",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005785",
+        "EQUIPO": "MOTOCICLETA M48597",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005786",
+        "EQUIPO": "MOTOCICLETA M48598",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005787",
+        "EQUIPO": "CAMION P65886",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005788",
+        "EQUIPO": "COMPRESOR SAMBLASTING",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005789",
+        "EQUIPO": "PODADORA DE CARRETILLA N°1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-Z1",
+        "NOMBRE_UBICACION": "ZONAS VERDES A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005790",
+        "EQUIPO": "SUBESTACION PRINCIPAL",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-S3",
+        "NOMBRE_UBICACION": "CUARTOS ELECTRICOS Y SUBESTACION A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005791",
+        "EQUIPO": "PLANTA DE EMERGENCIA",
+        "CECO": "3000000056",
+        "UBICACIÓN": "3002-0A3-S3",
+        "NOMBRE_UBICACION": "CUARTOS ELECTRICOS Y SUBESTACION A-3",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005792",
+        "EQUIPO": "CABEZAL MACK C78934",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005793",
+        "EQUIPO": "CABEZAL MACK C-114-145",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005794",
+        "EQUIPO": "CABEZAL MACK C-114-142",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005795",
+        "EQUIPO": "CISTERNA RE9238",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005796",
+        "EQUIPO": "CISTERNA RE9261",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005797",
+        "EQUIPO": "PLATAFORMA RE10587",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005798",
+        "EQUIPO": "PLATAFORMA RE11276",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005799",
+        "EQUIPO": "GONDOLA RE9342",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005800",
+        "EQUIPO": "GONDOLA RE9343",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005801",
+        "EQUIPO": "AC DESPACHO A3",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005802",
+        "EQUIPO": "AC SEGURIDAD PATRIMONIAL",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-O2-002",
+        "NOMBRE_UBICACION": "OFICINA DE SEGURIDAD PATRIMONIAL",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005803",
+        "EQUIPO": "COMPRESOR DE 5HP TALLER",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-T2",
+        "NOMBRE_UBICACION": "TALLER 2 AUTOMOTRIZ A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005804",
+        "EQUIPO": "PODADORA DE CARRETILLA N°2",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-Z2",
+        "NOMBRE_UBICACION": "ZONAS VERDES A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005805",
+        "EQUIPO": "TOLVA DE DESCARGA 3",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005806",
+        "EQUIPO": "BANDA GRANELERA N°2 SIST RECEP",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005807",
+        "EQUIPO": "BANDA GRANELERA N°2 SIST RECEP",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005808",
+        "EQUIPO": "BASCULA ENTRADA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005809",
+        "EQUIPO": "BASCULA SALIDA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005810",
+        "EQUIPO": "TOLVA MOVIL MONOPRODUCTO N°1 A3M",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005811",
+        "EQUIPO": "TRANS HORIZONTAL SACOS 30815 A3M",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005812",
+        "EQUIPO": "COSEDORA PEDESTAL 30409",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005813",
+        "EQUIPO": "TRANS CARGA AJUSTABLE 31608 A3M",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005814",
+        "EQUIPO": "BASCULA PORTATIL 31114",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005815",
+        "EQUIPO": "BASCULA PORTATIL N° 6",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005816",
+        "EQUIPO": "PAYLODER EQ 15 CAT 914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005817",
+        "EQUIPO": "PAYLODER NEW  HOLLAND 12 B 20117 EQ17",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10005818",
+        "EQUIPO": "BASCULA PORTATIL 31116",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005819",
+        "EQUIPO": "BASCULA PORTATIL N° 8",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005820",
+        "EQUIPO": "TRANS HORIZONTAL SACOS 30816 A3-C",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005821",
+        "EQUIPO": "COSEDORA PEDESTAL N°8",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005822",
+        "EQUIPO": "COSEDORA PEDESTAL N°9",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005823",
+        "EQUIPO": "TRANS CARGA AJUSTABLE 31609 A3-C",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005824",
+        "EQUIPO": "COSEDORA DE MANO 32101",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005825",
+        "EQUIPO": "TOLVA MOVIL  DE CALCIO A3-C",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005826",
+        "EQUIPO": "MOTOR DE 40 HP - ELEVADOR 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005-002",
+        "NOMBRE_UBICACION": "ELEVADOR 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005827",
+        "EQUIPO": "CAJA REDUCTORA DE 40 HP - ELEVADOR 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005-002",
+        "NOMBRE_UBICACION": "ELEVADOR 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005828",
+        "EQUIPO": "MOTOR DE 40 HP MEZCLADORA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005829",
+        "EQUIPO": "CAJA REDUCTORA P/MEZCLADOR F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005830",
+        "EQUIPO": "ELEVADOR FORMULADORA N°1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005831",
+        "EQUIPO": "ELEVADOR N°2 FORMULADORA F1",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005832",
+        "EQUIPO": "MOTOR-REDUCTOR 3 HP F1 TRANS HORIZONTAL",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005833",
+        "EQUIPO": "MOTOR DE 25 HP BULKTOTER F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005834",
+        "EQUIPO": "CAJA REDUCTORA DE 25 HP BULKT F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005835",
+        "EQUIPO": "MOTOR-REDUCTOR N°2  5 HP F1 TRANS CARGA",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005836",
+        "EQUIPO": "MOTOR-REDUCTOR  N°3 5 HP F1 TRANS CARGA",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005837",
+        "EQUIPO": "BOMBA AGROTAIN 1 ¾ HP",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005838",
+        "EQUIPO": "MOTOR-REDUCTOR N°4 5 HP  F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005839",
+        "EQUIPO": "MOTOR COSEDORA N°2",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005840",
+        "EQUIPO": "MOTOR DE 40 HP  -  ELEVADOR 2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012-002",
+        "NOMBRE_UBICACION": "ELEVADOR 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005841",
+        "EQUIPO": "CAJA REDUCTORA ELEVADOR #2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012-002",
+        "NOMBRE_UBICACION": "ELEVADOR 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005842",
+        "EQUIPO": "MOTOVIBRADOR N°1 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005843",
+        "EQUIPO": "MOTOVIBRADOR N°2 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005844",
+        "EQUIPO": "MOTOVIBRADOR N°3 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-002",
+        "NOMBRE_UBICACION": "SILO 2 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005845",
+        "EQUIPO": "MOTOVIBRADOR N°4 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-002",
+        "NOMBRE_UBICACION": "SILO 2 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005846",
+        "EQUIPO": "BOMBA MELAZA N°1 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-004",
+        "NOMBRE_UBICACION": "SILO DE MELAZA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005847",
+        "EQUIPO": "BOMBA MELAZA N°2  5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-004",
+        "NOMBRE_UBICACION": "SILO DE MELAZA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005848",
+        "EQUIPO": "BOMBA AGUA A MELAZA N°3 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005849",
+        "EQUIPO": "BOMBA BINDER N°4 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-009",
+        "NOMBRE_UBICACION": "TANQUE DE BINDER 1 GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005850",
+        "EQUIPO": "BOMBA BINDER N°5 A PLATO 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-010",
+        "NOMBRE_UBICACION": "TANQUE  DE BINDER 2 GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005851",
+        "EQUIPO": "BOMBA BUNKER N°6 1/2HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-006",
+        "NOMBRE_UBICACION": "TANQUE DE BUNKER GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005852",
+        "EQUIPO": "BOMBA BUNKER VIKING N° 7 1HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-006",
+        "NOMBRE_UBICACION": "TANQUE DE BUNKER GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005853",
+        "EQUIPO": "MOTOR  N°3 DE 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005854",
+        "EQUIPO": "MOTOR  N°4 DE 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005855",
+        "EQUIPO": "MOTOR N°5 DE 7.5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005856",
+        "EQUIPO": "CAJA REDUCTORA DE ELEV 1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005857",
+        "EQUIPO": "MOTOR N°6 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005858",
+        "EQUIPO": "CAJA REDUCTORA DE CAL HIDRAT GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005859",
+        "EQUIPO": "MOTOR N°7 DE 30 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005860",
+        "EQUIPO": "CAJA REDUCTORA DE PLATO GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005861",
+        "EQUIPO": "MOTOR N° 7 3 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005862",
+        "EQUIPO": "CAJA REDUCTORA  BANDA N° 3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005863",
+        "EQUIPO": "MOTOR DE 15 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005864",
+        "EQUIPO": "MOTOR N°8 DE 2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005865",
+        "EQUIPO": "MOTOR N°9 DE 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005866",
+        "EQUIPO": "CAJA REDUCTORA 3 DE ELEV GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005867",
+        "EQUIPO": "MOTOR N°10 DE 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005868",
+        "EQUIPO": "MOTOR N°11 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005869",
+        "EQUIPO": "MOTOR N°12 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005870",
+        "EQUIPO": "MOTOR N°13 DE 30HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005871",
+        "EQUIPO": "MOTOR N°14 DE 3HP - BANDA GRANELERA N°4",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3",
+        "NOMBRE_UBICACION": "GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005872",
+        "EQUIPO": "MOTOR N°15 DE 20HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005873",
+        "EQUIPO": "MOTOR N°16 DE 20HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005874",
+        "EQUIPO": "MOTOR N°17 DE  50HP GRANULADORA - BLOWER",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005875",
+        "EQUIPO": "MOTOR N°19  DE 50 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005876",
+        "EQUIPO": "MOTOR N°20  DE 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005877",
+        "EQUIPO": "VENTILADOR DE COLECTOR 75 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005878",
+        "EQUIPO": "MOTOR N°21  DE 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005879",
+        "EQUIPO": "MOTOR N°22  DE 20 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005880",
+        "EQUIPO": "MOTOR N°23 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005881",
+        "EQUIPO": "MOTOR N°24 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005882",
+        "EQUIPO": "MOTOR N°25 DE 1.7HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005883",
+        "EQUIPO": "MOTOR DE 1 HP MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005884",
+        "EQUIPO": "MOTOR DE 1 HP MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005885",
+        "EQUIPO": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005886",
+        "EQUIPO": "CELDA DE CARGA 1",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005887",
+        "EQUIPO": "CELDA DE CARGA 2",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005888",
+        "EQUIPO": "CELDA DE CARGA 3",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005889",
+        "EQUIPO": "CELDA DE CARGA 4",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005890",
+        "EQUIPO": "CELDA DE CARGA 5",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005891",
+        "EQUIPO": "CELDA DE CARGA 6",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005892",
+        "EQUIPO": "CELDA DE CARGA 7",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005893",
+        "EQUIPO": "CELDA DE CARGA 8",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005894",
+        "EQUIPO": "PLATAFORMA BASCULA CAMIONERA ENTRADA",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005895",
+        "EQUIPO": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005896",
+        "EQUIPO": "CELDA DE CARGA 1",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005897",
+        "EQUIPO": "BULKTOTTER N°1",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005898",
+        "EQUIPO": "BULKTOTTER N°2",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005899",
+        "EQUIPO": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005900",
+        "EQUIPO": "CELDA DE CARGA 1",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005901",
+        "EQUIPO": "CELDA DE CARGA 2",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005902",
+        "EQUIPO": "CELDA DE CARGA 3",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005903",
+        "EQUIPO": "CELDA DE CARGA 4",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005904",
+        "EQUIPO": "CELDA DE CARGA 5",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005905",
+        "EQUIPO": "CELDA DE CARGA 6",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005906",
+        "EQUIPO": "PLATAFORMA BASCULA CAMIONERA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005907",
+        "EQUIPO": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005908",
+        "EQUIPO": "CELDA DE CARGA 1",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005909",
+        "EQUIPO": "CELDA DE CARGA 2",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005910",
+        "EQUIPO": "CELDA DE CARGA 3",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005911",
+        "EQUIPO": "CELDA DE CARGA 4",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005912",
+        "EQUIPO": "CELDA DE CARGA 5",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005913",
+        "EQUIPO": "CELDA DE CARGA 6",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005914",
+        "EQUIPO": "CELDA DE CARGA 7",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005915",
+        "EQUIPO": "CELDA DE CARGA 8",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005916",
+        "EQUIPO": "PLATAFORMA BASCULA CAMIONERA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005917",
+        "EQUIPO": "MOTOR COSEDORA N°7",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005918",
+        "EQUIPO": "MOTOR COSEDORA N°8",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005919",
+        "EQUIPO": "MOTOR COSEDORA N°9",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005920",
+        "EQUIPO": "MOTOR DE 20 HP ELEVADOR F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005921",
+        "EQUIPO": "MOTOR DE 20 HP ELEVADOR 2 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005922",
+        "EQUIPO": "CAJA REDUCTORA 1 PARA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005923",
+        "EQUIPO": "CAJA REDUCTORA 2 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005924",
+        "EQUIPO": "MOTOR-REDUCTOR N°1 5 HP F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005925",
+        "EQUIPO": "MOTOR DE 100 HP BUKLTOTER N°1",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10005926",
+        "EQUIPO": "MOTOR DE 100 HP BUKLTOTER N°2",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10006096",
+        "EQUIPO": "TOLVA COLADORA 31404",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10006097",
+        "EQUIPO": "TAMIZADORA 32002",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10006098",
+        "EQUIPO": "TAMIZADORA 32003",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10006099",
+        "EQUIPO": "TOLVA COLADORA 31405",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009019",
+        "EQUIPO": "AIRE ACONDICIONADO SUM01",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009020",
+        "EQUIPO": "AIRE ACONDICIONADO SUM02",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009021",
+        "EQUIPO": "AIRE ACONDICIONADO SUM03",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009022",
+        "EQUIPO": "AIRE ACONDICIONADO SUM04",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009153",
+        "EQUIPO": "MEZCLADOR  N°5 (FORMULADORA #3) F3",
+        "CECO": "3000000083",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009255",
+        "EQUIPO": "PAYLOADER VOLVO #1 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10009644",
+        "EQUIPO": "UPS OFICINA DE FACTURACION",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-001",
+        "NOMBRE_UBICACION": "OFICINA DE FACTURACION",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009645",
+        "EQUIPO": "UPS BASCULA A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10009646",
+        "EQUIPO": "PAYLOADER VOLVO #2 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10009647",
+        "EQUIPO": "PAYLOADER VOLVO #3 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10009648",
+        "EQUIPO": "MONTACARGA YALE PRODUCCION",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10009681",
+        "EQUIPO": "RACK DE SALA DE REUNIONES",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-006",
+        "NOMBRE_UBICACION": "SALA DE REUNIONES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010537",
+        "EQUIPO": "PAYLOADER VOLVO #4 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10010538",
+        "EQUIPO": "SISTEMA DE BIOSMART  F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010539",
+        "EQUIPO": "SISTEMA DE BIOSMART F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010-002",
+        "NOMBRE_UBICACION": "NIVEL 2 LINEA DE MEZCLADO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010571",
+        "EQUIPO": "OASIS DE FACTURACION",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-001",
+        "NOMBRE_UBICACION": "OFICINA DE FACTURACION",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010572",
+        "EQUIPO": "OASIS DE SALA DE ESPERA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-004",
+        "NOMBRE_UBICACION": "SALA DE ESPERA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010573",
+        "EQUIPO": "OASIS DE DESPACHO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-C1",
+        "NOMBRE_UBICACION": "OFICINA DE DESPACHO A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010574",
+        "EQUIPO": "OASIS DE COMEDOR",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-001",
+        "NOMBRE_UBICACION": "COMEDOR A-1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010575",
+        "EQUIPO": "OASIS DE FORMULADORA 1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010576",
+        "EQUIPO": "OASIS DE BODEGA DE MATERIAL DE EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010577",
+        "EQUIPO": "OASIS DE GRANULADORA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B3",
+        "NOMBRE_UBICACION": "GRANULADORA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010578",
+        "EQUIPO": "OASIS DE SALON DE USOS MULTIPLES",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010579",
+        "EQUIPO": "OASIS DE TALLER DE MANTENIMIENTO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-T1-001",
+        "NOMBRE_UBICACION": "TALLER MANTENIMIENTO INDUSTRIAL",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010580",
+        "EQUIPO": "OASIS OFICINA DE MANTENIMIENTO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1",
+        "NOMBRE_UBICACION": "OFICINA DE MANTENIMIENTO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010581",
+        "EQUIPO": "OASIA DE VIGILANCIA A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-V3",
+        "NOMBRE_UBICACION": "CASETA DE VIGILANCIA A3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010582",
+        "EQUIPO": "OASIS DE OFICINA DE DESPACHO A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010583",
+        "EQUIPO": "OASIS DE TALLER AUTOMOTRIZ A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-T2",
+        "NOMBRE_UBICACION": "TALLER 2 AUTOMOTRIZ A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010584",
+        "EQUIPO": "OASIS DE COMEDOR A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-A2-001",
+        "NOMBRE_UBICACION": "COMEDOR A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010585",
+        "EQUIPO": "OASIS DE PORTON DE BODEGA A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-B9",
+        "NOMBRE_UBICACION": "BODEGAS - BINES 1 AL 10  A-3",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010590",
+        "EQUIPO": "OASIS DE FORMULADORA 2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010591",
+        "EQUIPO": "AC BODEGA DE SEMILLA 1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-M1",
+        "NOMBRE_UBICACION": "BODEGA DE SEMILLAS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010592",
+        "EQUIPO": "AC BODEGA DE SEMILLA 2",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-M1",
+        "NOMBRE_UBICACION": "BODEGA DE SEMILLAS",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010593",
+        "EQUIPO": "AC CUARTO PURIFICADOR DE AGUA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1",
+        "NOMBRE_UBICACION": "CUARTO DE PURIFICACION DE AGUA",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010594",
+        "EQUIPO": "PAYLODER CATERPILLA EQ1 CAT914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10010596",
+        "EQUIPO": "CAMION ISUZU P120-356",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10010597",
+        "EQUIPO": "CAMION ISUZU P120-357",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10010599",
+        "EQUIPO": "AIRE ACONDICIONADO 6000 BTU CLINICA MEDI",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-B4-001",
+        "NOMBRE_UBICACION": "CLINICA MEDICA A1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010637",
+        "EQUIPO": "CODIFICADORA A3",
+        "CECO": "3000000053",
+        "UBICACIÓN": "3002-0A3-T3",
+        "NOMBRE_UBICACION": "BODEGA DE REPROCESO",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010716",
+        "EQUIPO": "TOLVA BASCULA FORMULADORA 1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010717",
+        "EQUIPO": "TOLVA BASCULA MONO PRODUCTO FORM1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10010718",
+        "EQUIPO": "TOLVA BASCULA FORMULADORA 2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10011017",
+        "EQUIPO": "SISTEMA DE DOSIFICACION DE MD",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10011018",
+        "EQUIPO": "CAMION ISUZU QLR P6774B",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "HR_KM": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "CODIGO": "10011019",
+        "EQUIPO": "KAESER AIRCENTER 1327",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-B2-13",
+        "NOMBRE_UBICACION": "CUARTO DE COMPRESORES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "CODIGO": "10011020",
+        "EQUIPO": "KAESER AIRCENTER 1326",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-B2-13",
+        "NOMBRE_UBICACION": "CUARTO DE COMPRESORES",
+        "HR_KM": "",
+        "MODIFICABLE": ""
+    }
+]
