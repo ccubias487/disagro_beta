@@ -32,7 +32,7 @@ function esperando() {
   document.getElementById("no_encontrado_texto").style.fontWeight = "bold"
   document.getElementById("no_encontrado_texto").style.color = "White"
   document.getElementById("no_encontrado_texto").style.textAlign = "center"
-  document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
+  //document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
 }
 
 function sin_datos(contador) {
