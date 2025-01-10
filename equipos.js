@@ -6,7 +6,7 @@ document.getElementById("Buscar_string").addEventListener("keydown", function (e
 });
 if (localStorage.getItem("usuario")== null){
     window.location.href = "index.html";
-  }
+  } 
 
 document.getElementById("inicio").addEventListener("click", function(){
     window.location.href = "principal.html";
