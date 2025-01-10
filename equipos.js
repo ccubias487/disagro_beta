@@ -154,7 +154,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               div.id = "insumos" + i
               div.className = 'cuadro_resumen_insumos';
               div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">EQUIPO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">HR/KM: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
-              document.getElementById("boton_agregar").removeAttribute('onclick')
+//              ////document.getElementById("boton_agregar").removeAttribute('onclick')
               //div.onclick = function(){ventana_flotante(i)}
               container.appendChild(div)
               contador = contador + 1
@@ -189,7 +189,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             div.id = "insumos" + i
             div.className = 'cuadro_resumen_insumos';
              div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">EQUIPO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">HR/KM: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
-            document.getElementById("boton_agregar").removeAttribute('onclick')
+            ////document.getElementById("boton_agregar").removeAttribute('onclick')
             //div.onclick = function(){ventana_flotante(i)}
             container.appendChild(div)
             contador = contador + 1
@@ -228,7 +228,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               div.id = "insumos" + i
               div.className = 'cuadro_resumen_insumos';
                div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">EQUIPO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">HR/KM: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
-              document.getElementById("boton_agregar").removeAttribute('onclick')
+              //////document.getElementById("boton_agregar").removeAttribute('onclick')
              // div.onclick = function(){ventana_flotante(i)}
               container.appendChild(div)
               contador = contador + 1
@@ -263,7 +263,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             div.id = "insumos" + i
             div.className = 'cuadro_resumen_insumos';
              div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].SAP + '</a></div><div class="titulo_resumen_ordenes">EQUIPO: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].DESCRIPCION + '</a></div><div class="titulo_resumen_ordenes">HR/KM: &nbsp &nbsp<a class="producto_descripcion">' + jsondata[i].EXISTENCIA + '</a></div></div></div>'
-            document.getElementById("boton_agregar").removeAttribute('onclick')
+            ////document.getElementById("boton_agregar").removeAttribute('onclick')
            // div.onclick = function(){ventana_flotante(i)}
             container.appendChild(div)
             contador = contador + 1
