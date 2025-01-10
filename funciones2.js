@@ -7,6 +7,7 @@ document.getElementById("inventario").addEventListener("click", function(){
     window.location.href = "existencias_disagro.html";
 })
 
+
 document.getElementById("requisicion").addEventListener("click", function(){
     
     window.location.href = "construyendo.html";
