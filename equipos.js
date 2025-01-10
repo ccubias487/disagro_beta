@@ -127,7 +127,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
         //localStorage.setItem("ventana_flotante",i)
         container.appendChild(div)
         contador = contador + 1
-        if (Number(jsondata[i].EXISTENCIA == 0)) {
+        if (Number(jsondata[i].SAP == 0)) {
           document.getElementById("insumos" + i).style.backgroundColor = "rgb(147, 81, 85)"
         }
 
@@ -160,7 +160,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               contador = contador + 1
               document.getElementById("no_encontrado").innerHTML = ""
               document.getElementById("no_encontrado_texto").innerHTML = ""
-              if (Number(jsondata[i].EXISTENCIA == 0)) {
+              if (Number(jsondata[i].SAP == 0)) {
                 document.getElementById("insumos" + i).style.backgroundColor = "rgb(147, 81, 85)"
               }
 
@@ -195,7 +195,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             contador = contador + 1
             document.getElementById("no_encontrado").innerHTML = ""
             document.getElementById("no_encontrado_texto").innerHTML = ""
-            if (Number(jsondata[i].EXISTENCIA == 0)) {
+            if (Number(jsondata[i].SAP == 0)) {
               document.getElementById("insumos" + i).style.backgroundColor = "rgb(147, 81, 85)"
             }
 
@@ -234,7 +234,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
               contador = contador + 1
               document.getElementById("no_encontrado").innerHTML = ""
               document.getElementById("no_encontrado_texto").innerHTML = ""
-              if (Number(jsondata[i].EXISTENCIA == 0)) {
+              if (Number(jsondata[i].SAP == 0)) {
                 document.getElementById("insumos" + i).style.backgroundColor = "rgb(147, 81, 85)"
               }
 
@@ -269,7 +269,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             contador = contador + 1
             document.getElementById("no_encontrado").innerHTML = ""
             document.getElementById("no_encontrado_texto").innerHTML = ""
-            if (Number(jsondata[i].EXISTENCIA == 0)) {
+            if (Number(jsondata[i].SAP == 0)) {
               document.getElementById("insumos" + i).style.backgroundColor = "rgb(147, 81, 85)"
             }
 
