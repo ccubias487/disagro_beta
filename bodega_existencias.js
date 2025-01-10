@@ -112,32 +112,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
 
     }
 
-    document.getElementById("boton_agregar").addEventListener("click", function(){
-      //venta_flotante(localStorage.getItem("ventana_flotante"))
-        k=localStorage.getItem("ventana_flotante")
-        let orden= localStorage.getItem("iniciar_orden")
-        let datosJSON = [];
-        let material=""
-        const modal = document.getElementById("myModal")
-        const nuevoDato = {  ORDEN: orden, SAP: jsondata[k].SAP, DESCRIPCION: jsondata[k].DESCRIPCION, CANTIDAD: document.getElementById("cantidad_insumo").value, EXISTENCIA: jsondata[k].EXISTENCIA, VALOR_TOTAL: jsondata[k].VALOR_TOTAL }; 
-        //const nuevoDato = {  ORDEN: jsondata[k].ORDEN, SAP: jsondata[k].SAP, DESCRIPCION: jsondata[k].DESCRIPCION, CANTIDAD: jsondata[k].CANTIDAD, EXISTENCIA: jsondata[k].EXISTENCIA, VALOR_TOTAL: jsondata[k].VALOR_TOTAL };
-        
-        material=localStorage.getItem("agregar_material")
-
-        if((localStorage.getItem("agregar_material"))==null){
-          datosJSON.push(nuevoDato);
-          console.log("1 "+datosJSON)
-          localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
-          modal.style.display = "none";
-        }else{
-          datosJSON=(JSON.parse(material))
-          datosJSON = datosJSON.filter(item => item.SAP !== jsondata[k].SAP);
-          datosJSON.push(nuevoDato);
-        localStorage.setItem("agregar_material",JSON.stringify(datosJSON))
-        modal.style.display = "none";
-        }
-        
-    })
+   
 
     for (let i in jsondata) {
       // console.log(jsondata[i].HOJARUTA)      
