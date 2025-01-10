@@ -53,7 +53,7 @@ function sin_datos(contador) {
     document.getElementById("no_encontrado_texto").style.fontSize = "xx-large"
     document.getElementById("no_encontrado_texto").style.fontWeight = "bold"
     document.getElementById("no_encontrado_texto").style.color = "White"
-    document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
+    //document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
   }
 }
 
