@@ -33,5 +33,12 @@
         "TIPO": "USER",
         "NOMBRE": "VILMO SANTINO RAMAZZINI LOPEZ",
         "NICK": "VILMO RAMAZZINI"
+    },
+     {
+        "USUARIO": "200998",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "RUBEN VELASQUEZ",
+        "NICK": "RUBEN VELASQUEZ"
     }
 ]
