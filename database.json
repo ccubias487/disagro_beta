@@ -35,18 +35,18 @@
         "PRIORIDAD": "1"
     },
     {
-        "ORDEN": "3002008719",
+        "ORDEN": "3002009076",
         "NOMBRE": "RUBEN VELASQUEZ",
         "DESCRIPCION": "PLAN DE MANNTO ELEVADOR 1 F1",
         "HOJARUTA": "1600",
         "PRIORIDAD": "1"
     },
     {
-        "ORDEN": "3002008718",
+        "ORDEN": "3002009076",
         "NOMBRE": "RUBEN VELASQUEZ",
-        "DESCRIPCION": "PLAN DE MANTENIMIENTO VOLVO #4",
-        "HOJARUTA": "2754",
-        "PRIORIDAD": "1"
+        "DESCRIPCION": "LIMPIEZA DE FOSAS DE AGUAS LLUVIAS",
+        "HOJARUTA": "2771",
+        "PRIORIDAD": "2"
     },
     {
         "ORDEN": "3002008719",
