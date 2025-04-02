@@ -12,7 +12,7 @@ const BRANCH_NAME = "disagro_beta1.0";  // Especificar la rama
 const encodeBase64 = (obj) => {
   return btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2))));
 };
-
+function a(){
 // Obtener el SHA del archivo actual desde la rama especificada
 async function obtenerSHA() {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH_NAME}`;
@@ -33,7 +33,7 @@ async function obtenerSHA() {
 
 
 //document.getElementById("boton_siguiente").addEventListener("click", function(){
-function a(){
+
 async function obtenercontent() {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH_NAME}`;
 
