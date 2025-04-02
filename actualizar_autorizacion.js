@@ -1,4 +1,4 @@
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 const REPO_OWNER = "ccubias487";
 const REPO_NAME = "disagro_beta";
 const FILE_PATH = "autorizacion.json";
