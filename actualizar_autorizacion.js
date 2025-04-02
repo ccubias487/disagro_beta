@@ -32,7 +32,8 @@ async function obtenerSHA() {
 }
 
 
-document.getElementById("boton_siguiente").addEventListener("click", function(){
+//document.getElementById("boton_siguiente").addEventListener("click", function(){
+function a(){
 async function obtenercontent() {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH_NAME}`;
 
@@ -107,4 +108,8 @@ async function actualizarArchivo() {
 // Ejecutar actualización
 //actualizarArchivo().catch(console.error);
 
-})
+//})
+
+}
+
+a()
