@@ -77,7 +77,7 @@ return (ordenesActualizadas)
 async function actualizarArchivo2() {
   const cont = await obtenercontent();
 }
-actualizarArchivo2()
+obtenercontent()
 
 // Actualizar el archivo en GitHub en la rama especificada
 async function actualizarArchivo() {
