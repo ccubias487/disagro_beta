@@ -6,7 +6,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
   })
   .then((data) => {
     
-    const GITHUB_TOKEN = data.GITHUB_TOKEN;
+    const GITHUB_TOKEN = data.GITHUB_TOKEN.replace(/\s+/g, "");
     const REPO_OWNER = data.REPO_OWNER;
     const REPO_NAME = data.REPO_NAME;
     const FILE_PATH = data.FILE_PATH;
