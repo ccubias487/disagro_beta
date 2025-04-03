@@ -5,7 +5,8 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
     return response.json();
   })
   .then((data) => {
-    
+
+    function a(){
     const GITHUB_TOKEN = data.GITHUB_TOKEN.replace(/\s+/g, "");
     const REPO_OWNER = data.REPO_OWNER;
     const REPO_NAME = data.REPO_NAME;
@@ -24,7 +25,7 @@ const encodeBase64 = (obj) => {
   return btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2))));
 };
 
-function a(){
+
   
 // Obtener el SHA del archivo actual desde la rama especificada
 async function obtenerSHA() {
