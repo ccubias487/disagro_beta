@@ -122,6 +122,7 @@ async function actualizarArchivo() {
 
 //})
 
+  a()
 }
 })
 
