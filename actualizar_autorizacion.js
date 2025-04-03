@@ -14,6 +14,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
     const BRANCH_NAME = data.BRANCH_NAME;  // Especificar la rama
 
     console.log(data)
+    console.log(GITHUB_TOKEN)
  
 // Nuevo contenido JSON
 
