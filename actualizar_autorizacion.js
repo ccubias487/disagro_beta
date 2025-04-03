@@ -1,10 +1,20 @@
-const GITHUB_TOKEN = "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";
-const REPO_OWNER = "ccubias487";
-const REPO_NAME = "disagro_beta";
-const FILE_PATH = "autorizacion.json";
-const COMMIT_MESSAGE = "Actualización desde JavaScript";
-const BRANCH_NAME = "disagro_beta1.0";  // Especificar la rama
 
+
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/autentificacion.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+    
+    const GITHUB_TOKEN = data.GITHUB_TOKEN;
+    const REPO_OWNER = data.REPO_OWNER;
+    const REPO_NAME = data.REPO_NAME;
+    const FILE_PATH = data.FILE_PATH;
+    const COMMIT_MESSAGE = data.COMMIT_MESSAGE;
+    const BRANCH_NAME = data.BRANCH_NAME;  // Especificar la rama
+
+    console.log(data)
+ 
 // Nuevo contenido JSON
 
 
@@ -12,7 +22,9 @@ const BRANCH_NAME = "disagro_beta1.0";  // Especificar la rama
 const encodeBase64 = (obj) => {
   return btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2))));
 };
+
 function a(){
+  
 // Obtener el SHA del archivo actual desde la rama especificada
 async function obtenerSHA() {
   const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH_NAME}`;
@@ -77,7 +89,7 @@ return (ordenesActualizadas)
 async function actualizarArchivo2() {
   const cont = await obtenercontent();
 }
-obtenercontent()
+actualizarArchivo2()
 
 // Actualizar el archivo en GitHub en la rama especificada
 async function actualizarArchivo() {
@@ -111,5 +123,6 @@ async function actualizarArchivo() {
 //})
 
 }
+})
 
-a()
+
