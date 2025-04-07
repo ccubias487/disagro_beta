@@ -82,8 +82,16 @@ let nuevoObjeto=""
     
     }
   }
-
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/autentificacion.json")
+  .then((response) => {
+    return response.json();
+  })
+  .then((data) => {
+let ordenesActualizadas= data
+    ordenesActualizadas.push(nuevoObjeto)
+  })
   console.log(nuevoObjeto)
+  console.log(ordenesActualizadas)
 return (ordenesActualizadas)
   //return data.sha; // Necesario para actualizar el archivo
 }
