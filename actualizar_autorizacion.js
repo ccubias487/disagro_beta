@@ -124,8 +124,9 @@ async function actualizarArchivo() {
 
 //})
 
-  a()
+ 
 }
+     a()
 })
 
 
