@@ -64,10 +64,10 @@ async function obtenercontent() {
   
   let ordenes=JSON.parse(atob(data.content))
   data_local=JSON.parse(localStorage.getItem("agregar_material"))
-
+let nuevoObjeto=""
   if(data_local.length>0){
     for (let i = 0; i < data_local.length; i++) {
-      let nuevoObjeto =  {
+       nuevoObjeto =  {
         "ORDEN": data_local[i].ORDEN,
         "CODIGO": data_local[i].SAP,
         "DESCRIPCION": data_local[i].DESCRIPCION,
