@@ -67,7 +67,11 @@ function calcularDiferenciaTiempo(fecha1, fecha2) {
 
 document
   .getElementById("boton_siguiente")
-  .addEventListener("click", function () {
+  .addEventListener("click", async function () {
+
+    await actualizar_pedido()
+    localStorage.removeItem("autorizaciones")
+
     if (localStorage.getItem("agregar_material") !== null) {
       const nuevoDato = {
         ORDEN: orden,
