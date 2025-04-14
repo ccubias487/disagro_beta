@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Captura Múltiple de Fotos</title>
+  <title>Captura y Galería</title>
   <style>
     video, canvas, img {
       max-width: 100%;
@@ -15,14 +15,17 @@
   </style>
 </head>
 <body>
-  <h2>Captura de Fotos para Reporte</h2>
+  <h2>Reporte con Fotos</h2>
 
   <video id="video" autoplay playsinline></video>
   <br>
   <button onclick="tomarFoto()">📸 Tomar Foto</button>
+  <button onclick="abrirGaleria()">🖼️ Seleccionar desde Galería</button>
   <button onclick="enviarReporte()">📤 Enviar Reporte</button>
 
-  <h3>Fotos Capturadas:</h3>
+  <input type="file" id="inputGaleria" accept="image/*" multiple style="display: none;" />
+
+  <h3>Fotos Capturadas/Seleccionadas:</h3>
   <div id="galeria"></div>
 
   <canvas id="canvas" style="display:none;"></canvas>
@@ -31,7 +34,8 @@
     const video = document.getElementById('video');
     const canvas = document.getElementById('canvas');
     const galeria = document.getElementById('galeria');
-    const fotos = []; // Aquí se guardan las imágenes en base64
+    const inputGaleria = document.getElementById('inputGaleria');
+    const fotos = [];
 
     // Acceder a la cámara
     navigator.mediaDevices.getUserMedia({ video: true })
@@ -42,17 +46,39 @@
         alert('Error al acceder a la cámara: ' + error);
       });
 
-    // Función para tomar foto
+    // Tomar foto desde cámara
     function tomarFoto() {
       const context = canvas.getContext('2d');
       canvas.width = video.videoWidth;
       canvas.height = video.videoHeight;
       context.drawImage(video, 0, 0, canvas.width, canvas.height);
-      
+
       const dataURL = canvas.toDataURL('image/png');
+      agregarFoto(dataURL);
+    }
+
+    // Abrir selector de archivos
+    function abrirGaleria() {
+      inputGaleria.click();
+    }
+
+    // Procesar archivos seleccionados desde galería
+    inputGaleria.addEventListener('change', function () {
+      const archivos = inputGaleria.files;
+      for (let archivo of archivos) {
+        const lector = new FileReader();
+        lector.onload = function (e) {
+          const dataURL = e.target.result;
+          agregarFoto(dataURL);
+        };
+        lector.readAsDataURL(archivo);
+      }
+    });
+
+    // Agregar imagen a galería y al array
+    function agregarFoto(dataURL) {
       fotos.push(dataURL);
 
-      // Mostrar la imagen en la galería
       const img = document.createElement('img');
       img.src = dataURL;
       galeria.appendChild(img);
@@ -61,8 +87,6 @@
     // Simulación de envío de reporte
     function enviarReporte() {
       console.log("Fotos para enviar:", fotos);
-
-      // Aquí podrías hacer un fetch() o POST con las fotos
       alert(`Se enviarán ${fotos.length} fotos en el reporte.`);
     }
   </script>
