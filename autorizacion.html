@@ -9,41 +9,60 @@
         <article id="contenido_tabla" class="articulo">
           <div id="encabezado_notificaciones_ordenes">
             <div class="logo_ordenes"></div>
-            <div class="logo_titulo" id="titulo_logo">
-              AUTORIZACIONES
-            </div>
-    
+            <div class="logo_titulo" id="titulo_logo">AUTORIZACIONES</div>
           </div>
 
-          <div class="caja_resumen_actividades" id="actividades_asignadas">
-            
-          </div>
+          <div
+            class="caja_resumen_actividades"
+            id="actividades_asignadas"
+          ></div>
           <div class="mascota" id="no_encontrado"></div>
           <div class="mascota" id="no_encontrado_texto"></div>
           <div>
-            <div class="botones_vertical">
-
-          </div>
+            <div class="botones_vertical"></div>
             <style>
               #boton_siguiente {
                 margin-top: 30px;
                 margin-bottom: 200px;
                 border-radius: 15px;
-        width: 275px;
-        background: rgb(102, 202, 92);
-        color: white;
-        border: 2px solid rgb(102, 202, 92);
-        height: 80px;
-        font-size: xx-large;
-        font-weight: bold;
+                width: 275px;
+                background: rgb(102, 202, 92);
+                color: white;
+                border: 2px solid rgb(102, 202, 92);
+                height: 80px;
+                font-size: xx-large;
+                font-weight: bold;
               }
               #boton_agregar {
                 margin-top: 30px;
               }
-              #titulo_logo{
+              #titulo_logo {
                 text-align: center;
               }
             </style>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn" class="close">&times;</span>
+              <h1 id="titulo_modal">FALTA AUTORIZACION PARA CONTINUAR</h1>
+
+              <div class="botones_modal">
+                <img
+                  src="https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/escribiendo.png"
+                  alt="Escribiendo"
+                  style="width: 260px; display: block; margin: 0 auto"
+                />
+                <style>
+                  #titulo_modal,
+                  #autorizar {
+                    font-size: 32px; /* Tamaño grande */
+                    font-weight: bold; /* Negrita */
+                    text-align: center; /* Opcional: centrar texto */
+                  }
+                </style>
+              </div>
+            </div>
           </div>
 
           <div class="menu_app">

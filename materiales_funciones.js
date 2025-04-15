@@ -216,7 +216,9 @@ fetch(
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    if (contador == 1) {
+    insumo_salir= JSON.parse(localStorage.getItem("agregar_material"))
+    //console.log(insumo_salir)
+    if (insumo_salir == null) {
       let aleatorio_image =
         "https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/empty" +
         numeroAleatorio(1, 3) +
@@ -236,5 +238,19 @@ fetch(
       document.getElementById("no_encontrado_texto").style.fontWeight = "bold";
       document.getElementById("no_encontrado_texto").style.color = "White";
       document.getElementById("boton_siguiente").innerHTML = "Iniciar orden";
+    }else{
+      const div = document.getElementById("no_encontrado");
+      const imagen = document.createElement("img");
+      //imagen.src = aleatorio_image;
+      imagen.alt = "No encontrado";
+      imagen.style.width = "0px";
+      imagen.style.height = "0px";
+      div.appendChild(imagen);
+      document.getElementById("no_encontrado_texto").innerHTML =
+        "";
+      document.getElementById("no_encontrado_texto")
     }
   });
+
+  
+ 

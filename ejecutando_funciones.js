@@ -132,9 +132,11 @@ function calcularDiferenciaTiempo(fecha1, fecha2) {
 }
 
 document.getElementById("boton_insumo").addEventListener("click", function () {
-  let material = JSON.parse(localStorage.getItem("autorizaciones"))
-  const diferencia = calcularDiferenciaTiempo(material[0].INICIO, fecha_actual());
-  console.log("Diferencia de tiempo:", diferencia);
+ // let material = JSON.parse(localStorage.getItem("autorizaciones"))
+ // const diferencia = calcularDiferenciaTiempo(material[0].INICIO, fecha_actual());
+//console.log("Diferencia de tiempo:", diferencia);
+
+window.location.href = "materiales_orden.html";
   
 })
 

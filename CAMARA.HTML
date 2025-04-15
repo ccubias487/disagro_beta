@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <title>Reporte con Fotos en PDF</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+
     <style>
       video,
       canvas,
@@ -74,7 +76,18 @@
               alert("Error al acceder a la cámara: " + error);
             });
         }
-      
+
+        function convertirMinutosAHoras(minutos) {
+  const totalSegundos = minutos * 60;
+
+  const horas = Math.floor(totalSegundos / 3600);
+  const minutosRestantes = Math.floor((totalSegundos % 3600) / 60);
+  const segundos = totalSegundos % 60;
+
+  return `${String(horas).padStart(2, '0')}:${String(minutosRestantes).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+}
+
+
         function cambiarCamara() {
           modoCamara = modoCamara === 'user' ? 'environment' : 'user';
           iniciarCamara();
@@ -127,7 +140,7 @@
       
           // Logo (si está definido como variable global)
           if (typeof logo !== 'undefined') {
-            pdf.addImage(logo, "PNG", 75, 1, anchoPagina - 72 / 2, 50);
+            pdf.addImage(logo, "PNG", 75, 1, (anchoPagina - 75 )/ 2, 50);
           }
       
           // Título centrado
@@ -147,16 +160,72 @@
           pdf.setFont("helvetica", "normal");
           pdf.text(tecnico, margen, 65 + altoDescripcion);
       
-          pdf.addPage();
+
+//////////
+const headers = [["Item", "Actividad", "Tiempo Pro"]];
+const data = [
+  ["001", "RETIRAR FILTRO DE ACEITE DE MOTOR", "20"],
+  ["002", "CAMBIO DE ACEITE DE MOTOR", "50"],
+  ["003", "REVISION DE PRESION DE LLANTAS", "30"],
+  ["003", "INSPECCON DE TERMOSTATO", "18"],
+  ["003", "REVISION DE SISTEMA DE ENFRIAMIENTO", "35"],
+];
+
+// Usando autoTable plugin (incluido por jsPDF)
+pdf.autoTable({
+  startY: 80, // Altura inicial en la página
+  head: headers,
+  body: data,
+  theme: 'grid', // Puedes usar 'plain', 'striped', 'grid'
+  styles: {
+    halign: 'center',
+    fontSize: 10
+  },
+  headStyles: {
+    fillColor: [58, 220, 90], // Gris claro
+    textColor: 20,
+    fontStyle: 'bold'
+  },
+});
+//////
+const tiempo_reportado=   "Tiempo reportado: " + convertirMinutosAHoras(153)  
+const observacion=   "OBSERVACION: SE DETECTARON QUE LAS LUCES TRASERAS NO ESTAN FUNCIONANDO, PERO NO SE ENCONTRARON EN BODEGA PARA REALIZAR EL CAMBIO" 
+
+const yDespuesDeTabla = pdf.lastAutoTable.finalY + 10;
+pdf.setFontSize(12);
+pdf.setFont("helvetica", "normal");
+pdf.text(tiempo_reportado, margen, yDespuesDeTabla);
+
+
+const Despues_hora_reportada = yDespuesDeTabla + 10;
+pdf.setFontSize(12);
+pdf.setFont("helvetica", "normal");
+//pdf.text(observacion, margen, Despues_texto);
+
+const lineas = pdf.splitTextToSize(observacion, anchoPagina - margen * 2);
+
+//const altObservacion= observacion_div.length * 5;
+//observacion_div.forEach((observacion, index) => {
+pdf.text(lineas, margen, Despues_hora_reportada);
+
+const firma= "Carlos Alexander Cubias Ortiz                                               Antonio Blanco Rauda "
+const Despues_firma = Despues_hora_reportada + 40;
+pdf.setFontSize(12);
+pdf.setFont("helvetica", "normal");
+pdf.text(firma, margen, Despues_firma);
+
+const Despues_imagenes = Despues_firma + 15;
+
+        //  pdf.addPage();
       
           // Fotos en cuadrícula
           const columnas = 2;
-          const espacioEntreImagenes = 10;
+          const espacioEntreImagenes = 5
           const imgAncho = 85;
           const imgAlto = 85;
       
-          let x = margen;
-          let y = 30;
+          let x = margen-5;
+          let y = Despues_imagenes
       
           for (let i = 0; i < fotos.length; i++) {
             const img = fotos[i];
