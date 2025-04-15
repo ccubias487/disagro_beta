@@ -1,54 +1,4 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Reporte con Fotos en PDF</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
 
-    <style>
-      video,
-      canvas,
-      img {
-        max-width: 100%;
-        border: 1px solid #ccc;
-      }
-      #galeria img {
-        width: 100px;
-        margin: 5px;
-      }
-      input,
-      textarea {
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 5px;
-      }
-    </style>
-  </head>
-  <body>
-    <h2>Formulario de Reporte</h2>
-
-
-    <video id="video" autoplay playsinline></video>
-    <br />
-    <button onclick="tomarFoto()">📸 Tomar Foto</button>
-    <button onclick="abrirGaleria()">🖼️ Seleccionar desde Galería</button>
-    <button onclick="generarPDF()">📄 Generar PDF</button>
-
-    <input
-      type="file"
-      id="inputGaleria"
-      accept="image/*"
-      multiple
-      style="display: none"
-    />
-
-    <h3>Fotos Capturadas/Seleccionadas:</h3>
-    <div id="galeria"></div>
-
-    <canvas id="canvas" style="display: none"></canvas>
-
-    <script>
         const video = document.getElementById("video");
         const canvas = document.getElementById("canvas");
         const galeria = document.getElementById("galeria");
@@ -120,137 +70,198 @@
         });
       
         function agregarFoto(dataURL) {
-          fotos.push(dataURL);
-          const img = document.createElement("img");
-          img.src = dataURL;
-          galeria.appendChild(img);
-        }
-      
-        async function generarPDF() {
-          const { jsPDF } = window.jspdf;
-          const pdf = new jsPDF();
-      
-          const ancho_hoja = pdf.internal.pageSize.getWidth();
-          const titulo = "ORDEN DE TRABAJO 3002008736";
-          const descripcion = "PLAN DE MANTTO ANDA GRANELERA N°2 SIST R";
-          const tecnico = "TECNICO: CARLOS ALEXANDER CUBIAS ORTIZ";
-      
-          const margen = 15;
-          const anchoPagina = pdf.internal.pageSize.getWidth();
-      
-          // Logo (si está definido como variable global)
-          if (typeof logo !== 'undefined') {
-            pdf.addImage(logo, "PNG", 75, 1, (anchoPagina - 75 )/ 2, 50);
+            fotos.push(dataURL); // Agrega al array
+          
+            const contenedor = document.createElement("div");
+            contenedor.style.position = "relative";
+            contenedor.style.display = "inline-block";
+            contenedor.style.margin = "5px";
+          
+            const img = document.createElement("img");
+            img.src = dataURL;
+            img.style.width = "300px";
+            img.style.border = "1px solid #ccc";
+          
+            const botonEliminar = document.createElement("button");
+            botonEliminar.textContent = "❌";
+            botonEliminar.style.position = "absolute";
+            botonEliminar.style.top = "0";
+            botonEliminar.style.right = "0";
+            botonEliminar.style.width= "45px"
+            botonEliminar.style.height= "40px"
+            botonEliminar.style.backgroundColor = "black";
+            botonEliminar.style.color = "white";
+            botonEliminar.style.border = "none";
+            botonEliminar.style.cursor = "pointer";
+            botonEliminar.style.fontSize = "25px";
+            botonEliminar.style.padding = "2px 5px";
+          
+            botonEliminar.onclick = () => {
+              const index = fotos.indexOf(dataURL);
+              if (index > -1) {
+                fotos.splice(index, 1); // Elimina del array
+              }
+              galeria.removeChild(contenedor); // Elimina del DOM
+            };
+          
+            contenedor.appendChild(img);
+            contenedor.appendChild(botonEliminar);
+            galeria.appendChild(contenedor);
           }
+          
       
-          // Título centrado
-          pdf.setFontSize(20);
-          pdf.setFont("helvetica", "bold");
-          pdf.text(titulo, (anchoPagina - pdf.getTextWidth(titulo)) / 2, 50);
-      
-          // Descripción centrada
-          pdf.setFontSize(12);
-          const textoDividido = pdf.splitTextToSize(descripcion, anchoPagina - margen * 2);
-          const altoDescripcion = textoDividido.length * 5;
-          textoDividido.forEach((linea, index) => {
-            pdf.text(linea, (anchoPagina - pdf.getTextWidth(linea)) / 2, 60 + index * 5);
-          });
-      
-          // Técnico (alineado a la izquierda)
-          pdf.setFont("helvetica", "normal");
-          pdf.text(tecnico, margen, 65 + altoDescripcion);
-      
-
-//////////
-const headers = [["Item", "Actividad", "Tiempo Pro"]];
-const data = [
-  ["001", "RETIRAR FILTRO DE ACEITE DE MOTOR", "20"],
-  ["002", "CAMBIO DE ACEITE DE MOTOR", "50"],
-  ["003", "REVISION DE PRESION DE LLANTAS", "30"],
-  ["003", "INSPECCON DE TERMOSTATO", "18"],
-  ["003", "REVISION DE SISTEMA DE ENFRIAMIENTO", "35"],
-];
-
-// Usando autoTable plugin (incluido por jsPDF)
-pdf.autoTable({
-  startY: 80, // Altura inicial en la página
-  head: headers,
-  body: data,
-  theme: 'grid', // Puedes usar 'plain', 'striped', 'grid'
-  styles: {
-    halign: 'center',
-    fontSize: 10
-  },
-  headStyles: {
-    fillColor: [58, 220, 90], // Gris claro
-    textColor: 20,
-    fontStyle: 'bold'
-  },
-});
-//////
-const tiempo_reportado=   "Tiempo reportado: " + convertirMinutosAHoras(153)  
-const observacion=   "OBSERVACION: SE DETECTARON QUE LAS LUCES TRASERAS NO ESTAN FUNCIONANDO, PERO NO SE ENCONTRARON EN BODEGA PARA REALIZAR EL CAMBIO" 
-
-const yDespuesDeTabla = pdf.lastAutoTable.finalY + 10;
-pdf.setFontSize(12);
-pdf.setFont("helvetica", "normal");
-pdf.text(tiempo_reportado, margen, yDespuesDeTabla);
-
-
-const Despues_hora_reportada = yDespuesDeTabla + 10;
-pdf.setFontSize(12);
-pdf.setFont("helvetica", "normal");
-//pdf.text(observacion, margen, Despues_texto);
-
-const lineas = pdf.splitTextToSize(observacion, anchoPagina - margen * 2);
-
-//const altObservacion= observacion_div.length * 5;
-//observacion_div.forEach((observacion, index) => {
-pdf.text(lineas, margen, Despues_hora_reportada);
-
-const firma= "Carlos Alexander Cubias Ortiz                                               Antonio Blanco Rauda "
-const Despues_firma = Despues_hora_reportada + 10;
-pdf.setFontSize(12);
-pdf.setFont("helvetica", "normal");
-pdf.text(firma, margen, Despues_firma);
-
-const Despues_imagenes = Despues_firma + 5;
-
-         pdf.addPage();
-      
-          // Fotos en cuadrícula
-          const columnas = 2;
-          const espacioEntreImagenes = 10
-          const imgAncho = 90;
-          const imgAlto = 90;
-      
-          let x = margen;
-          let y = 10;
-      
-          for (let i = 0; i < fotos.length; i++) {
-            const img = fotos[i];
-      
-            pdf.setFontSize(10);
-            pdf.text(`Foto ${i + 1}`, x, y - 5);
-            pdf.addImage(img, "PNG", x, y, imgAncho, imgAlto);
-      
-            if ((i + 1) % columnas === 0) {
-              x = margen;
-              y += imgAlto + 20;
-            } else {
-              x += imgAncho + espacioEntreImagenes;
+          async function generarPDF() {
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF();
+            
+            const margen = 15;
+            const anchoPagina = pdf.internal.pageSize.getWidth();
+            const alturaPagina = pdf.internal.pageSize.getHeight();
+            
+            function hayEspacioDisponible(yActual, espacioNecesario) {
+              return yActual + espacioNecesario <= alturaPagina - 20;
             }
-      
-            if (y + imgAlto > pdf.internal.pageSize.getHeight() - margen) {
+            
+            const titulo = "ORDEN DE TRABAJO " + localStorage.getItem("iniciar_orden");
+            const descripcion = localStorage.getItem("iniciar_orden_d");
+            const tecnico = "TECNICO: " + localStorage.getItem("nombre");
+            
+            // Logo
+            if (typeof logo !== "undefined" && logo.length > 0) {
+              pdf.addImage(logo, "PNG", 75, 1, (anchoPagina - 75) / 2, 50);
+            }
+            
+            // Título
+            pdf.setFontSize(20);
+            pdf.setFont("helvetica", "bold");
+            pdf.text(titulo, (anchoPagina - pdf.getTextWidth(titulo)) / 2, 50);
+            
+            // Descripción
+            pdf.setFontSize(12);
+            const textoDividido = pdf.splitTextToSize(descripcion, anchoPagina - margen * 2);
+            const altoDescripcion = textoDividido.length * 5;
+            textoDividido.forEach((linea, index) => {
+              pdf.text(linea, (anchoPagina - pdf.getTextWidth(linea)) / 2, 60 + index * 5);
+            });
+            
+            // Técnico
+            const yTabla = 65 + altoDescripcion;
+            pdf.setFont("helvetica", "normal");
+            pdf.text(tecnico, margen, yTabla);
+            
+            // Tabla
+            const headers = [["Item", "Actividad", "Tiempo Pro"]];
+            const data = JSON.parse(localStorage.getItem("data_actividad"));
+            pdf.autoTable({
+              startY: yTabla + 10,
+              head: headers,
+              body: data,
+              theme: 'grid',
+              styles: {
+                halign: 'center',
+                fontSize: 10
+              },
+              headStyles: {
+                fillColor: [58, 220, 90],
+                textColor: 20,
+                fontStyle: 'bold'
+              },
+            });
+            
+            let yActual = pdf.lastAutoTable.finalY + 10;
+            const tiempo_reportado = "Tiempo estimado: " + convertirMinutosAHoras(Number(localStorage.getItem("tiempo_estimado")));
+            const tiempo_orden = "Tiempo de orden: " + localStorage.getItem("tiempo_orden");
+            const observacion_local = localStorage.getItem("observacion");
+            const observacion = "OBSERVACION: " + observacion_local;
+            
+            pdf.setFontSize(12);
+            pdf.setFont("helvetica", "normal");
+            
+            // Tiempo reportado
+            if (!hayEspacioDisponible(yActual, 10)) {
               pdf.addPage();
-              x = margen;
-              y = 30;
+              yActual = 20;
             }
+            pdf.text(tiempo_reportado, margen, yActual);
+            yActual += 10;
+            
+            // Tiempo de orden
+            if (!hayEspacioDisponible(yActual, 10)) {
+              pdf.addPage();
+              yActual = 20;
+            }
+            pdf.text(tiempo_orden, margen, yActual);
+            yActual += 10;
+            
+            // Observación
+            let alturaObservacion = 0;
+            if (observacion_local !== null && observacion_local !== "") {
+              const lineas = pdf.splitTextToSize(observacion, anchoPagina - margen * 2);
+              alturaObservacion = lineas.length * 5;
+              if (!hayEspacioDisponible(yActual, alturaObservacion)) {
+                pdf.addPage();
+                yActual = 20;
+              }
+              pdf.text(lineas, margen, yActual);
+              yActual += alturaObservacion + 10;
+            }
+            
+            // Firma
+            const firma_img = localStorage.getItem("firma_user");
+            const firma = "    " + localStorage.getItem("nombre") + "                                              ";
+            const alturaFirma = 55;
+            
+            if (!hayEspacioDisponible(yActual, alturaFirma)) {
+              pdf.addPage();
+              yActual = 20;
+            }
+            
+            if (firma_img) {
+              pdf.addImage(firma_img, "PNG", margen + 18, yActual, (anchoPagina - 75) / 2, 50);
+            }
+            pdf.text(firma, margen, yActual + 35);
+            yActual += 65;
+            
+            // Verificar espacio para fotos después de la firma
+            if (!hayEspacioDisponible(yActual, 20)) {
+              pdf.addPage();
+              yActual = 20;
+            }
+            
+            // Fotos
+            // Fotos en cuadrícula con validación de espacio
+            const columnas = 2;
+            const espacioEntreImagenes = 10;
+            const imgAncho = 90;
+            const imgAlto = 90;
+            
+            let x = margen;
+            let y = yActual;
+            
+            for (let i = 0; i < fotos.length; i++) {
+              // Verificar si la imagen cabe en la hoja actual
+              if (y + imgAlto > alturaPagina - margen) {
+                pdf.addPage();
+                x = margen;
+                y = 20;
+              }
+              
+              // Agregar texto y foto
+              pdf.setFontSize(10);
+              pdf.text(`Foto ${i + 1}`, x, y - 5);
+              pdf.addImage(fotos[i], "PNG", x, y, imgAncho, imgAlto);
+              
+              // Actualizar posición para la siguiente imagen
+              if ((i + 1) % columnas === 0) {
+                x = margen;
+                y += imgAlto + espacioEntreImagenes;
+              } else {
+                x += imgAncho + espacioEntreImagenes;
+              }
+            }
+            
+            pdf.save("reporte_con_fotos.pdf");
           }
+          
+          
       
-          pdf.save("reporte_con_fotos.pdf");
-        }
-      </script>
-      
-  </body>
-</html>

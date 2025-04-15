@@ -85,7 +85,7 @@ tiemposcambian.GuardandoPNGs = (function() {
   }
   
   function resetCanvas() {
-    ctx.fillStyle = '#EEEEEE';
+    ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
 
