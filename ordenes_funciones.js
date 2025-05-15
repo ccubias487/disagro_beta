@@ -1,3 +1,11 @@
+if (localStorage.getItem("usuario")== null){
+  window.location.href = "index.html";
+}
+
+document.getElementById("inicio").addEventListener("click",function(){
+    window.location.href = "principal.html";
+})
+
 fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
   .then((response) => response.json())
   .then((data) => {
