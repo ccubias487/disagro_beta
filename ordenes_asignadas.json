@@ -5,7 +5,7 @@
         "POSICION": "10",
         "ACTIVIDAD": "SISTEMA ELECTRICO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -16,7 +16,7 @@
         "POSICION": "20",
         "ACTIVIDAD": "REVISION DE LINEAS DE CONTACTOS INTERNOS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "25",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -27,7 +27,7 @@
         "POSICION": "30",
         "ACTIVIDAD": "REVISION DE BALEROS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "45",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -38,7 +38,7 @@
         "POSICION": "40",
         "ACTIVIDAD": "EMBARNIZADO DE EMBONIDO DE MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "45",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -49,7 +49,7 @@
         "POSICION": "50",
         "ACTIVIDAD": "LIMPIEZA GENERAL DEL MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "25",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -60,7 +60,7 @@
         "POSICION": "60",
         "ACTIVIDAD": "CAMBIO DE BALEROS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "2",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -71,7 +71,7 @@
         "POSICION": "70",
         "ACTIVIDAD": "LIMPIEZA DE COMPONENTES INTERNOS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "30",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -82,7 +82,7 @@
         "POSICION": "80",
         "ACTIVIDAD": "PRUEBAS DE FUNCIONAMIENTO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "TIEMPO": "10",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
