@@ -72,9 +72,9 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
 
         // Colorear según prioridad
         const prioridadColor = {
-          "1": "rgb(175, 8, 5)",
-          "2": "rgb(202 169 5)",
-          "3": "rgb(83, 202, 5)"
+          "A": "rgb(175, 8, 5)",
+          "B": "rgb(202 169 5)",
+          "C": "rgb(83, 202, 5)"
         };
 
         const prioridad = jsondata[i].PRIORIDAD;
