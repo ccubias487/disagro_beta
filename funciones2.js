@@ -92,6 +92,8 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       ordenesUnicas.add(orden); // Marcar orden como procesada
           asignadas= asignadas+1
       }
+      console.log(asignadas)
+      console.log(ordenesUnicas)
 document.getElementById("asignadas").innerHTML=asignadas
 console.log(realizadas)
 console.log(asignadas)
