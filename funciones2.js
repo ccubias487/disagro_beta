@@ -46,7 +46,7 @@ function convertirNombrePropio(nombre) {
       .join(' '); 
   }
   
-  let nombre = convertirNombrePropio(localStorage.getItem("cod_empleado"));
+  let nombre = convertirNombrePropio(localStorage.getItem("usuario"));
   
   let ejecutando=localStorage.getItem("proceso")
   console.log(ejecutando)
@@ -89,7 +89,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       const orden = data[i].ORDEN;
 
       // Omitir si ya se procesó esta orden
-          if (data[i].NOMBRE== localStorage.getItem("nombre")){
+          if (data[i].NOMBRE== localStorage.getItem("cod_empleado")){
   if (ordenesUnicas.has(orden)) continue;
       ordenesUnicas.add(orden); // Marcar orden como procesada
           asignadas= asignadas+1
