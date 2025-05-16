@@ -64,7 +64,7 @@ document.getElementById("ordenes").addEventListener("click",function(){
 document.getElementById("nombre_user").innerHTML="Hola, "+ nombre
 
 
-fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/database.json")
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
   .then((response) => {
     return response.json();
   })
@@ -81,11 +81,16 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
   }
 
 
-    for(i in data){
-      if (data[i].NOMBRE== localStorage.getItem("nombre")){
-        asignadas= asignadas+1
+   
+
+      for (let i in data) {
+      const orden = data[i].ORDEN;
+
+      // Omitir si ya se procesó esta orden
+      if (ordenesUnicas.has(orden)) continue;
+      ordenesUnicas.add(orden); // Marcar orden como procesada
+          asignadas= asignadas+1
       }
-    }
 document.getElementById("asignadas").innerHTML=asignadas
 console.log(realizadas)
 console.log(asignadas)
