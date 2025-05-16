@@ -10,7 +10,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
   .then((response) => response.json())
   .then((data) => {
     const jsondata = data.sort((a, b) => {
-  return a.ORDEN.localeCompare(b.ORDEN);
+  return a.PRIORIDAD.localeCompare(b.PRIORIDAD);
 });
 
 
