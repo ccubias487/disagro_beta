@@ -64,7 +64,7 @@ async function actualizar_pedido() {
         DESCRIPCION: data_local[i].DESCRIPCION,
         CANTIDAD: data_local[i].CANTIDAD,
         DETALLE: localStorage.getItem("iniciar_orden_d"),
-        STATUS: "PENDIENTE",
+        STATUS: "AUTORIZADO",
         SOLICITANTE: localStorage.getItem("nombre"),
         AUTORIZADO: "",
         REQUISICION: "30020154524",
