@@ -82,7 +82,8 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
 
 
    
-
+    const ordenesUnicas = new Set(); 
+      
       for (let i in data) {
       const orden = data[i].ORDEN;
 
