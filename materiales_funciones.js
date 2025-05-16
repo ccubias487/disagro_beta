@@ -85,7 +85,8 @@ document
         datosJSON.push(nuevoDato);
         console.log(datosJSON);
         localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
-        window.location.href = "autorizacion.html";
+       // window.location.href = "autorizacion.html";
+        window.location.href = "ejecutando.html";
       } else {
         datosJSON = JSON.parse(material);
         console.log(datosJSON);
@@ -94,7 +95,8 @@ document
 
         console.log(datosJSON);
         //localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
-        window.location.href = "autorizacion.html";
+       // window.location.href = "autorizacion.html";
+        window.location.href = "ejecutando.html";
       }
     } else {
       const fechayhora = fecha_actual();
