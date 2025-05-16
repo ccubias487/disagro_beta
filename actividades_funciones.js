@@ -11,7 +11,7 @@ document.getElementById("actividades_siguiente").addEventListener("click",functi
 })
 document.getElementById("titulo_logo").innerHTML=localStorage.getItem("iniciar_orden_d")
 
-fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/hojaruta.json")
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
       .then((response) => {
         return response.json();
       })
