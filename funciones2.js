@@ -26,6 +26,7 @@ document.getElementById("cuenta").addEventListener("click", function(){
   localStorage.removeItem("firma_user")
   localStorage.removeItem("nombre")
   localStorage.removeItem("usuario")
+    localStorage.removeItem("cod_empleado")
   localStorage.removeItem("realizadas")
   localStorage.removeItem("proceso")
 localStorage.removeItem("orden_ejecucion")
@@ -45,7 +46,7 @@ function convertirNombrePropio(nombre) {
       .join(' '); 
   }
   
-  let nombre = convertirNombrePropio(localStorage.getItem("usuario"));
+  let nombre = convertirNombrePropio(localStorage.getItem("cod_empleado"));
   
   let ejecutando=localStorage.getItem("proceso")
   console.log(ejecutando)
