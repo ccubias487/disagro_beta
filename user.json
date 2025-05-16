@@ -35,17 +35,24 @@
         "NICK": "VILMO RAMAZZINI"
     },
      {
-        "USUARIO": "200998",
+        "USUARIO": "200993",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
         "NOMBRE": "RUBEN VELASQUEZ",
         "NICK": "RUBEN VELASQUEZ"
     },
      {
+        "USUARIO": "200903",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "MELVIN STANLEY DIAZ AVALOS",
+        "NICK": "MELVIN DIAZ"
+    },
+     {
         "USUARIO": "200998",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
-        "NOMBRE": "MELVIN DIAZ",
-        "NICK": "MELVIN DIAZ"
+        "NOMBRE": "BALMORE EDUARDO BARRIENTOS",
+        "NICK": "BALMORE BARRIENTOS"
     }
 ]
