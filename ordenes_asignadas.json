@@ -5,7 +5,7 @@
         "POSICION": "10",
         "ACTIVIDAD": "SISTEMA ELECTRICO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -16,7 +16,7 @@
         "POSICION": "20",
         "ACTIVIDAD": "REVISION DE LINEAS DE CONTACTOS INTERNOS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "25",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -27,7 +27,7 @@
         "POSICION": "30",
         "ACTIVIDAD": "REVISION DE BALEROS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "45",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -38,7 +38,7 @@
         "POSICION": "40",
         "ACTIVIDAD": "EMBARNIZADO DE EMBONIDO DE MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "45",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -49,7 +49,7 @@
         "POSICION": "50",
         "ACTIVIDAD": "LIMPIEZA GENERAL DEL MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "25",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -60,7 +60,7 @@
         "POSICION": "60",
         "ACTIVIDAD": "CAMBIO DE BALEROS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "2",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -71,7 +71,7 @@
         "POSICION": "70",
         "ACTIVIDAD": "LIMPIEZA DE COMPONENTES INTERNOS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "30",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -82,7 +82,7 @@
         "POSICION": "80",
         "ACTIVIDAD": "PRUEBAS DE FUNCIONAMIENTO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "1834",
         "PRIORIDAD": "A"
@@ -456,7 +456,7 @@
         "POSICION": "10",
         "ACTIVIDAD": "TANQUE DE MELAZA",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "1653",
         "PRIORIDAD": "B"
@@ -467,7 +467,7 @@
         "POSICION": "20",
         "ACTIVIDAD": "LIMPIEZA GENERAL DEL CHASIS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "20",
         "HOJARUTA": "1653",
         "PRIORIDAD": "B"
@@ -478,7 +478,7 @@
         "POSICION": "30",
         "ACTIVIDAD": " REVISION QUE NO HAYA FUGAS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "20",
         "HOJARUTA": "1653",
         "PRIORIDAD": "B"
@@ -489,7 +489,7 @@
         "POSICION": "40",
         "ACTIVIDAD": "REVISION DE VALVULAS DE SEGURIDAD",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "20",
         "HOJARUTA": "1653",
         "PRIORIDAD": "B"
@@ -500,7 +500,7 @@
         "POSICION": "50",
         "ACTIVIDAD": "APLICAR PINTURA SI ES NECESARIO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "20",
         "HOJARUTA": "1653",
         "PRIORIDAD": "B"
@@ -3206,7 +3206,7 @@
         "POSICION": "10",
         "ACTIVIDAD": "MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3217,7 +3217,7 @@
         "POSICION": "20",
         "ACTIVIDAD": "INSPECCION DE MANCHAS DE ACEITE DE MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3228,7 +3228,7 @@
         "POSICION": "30",
         "ACTIVIDAD": "REVISAR NIVEL DE ACEITE DE MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3239,7 +3239,7 @@
         "POSICION": "40",
         "ACTIVIDAD": "RETIRAR FILTRO DE ACEITE MOTOR Y DRENAR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3250,7 +3250,7 @@
         "POSICION": "50",
         "ACTIVIDAD": "CAMBIO DEL FILTRO DE ACEITE",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3261,7 +3261,7 @@
         "POSICION": "60",
         "ACTIVIDAD": "CAMBIO DE ACEITE DE MOTOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3272,7 +3272,7 @@
         "POSICION": "70",
         "ACTIVIDAD": "CAMBIO PRE-FILTRO DE COMBUSTIBLE",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3283,7 +3283,7 @@
         "POSICION": "80",
         "ACTIVIDAD": "INSPECCION DE TERMOSTATO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3294,7 +3294,7 @@
         "POSICION": "90",
         "ACTIVIDAD": "CAMBIO DE FILTRO DE AIRE TF20325-2",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3305,7 +3305,7 @@
         "POSICION": "100",
         "ACTIVIDAD": "CAMBIO DE FILTRO DE AIRE DA4189",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3316,7 +3316,7 @@
         "POSICION": "110",
         "ACTIVIDAD": "REVISION DE ESTADO Y TENSION CORREAS MOT",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3327,7 +3327,7 @@
         "POSICION": "120",
         "ACTIVIDAD": "REFRIGERACION",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3338,7 +3338,7 @@
         "POSICION": "130",
         "ACTIVIDAD": "NIVELACIÓN/REVISIÓN SISTEMA DE ENFRIAMIN",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3349,7 +3349,7 @@
         "POSICION": "140",
         "ACTIVIDAD": "INSPECCIONAR MANGUERAS Y CONEXIONES DEL",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3360,7 +3360,7 @@
         "POSICION": "150",
         "ACTIVIDAD": "INSPECCIONAR AJUSTE ADECUADO TAPA DEL RA",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3371,7 +3371,7 @@
         "POSICION": "200",
         "ACTIVIDAD": "FRENOS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3382,7 +3382,7 @@
         "POSICION": "210",
         "ACTIVIDAD": "REGULAR Y AJUSTAR ALTURA DEL PEDAL DEL F",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3393,7 +3393,7 @@
         "POSICION": "220",
         "ACTIVIDAD": "INSPECCION Y AJUSTE DEL FRENO DE PARQUEO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3404,7 +3404,7 @@
         "POSICION": "230",
         "ACTIVIDAD": "VERIFICAR NIVEL DEL LIQUIDO DE FRENOS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3415,7 +3415,7 @@
         "POSICION": "240",
         "ACTIVIDAD": "INSPECCIONAR RUIDOS DEL SISTEMA DE FRENO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3426,7 +3426,7 @@
         "POSICION": "250",
         "ACTIVIDAD": "ELECTRICO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3437,7 +3437,7 @@
         "POSICION": "260",
         "ACTIVIDAD": "LIMPIEZA Y REVISION DE SUPERFICIE BATERI",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3448,7 +3448,7 @@
         "POSICION": "270",
         "ACTIVIDAD": "LIMPIEZA Y AJUSTE DE BORNES DE LA BATERI",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3459,7 +3459,7 @@
         "POSICION": "280",
         "ACTIVIDAD": "MEDICION DE VOLTAJE DE BATERIA 24-27 V (",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3470,7 +3470,7 @@
         "POSICION": "290",
         "ACTIVIDAD": "VERIFICACION DE CABLEADOR ELECTRICO BATE",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3481,7 +3481,7 @@
         "POSICION": "300",
         "ACTIVIDAD": "INSPECCION Y LIMPIEZA DE CAJA DE FUSIBLE",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3492,7 +3492,7 @@
         "POSICION": "310",
         "ACTIVIDAD": "INSPECCION Y LIMPIEZA DE ALTERNADOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3503,7 +3503,7 @@
         "POSICION": "320",
         "ACTIVIDAD": "VERIFICAR VOLTAJE DE CARGA DE ALTERNADOR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3514,7 +3514,7 @@
         "POSICION": "330",
         "ACTIVIDAD": "REVISION Y CAMBIO DE LUCES",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3525,7 +3525,7 @@
         "POSICION": "340",
         "ACTIVIDAD": "LUBRICACIÓN",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3536,7 +3536,7 @@
         "POSICION": "350",
         "ACTIVIDAD": "LUBRICACIÓN EJE CARDÁN DELANTERO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3547,7 +3547,7 @@
         "POSICION": "360",
         "ACTIVIDAD": "LUBRICACIÓN EJE CARDÁN INTERMEDIO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3558,7 +3558,7 @@
         "POSICION": "370",
         "ACTIVIDAD": "LUBRICACIÓN EJE CARDÁN TRASERO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3569,7 +3569,7 @@
         "POSICION": "420",
         "ACTIVIDAD": "REVISIÓN DE ESTADO DE GRASERAS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3580,7 +3580,7 @@
         "POSICION": "430",
         "ACTIVIDAD": "LUBRICACION Y LIMPIEZA DE PASADORES Y BU",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3591,7 +3591,7 @@
         "POSICION": "440",
         "ACTIVIDAD": "GENERAL",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3602,7 +3602,7 @@
         "POSICION": "450",
         "ACTIVIDAD": "REVISIÓN DE CRUCES DE CARDANES DE DEL/TR",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3613,7 +3613,7 @@
         "POSICION": "460",
         "ACTIVIDAD": "VERIFICACIÓN DE PRESIÓN DE LAS 4 LLANTAS",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3624,7 +3624,7 @@
         "POSICION": "470",
         "ACTIVIDAD": "VERFICAR TORQUE EN PERNOS DE LAS 4 RUEDA",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3635,7 +3635,7 @@
         "POSICION": "480",
         "ACTIVIDAD": "REVISIÓN ESTADO MANGUERAS SISTEMA HIDRAU",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3646,7 +3646,7 @@
         "POSICION": "510",
         "ACTIVIDAD": "SERVOTRANSMISION",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3657,7 +3657,7 @@
         "POSICION": "530",
         "ACTIVIDAD": "CAMBIO DE ACEITE SERVO-TRANSMISION 15W-4",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3668,7 +3668,7 @@
         "POSICION": "540",
         "ACTIVIDAD": "CAMBIO DE ACEITE SERVO-TRANSMISION HIDRA",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3679,7 +3679,7 @@
         "POSICION": "550",
         "ACTIVIDAD": "CAMBIO DE FILTRO SERVO-TRANSMISION",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
@@ -3690,7 +3690,7 @@
         "POSICION": "560",
         "ACTIVIDAD": "COMPLETAR NIVELES DE ACEITE HIDRAULICO",
         "COD": "200176",
-        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NOMBRE": "200850",
         "TIEMPO": "10",
         "HOJARUTA": "2754",
         "PRIORIDAD": ""
