@@ -57,7 +57,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
         }
       }
 
-      if (jsondata[i].NOMBRE == localStorage.getItem("nombre")) {
+      if (jsondata[i].NOMBRE == localStorage.getItem("cod_empleado")) {
         const div = document.createElement('div');
         div.className = 'cuadro_resumen_ordenes';
         div.innerHTML =
