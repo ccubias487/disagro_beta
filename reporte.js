@@ -261,6 +261,7 @@
             }
             
             pdf.save("reporte_con_fotos.pdf");
+                  window.location.href = "principal.html"
           }
           
           
