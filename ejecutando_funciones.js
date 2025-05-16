@@ -146,7 +146,7 @@ window.location.href = "materiales_orden.html";
 let orden = localStorage.getItem("iniciar_orden")
 
 
-fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/hojaruta.json")
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
   .then((response) => {
     return response.json();
   })
