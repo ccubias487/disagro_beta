@@ -172,6 +172,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
 
   
       if (jsondata[j].HOJARUTA== localStorage.getItem("iniciar_orden_hr")) {
+        if (jsondata[j].ORDEN== localStorage.getItem("iniciar_orden")) {
       const div = document.createElement('div');
       div.id = "insumos" + j
       
@@ -189,6 +190,9 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       data_actividad.push([contador.toString().padStart(3,"0"),jsondata[j].ACTIVIDAD, jsondata[j].TIEMPO])
     }
   }
+    }
+
+    
   //console.log(data_actividad)
   localStorage.setItem("data_actividad", JSON.stringify(data_actividad))
     function numeroAleatorio(min, max) {
