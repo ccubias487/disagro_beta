@@ -9,6 +9,7 @@ document.getElementById("inicio").addEventListener("click",function(){
 fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
   .then((response) => response.json())
   .then((data) => {
+    console.log(jsondata);
     const jsondata = data.sort((a, b) => {
   return a.PRIORIDAD.localeCompare(b.PRIORIDAD);
 });
