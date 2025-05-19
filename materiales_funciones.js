@@ -68,11 +68,32 @@ function calcularDiferenciaTiempo(fecha1, fecha2) {
 document
   .getElementById("boton_siguiente")
   .addEventListener("click", async function () {
+    await actualizar_pedido();
+    let materiales_utilizados = [];
 
-    await actualizar_pedido()
-    localStorage.removeItem("autorizaciones")
+if (localStorage.getItem("agregar_material") !== null) {
+  
 
-    if (localStorage.getItem("agregar_material") !== null) {
+  // Obtener lo que ya está en localStorage
+  const guardados = localStorage.getItem("materiales_utilizados");
+  if (guardados) {
+    materiales_utilizados = JSON.parse(guardados); // ✅ Convertir a array real
+  }
+
+  const nuevos_materiales = JSON.parse(localStorage.getItem("agregar_material"));
+
+  // Asegurarse que ambos son arrays
+  if (Array.isArray(nuevos_materiales)) {
+    materiales_utilizados = materiales_utilizados.concat(nuevos_materiales);
+  } else {
+    materiales_utilizados.push(nuevos_materiales);
+  }
+
+  // Guardar de nuevo en localStorage
+  localStorage.setItem("materiales_utilizados", JSON.stringify(materiales_utilizados));
+
+await generarPDF();
+
       const nuevoDato = {
         ORDEN: orden,
         DETALLE: localStorage.getItem("iniciar_orden_d"),
@@ -84,9 +105,58 @@ document
       if (localStorage.getItem("autorizaciones") == null) {
         datosJSON.push(nuevoDato);
         console.log(datosJSON);
-        localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
-       // window.location.href = "autorizacion.html";
-        window.location.href = "ejecutando.html";
+        //localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
+
+        //saltar autorizaciones
+        const fechayhora = fecha_actual();
+        if (localStorage.getItem("autorizaciones") == null) {
+          let datosJSON = [];
+          const nuevoDato = {
+            ORDEN: orden,
+            DETALLE: localStorage.getItem("iniciar_orden_d"),
+            STATUS: "AUTORIZADO",
+            INICIO: fechayhora,
+          };
+          console.log(nuevoDato);
+          datosJSON.push(nuevoDato);
+          datosJSON = datosJSON.sort((a, b) => {
+            return parseInt(a.ORDEN) - parseInt(b.ORDEN);
+          });
+          localStorage.setItem("validadnod", "existe");
+          localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
+        } else {
+          let datos = JSON.parse(localStorage.getItem("autorizaciones"));
+          const existe = datos.some(
+            (item) => item.ORDEN === localStorage.getItem("iniciar_orden")
+          );
+          localStorage.setItem("validadnod", existe);
+          if (existe) {
+            localStorage.removeItem("agregar_material");
+            window.location.href = "ejecutando.html";
+          } else {
+            const nuevoDato = {
+              ORDEN: orden,
+              DETALLE: localStorage.getItem("iniciar_orden_d"),
+              STATUS: "AUTORIZADO",
+              INICIO: fechayhora,
+            };
+            datosJSON = datosJSON.filter(
+              (item) => item.ORDEN !== localStorage.getItem("iniciar_orden")
+            );
+            datosJSON.push(nuevoDato);
+            datosJSON2 = datosJSON.sort((a, b) => {
+              return Number(a.ORDEN) - Number(b.ORDEN);
+            });
+            localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
+          }
+        }
+
+        ///
+
+        // window.location.href = "autorizacion.html";
+
+        localStorage.removeItem("agregar_material");
+       // window.location.href = "ejecutando.html";
       } else {
         datosJSON = JSON.parse(material);
         console.log(datosJSON);
@@ -95,9 +165,11 @@ document
 
         console.log(datosJSON);
         //localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
-       // window.location.href = "autorizacion.html";
+        // window.location.href = "autorizacion.html";
+
         window.location.href = "ejecutando.html";
       }
+        localStorage.removeItem("agregar_material")
     } else {
       const fechayhora = fecha_actual();
       let datosJSON = JSON.parse(localStorage.getItem("autorizaciones"));
@@ -110,7 +182,7 @@ document
           STATUS: "AUTORIZADO",
           INICIO: fechayhora,
         };
-        console.log(nuevoDato)
+        console.log(nuevoDato);
         datosJSON.push(nuevoDato);
         datosJSON = datosJSON.sort((a, b) => {
           return parseInt(a.ORDEN) - parseInt(b.ORDEN);
@@ -118,25 +190,30 @@ document
 
         localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
       } else {
-        let datos = JSON.parse(localStorage.getItem("autorizaciones"))
-        const existe = datos.some(item => item.ORDEN === localStorage.getItem("iniciar_orden_d"));
+        let datos = JSON.parse(localStorage.getItem("autorizaciones"));
+        const existe = datos.some(
+          (item) => item.ORDEN === localStorage.getItem("iniciar_orden_d")
+        );
 
-        if (existe){
+        if (existe) {
           window.location.href = "ejecutando.html";
-        }else{
-        const nuevoDato = {
-          ORDEN: orden,
-          DETALLE: localStorage.getItem("iniciar_orden_d"),
-          STATUS: "AUTORIZADO",
-          INICIO: fechayhora,
-        };
-        datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden"));
-        datosJSON.push(nuevoDato);
-        datosJSON2 = datosJSON.sort((a, b) => {
-          return Number(a.ORDEN) - Number(b.ORDEN);
-        });
-        localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
-      }}
+        } else {
+          const nuevoDato = {
+            ORDEN: orden,
+            DETALLE: localStorage.getItem("iniciar_orden_d"),
+            STATUS: "AUTORIZADO",
+            INICIO: fechayhora,
+          };
+          datosJSON = datosJSON.filter(
+            (item) => item.ORDEN !== localStorage.getItem("iniciar_orden")
+          );
+          datosJSON.push(nuevoDato);
+          datosJSON2 = datosJSON.sort((a, b) => {
+            return Number(a.ORDEN) - Number(b.ORDEN);
+          });
+          localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
+        }
+      }
       window.location.href = "ejecutando.html";
     }
   });
@@ -218,7 +295,7 @@ fetch(
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    insumo_salir= JSON.parse(localStorage.getItem("agregar_material"))
+    insumo_salir = JSON.parse(localStorage.getItem("agregar_material"));
     //console.log(insumo_salir)
     if (insumo_salir == null) {
       let aleatorio_image =
@@ -240,7 +317,7 @@ fetch(
       document.getElementById("no_encontrado_texto").style.fontWeight = "bold";
       document.getElementById("no_encontrado_texto").style.color = "White";
       document.getElementById("boton_siguiente").innerHTML = "Iniciar orden";
-    }else{
+    } else {
       const div = document.getElementById("no_encontrado");
       const imagen = document.createElement("img");
       //imagen.src = aleatorio_image;
@@ -248,11 +325,7 @@ fetch(
       imagen.style.width = "0px";
       imagen.style.height = "0px";
       div.appendChild(imagen);
-      document.getElementById("no_encontrado_texto").innerHTML =
-        "";
-      document.getElementById("no_encontrado_texto")
+      document.getElementById("no_encontrado_texto").innerHTML = "";
+      document.getElementById("no_encontrado_texto");
     }
   });
-
-  
- 

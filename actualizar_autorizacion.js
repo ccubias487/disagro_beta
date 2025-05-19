@@ -11,8 +11,8 @@ async function actualizar_pedido() {
   const COMMIT_MESSAGE = data.COMMIT_MESSAGE;
   const BRANCH_NAME = data.BRANCH_NAME; 
 
-  console.log(data);
-  console.log(GITHUB_TOKEN);
+  //console.log(data);
+  //console.log(GITHUB_TOKEN);
 
   const encodeBase64 = (obj) => {
     return btoa(unescape(encodeURIComponent(JSON.stringify(obj, null, 2))));
@@ -75,8 +75,8 @@ async function actualizar_pedido() {
 
     const ordenesActualizadas = ordenesActuales.concat(nuevosObjetos);
 
-    console.log("Objetos nuevos:", nuevosObjetos);
-    console.log("Ordenes actualizadas:", ordenesActualizadas);
+    // console.log("Objetos nuevos:", nuevosObjetos);
+   // console.log("Ordenes actualizadas:", ordenesActualizadas);
 
     return ordenesActualizadas;
   }
@@ -84,7 +84,7 @@ async function actualizar_pedido() {
   async function actualizarArchivo() {
     const sha = await obtenerSHA();
     const cont = await obtenercontent();
-    console.log("Valor obtenido: ", cont);
+   // console.log("Valor obtenido: ", cont);
 
     const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/contents/${FILE_PATH}?ref=${BRANCH_NAME}`;
     const response = await fetch(url, {
@@ -103,11 +103,11 @@ async function actualizar_pedido() {
     });
 
     const result = await response.json();
-    console.log("Archivo actualizado:", result);
+    //console.log("Archivo actualizado:", result);
   }
 
   await actualizarArchivo();
-  console.log("Pedido actualizado con éxito.");
+  //console.log("Pedido actualizado con éxito.");
 }
 
 document
@@ -122,7 +122,7 @@ document
         STATUS: "PROCESO DE AUTORIZACION",
       };
 
-      console.log("Nuevo dato:", nuevoDato);
+     // console.log("Nuevo dato:", nuevoDato);
       // window.location.href = "siguiente.html";
     }
   });

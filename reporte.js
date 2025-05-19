@@ -227,6 +227,58 @@
               pdf.addPage();
               yActual = 20;
             }
+       
+
+
+
+
+//**************************************************************************************//
+ const descripcion2 =  "MATERIALES UTILIZADOS EN LA ODEN "+localStorage.getItem("iniciar_orden");
+      pdf.setFontSize(15);
+            pdf.setFont("helvetica", "bold");
+            pdf.text(descripcion2, 40, yActual);
+data2 =[]
+
+            materiales_req= JSON.parse(localStorage.getItem("materiales_utilizados"))
+            for(j=0; j<=materiales_req.length-1; j++ ){
+console.log(j)
+              data2.push([ 
+        materiales_req[j].CANTIDAD,
+        materiales_req[j].DESCRIPCION,
+        localStorage.getItem("iniciar_orden_d") ,
+        materiales_req[j].SAP 
+    ]);
+
+    console.log(data2)
+    yActual2=j*25
+
+            }
+
+
+            const headers2 = [["CANT", "DESCRIPCION", "PARA USO EN", "DOC.MAT.SAP"]];
+            //const data = JSON.parse(localStorage.getItem("agregar_material"));
+            pdf.autoTable({
+              startY: yActual + 10,
+              head: headers2,
+              body: data2,
+              theme: 'grid',
+              styles: {
+                halign: 'center',
+                fontSize: 10
+              },
+              headStyles: {
+                fillColor: [58, 220, 90],
+                textColor: 20,
+                fontStyle: 'bold'
+              },
+            });
+
+//**************************************************************************************//
+
+ if (!hayEspacioDisponible(yActual2, 20)) {
+              pdf.addPage();
+              yActual2 = 20;
+            }
             
             // Fotos
             // Fotos en cuadrícula con validación de espacio
@@ -236,16 +288,30 @@
             const imgAlto = 90;
             
             let x = margen;
-            let y = yActual;
+            let y = yActual2;
+
+
+ if(fotos.length>0){
+
+ const descripcion3 =  "FOTOGRAFIAS DE LA ORDEN "+localStorage.getItem("iniciar_orden");
+      pdf.setFontSize(15);
+            pdf.setFont("helvetica", "bold");
+            pdf.text(descripcion3, 50, yActual2-15);
+
+              }
             
+              yActual2=yActual2+25
+              
             for (let i = 0; i < fotos.length; i++) {
               // Verificar si la imagen cabe en la hoja actual
               if (y + imgAlto > alturaPagina - margen) {
                 pdf.addPage();
                 x = margen;
                 y = 20;
+                //r=yActual2+90
               }
-              
+            
+             
               // Agregar texto y foto
               pdf.setFontSize(10);
               pdf.text(`Foto ${i + 1}`, x, y - 5);
@@ -260,8 +326,8 @@
               }
             }
             
-            pdf.save("reporte_con_fotos.pdf");
-                  window.location.href = "principal.html"
+            pdf.save("ORDEN_DE_TRABAJO_"+localStorage.getItem('iniciar_orden')+".pdf");
+                //  window.location.href = "principal.html"
           }
           
           
