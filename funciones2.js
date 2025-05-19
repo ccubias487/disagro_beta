@@ -2,25 +2,40 @@ if (localStorage.getItem("usuario")== null){
     window.location.href = "index.html";
   }
 
+document.getElementById("inventario").addEventListener("click", function(){
+    
+    window.location.href = "existencias_disagro.html";
+})
+
+
+document.getElementById("requisicion").addEventListener("click", function(){
+    
+    window.location.href = "construyendo.html";
+})
+
+document.getElementById("equipos").addEventListener("click", function(){
+    
+    window.location.href = "equipos.html";
+})
+  
+
   if (localStorage.getItem("firma_user")== null){
     window.location.href = "firma.html";
   }
-
 document.getElementById("cuenta").addEventListener("click", function(){
   localStorage.removeItem("firma_user")
   localStorage.removeItem("nombre")
   localStorage.removeItem("usuario")
+    localStorage.removeItem("cod_empleado")
   localStorage.removeItem("realizadas")
   localStorage.removeItem("proceso")
+localStorage.removeItem("orden_ejecucion")
+ localStorage.removeItem("autorizaciones")   
 
     
   window.location.href = "index.html";
 })
 
-document.getElementById("inventario").addEventListener("click", function(){
-
-  window.location.href = "existencias_disagro.html";
-})
   
 function convertirNombrePropio(nombre) {
     return nombre
@@ -50,7 +65,7 @@ document.getElementById("ordenes").addEventListener("click",function(){
 document.getElementById("nombre_user").innerHTML="Hola, "+ nombre
 
 
-fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/database.json")
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
   .then((response) => {
     return response.json();
   })
@@ -67,11 +82,22 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
   }
 
 
-    for(i in data){
-      if (data[i].NOMBRE== localStorage.getItem("nombre")){
-        asignadas= asignadas+1
+   
+    const ordenesUnicas = new Set(); 
+      
+      for (let i in data) {
+      const orden = data[i].ORDEN;
+
+      // Omitir si ya se procesó esta orden
+          if (data[i].NOMBRE== localStorage.getItem("cod_empleado")){
+  if (ordenesUnicas.has(orden)) continue;
+      ordenesUnicas.add(orden); // Marcar orden como procesada
+          asignadas= asignadas+1
       }
-    }
+      }
+    
+      console.log(asignadas)
+      console.log(ordenesUnicas)
 document.getElementById("asignadas").innerHTML=asignadas
 console.log(realizadas)
 console.log(asignadas)

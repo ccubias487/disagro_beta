@@ -21,7 +21,8 @@ console.log(password)
 for (let i in data) {
 if(data[i].USUARIO==usuario && data[i].CONTRASEÑA==password){
     localStorage.setItem("usuario", data[i].NICK)
-    localStorage.setItem("nombre", data[i].NOMBRE)
+    localStorage.setItem("nombre", data[i].NOMBRE)  
+    localStorage.setItem("cod_empleado", data[i].USUARIO) 
     window.location.href = "principal.html";
 }else{
     document.getElementById("imagen_login").style.backgroundImage ='url("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/empty1.png")';

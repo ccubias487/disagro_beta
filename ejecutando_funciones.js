@@ -59,7 +59,7 @@ document.getElementById("boton_finalizar").addEventListener("click", function(){
   //autorizar = JSON.parse(localStorage.getItem("autorizaciones"))
   localStorage.setItem("autorizaciones", JSON.stringify(autorizar))
 
-  window.location.href = "principal.html";
+  window.location.href = "reporte.html";
 })
 function tiempo_orden() {
   const ahora = new Date();
@@ -70,6 +70,7 @@ function tiempo_orden() {
   if (orden[k].ORDEN==localStorage.getItem("iniciar_orden")){
   const diferencia = calcularDiferenciaTiempo(orden[k].INICIO, fecha_actual());
   document.getElementById("tiempo").innerHTML=diferencia
+  localStorage.setItem("tiempo_orden", diferencia)
   break
  // console.log("Diferencia de tiempo:", diferencia);
 }
@@ -132,9 +133,11 @@ function calcularDiferenciaTiempo(fecha1, fecha2) {
 }
 
 document.getElementById("boton_insumo").addEventListener("click", function () {
-  let material = JSON.parse(localStorage.getItem("autorizaciones"))
-  const diferencia = calcularDiferenciaTiempo(material[0].INICIO, fecha_actual());
-  console.log("Diferencia de tiempo:", diferencia);
+ // let material = JSON.parse(localStorage.getItem("autorizaciones"))
+ // const diferencia = calcularDiferenciaTiempo(material[0].INICIO, fecha_actual());
+//console.log("Diferencia de tiempo:", diferencia);
+
+window.location.href = "materiales_orden.html";
   
 })
 
@@ -143,7 +146,7 @@ document.getElementById("boton_insumo").addEventListener("click", function () {
 let orden = localStorage.getItem("iniciar_orden")
 
 
-fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/hojaruta.json")
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
   .then((response) => {
     return response.json();
   })
@@ -161,12 +164,21 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
     datosJSON = datosJSON.sort((a, b) => {
       return parseInt(a.ORDEN) - parseInt(b.ORDEN);
     });
+
+    let tiempo_estimado= 0
+    let data_actividad=[]
+
     for (let j in jsondata) {
 
-
+  
       if (jsondata[j].HOJARUTA== localStorage.getItem("iniciar_orden_hr")) {
+        if (jsondata[j].ORDEN== localStorage.getItem("iniciar_orden")) {
       const div = document.createElement('div');
       div.id = "insumos" + j
+      
+
+      tiempo_estimado= tiempo_estimado+ Number(jsondata[j].TIEMPO)
+      localStorage.setItem("tiempo_estimado", tiempo_estimado)
 
       div.className = 'cuadro_resumen_insumos';
       div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes"><a class="titulo_parrafo">ACTIVIDAD </a> : &nbsp &nbsp <a class="descripcion_parrafo">' + jsondata[j].ACTIVIDAD + '</a></div><div class="titulo_resumen_ordenes"><a class="titulo_parrafo">TIEMPO ESTIMADO</a>: &nbsp &nbsp<a class="descripcion_parrafo">' + jsondata[j].TIEMPO + '</a></div></div></div>'
@@ -175,9 +187,14 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       div.onclick = function () { hora(j) }
       container.appendChild(div)
       contador=contador +1
-
+      data_actividad.push([contador.toString().padStart(3,"0"),jsondata[j].ACTIVIDAD, jsondata[j].TIEMPO])
     }
   }
+    }
+
+    
+  //console.log(data_actividad)
+  localStorage.setItem("data_actividad", JSON.stringify(data_actividad))
     function numeroAleatorio(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }

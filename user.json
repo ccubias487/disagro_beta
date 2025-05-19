@@ -1,0 +1,58 @@
+[
+    {
+        "USUARIO": "200850",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NICK": "CARLOS CUBIAS"
+    },
+    {
+        "USUARIO": "200826",
+        "CONTRASEÑA": "DISAGRO123",
+        "TIPO": "USER",
+        "NOMBRE": "ANTONIO ADOLFO BLANCO RAUDA",
+        "NICK": "ANTONIO BLANCO"
+    },
+    {
+        "USUARIO": "200058",
+        "CONTRASEÑA": "DISAGRO456",
+        "TIPO": "USER",
+        "NOMBRE": "JOSUE MARCOS FRANCO ESBOBAR",
+        "NICK": "JOSUE FRANCO"
+    },
+    {
+        "USUARIO": "201163",
+        "CONTRASEÑA": "DISAGRO789",
+        "TIPO": "USER",
+        "NOMBRE": "ESTHER ABIGAIL MENJIVAR MIRON",
+        "NICK": "ESTHER MENJIVAR"
+    },
+    {
+        "USUARIO": "200999",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "VILMO SANTINO RAMAZZINI LOPEZ",
+        "NICK": "VILMO RAMAZZINI"
+    },
+     {
+        "USUARIO": "200993",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "RUBEN VELASQUEZ",
+        "NICK": "RUBEN VELASQUEZ"
+    },
+     {
+        "USUARIO": "200903",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "MELVIN STANLEY DIAZ AVALOS",
+        "NICK": "MELVIN DIAZ"
+    },
+     {
+        "USUARIO": "200998",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "BALMORE EDUARDO BARRIENTOS",
+        "NICK": "BALMORE BARRIENTOS"
+    }
+]

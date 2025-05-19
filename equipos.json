@@ -1,0 +1,2792 @@
+[
+    {
+        "SAP": "10005667",
+        "DESCRIPCION": "TOLVA DE DESCARGA 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005668",
+        "DESCRIPCION": "ELEVADOR 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005-002",
+        "NOMBRE_UBICACION": "ELEVADOR 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005669",
+        "DESCRIPCION": "BANDA GRANELERA N°1 SIST RECEP",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005670",
+        "DESCRIPCION": "MEZCLADOR  N°1 (F1)",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005671",
+        "DESCRIPCION": "AC BATCHELOR",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B2-008-009",
+        "NOMBRE_UBICACION": "OFICINA DE BATCHELOR F1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005672",
+        "DESCRIPCION": "BIN AEREO 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005673",
+        "DESCRIPCION": "BIN AEREO 2 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005674",
+        "DESCRIPCION": "BIN AEREO 3 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005675",
+        "DESCRIPCION": "BIN AEREO 4 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005676",
+        "DESCRIPCION": "BIN AEREO 5 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005677",
+        "DESCRIPCION": "BIN AEREO 6 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-004",
+        "NOMBRE_UBICACION": "NIVEL 4 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005678",
+        "DESCRIPCION": "TOLVA ENSACADO MEZCLADORA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005679",
+        "DESCRIPCION": "COMPRESOR 5HP N° 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005680",
+        "DESCRIPCION": "TRANS HORIZONTAL SACOS N° 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005681",
+        "DESCRIPCION": "COSEDORA PEDESTAL N°1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005682",
+        "DESCRIPCION": "BASCULA PORTATIL N° 1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005683",
+        "DESCRIPCION": "BASCULA PORTATIL N° 2 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005684",
+        "DESCRIPCION": "MOTOR COSEDORA N°1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005685",
+        "DESCRIPCION": "BULKTOTER FORMULADORA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005686",
+        "DESCRIPCION": "TRANS CARGA AJUSTABLE N°1 - F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005687",
+        "DESCRIPCION": "TRANS CARGA AJUSTABLE N°2 - F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005688",
+        "DESCRIPCION": "TRANS CARGA AJUSTABLE N°3 F1/MONOPRODUCT",
+        "CECO": "3000000083",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005689",
+        "DESCRIPCION": "SISTEMA DE ANVOL  F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005690",
+        "DESCRIPCION": "TRANS AJUSTABLE CARGA N°4 F1/MONOPRODUCT",
+        "CECO": "3000000083",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005691",
+        "DESCRIPCION": "PAYLODER  NEW  HOLLAND 12 B EQ17",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005692",
+        "DESCRIPCION": "PAYLODER  CATERPILLA CAT 918F EQ5",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005693",
+        "DESCRIPCION": "BANDA GRANELERA N°2 SIST RECEP",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005694",
+        "DESCRIPCION": "TOLVA MOVIL MONOPRODUCTO 31421 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005695",
+        "DESCRIPCION": "TRANS HORIZONTAL SACOS 30811 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005696",
+        "DESCRIPCION": "COSEDORA PEDESTAL 30402",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005697",
+        "DESCRIPCION": "TRANS CARGA AJUSTABLE 31607 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005698",
+        "DESCRIPCION": "BASCULA PORTATIL 3113 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005699",
+        "DESCRIPCION": "BASCULA PORTATIL N° 4 M1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005700",
+        "DESCRIPCION": "PAYLODER CATERPILLA EQ16 CAT914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005701",
+        "DESCRIPCION": "PAYLODER EQ15CATERPILLA 914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005702",
+        "DESCRIPCION": "MEZCLADOR  N°2 (F2 / 31204)",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005703",
+        "DESCRIPCION": "AC BATCHELOR 2 A1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B2-010-004",
+        "NOMBRE_UBICACION": "OFICINA DE BATCHELOR F2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005704",
+        "DESCRIPCION": "BANDA GRANELERA N° 1 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005705",
+        "DESCRIPCION": "BANDA GRANELERA N° 2 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005706",
+        "DESCRIPCION": "TOLVA ENSACADO MEZCLADORA 2 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005707",
+        "DESCRIPCION": "SISTEMA DE AGROTAIN F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010-002",
+        "NOMBRE_UBICACION": "NIVEL 2 LINEA DE MEZCLADO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005708",
+        "DESCRIPCION": "COMPRESOR 7.5 HP N° 2(CENTURION) F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005709",
+        "DESCRIPCION": "PAYLODER  CATERPILLA 928G 20108 EQ8",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005710",
+        "DESCRIPCION": "CATERPILLA CAT 914G 20101 EQ 1",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005711",
+        "DESCRIPCION": "MONTACARGA YALE AGROQUIMICO",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005712",
+        "DESCRIPCION": "TOLVA DE DESCARGA 2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005713",
+        "DESCRIPCION": "ELEVADOR 2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012-002",
+        "NOMBRE_UBICACION": "ELEVADOR 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005714",
+        "DESCRIPCION": "SILO CARBONATO DE CALCIO #1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005715",
+        "DESCRIPCION": "SILO CARBONATO DE CALCIO #2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-002",
+        "NOMBRE_UBICACION": "SILO 2 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005716",
+        "DESCRIPCION": "TANQUE MELAZA GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-004",
+        "NOMBRE_UBICACION": "SILO DE MELAZA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005717",
+        "DESCRIPCION": "TANQUE AGUA GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005718",
+        "DESCRIPCION": "TANQUE BINDER N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-009",
+        "NOMBRE_UBICACION": "TANQUE DE BINDER 1 GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005719",
+        "DESCRIPCION": "TANQUE BINDER N°2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-010",
+        "NOMBRE_UBICACION": "TANQUE  DE BINDER 2 GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005720",
+        "DESCRIPCION": "TANQUE BUNKER GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-006",
+        "NOMBRE_UBICACION": "TANQUE DE BUNKER GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005721",
+        "DESCRIPCION": "TRANS HELICOIDAL N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005722",
+        "DESCRIPCION": "TRANS HELICOIDAL N°2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005723",
+        "DESCRIPCION": "ELEVADOR N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005724",
+        "DESCRIPCION": "MEZCLADOR  N°3 (CAL HIDRAT) GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005725",
+        "DESCRIPCION": "MEZCLADOR  N°4 (PLATO GRANULADORA)",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005726",
+        "DESCRIPCION": "BANDA GRANELERA N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005727",
+        "DESCRIPCION": "SECADOR GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005728",
+        "DESCRIPCION": "ELEVADOR N°2 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005729",
+        "DESCRIPCION": "ELEVADOR N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005730",
+        "DESCRIPCION": "CLASIFICADORA N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005731",
+        "DESCRIPCION": "TRANS HELICOIDAL N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005732",
+        "DESCRIPCION": "TRANS HELICOIDAL N°4 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005733",
+        "DESCRIPCION": "MOLINO GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005734",
+        "DESCRIPCION": "BANDA GRANELERA N°4 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3",
+        "NOMBRE_UBICACION": "GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005735",
+        "DESCRIPCION": "BANDA GRANELERA N°5 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005736",
+        "DESCRIPCION": "BANDA GRANELERA N° 6 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005737",
+        "DESCRIPCION": "BLOWER DESCARGA CAL 50 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005738",
+        "DESCRIPCION": "VENTILADOR AIRE SECUND 50 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005739",
+        "DESCRIPCION": "VENTILADOR AIRE FRIO 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005740",
+        "DESCRIPCION": "COLECTOR DE POLVO GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005741",
+        "DESCRIPCION": "BANDA AJUSTABLE N°1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005742",
+        "DESCRIPCION": "TOLVA CAÑON ACUMULADOR GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005743",
+        "DESCRIPCION": "TRANS HELICOIDAL N°5 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005744",
+        "DESCRIPCION": "TRANS HELICOIDAL N°6 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005745",
+        "DESCRIPCION": "TRANS HELICOIDAL N°7 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005746",
+        "DESCRIPCION": "COMPRESOR TORNILLO 25 HP N°3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005747",
+        "DESCRIPCION": "HORNO CALEFACCION (QUEMADOR) GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005748",
+        "DESCRIPCION": "BANDA GRANELERA N° 7 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005749",
+        "DESCRIPCION": "MOTOR DE 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005750",
+        "DESCRIPCION": "AC GRANULADORA (UNIDAD CENTRAL)",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B3-014",
+        "NOMBRE_UBICACION": "CUARTO ELECTRICO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005751",
+        "DESCRIPCION": "AC OFICINAS VARIAS GRANULADORA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B3-013",
+        "NOMBRE_UBICACION": "OFICINA VARIOS GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005752",
+        "DESCRIPCION": "CODIFICADORA DE SACOS N°1 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005753",
+        "DESCRIPCION": "TRANS PARA MARCADO N°1 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005754",
+        "DESCRIPCION": "CODIFICADORA  N°2 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005755",
+        "DESCRIPCION": "TRANS PARA MARCADO N°2 MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005756",
+        "DESCRIPCION": "AC  N°1 BODEGA DE MATERIAL DE EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005757",
+        "DESCRIPCION": "AC  N°2 BODEGA DE MATERIAL DE EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005758",
+        "DESCRIPCION": "COMPRESOR 5HP TALLER",
+        "CECO": "3000000063",
+        "UBICACIÓN": "3002-0A1-T1-001",
+        "NOMBRE_UBICACION": "TALLER MANTENIMIENTO INDUSTRIAL",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005759",
+        "DESCRIPCION": "AC MANTTO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1",
+        "NOMBRE_UBICACION": "OFICINA DE MANTENIMIENTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005760",
+        "DESCRIPCION": "AC BODEGA SUMINISTROS",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B5-002",
+        "NOMBRE_UBICACION": "OFICINA DE BODEGA DE SUMINISTROS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005761",
+        "DESCRIPCION": "COSEDORA DE PEDESTAL  N°3",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005762",
+        "DESCRIPCION": "COSEDORA DE PEDESTAL  N°4",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005763",
+        "DESCRIPCION": "COSEDORA DE PEDESTAL  N°5",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005764",
+        "DESCRIPCION": "COSEDORA DE PEDESTAL  N°6",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005765",
+        "DESCRIPCION": "COSEDORA DE MANO N° 1",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005766",
+        "DESCRIPCION": "COSEDORA DE MANO N° 2",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005767",
+        "DESCRIPCION": "COSEDORA DE MANO N° 3",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005768",
+        "DESCRIPCION": "COSEDORA DE MANO N° 5",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B5-001",
+        "NOMBRE_UBICACION": "BODEGA DE SUMINISTRO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005769",
+        "DESCRIPCION": "SUBESTACION PRINCIPAL",
+        "CECO": "3000000025",
+        "UBICACIÓN": "3002-0A1-S1",
+        "NOMBRE_UBICACION": "SUBESTACION PRINCIPAL A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005770",
+        "DESCRIPCION": "PLANTA DE EMERGENCIA PRINCIPAL",
+        "CECO": "3000000025",
+        "UBICACIÓN": "3002-0A1-S1",
+        "NOMBRE_UBICACION": "SUBESTACION PRINCIPAL A-1",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005771",
+        "DESCRIPCION": "SUBESTACION DE GRAN Y LINEA DE MEZCLA",
+        "CECO": "3000000017",
+        "UBICACIÓN": "3002-0A1-S2",
+        "NOMBRE_UBICACION": "SUBESTACION DE GRAN Y LINEA DE MEZCLA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005772",
+        "DESCRIPCION": "PLANTA DE EMERGENCIA GRAN",
+        "CECO": "3000000017",
+        "UBICACIÓN": "3002-0A1-S2",
+        "NOMBRE_UBICACION": "SUBESTACION DE GRAN Y LINEA DE MEZCLA",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005773",
+        "DESCRIPCION": "BASCULA ENTRADA",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005774",
+        "DESCRIPCION": "BASCULA SALIDA",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005775",
+        "DESCRIPCION": "AC DESPACHO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005776",
+        "DESCRIPCION": "AC RRHH",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-002",
+        "NOMBRE_UBICACION": "OFICINA RECURSOS HUMANOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005777",
+        "DESCRIPCION": "AC SALA REUNIONES",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-006",
+        "NOMBRE_UBICACION": "SALA DE REUNIONES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005778",
+        "DESCRIPCION": "AC SUPERINTENDENCIA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1-004",
+        "NOMBRE_UBICACION": "OFICINA SUPERINTENDENTE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005779",
+        "DESCRIPCION": "AC FACTURACION A1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-001",
+        "NOMBRE_UBICACION": "OFICINA DE FACTURACION",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005780",
+        "DESCRIPCION": "TOYOTA DINA P-245-240",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005781",
+        "DESCRIPCION": "PICK UP P-329910 NISSAN FRONTIER 4X2",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005782",
+        "DESCRIPCION": "PICK UP P554-087",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005783",
+        "DESCRIPCION": "PICK UP P581-783",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005784",
+        "DESCRIPCION": "CAMION KIA P110519",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005785",
+        "DESCRIPCION": "MOTOCICLETA M48597",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005786",
+        "DESCRIPCION": "MOTOCICLETA M48598",
+        "CECO": "3000000064",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005787",
+        "DESCRIPCION": "CAMION P65886",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005788",
+        "DESCRIPCION": "COMPRESOR SAMBLASTING",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005789",
+        "DESCRIPCION": "PODADORA DE CARRETILLA N°1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-Z1",
+        "NOMBRE_UBICACION": "ZONAS VERDES A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005790",
+        "DESCRIPCION": "SUBESTACION PRINCIPAL",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-S3",
+        "NOMBRE_UBICACION": "CUARTOS ELECTRICOS Y SUBESTACION A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005791",
+        "DESCRIPCION": "PLANTA DE EMERGENCIA",
+        "CECO": "3000000056",
+        "UBICACIÓN": "3002-0A3-S3",
+        "NOMBRE_UBICACION": "CUARTOS ELECTRICOS Y SUBESTACION A-3",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005792",
+        "DESCRIPCION": "CABEZAL MACK C78934",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005793",
+        "DESCRIPCION": "CABEZAL MACK C-114-145",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005794",
+        "DESCRIPCION": "CABEZAL MACK C-114-142",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005795",
+        "DESCRIPCION": "CISTERNA RE9238",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005796",
+        "DESCRIPCION": "CISTERNA RE9261",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005797",
+        "DESCRIPCION": "PLATAFORMA RE10587",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005798",
+        "DESCRIPCION": "PLATAFORMA RE11276",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005799",
+        "DESCRIPCION": "GONDOLA RE9342",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005800",
+        "DESCRIPCION": "GONDOLA RE9343",
+        "CECO": "3000000007",
+        "UBICACIÓN": "3002-0A3-P2-003",
+        "NOMBRE_UBICACION": "PARQUEO DE EQUIPOS MOVILES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005801",
+        "DESCRIPCION": "AC DESPACHO A3",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005802",
+        "DESCRIPCION": "AC SEGURIDAD PATRIMONIAL",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-O2-002",
+        "NOMBRE_UBICACION": "OFICINA DE SEGURIDAD PATRIMONIAL",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005803",
+        "DESCRIPCION": "COMPRESOR DE 5HP TALLER",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-T2",
+        "NOMBRE_UBICACION": "TALLER 2 AUTOMOTRIZ A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005804",
+        "DESCRIPCION": "PODADORA DE CARRETILLA N°2",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-Z2",
+        "NOMBRE_UBICACION": "ZONAS VERDES A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005805",
+        "DESCRIPCION": "TOLVA DE DESCARGA 3",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005806",
+        "DESCRIPCION": "BANDA GRANELERA N°2 SIST RECEP",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005807",
+        "DESCRIPCION": "BANDA GRANELERA N°2 SIST RECEP",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005808",
+        "DESCRIPCION": "BASCULA ENTRADA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005809",
+        "DESCRIPCION": "BASCULA SALIDA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005810",
+        "DESCRIPCION": "TOLVA MOVIL MONOPRODUCTO N°1 A3M",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005811",
+        "DESCRIPCION": "TRANS HORIZONTAL SACOS 30815 A3M",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005812",
+        "DESCRIPCION": "COSEDORA PEDESTAL 30409",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005813",
+        "DESCRIPCION": "TRANS CARGA AJUSTABLE 31608 A3M",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005814",
+        "DESCRIPCION": "BASCULA PORTATIL 31114",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005815",
+        "DESCRIPCION": "BASCULA PORTATIL N° 6",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005816",
+        "DESCRIPCION": "PAYLODER EQ 15 CAT 914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005817",
+        "DESCRIPCION": "PAYLODER NEW  HOLLAND 12 B 20117 EQ17",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10005818",
+        "DESCRIPCION": "BASCULA PORTATIL 31116",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005819",
+        "DESCRIPCION": "BASCULA PORTATIL N° 8",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005820",
+        "DESCRIPCION": "TRANS HORIZONTAL SACOS 30816 A3-C",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005821",
+        "DESCRIPCION": "COSEDORA PEDESTAL N°8",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005822",
+        "DESCRIPCION": "COSEDORA PEDESTAL N°9",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005823",
+        "DESCRIPCION": "TRANS CARGA AJUSTABLE 31609 A3-C",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005824",
+        "DESCRIPCION": "COSEDORA DE MANO 32101",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005825",
+        "DESCRIPCION": "TOLVA MOVIL  DE CALCIO A3-C",
+        "CECO": "3000000054",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005826",
+        "DESCRIPCION": "MOTOR DE 40 HP - ELEVADOR 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005-002",
+        "NOMBRE_UBICACION": "ELEVADOR 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005827",
+        "DESCRIPCION": "CAJA REDUCTORA DE 40 HP - ELEVADOR 1",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B1-005-002",
+        "NOMBRE_UBICACION": "ELEVADOR 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005828",
+        "DESCRIPCION": "MOTOR DE 40 HP MEZCLADORA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005829",
+        "DESCRIPCION": "CAJA REDUCTORA P/MEZCLADOR F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005830",
+        "DESCRIPCION": "ELEVADOR FORMULADORA N°1 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005831",
+        "DESCRIPCION": "ELEVADOR N°2 FORMULADORA F1",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005832",
+        "DESCRIPCION": "MOTOR-REDUCTOR 3 HP F1 TRANS HORIZONTAL",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005833",
+        "DESCRIPCION": "MOTOR DE 25 HP BULKTOTER F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005834",
+        "DESCRIPCION": "CAJA REDUCTORA DE 25 HP BULKT F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005835",
+        "DESCRIPCION": "MOTOR-REDUCTOR N°2  5 HP F1 TRANS CARGA",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005836",
+        "DESCRIPCION": "MOTOR-REDUCTOR  N°3 5 HP F1 TRANS CARGA",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005837",
+        "DESCRIPCION": "BOMBA AGROTAIN 1 ¾ HP",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005838",
+        "DESCRIPCION": "MOTOR-REDUCTOR N°4 5 HP  F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005839",
+        "DESCRIPCION": "MOTOR COSEDORA N°2",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A1-B1-008",
+        "NOMBRE_UBICACION": "MONOPRODUCTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005840",
+        "DESCRIPCION": "MOTOR DE 40 HP  -  ELEVADOR 2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012-002",
+        "NOMBRE_UBICACION": "ELEVADOR 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005841",
+        "DESCRIPCION": "CAJA REDUCTORA ELEVADOR #2",
+        "CECO": "3000000020",
+        "UBICACIÓN": "3002-0A1-B2-012-002",
+        "NOMBRE_UBICACION": "ELEVADOR 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005842",
+        "DESCRIPCION": "MOTOVIBRADOR N°1 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005843",
+        "DESCRIPCION": "MOTOVIBRADOR N°2 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005844",
+        "DESCRIPCION": "MOTOVIBRADOR N°3 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-002",
+        "NOMBRE_UBICACION": "SILO 2 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005845",
+        "DESCRIPCION": "MOTOVIBRADOR N°4 1/2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-002",
+        "NOMBRE_UBICACION": "SILO 2 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005846",
+        "DESCRIPCION": "BOMBA MELAZA N°1 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-004",
+        "NOMBRE_UBICACION": "SILO DE MELAZA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005847",
+        "DESCRIPCION": "BOMBA MELAZA N°2  5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-004",
+        "NOMBRE_UBICACION": "SILO DE MELAZA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005848",
+        "DESCRIPCION": "BOMBA AGUA A MELAZA N°3 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005849",
+        "DESCRIPCION": "BOMBA BINDER N°4 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-009",
+        "NOMBRE_UBICACION": "TANQUE DE BINDER 1 GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005850",
+        "DESCRIPCION": "BOMBA BINDER N°5 A PLATO 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-010",
+        "NOMBRE_UBICACION": "TANQUE  DE BINDER 2 GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005851",
+        "DESCRIPCION": "BOMBA BUNKER N°6 1/2HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-006",
+        "NOMBRE_UBICACION": "TANQUE DE BUNKER GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005852",
+        "DESCRIPCION": "BOMBA BUNKER VIKING N° 7 1HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-006",
+        "NOMBRE_UBICACION": "TANQUE DE BUNKER GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005853",
+        "DESCRIPCION": "MOTOR  N°3 DE 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005854",
+        "DESCRIPCION": "MOTOR  N°4 DE 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005855",
+        "DESCRIPCION": "MOTOR N°5 DE 7.5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005856",
+        "DESCRIPCION": "CAJA REDUCTORA DE ELEV 1 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005857",
+        "DESCRIPCION": "MOTOR N°6 5 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005858",
+        "DESCRIPCION": "CAJA REDUCTORA DE CAL HIDRAT GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-008",
+        "NOMBRE_UBICACION": "HORNO DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005859",
+        "DESCRIPCION": "MOTOR N°7 DE 30 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005860",
+        "DESCRIPCION": "CAJA REDUCTORA DE PLATO GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005861",
+        "DESCRIPCION": "MOTOR N° 7 3 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005862",
+        "DESCRIPCION": "CAJA REDUCTORA  BANDA N° 3 GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005863",
+        "DESCRIPCION": "MOTOR DE 15 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005864",
+        "DESCRIPCION": "MOTOR N°8 DE 2 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005865",
+        "DESCRIPCION": "MOTOR N°9 DE 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005866",
+        "DESCRIPCION": "CAJA REDUCTORA 3 DE ELEV GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005867",
+        "DESCRIPCION": "MOTOR N°10 DE 5HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005868",
+        "DESCRIPCION": "MOTOR N°11 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005869",
+        "DESCRIPCION": "MOTOR N°12 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005870",
+        "DESCRIPCION": "MOTOR N°13 DE 30HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005871",
+        "DESCRIPCION": "MOTOR N°14 DE 3HP - BANDA GRANELERA N°4",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3",
+        "NOMBRE_UBICACION": "GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005872",
+        "DESCRIPCION": "MOTOR N°15 DE 20HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005873",
+        "DESCRIPCION": "MOTOR N°16 DE 20HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005874",
+        "DESCRIPCION": "MOTOR N°17 DE  50HP GRANULADORA - BLOWER",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-001",
+        "NOMBRE_UBICACION": "SILO 1 DE CAL GRANULADORA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005875",
+        "DESCRIPCION": "MOTOR N°19  DE 50 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005876",
+        "DESCRIPCION": "MOTOR N°20  DE 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005877",
+        "DESCRIPCION": "VENTILADOR DE COLECTOR 75 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005878",
+        "DESCRIPCION": "MOTOR N°21  DE 10 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005879",
+        "DESCRIPCION": "MOTOR N°22  DE 20 HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005880",
+        "DESCRIPCION": "MOTOR N°23 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-011",
+        "NOMBRE_UBICACION": "ZARANDA DE GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005881",
+        "DESCRIPCION": "MOTOR N°24 DE 3HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-005",
+        "NOMBRE_UBICACION": "TANQUE DE AGUA GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005882",
+        "DESCRIPCION": "MOTOR N°25 DE 1.7HP GRANULADORA",
+        "CECO": "3000000016",
+        "UBICACIÓN": "3002-0A1-B3-007",
+        "NOMBRE_UBICACION": "PLATO GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005883",
+        "DESCRIPCION": "MOTOR DE 1 HP MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005884",
+        "DESCRIPCION": "MOTOR DE 1 HP MAT EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005885",
+        "DESCRIPCION": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005886",
+        "DESCRIPCION": "CELDA DE CARGA 1",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005887",
+        "DESCRIPCION": "CELDA DE CARGA 2",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005888",
+        "DESCRIPCION": "CELDA DE CARGA 3",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005889",
+        "DESCRIPCION": "CELDA DE CARGA 4",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005890",
+        "DESCRIPCION": "CELDA DE CARGA 5",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005891",
+        "DESCRIPCION": "CELDA DE CARGA 6",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005892",
+        "DESCRIPCION": "CELDA DE CARGA 7",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005893",
+        "DESCRIPCION": "CELDA DE CARGA 8",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005894",
+        "DESCRIPCION": "PLATAFORMA BASCULA CAMIONERA ENTRADA",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005895",
+        "DESCRIPCION": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005896",
+        "DESCRIPCION": "CELDA DE CARGA 1",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005897",
+        "DESCRIPCION": "BULKTOTTER N°1",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005898",
+        "DESCRIPCION": "BULKTOTTER N°2",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005899",
+        "DESCRIPCION": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005900",
+        "DESCRIPCION": "CELDA DE CARGA 1",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005901",
+        "DESCRIPCION": "CELDA DE CARGA 2",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005902",
+        "DESCRIPCION": "CELDA DE CARGA 3",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005903",
+        "DESCRIPCION": "CELDA DE CARGA 4",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005904",
+        "DESCRIPCION": "CELDA DE CARGA 5",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005905",
+        "DESCRIPCION": "CELDA DE CARGA 6",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005906",
+        "DESCRIPCION": "PLATAFORMA BASCULA CAMIONERA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005907",
+        "DESCRIPCION": "INDICADOR BASCULA CAMIONERA IND 780",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005908",
+        "DESCRIPCION": "CELDA DE CARGA 1",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005909",
+        "DESCRIPCION": "CELDA DE CARGA 2",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005910",
+        "DESCRIPCION": "CELDA DE CARGA 3",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005911",
+        "DESCRIPCION": "CELDA DE CARGA 4",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005912",
+        "DESCRIPCION": "CELDA DE CARGA 5",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005913",
+        "DESCRIPCION": "CELDA DE CARGA 6",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005914",
+        "DESCRIPCION": "CELDA DE CARGA 7",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005915",
+        "DESCRIPCION": "CELDA DE CARGA 8",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005916",
+        "DESCRIPCION": "PLATAFORMA BASCULA CAMIONERA",
+        "CECO": "3000000050",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005917",
+        "DESCRIPCION": "MOTOR COSEDORA N°7",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005918",
+        "DESCRIPCION": "MOTOR COSEDORA N°8",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-D1",
+        "NOMBRE_UBICACION": "BODEGA DE CALCIO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005919",
+        "DESCRIPCION": "MOTOR COSEDORA N°9",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005920",
+        "DESCRIPCION": "MOTOR DE 20 HP ELEVADOR F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005921",
+        "DESCRIPCION": "MOTOR DE 20 HP ELEVADOR 2 F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005922",
+        "DESCRIPCION": "CAJA REDUCTORA 1 PARA F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005923",
+        "DESCRIPCION": "CAJA REDUCTORA 2 F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-008-002",
+        "NOMBRE_UBICACION": "NIVEL 2 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005924",
+        "DESCRIPCION": "MOTOR-REDUCTOR N°1 5 HP F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005925",
+        "DESCRIPCION": "MOTOR DE 100 HP BUKLTOTER N°1",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10005926",
+        "DESCRIPCION": "MOTOR DE 100 HP BUKLTOTER N°2",
+        "CECO": "3000000051",
+        "UBICACIÓN": "3002-0A3-F1",
+        "NOMBRE_UBICACION": "FOSA DE DESCARGA 3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10006096",
+        "DESCRIPCION": "TOLVA COLADORA 31404",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10006097",
+        "DESCRIPCION": "TAMIZADORA 32002",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10006098",
+        "DESCRIPCION": "TAMIZADORA 32003",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10006099",
+        "DESCRIPCION": "TOLVA COLADORA 31405",
+        "CECO": "3000000067",
+        "UBICACIÓN": "3002-0A3-B7",
+        "NOMBRE_UBICACION": "ZONA DE PRODUCCION - MONOPRODUCTO A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009019",
+        "DESCRIPCION": "AIRE ACONDICIONADO SUM01",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009020",
+        "DESCRIPCION": "AIRE ACONDICIONADO SUM02",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009021",
+        "DESCRIPCION": "AIRE ACONDICIONADO SUM03",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009022",
+        "DESCRIPCION": "AIRE ACONDICIONADO SUM04",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009153",
+        "DESCRIPCION": "MEZCLADOR  N°5 (FORMULADORA #3) F3",
+        "CECO": "3000000083",
+        "UBICACIÓN": "3002-ZZZ",
+        "NOMBRE_UBICACION": "OBJETOS TECNICOS ELIMINADOS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009255",
+        "DESCRIPCION": "PAYLOADER VOLVO #1 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10009644",
+        "DESCRIPCION": "UPS OFICINA DE FACTURACION",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-001",
+        "NOMBRE_UBICACION": "OFICINA DE FACTURACION",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009645",
+        "DESCRIPCION": "UPS BASCULA A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10009646",
+        "DESCRIPCION": "PAYLOADER VOLVO #2 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10009647",
+        "DESCRIPCION": "PAYLOADER VOLVO #3 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10009648",
+        "DESCRIPCION": "MONTACARGA YALE PRODUCCION",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10009681",
+        "DESCRIPCION": "RACK DE SALA DE REUNIONES",
+        "CECO": "3000000019",
+        "UBICACIÓN": "3002-0A1-O1-006",
+        "NOMBRE_UBICACION": "SALA DE REUNIONES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010537",
+        "DESCRIPCION": "PAYLOADER VOLVO #4 L60F",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10010538",
+        "DESCRIPCION": "SISTEMA DE BIOSMART  F1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010539",
+        "DESCRIPCION": "SISTEMA DE BIOSMART F2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010-002",
+        "NOMBRE_UBICACION": "NIVEL 2 LINEA DE MEZCLADO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010571",
+        "DESCRIPCION": "OASIS DE FACTURACION",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-001",
+        "NOMBRE_UBICACION": "OFICINA DE FACTURACION",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010572",
+        "DESCRIPCION": "OASIS DE SALA DE ESPERA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-SC-004",
+        "NOMBRE_UBICACION": "SALA DE ESPERA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010573",
+        "DESCRIPCION": "OASIS DE DESPACHO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-C1",
+        "NOMBRE_UBICACION": "OFICINA DE DESPACHO A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010574",
+        "DESCRIPCION": "OASIS DE COMEDOR",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-001",
+        "NOMBRE_UBICACION": "COMEDOR A-1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010575",
+        "DESCRIPCION": "OASIS DE FORMULADORA 1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010576",
+        "DESCRIPCION": "OASIS DE BODEGA DE MATERIAL DE EMPAQUE",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B4",
+        "NOMBRE_UBICACION": "BODEGA MATERIAL DE EMPAQUE",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010577",
+        "DESCRIPCION": "OASIS DE GRANULADORA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B3",
+        "NOMBRE_UBICACION": "GRANULADORA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010578",
+        "DESCRIPCION": "OASIS DE SALON DE USOS MULTIPLES",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-A1-005",
+        "NOMBRE_UBICACION": "SALON DE USOS MULTIPLES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010579",
+        "DESCRIPCION": "OASIS DE TALLER DE MANTENIMIENTO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-T1-001",
+        "NOMBRE_UBICACION": "TALLER MANTENIMIENTO INDUSTRIAL",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010580",
+        "DESCRIPCION": "OASIS OFICINA DE MANTENIMIENTO",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-B1",
+        "NOMBRE_UBICACION": "OFICINA DE MANTENIMIENTO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010581",
+        "DESCRIPCION": "OASIA DE VIGILANCIA A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-V3",
+        "NOMBRE_UBICACION": "CASETA DE VIGILANCIA A3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010582",
+        "DESCRIPCION": "OASIS DE OFICINA DE DESPACHO A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-O2-001",
+        "NOMBRE_UBICACION": "OFICINA DE BASCULA A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010583",
+        "DESCRIPCION": "OASIS DE TALLER AUTOMOTRIZ A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-T2",
+        "NOMBRE_UBICACION": "TALLER 2 AUTOMOTRIZ A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010584",
+        "DESCRIPCION": "OASIS DE COMEDOR A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-A2-001",
+        "NOMBRE_UBICACION": "COMEDOR A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010585",
+        "DESCRIPCION": "OASIS DE PORTON DE BODEGA A3",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A3-B9",
+        "NOMBRE_UBICACION": "BODEGAS - BINES 1 AL 10  A-3",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010590",
+        "DESCRIPCION": "OASIS DE FORMULADORA 2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010591",
+        "DESCRIPCION": "AC BODEGA DE SEMILLA 1",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-M1",
+        "NOMBRE_UBICACION": "BODEGA DE SEMILLAS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010592",
+        "DESCRIPCION": "AC BODEGA DE SEMILLA 2",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-M1",
+        "NOMBRE_UBICACION": "BODEGA DE SEMILLAS",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010593",
+        "DESCRIPCION": "AC CUARTO PURIFICADOR DE AGUA",
+        "CECO": "3000000023",
+        "UBICACIÓN": "3002-0A1-O1",
+        "NOMBRE_UBICACION": "CUARTO DE PURIFICACION DE AGUA",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010594",
+        "DESCRIPCION": "PAYLODER CATERPILLA EQ1 CAT914G",
+        "CECO": "3000000066",
+        "UBICACIÓN": "3002-0A1-C2",
+        "NOMBRE_UBICACION": "PAYLOADERS Y MONTACARGAS",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10010596",
+        "DESCRIPCION": "CAMION ISUZU P120-356",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10010597",
+        "DESCRIPCION": "CAMION ISUZU P120-357",
+        "CECO": "3000000010",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10010599",
+        "DESCRIPCION": "AIRE ACONDICIONADO 6000 BTU CLINICA MEDI",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-B4-001",
+        "NOMBRE_UBICACION": "CLINICA MEDICA A1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010637",
+        "DESCRIPCION": "CODIFICADORA A3",
+        "CECO": "3000000053",
+        "UBICACIÓN": "3002-0A3-T3",
+        "NOMBRE_UBICACION": "BODEGA DE REPROCESO",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010716",
+        "DESCRIPCION": "TOLVA BASCULA FORMULADORA 1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010717",
+        "DESCRIPCION": "TOLVA BASCULA MONO PRODUCTO FORM1",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008",
+        "NOMBRE_UBICACION": "FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10010718",
+        "DESCRIPCION": "TOLVA BASCULA FORMULADORA 2",
+        "CECO": "3000000045",
+        "UBICACIÓN": "3002-0A1-B2-010",
+        "NOMBRE_UBICACION": "FORMULADORA 2",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10011017",
+        "DESCRIPCION": "SISTEMA DE DOSIFICACION DE MD",
+        "CECO": "3000000012",
+        "UBICACIÓN": "3002-0A1-B2-008-003",
+        "NOMBRE_UBICACION": "NIVEL 3 TORRE DE MEZCLADO FORMULADORA 1",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10011018",
+        "DESCRIPCION": "CAMION ISUZU QLR P6774B",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-P1-002",
+        "NOMBRE_UBICACION": "PARQUEO PARA COLABORADORES",
+        "EXISTENCIA": "500",
+        "MODIFICABLE": "SI"
+    },
+    {
+        "SAP": "10011019",
+        "DESCRIPCION": "KAESER AIRCENTER 1327",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-B2-13",
+        "NOMBRE_UBICACION": "CUARTO DE COMPRESORES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    },
+    {
+        "SAP": "10011020",
+        "DESCRIPCION": "KAESER AIRCENTER 1326",
+        "CECO": "3000000022",
+        "UBICACIÓN": "3002-0A1-B2-13",
+        "NOMBRE_UBICACION": "CUARTO DE COMPRESORES",
+        "EXISTENCIA": "",
+        "MODIFICABLE": ""
+    }
+]

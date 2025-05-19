@@ -68,7 +68,7 @@ tiemposcambian.GuardandoPNGs = (function() {
     if (mousePressed) {
       ctx.beginPath();
       ctx.strokeStyle = document.getElementById('color').value;
-      ctx.lineWidth = 1;
+      ctx.lineWidth = 8;
       ctx.lineJoin = 'round';
       ctx.moveTo(lastX, lastY);
       ctx.lineTo(x, y);
@@ -85,7 +85,7 @@ tiemposcambian.GuardandoPNGs = (function() {
   }
   
   function resetCanvas() {
-    ctx.fillStyle = '#EEEEEE';
+    ctx.fillStyle = '#ffffff';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   }
 

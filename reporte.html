@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="reporte.css" />
+    <style>
+      video,
+      canvas,
+      img {
+        max-width: 100%;
+        border: 1px solid #ccc;
+      }
+      #galeria img {
+        width: 250px;
+        margin: 5px;
+      }
+      input,
+      textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <div id="encabezado_notificaciones_ordenes">
+      <div class="logo_ordenes"></div>
+      <div class="logo_titulo">REPORTE DE ORDEN 3002009888</div>
+    </div>
+<h1 id="descripcion">SI TIENE ALGUNA OBSERVACION O COMENTARIO, COLOQUELO EN EL SIGUIENTE CAMPO</h1>
+    <div>
+      <textarea id="autoTextarea" maxlength="1000"placeholder="Escribe tu comentario..."></textarea>
+
+    </div>
+    <br />
+    <button onclick="siguiente_paso()" class="boton">⏭️ Siguiente</button>
+
+
+    <input
+      type="file"
+      id="inputGaleria"
+      accept="image/*"
+      multiple
+      style="display: none"
+    />
+
+
+    <div id="galeria"></div>
+
+    <canvas id="canvas" style="display: none"></canvas>
+<script>
+
+
+const textarea = document.getElementById("autoTextarea");
+
+textarea.addEventListener("input", () => {
+  textarea.style.height = "auto"; 
+  textarea.style.height = textarea.scrollHeight + "px";
+  textarea.style.fontSize = "xx-large";
+  textarea.style.fontWeight = "bold";
+  textarea.style.textTransform="uppercase"
+});
+
+function siguiente_paso(){
+let comentario= document.getElementById("autoTextarea").value.toUpperCase()
+let prueba0= localStorage.getItem("observacion")
+localStorage.setItem("observacion",comentario)
+
+window.location.href = "reporte_foto.html";
+
+}
+</script>
+   
+  </body>
+</html>

@@ -11,7 +11,7 @@ document.getElementById("actividades_siguiente").addEventListener("click",functi
 })
 document.getElementById("titulo_logo").innerHTML=localStorage.getItem("iniciar_orden_d")
 
-fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/hojaruta.json")
+fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json")
       .then((response) => {
         return response.json();
       })
@@ -33,6 +33,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             }
 
             if (jsondata[i].HOJARUTA==localStorage.getItem("iniciar_orden_hr")) {
+                if (jsondata[i].ORDEN==localStorage.getItem("iniciar_orden")) {
                 const div = document.createElement('div');
                 div.className = 'cuadro_resumen_actividades';
                 div.innerHTML='<div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">'+contador+'.   '+jsondata[i].ACTIVIDAD+'</div></div>'
@@ -40,7 +41,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                 container.appendChild(div)
                 contador=contador+1
      
-                
+                } 
             }
 
         }
