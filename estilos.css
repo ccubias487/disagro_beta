@@ -1102,16 +1102,15 @@ margin-top: 20px;
 
 
         #logo{
-        /*background-image: url("https://www.disagro.com/sites/default/files/logotipo-disagro-verde.png");*/
-        /*background-image: url("https://marchenhaft.s3.us-east-2.amazonaws.com/1667169895571-removebg-preview.png");*/
+
         background-image: url("https://www.disagro.com.sv/wp-content/uploads/2023/07/logotipo-disagro-verde.png");
         
         background-size:  contain;
         background-repeat: no-repeat;
         background-position: left;
-        height: 150px;
-        width: 60%;
-        margin: 0.5rem;
+        height: 350px;
+        width: 50%;
+       
 
 
         }
