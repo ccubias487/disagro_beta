@@ -2,44 +2,71 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
     <link href="requisiciones.css" rel="stylesheet" type="text/css" />
   </head>
   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-  gtag('config', 'G-LJ800MZ8V1');
-</script>
-  
+    gtag("config", "G-LJ800MZ8V1");
+  </script>
+
   <body>
     <section class="page-content">
       <section class="grid">
         <article id="contenido_tabla" class="articulo">
           <div id="encabezado_notificaciones">
-              <div id="logo"></div>
-
-          
+            <div id="logo"></div>
           </div>
 
-          
+          <div id="mensaje">
+
+          </div>
           <div id="contenido">
+            <a class="titulo_input" id="titulo_input_req">PARA USO EN</a>
+            <input type="text" class="input3" name="user" id="user" />
 
- <a class="titulo_input" id="titulo_input_req">PARA USO EN</a>
-      <input type="text" class="input3" name="user" id="user">
-
- <button class="boton" id="boton_agregar">Agregar</button>
+            <button class="boton" id="boton_agregar">Agregar</button>
           </div>
 
-      <div id="tabla">
-<table class="tabla_notificacions" id='tabla_requisiciones'></table>
-      </div>    
+          <div id="tabla">
+            <table class="tabla_notificacions" id="tabla_requisiciones"></table>
+          </div>
 
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn" class="close">&times;</span>
+              <h3 id="agregar_texto">MODIFICAR</h3>
+              <h1 id="producto">PRODUCTO</h1>
+              <h1 id="existencia">EXISTENCIA: </h1>
+              <input
+                type="number"
+                class="input33"
+                name="cantidad"
+                id="cantidad_insumo"
+              />
+              <div class="botones_modal">
+                <button class="boton" id="boton_modificar">Agregar</button>
+                <button class="boton" id="boton_eliminar">Eliminar</button>
+                <button class="boton" id="boton_cancelar">Cancelar</button>
+              </div>
+            </div>
+          </div>
+
+          <button class="boton2" id="boton_enviar">Enviar a autorizacion</button>
           <div class="menu_app">
             <div class="menu_app_content">
-              <div class="icono_menu_app">
+              <div class="icono_menu_app" id="inicio">
                 <svg
                   width="171"
                   height="121"
@@ -285,7 +312,7 @@
                   />
                 </svg>
 
-                <div class="titulo_menu" >Cuenta</div>
+                <div class="titulo_menu">Cuenta</div>
               </div>
             </div>
           </div>
@@ -295,6 +322,7 @@
       </section>
       <footer class="page-footer"></footer>
       <script src="requisiciones.js"></script>
+      <script src="reporte_requisicion.js"></script>
     </section>
   </body>
 </html>

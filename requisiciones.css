@@ -65,6 +65,44 @@ body, html {
     cursor: hand;
     }
   
+
+    .button2 {
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 6px 13px;
+    
+    font-size: 9px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .boton2{
+    border-radius: 15px;
+    width: 275px;
+    background: rgb(102, 202, 92);
+    color: white;
+    border: 2px solid rgb(102, 202, 92);
+    height: 80px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 15px;
+    margin-bottom: 50px;
+    margin-top: 35px;
+    }
+
+  
+  .boton:hover2{
+    box-shadow: 0 0 5px rgb(102, 202, 92),
+                0 0 25px rgb(102, 202, 92),
+                0 0 50px rgb(102, 202, 92),
+                0 0 200px rgb(102, 202, 92);
+    cursor: hand;
+    }
   .gui {
     width: 100%;
     text-align: right;
@@ -208,7 +246,9 @@ body, html {
   color: white;
   text-align: center;
 }
-
+td {
+    height: 55px;
+}
 
 .tabla_busqueda tr:nth-child(odd) {
   background: rgba(241, 239, 236, 0.3);
@@ -230,4 +270,48 @@ body, html {
   align-items: center;
   font-size: 12px;
 font-family: sans-serif 
+}
+
+#producto, #agregar_texto, #existencia{
+  font-size: x-large;
+}
+
+.modal-content {
+    background-color: rgb(54, 74, 108, 0.9);
+    padding: 20px;
+    border-radius: 25px;
+    width: 700px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.input33 {
+    width: 40%; 
+    border-radius: 5px;
+    border: 2px solid rgb(102, 202, 92);
+    background: #5C5F5C;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 0.1rem;
+    height: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#mensaje{
+  font-size: xx-large;
+ color: white;
+ width: 100%;
+ margin-top: 35px;
+ background-color: "#d5383887";
+ background: #d5383887;
 }
