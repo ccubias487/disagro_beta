@@ -229,6 +229,97 @@ fetch(
       return parseInt(a.PRIORIDAD) - parseInt(b.PRIORIDAD);
     });
 
+function ventana_flotante(k) {
+  let fila = this.rowIndex - 1;
+  console.log(fila);
+materiales = JSON.parse(localStorage.getItem("agregar_material"));
+  localStorage.setItem("ventana_flotante", fila);
+  //document.getElementById("cantidad_insumo").value=""
+  const modal = document.getElementById("myModal");
+  const closeBtn = document.getElementById("closeBtn");
+  modal.style.display = "flex";
+  document.getElementById("producto").innerHTML = materiales[k].DESCRIPCION;
+  document.getElementById("existencia").innerHTML =
+    "EXISTENCIA: " + materiales[k].EXISTENCIA;
+    document.getElementById("cantidad_insumo").focus()
+  closeBtn.addEventListener("click", function () {
+    modal.style.display = "none";
+  });
+
+  window.addEventListener("click", function (event) {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+
+  document
+    .getElementById("boton_cancelar")
+    .addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+  document
+    .getElementById("boton_eliminar")
+    .addEventListener("click", function () {
+      materiales = JSON.parse(localStorage.getItem("agregar_material"));
+      console.log("borrando: ", k);
+
+      const ordenesFiltradas = materiales.filter(
+        (item) => item.SAP !== materiales[k].SAP
+      );
+
+      localStorage.setItem(
+        "agregar_material",
+        JSON.stringify(ordenesFiltradas)
+      );
+     // location.reload();
+    });
+
+  document
+    .getElementById("boton_modificar")
+    .addEventListener("click", function () {
+      //venta_flotante(localStorage.getItem("ventana_flotante"))
+      materiales = JSON.parse(localStorage.getItem("agregar_material"));
+      //k = localStorage.getItem("ventana_flotante");
+      let orden = localStorage.getItem("iniciar_orden");
+      let datosJSON = [];
+      let material = "";
+      const modal = document.getElementById("myModal");
+      const nuevoDato = {
+        ORDEN: orden,
+        SAP: materiales[k].SAP,
+        DESCRIPCION: materiales[k].DESCRIPCION,
+        CANTIDAD: document.getElementById("cantidad_insumo").value,
+        EXISTENCIA: materiales[k].EXISTENCIA,
+        VALOR_TOTAL: materiales[k].VALOR_TOTAL,
+      };
+      //const nuevoDato = {  ORDEN: jsondata[k].ORDEN, SAP: jsondata[k].SAP, DESCRIPCION: jsondata[k].DESCRIPCION, CANTIDAD: jsondata[k].CANTIDAD, EXISTENCIA: jsondata[k].EXISTENCIA, VALOR_TOTAL: jsondata[k].VALOR_TOTAL };
+
+      material = localStorage.getItem("agregar_material");
+
+      if (localStorage.getItem("agregar_material") == null) {
+        datosJSON.push(nuevoDato);
+        console.log("1 " + datosJSON);
+        localStorage.setItem("agregar_material", JSON.stringify(datosJSON));
+        modal.style.display = "none";
+      } else {
+        datosJSON = JSON.parse(material);
+        datosJSON = datosJSON.filter(
+          (item) => item.SAP !== materiales[k].SAP
+        );
+        datosJSON.push(nuevoDato);
+        localStorage.setItem("agregar_material", JSON.stringify(datosJSON));
+        modal.style.display = "none";
+      }
+      location.reload();
+    });
+}
+
+
+
+
+
+
     //console.log(jsondata)
     const container = document.getElementById("actividades_asignadas");
     let contador = 1;
@@ -274,10 +365,12 @@ fetch(
         }
       }
     }
+    
     datosJSON = JSON.parse(localStorage.getItem("agregar_material"));
     for (let j in datosJSON) {
       const div = document.createElement("div");
       div.id = "insumos" + j;
+        div.onclick = function(){ventana_flotante(j)}
       div.className = "cuadro_resumen_insumos";
       div.innerHTML =
         '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' +
@@ -289,6 +382,13 @@ fetch(
         '</div><div class="titulo_resumen_ordenes">EXISTENCIA: &nbsp &nbsp' +
         datosJSON[j].EXISTENCIA +
         "</div></div></div>";
+
+materiales_req=Number(datosJSON[j].EXISTENCIA)-Number(datosJSON[j].CANTIDAD)
+
+if (materiales_req < 0) {
+      div.style.backgroundColor = "#d5383887";
+    }
+
       container.appendChild(div);
     }
     function numeroAleatorio(min, max) {

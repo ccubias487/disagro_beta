@@ -87,7 +87,7 @@ body, html {
     background: rgb(102, 202, 92);
     color: white;
     border: 2px solid rgb(102, 202, 92);
-    height: 80px;
+    height: 100px;
     font-size: xx-large;
     font-weight: bold;
     margin: 15px;
@@ -273,7 +273,7 @@ font-family: sans-serif
 }
 
 #producto, #agregar_texto, #existencia{
-  font-size: x-large;
+  font-size: xx-large;
 }
 
 .modal-content {
@@ -315,3 +315,23 @@ font-family: sans-serif
  background-color: "#d5383887";
  background: #d5383887;
 }
+
+#log{
+  margin-top: 25px;
+}
+
+.boton22{
+    border-radius: 15px;
+    width: 175px;
+    background: rgb(102, 202, 92);
+    color: white;
+    border: 2px solid rgb(102, 202, 92);
+    height: 80px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 55px;
+    }
+
+    #tabla{
+      margin-bottom: 255px;
+    }
