@@ -1728,7 +1728,8 @@
         "UBICACION": "COMPLEJO A-1",
         "CENTRO": "3000000022",
         "HOJA": "undefined",
-        "UNIDAD_TRABAJO": "undefined"
+        "UNIDAD_TRABAJO": "undefined",
+        "PRIORIDAD": "A"
     },
     {
         "ORDEN": "3002010451",
@@ -1743,7 +1744,8 @@
         "UBICACION": "COMPLEJO A-1",
         "CENTRO": "3000000022",
         "HOJA": "undefined",
-        "UNIDAD_TRABAJO": "H"
+        "UNIDAD_TRABAJO": "H",
+        "PRIORIDAD": "A"
     },
     {
         "ORDEN": "3002010451",
@@ -1758,7 +1760,8 @@
         "UBICACION": "COMPLEJO A-1",
         "CENTRO": "3000000022",
         "HOJA": "undefined",
-        "UNIDAD_TRABAJO": "H"
+        "UNIDAD_TRABAJO": "H",
+        "PRIORIDAD": "A"
     },
     {
         "ORDEN": "3002010451",
@@ -1773,6 +1776,7 @@
         "UBICACION": "COMPLEJO A-1",
         "CENTRO": "3000000022",
         "HOJA": "undefined",
-        "UNIDAD_TRABAJO": "H"
+        "UNIDAD_TRABAJO": "H",
+        "PRIORIDAD": "A"
     }
 ]
