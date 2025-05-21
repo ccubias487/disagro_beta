@@ -39,8 +39,8 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
             console.log("hoja orden local", localStorage.getItem("iniciar_orden"))
             console.log("---------------------------------------------------------------------")
             
-            if (jsondata[i].HOJARUTA==localStorage.getItem("iniciar_orden_hr")) {
-                if (jsondata[i].ORDEN==localStorage.getItem("iniciar_orden")) {
+            if (String(jsondata[i].HOJARUTA)==localStorage.getItem("iniciar_orden_hr")) {
+                if (String(jsondata[i].ORDEN)==localStorage.getItem("iniciar_orden")) {
                 const div = document.createElement('div');
                 div.className = 'cuadro_resumen_actividades';
                 div.innerHTML='<div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">'+contador+'.   '+jsondata[i].ACTIVIDAD+'</div></div>'
