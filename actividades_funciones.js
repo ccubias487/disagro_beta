@@ -23,17 +23,22 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
           });
 
 
-        console.log(jsondata)
+       // console.log(jsondata)
         const container = document.getElementById('actividades_asignadas');
         let contador=1
         for (let i in jsondata) {
-            console.log(jsondata[i].HOJARUTA)      
+         //   console.log(jsondata[i].HOJARUTA)      
             
             function iniciar_orden(){
                 localStorage.setItem("iniciar_orden_hr",jsondata[i].HOJARUTA)
                 
             }
-
+            console.log("hoja ruta ", jsondata[i].HOJARUTA)
+            console.log("hoja ruta local", localStorage.getItem("iniciar_orden_hr"))
+             console.log("hoja orden ", jsondata[i].ORDEN)
+            console.log("hoja orden local", localStorage.getItem("iniciar_orden"))
+            console.log("---------------------------------------------------------------------")
+            
             if (jsondata[i].HOJARUTA==localStorage.getItem("iniciar_orden_hr")) {
                 if (jsondata[i].ORDEN==localStorage.getItem("iniciar_orden")) {
                 const div = document.createElement('div');
