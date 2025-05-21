@@ -6,7 +6,7 @@ document.getElementById("inicio").addEventListener("click", function () {
   window.location.href = "principal.html";
 });
 materiales = JSON.parse(localStorage.getItem("agregar_material"));
-document.getElementById("boton_enviar").style.display = "none";
+//document.getElementById("boton_enviar").style.display = "none";
 document.getElementById("tabla_requisiciones").innerHTML = "";
 console.log(materiales);
 
