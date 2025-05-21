@@ -6,6 +6,8 @@ document.getElementById("inicio").addEventListener("click",function(){
     window.location.href = "principal.html";
 })
 
+
+
 document.getElementById("actividades_siguiente").addEventListener("click",function(){
     window.location.href = "materiales_orden.html";
 })
