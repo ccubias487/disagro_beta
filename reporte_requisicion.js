@@ -5,6 +5,7 @@
 
 
           async function generarPDF() {
+            document.getElementById("loader-container").style.display = "flex";
             const { jsPDF } = window.jspdf;
             const pdf = new jsPDF();
             
@@ -154,11 +155,178 @@ function obtenerFechaFormato() {
 }
 
 const fechaFormateada = obtenerFechaFormato();
-console.log(fechaFormateada); // Ejemplo: 19052025152130
+console.log(fechaFormateada); 
 
 
              
             pdf.save("REQUISICION_"+localStorage.getItem("iniciar_orden")+fechaFormateada+".pdf");
+                  //window.location.href = "principal.html"
+                   document.getElementById("loader-container").style.display = "none"; 
+          }
+          
+          
+      
+async function generarPDF2() {
+document.getElementById("loader-container").style.display = "flex";
+
+            const { jsPDF } = window.jspdf;
+            const pdf = new jsPDF();
+            
+            
+            const margen = 15;
+            const anchoPagina = pdf.internal.pageSize.getWidth();
+            const alturaPagina = pdf.internal.pageSize.getHeight();
+            
+            function hayEspacioDisponible(yActual, espacioNecesario) {
+              return yActual + espacioNecesario <= alturaPagina - 20;
+            }
+
+
+            var fecha = new Date();
+fecha = fecha.toLocaleDateString("es-MX",{ weekday:'long', day:'numeric', month:'long', year:'numeric' });
+
+            
+            const titulo = "REQUISICION PARA BODEGA SUMINISTROS ";
+            const descripcion = fecha;
+            const tecnico = "TECNICO: " + localStorage.getItem("nombre");
+            
+            // Logo
+            if (typeof logo !== "undefined" && logo.length > 0) {
+              pdf.addImage(logo, "PNG", 75, 1, (anchoPagina - 75) / 2, 50);
+            }
+            
+            // Título
+            pdf.setFontSize(20);
+            pdf.setFont("helvetica", "bold");
+            pdf.text(titulo, (anchoPagina - pdf.getTextWidth(titulo)) / 2, 50);
+            
+            // Descripción
+            pdf.setFontSize(12);
+            const textoDividido = pdf.splitTextToSize(descripcion, anchoPagina - margen * 2);
+            const altoDescripcion = textoDividido.length * 5;
+            textoDividido.forEach((linea, index) => {
+              pdf.text(linea, (anchoPagina - pdf.getTextWidth(linea)) / 2, 60 + index * 5);
+            });
+            
+            // Técnico
+            const yTabla = 55 + altoDescripcion;
+
+            
+            // Tabla
+            data =[]
+
+            materiales_req= JSON.parse(localStorage.getItem("agregar_material"))
+            for(i=0; i<=materiales_req.length-1; i++ ){
+
+              data.push([ 
+        materiales_req[i].CANTIDAD,
+        materiales_req[i].DESCRIPCION,
+        localStorage.getItem("usoen") ,
+        materiales_req[i].SAP 
+    ]);
+
+    console.log(data)
+
+            }
+
+            const headers = [["CANT", "DESCRIPCION", "PARA USO EN", "DOC.MAT.SAP"]];
+            //const data = JSON.parse(localStorage.getItem("agregar_material"));
+            pdf.autoTable({
+              startY: yTabla + 10,
+              head: headers,
+              body: data,
+              theme: 'grid',
+              styles: {
+                halign: 'center',
+                fontSize: 10
+              },
+              headStyles: {
+                fillColor: [58, 220, 90],
+                textColor: 20,
+                fontStyle: 'bold'
+              },
+            });
+            
+            let yActual = pdf.lastAutoTable.finalY + 10;
+            const tiempo_reportado = "Tiempo estimado: " ;
+            const tiempo_orden = "Tiempo de orden: " ;
+            const observacion_local = "observacion";
+            const observacion = "OBSERVACION: " + observacion_local;
+            
+         
+            
+           // Firmas múltiples
+const firmas = [
+  {
+    nombre: localStorage.getItem("nombre"), // Firma 1: técnico
+    imagen: localStorage.getItem("firma_user")
+  },
+  {
+    nombre: "Autorizado", // Firma 2
+    imagen: localStorage.getItem("firma_user1") // Asegúrate de tener esta en localStorage
+  },
+  {
+    nombre: "Bodeguero", // Firma 3
+    imagen: localStorage.getItem("firma_user1") // También en localStorage
+  }
+];
+
+const anchoFirma = 50;
+const altoFirma = 40;
+const espacioFirma = (anchoPagina - 3 * anchoFirma) / 4; // Espaciado entre firmas
+let yFirma = yActual;
+
+if (!hayEspacioDisponible(yActual, altoFirma + 20)) {
+  pdf.addPage();
+  yFirma = 20;
+}
+
+firmas.forEach((firmaData, index) => {
+  const xFirma = espacioFirma + (espacioFirma + anchoFirma) * index;
+
+  if (firmaData.imagen) {
+    pdf.addImage(firmaData.imagen, "PNG", xFirma, yFirma, anchoFirma, altoFirma);
+  }
+
+  if (firmaData.nombre) {
+    pdf.setFontSize(10);
+    pdf.text(firmaData.nombre, xFirma + anchoFirma / 2, yFirma + altoFirma + 10, { align: 'center' });
+  }
+});
+
+
+
+
+           
+
+            
+yActual = yFirma + altoFirma + 30;
+
+
+
+function obtenerFechaFormato() {
+  const ahora = new Date();
+
+  const dia = String(ahora.getDate()).padStart(2, '0');
+  const mes = String(ahora.getMonth() + 1).padStart(2, '0'); // Meses van de 0 a 11
+  const año = ahora.getFullYear();
+  const horas = String(ahora.getHours()).padStart(2, '0');
+  const minutos = String(ahora.getMinutes()).padStart(2, '0');
+  const segundos = String(ahora.getSeconds()).padStart(2, '0');
+
+  return `${dia}${mes}${año}${horas}${minutos}${segundos}`;
+}
+
+const fechaFormateada = obtenerFechaFormato();
+console.log(fechaFormateada); 
+
+
+             
+            pdf.save("REQUISICION_"+localStorage.getItem("cod_empleado")+fechaFormateada+".pdf");
+           // localStorage.removeItem("agregar_material")
+           localStorage.setItem("agregar_materia", "")
+           document.getElementById("loader-container").style.display = "none"; 
+            //location.reload()
                   //window.location.href = "principal.html"
           }
           

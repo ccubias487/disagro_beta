@@ -1,80 +1,69 @@
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" initial-scale=1, maximum-scale=1  user-scalable=no  />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+    <link href="requisiciones.css" rel="stylesheet" type="text/css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-LJ800MZ8V1");
+  </script>
+
   <body>
-
-
-
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <span id="closeBtn" class="close">&times;</span>
-        <h1>AGREGAR</h2>
-        <h1 id="producto">PRODUCTO</h1>
-        <input type="number" class="input3" name="cantidad" id="cantidad_insumo">
-        <div class="botones_modal">
-        <button class="boton" id="boton_agregar">Agregar</button>
-        <button class="boton" id="boton_cancelar">Cancelar</button>
-      </div>
-      </div>
-    </div>
-    
     <section class="page-content">
       <section class="grid">
         <article id="contenido_tabla" class="articulo">
-          <div id="encabezado_notificaciones_ordenes">
-            <div class="logo_ordenes"></div>
-            <form class="form-wrapper cf">
+          <div id="encabezado_notificaciones">
+            <div id="logo"></div>
+          </div>
+
+          <div id="mensaje">
+
+          </div>
+          <div id="contenido">
+            <a class="titulo_input" id="titulo_input_req">PARA USO EN</a>
+            <input type="text" class="input3" name="user" id="user" />
+
+            <button class="boton22" id="boton_agregar">Agregar</button>
+          </div>
+
+          <div id="tabla">
+            <table class="tabla_notificacions" id="tabla_requisiciones"></table>
+          </div>
+
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span id="closeBtn" class="close">&times;</span>
+              <h3 id="agregar_texto">MODIFICAR</h3>
+              <h1 id="producto">PRODUCTO</h1>
+              <h1 id="existencia">EXISTENCIA: </h1>
               <input
-                type="text"
-                id="Buscar_string"
-                placeholder="Buscar por codigo..."
-                required
+                type="number"
+                class="input33"
+                name="cantidad"
+                id="cantidad_insumo"
               />
-              <button type="button" id="boton_buscar">Buscar</button>
-            </form>
-            <div class="switch">
-              <input type="checkbox" id="mode" checked="">
-              <label for="mode">
-                <span></span>
-                <span id="label_buscar">CODIGO</span>
-              </label>
+              <div class="botones_modal">
+                <button class="boton" id="boton_modificar">Modificar</button>
+                <button class="boton" id="boton_eliminar">Eliminar</button>
+                <button class="boton" id="boton_cancelar">Cancelar</button>
+              </div>
             </div>
           </div>
 
-          <div
-            class="caja_resumen_actividades"
-            id="actividades_asignadas"
-          ></div>
-          <div class="mascota" id="no_encontrado"></div>
-          <div class="mascota" id="no_encontrado_texto"></div>
-          <div>
-            <div class="botones_vertical">
-    
-            </div>
-            <style>
-              #boton_siguiente {
-                margin-top: 30px;
-                margin-bottom: 200px;
-                border-radius: 15px;
-                width: 275px;
-                background: rgb(102, 202, 92);
-                color: white;
-                border: 2px solid rgb(102, 202, 92);
-                height: 80px;
-                font-size: xx-large;
-                font-weight: bold;
-              }
-              #boton_agregar, #boton_cancelar {
-                margin-top: 30px;
-              }
-              #titulo_logo {
-                text-align: center;
-              }
-            </style>
-          </div>
-
+          <button class="boton2" id="boton_enviar">Enviar a autorizacion</button>
           <div class="menu_app">
             <div class="menu_app_content">
               <div class="icono_menu_app" id="inicio">
@@ -192,7 +181,7 @@
                 <div class="titulo_menu">Inicio</div>
               </div>
 
-              <div class="icono_menu_app" id="horas">
+              <div class="icono_menu_app">
                 <svg
                   width="181"
                   height="121"
@@ -262,7 +251,7 @@
                 <div class="titulo_menu">Horas</div>
               </div>
 
-              <div class="icono_menu_app">
+              <div class="icono_menu_app" id="cuenta">
                 <svg
                   width="140"
                   height="121"
@@ -332,7 +321,8 @@
         </article>
       </section>
       <footer class="page-footer"></footer>
-      <script src="bodega_materiales.js"></script>
+      <script src="requisiciones.js"></script>
+      <script src="reporte_requisicion.js"></script>
     </section>
   </body>
 </html>

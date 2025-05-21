@@ -31,7 +31,7 @@ function esperando() {
   document.getElementById("no_encontrado_texto").style.fontWeight = "bold"
   document.getElementById("no_encontrado_texto").style.color = "White"
   document.getElementById("no_encontrado_texto").style.textAlign = "center"
-  document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
+  //document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
 }
 
 function sin_datos(contador) {
@@ -52,7 +52,7 @@ function sin_datos(contador) {
     document.getElementById("no_encontrado_texto").style.fontSize = "xx-large"
     document.getElementById("no_encontrado_texto").style.fontWeight = "bold"
     document.getElementById("no_encontrado_texto").style.color = "White"
-    document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
+    //document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
   }
 }
 
@@ -82,6 +82,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
 
     //console.log(jsondata)
     const container = document.getElementById('actividades_asignadas');
+    document.getElementById("actividades_asignadas").style.marginBottom="50px"
     let contador = 1
 
     function ventana_flotante(k) {
@@ -94,6 +95,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       const closeBtn = document.getElementById("closeBtn");
       modal.style.display = "flex";
       document.getElementById("producto").innerHTML = jsondata[k].DESCRIPCION
+      document.getElementById("cantidad_insumo").focus()
       closeBtn.addEventListener("click", function () {
         modal.style.display = "none";
       });

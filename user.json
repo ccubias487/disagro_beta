@@ -1,58 +1,177 @@
 [
     {
+        "USUARIO": "200668",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "ALEX WILLIAM VALENCIA PIMENTEL",
+        "NICK": "ALEX PIMENTEL"
+    },
+    {
+        "USUARIO": "200826",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "ANTONIO ADOLFO BLANCO RAUDA",
+        "NICK": "ANTONIO RAUDA"
+    },
+    {
+        "USUARIO": "200998",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "BALMORE EDUARDO BARRIENTOS MARTINEZ",
+        "NICK": "BALMORE MARTINEZ"
+    },
+    {
+        "USUARIO": "200176",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "CARLOS ALBERTO CHAVEZ GOMEZ",
+        "NICK": "CARLOS GOMEZ"
+    },
+    {
         "USUARIO": "200850",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
         "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
-        "NICK": "CARLOS CUBIAS"
+        "NICK": "CARLOS ORTIZ"
     },
     {
-        "USUARIO": "200826",
-        "CONTRASEÑA": "DISAGRO123",
+        "USUARIO": "200472",
+        "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
-        "NOMBRE": "ANTONIO ADOLFO BLANCO RAUDA",
-        "NICK": "ANTONIO BLANCO"
+        "NOMBRE": "CARLOS OTTONIEL MONROY RIVAS",
+        "NICK": "CARLOS RIVAS"
     },
     {
-        "USUARIO": "200058",
-        "CONTRASEÑA": "DISAGRO456",
+        "USUARIO": "201111",
+        "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
-        "NOMBRE": "JOSUE MARCOS FRANCO ESBOBAR",
-        "NICK": "JOSUE FRANCO"
+        "NOMBRE": "ELY BENEDICTO TRIGUEROS CONCE",
+        "NICK": "ELY CONCE"
     },
     {
         "USUARIO": "201163",
-        "CONTRASEÑA": "DISAGRO789",
+        "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
         "NOMBRE": "ESTHER ABIGAIL MENJIVAR MIRON",
-        "NICK": "ESTHER MENJIVAR"
+        "NICK": "ESTHER MIRON"
     },
     {
-        "USUARIO": "200999",
+        "USUARIO": "200984",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
-        "NOMBRE": "VILMO SANTINO RAMAZZINI LOPEZ",
-        "NICK": "VILMO RAMAZZINI"
+        "NOMBRE": "FRANCISCO ARNULFO FLORES POZADA",
+        "NICK": "FRANCISCO POZADA"
     },
-     {
-        "USUARIO": "200993",
+    {
+        "USUARIO": "200216",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
-        "NOMBRE": "RUBEN VELASQUEZ",
-        "NICK": "RUBEN VELASQUEZ"
+        "NOMBRE": "JAMILTON JOSUE RAFAILAN LOPEZ",
+        "NICK": "JAMILTON LOPEZ"
     },
-     {
+    {
+        "USUARIO": "201148",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "JONATHAN ISAIAS PORTILLO HERNANDEZ",
+        "NICK": "JONATHAN HERNANDEZ"
+    },
+    {
+        "USUARIO": "200654",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "JOSE ALBERTO RIVAS HERNANDEZ",
+        "NICK": "JOSE HERNANDEZ"
+    },
+    {
+        "USUARIO": "200244",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "JOSUE DANIEL ORTIZ MELGAR",
+        "NICK": "JOSUE MELGAR"
+    },
+    {
+        "USUARIO": "200058",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "JOSUE MARCOS FRANCO ESCOBAR",
+        "NICK": "JOSUE ESCOBAR"
+    },
+    {
+        "USUARIO": "200059",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "JUAN JOSE ORELLANA LAZO",
+        "NICK": "JUAN LAZO"
+    },
+    {
+        "USUARIO": "201056",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "MARLON ERNESTO CORADO CRUZ",
+        "NICK": "MARLON CRUZ"
+    },
+    {
         "USUARIO": "200903",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
         "NOMBRE": "MELVIN STANLEY DIAZ AVALOS",
-        "NICK": "MELVIN DIAZ"
+        "NICK": "MELVIN AVALOS"
     },
-     {
-        "USUARIO": "200998",
+    {
+        "USUARIO": "200147",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "USER",
-        "NOMBRE": "BALMORE EDUARDO BARRIENTOS",
-        "NICK": "BALMORE BARRIENTOS"
+        "NOMBRE": "MIGUEL ALEXANDER RIVERA GUERRERO",
+        "NICK": "MIGUEL GUERRERO"
+    },
+    {
+        "USUARIO": "201041",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "OSCAR ARMANDO CARCAMO",
+        "NICK": "OSCAR CARCAMO"
+    },
+    {
+        "USUARIO": "200655",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "OSCAR DANIEL SANTOS ARANA",
+        "NICK": "OSCAR ARANA"
+    },
+    {
+        "USUARIO": "200055",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "PEDRO ALBERTO SALAZAR",
+        "NICK": "PEDRO SALAZAR"
+    },
+    {
+        "USUARIO": "201130",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "RAFAEL PATRIZ MATA",
+        "NICK": "RAFAEL MATA"
+    },
+    {
+        "USUARIO": "200239",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "VICTOR MANUEL JUAREZ ALFARO",
+        "NICK": "VICTOR ALFARO"
+    },
+    {
+        "USUARIO": "200154",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "WALTER NEFTALY GARCIA PEREZ",
+        "NICK": "WALTER PEREZ"
+    },
+    {
+        "USUARIO": "201053",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "WILFREDO ELENILSON HERNANDEZ MORAN",
+        "NICK": "WILFREDO MORAN"
     }
 ]
