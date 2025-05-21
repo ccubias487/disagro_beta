@@ -54,5 +54,12 @@
         "TIPO": "USER",
         "NOMBRE": "BALMORE EDUARDO BARRIENTOS",
         "NICK": "BALMORE BARRIENTOS"
+    },
+     {
+        "USUARIO": "200668",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "ALEX WILLIAM VALENCIA PIMENTEL",
+        "NICK": "ALEX PIMENTEL"
     }
 ]
