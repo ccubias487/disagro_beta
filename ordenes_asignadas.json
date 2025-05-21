@@ -1721,19 +1721,28 @@
         "POSICION": "10",
         "ACTIVIDAD": "INST LAMPARA DE EMERGENCIA EN PLANTA",
         "COD": "200998",
+        "NOMBRE": "",
         "TIEMPO": "0",
+        "EQUIPO_COD": "undefined",
+        "EQUIPO": "undefined",
         "UBICACION": "COMPLEJO A-1",
-        "CENTRO": 3000000022,
-        "UNIDAD_TRABAJO": "H"
+        "CENTRO": "3000000022",
+        "HOJA": "undefined",
+        "UNIDAD_TRABAJO": "undefined"
     },
     {
         "ORDEN": "3002010451",
         "DESCRIPCION": "INSTALACION DE LAMPARA DE EMERGENCIA",
         "POSICION": "20",
         "ACTIVIDAD": "INST LAMPARA DE EMERGENCIA FACTURACION",
+        "COD": "undefined",
+        "NOMBRE": "",
         "TIEMPO": "1440",
+        "EQUIPO_COD": "undefined",
+        "EQUIPO": "undefined",
         "UBICACION": "COMPLEJO A-1",
-        "CENTRO": 3000000022,
+        "CENTRO": "3000000022",
+        "HOJA": "undefined",
         "UNIDAD_TRABAJO": "H"
     },
     {
@@ -1741,9 +1750,14 @@
         "DESCRIPCION": "INSTALACION DE LAMPARA DE EMERGENCIA",
         "POSICION": "30",
         "ACTIVIDAD": "INST LAMPARA DE EMERGENCIA BASCULA",
+        "COD": "undefined",
+        "NOMBRE": "",
         "TIEMPO": "1440",
+        "EQUIPO_COD": "undefined",
+        "EQUIPO": "undefined",
         "UBICACION": "COMPLEJO A-1",
-        "CENTRO": 3000000022,
+        "CENTRO": "3000000022",
+        "HOJA": "undefined",
         "UNIDAD_TRABAJO": "H"
     },
     {
@@ -1751,9 +1765,14 @@
         "DESCRIPCION": "INSTALACION DE LAMPARA DE EMERGENCIA",
         "POSICION": "40",
         "ACTIVIDAD": "INST LAMPARA DE EMERGENCIA SALA REUNIONE",
+        "COD": "undefined",
+        "NOMBRE": "",
         "TIEMPO": "1440",
+        "EQUIPO_COD": "undefined",
+        "EQUIPO": "undefined",
         "UBICACION": "COMPLEJO A-1",
-        "CENTRO": 3000000022,
+        "CENTRO": "3000000022",
+        "HOJA": "undefined",
         "UNIDAD_TRABAJO": "H"
     }
 ]
