@@ -39,7 +39,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
                 const div = document.createElement('div');
                 div.className = 'cuadro_resumen_actividades';
                 div.innerHTML='<div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">'+contador+'.   '+jsondata[i].ACTIVIDAD+'</div></div>'
-
+console.log("aquie")
                 container.appendChild(div)
                 contador=contador+1
      
