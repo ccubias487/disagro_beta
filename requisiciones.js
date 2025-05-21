@@ -123,7 +123,7 @@ function borrado() {
 
 try {
   if (materiales.length == 0) {
-    document.getElementById("boton_enviar").style.display = "none";
+    document.getElementById("boton_enviar").style.display = "inline_block";
   } else {
     document.getElementById("boton_enviar").style.display = "inline_block";
   }
