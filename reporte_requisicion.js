@@ -157,11 +157,11 @@ function obtenerFechaFormato() {
 const fechaFormateada = obtenerFechaFormato();
 console.log(fechaFormateada); 
 
-
+ document.getElementById("loader-container").style.display = "none"; 
              
             pdf.save("REQUISICION_"+localStorage.getItem("iniciar_orden")+fechaFormateada+".pdf");
-                  //window.location.href = "principal.html"
-                   document.getElementById("loader-container").style.display = "none"; 
+            window.location.href = "ejecutando.html"
+                  
           }
           
           

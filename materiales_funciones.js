@@ -95,7 +95,7 @@ if (localStorage.getItem("agregar_material") !== null) {
 
   console.log("DEBUG")
 document.getElementById("loader-container").style.display = "flex";
- generarPDF();
+ await generarPDF();
 //document.getElementById("loader-container").style.display = "none";
 
       const nuevoDato = {
@@ -161,7 +161,7 @@ document.getElementById("loader-container").style.display = "flex";
         // window.location.href = "autorizacion.html";
 
         localStorage.removeItem("agregar_material");
-       // window.location.href = "ejecutando.html";
+        window.location.href = "ejecutando.html";
       } else {
         datosJSON = JSON.parse(material);
         console.log(datosJSON);
