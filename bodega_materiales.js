@@ -95,6 +95,7 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       const closeBtn = document.getElementById("closeBtn");
       modal.style.display = "flex";
       document.getElementById("producto").innerHTML = jsondata[k].DESCRIPCION
+      document.getElementById("cantidad_insumo").focus()
       closeBtn.addEventListener("click", function () {
         modal.style.display = "none";
       });

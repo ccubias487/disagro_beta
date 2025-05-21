@@ -68,6 +68,7 @@ function calcularDiferenciaTiempo(fecha1, fecha2) {
 document
   .getElementById("boton_siguiente")
   .addEventListener("click", async function () {
+    document.getElementById("loader-container").style.display = "flex";
     await actualizar_pedido();
     let materiales_utilizados = [];
 
@@ -92,7 +93,10 @@ if (localStorage.getItem("agregar_material") !== null) {
   // Guardar de nuevo en localStorage
   localStorage.setItem("materiales_utilizados", JSON.stringify(materiales_utilizados));
 
-await generarPDF();
+  console.log("DEBUG")
+document.getElementById("loader-container").style.display = "flex";
+ generarPDF();
+//document.getElementById("loader-container").style.display = "none";
 
       const nuevoDato = {
         ORDEN: orden,
@@ -132,6 +136,7 @@ await generarPDF();
           localStorage.setItem("validadnod", existe);
           if (existe) {
             localStorage.removeItem("agregar_material");
+            //aca
             window.location.href = "ejecutando.html";
           } else {
             const nuevoDato = {
@@ -167,6 +172,7 @@ await generarPDF();
         //localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
         // window.location.href = "autorizacion.html";
 
+        //aca
         window.location.href = "ejecutando.html";
       }
         localStorage.removeItem("agregar_material")
@@ -196,6 +202,7 @@ await generarPDF();
         );
 
         if (existe) {
+          //aca
           window.location.href = "ejecutando.html";
         } else {
           const nuevoDato = {
@@ -214,6 +221,7 @@ await generarPDF();
           localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
         }
       }
+      //aca
       window.location.href = "ejecutando.html";
     }
   });

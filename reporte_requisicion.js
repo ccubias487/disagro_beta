@@ -5,6 +5,7 @@
 
 
           async function generarPDF() {
+            document.getElementById("loader-container").style.display = "flex";
             const { jsPDF } = window.jspdf;
             const pdf = new jsPDF();
             
@@ -160,11 +161,14 @@ console.log(fechaFormateada);
              
             pdf.save("REQUISICION_"+localStorage.getItem("iniciar_orden")+fechaFormateada+".pdf");
                   //window.location.href = "principal.html"
+                   document.getElementById("loader-container").style.display = "none"; 
           }
           
           
       
 async function generarPDF2() {
+document.getElementById("loader-container").style.display = "flex";
+
             const { jsPDF } = window.jspdf;
             const pdf = new jsPDF();
             
@@ -319,6 +323,10 @@ console.log(fechaFormateada);
 
              
             pdf.save("REQUISICION_"+localStorage.getItem("cod_empleado")+fechaFormateada+".pdf");
+           // localStorage.removeItem("agregar_material")
+           localStorage.setItem("agregar_materia", "")
+           document.getElementById("loader-container").style.display = "none"; 
+            //location.reload()
                   //window.location.href = "principal.html"
           }
           

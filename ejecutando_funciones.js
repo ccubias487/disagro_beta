@@ -40,24 +40,7 @@ if ((ejecutando_orden) == null) {
 
 
 document.getElementById("boton_finalizar").addEventListener("click", function(){
-  let ejecutando=localStorage.getItem("realizadas")
-  if (ejecutando==null){
-    localStorage.setItem("realizadas","1")
-  }else{
-  
-  localStorage.setItem("realizadas",Number(ejecutando)+1)
-  }
-
-  datosJSON=JSON.parse(localStorage.getItem("orden_ejecucion"))
-  datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
-  localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON))
-  ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
-  localStorage.setItem("proceso", ejecutando_orden.length)
-
-  autorizar=JSON.parse(localStorage.getItem("autorizaciones"))
-  autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
-  //autorizar = JSON.parse(localStorage.getItem("autorizaciones"))
-  localStorage.setItem("autorizaciones", JSON.stringify(autorizar))
+ 
 
   window.location.href = "reporte.html";
 })
@@ -155,10 +138,30 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       return parseInt(a.PRIORIDAD) - parseInt(b.PRIORIDAD);
     });
     
+
+
+    function minutosAFormatoHora(minutosTotales) {
+    const totalSegundos = Math.floor(minutosTotales * 60);
+    const horas = Math.floor(totalSegundos / 3600);
+    const minutos = Math.floor((totalSegundos % 3600) / 60);
+    const segundos = totalSegundos % 60;
+
+    // Agrega ceros delante si es necesario
+    const formatoHora = String(horas).padStart(2, '0');
+    const formatoMinuto = String(minutos).padStart(2, '0');
+    const formatoSegundo = String(segundos).padStart(2, '0');
+
+    return `${formatoHora}:${formatoMinuto}:${formatoSegundo}`;
+}
+
+
+
     //console.log(jsondata)
     const container = document.getElementById('actividades_asignadas');
     let contador = 1
     let datosJSON = [];
+    let equipo
+    let ubicacion
    
     datosJSON = (JSON.parse(localStorage.getItem("autorizaciones")))
     datosJSON = datosJSON.sort((a, b) => {
@@ -171,8 +174,8 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
     for (let j in jsondata) {
 
   
-      if (jsondata[j].HOJARUTA== localStorage.getItem("iniciar_orden_hr")) {
-        if (jsondata[j].ORDEN== localStorage.getItem("iniciar_orden")) {
+      if (String(jsondata[j].HOJARUTA)== localStorage.getItem("iniciar_orden_hr")) {
+        if (String(jsondata[j].ORDEN)== localStorage.getItem("iniciar_orden")) {
       const div = document.createElement('div');
       div.id = "insumos" + j
       
@@ -180,8 +183,24 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       tiempo_estimado= tiempo_estimado+ Number(jsondata[j].TIEMPO)
       localStorage.setItem("tiempo_estimado", tiempo_estimado)
 
+      tiempo_formato= minutosAFormatoHora(jsondata[j].TIEMPO)
+
+      if(String(jsondata[j].EQUIPO) == "undefined"){
+          equipo="EQUIPO NO ASIGNADO"
+      }else{
+        equipo= jsondata[j].EQUIPO
+      }
+
+       if(String(jsondata[j].UBICACION) == "undefined"){
+          ubicacion="UBICACION NO ASIGNADA"
+      }else{
+        ubicacion= jsondata[j].UBICACION
+      }
+      
+      localStorage.setItem("equipo", equipo)
+       localStorage.setItem("ubicacion", ubicacion)
       div.className = 'cuadro_resumen_insumos';
-      div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes"><a class="titulo_parrafo">ACTIVIDAD </a> : &nbsp &nbsp <a class="descripcion_parrafo">' + jsondata[j].ACTIVIDAD + '</a></div><div class="titulo_resumen_ordenes"><a class="titulo_parrafo">TIEMPO ESTIMADO</a>: &nbsp &nbsp<a class="descripcion_parrafo">' + jsondata[j].TIEMPO + '</a></div></div></div>'
+      div.innerHTML = '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes"><a class="titulo_parrafo">ACTIVIDAD </a> : &nbsp &nbsp <a class="descripcion_parrafo">' + jsondata[j].ACTIVIDAD + '</a></div><div class="titulo_resumen_ordenes"><a class="titulo_parrafo">TIEMPO ESTIMADO</a>: &nbsp &nbsp<a class="descripcion_parrafo">' + tiempo_formato + ' </a></div></div></div>'
  
      
       div.onclick = function () { hora(j) }
@@ -214,6 +233,6 @@ fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0
       document.getElementById("no_encontrado_texto").style.fontSize = "xx-large"
       document.getElementById("no_encontrado_texto").style.fontWeight = "bold"
       document.getElementById("no_encontrado_texto").style.color = "White"
-      document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
+      //document.getElementById("boton_siguiente").innerHTML = "Iniciar orden"
     }
   })

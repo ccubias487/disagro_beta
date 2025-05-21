@@ -2,13 +2,31 @@ document.getElementById("boton_agregar").addEventListener("click", function () {
   window.location.href = "existencias.html";
 });
 
+window.addEventListener("pageshow", (event) => {
+  if (event.persisted) {
+    // La página viene desde la caché, forzar recarga
+    window.location.reload();
+  }
+});
+
+
+
 document.getElementById("inicio").addEventListener("click", function () {
   window.location.href = "principal.html";
 });
 materiales = JSON.parse(localStorage.getItem("agregar_material"));
-//document.getElementById("boton_enviar").style.display = "none";
+
+console.log(materiales)
+try{
+if ((materiales == null)) {
+    document.getElementById("boton_enviar").style.display = "none";
+  } }catch {
+    document.getElementById("boton_enviar").style.display = "inline_block";
+  }
+
+
 document.getElementById("tabla_requisiciones").innerHTML = "";
-console.log(materiales);
+
 
 function ventana_flotante() {
   let fila = this.rowIndex - 1;
@@ -123,7 +141,7 @@ function borrado() {
 
 try {
   if (materiales.length == 0) {
-    document.getElementById("boton_enviar").style.display = "inline_block";
+    document.getElementById("boton_enviar").style.display = "none";
   } else {
     document.getElementById("boton_enviar").style.display = "inline_block";
   }

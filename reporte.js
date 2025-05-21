@@ -112,12 +112,37 @@ function agregarFoto(dataURL) {
 }
 
 async function generarPDF() {
+  document.getElementById("loader-container").style.display = "flex";
   const { jsPDF } = window.jspdf;
   const pdf = new jsPDF();
 
   const margen = 15;
   const anchoPagina = pdf.internal.pageSize.getWidth();
   const alturaPagina = pdf.internal.pageSize.getHeight();
+
+
+  //***            DATOS TRASLADADOS                                   */
+ let ejecutando=localStorage.getItem("realizadas")
+  if (ejecutando==null){
+    localStorage.setItem("realizadas","1")
+  }else{
+  
+  localStorage.setItem("realizadas",Number(ejecutando)+1)
+  }
+
+  datosJSON=JSON.parse(localStorage.getItem("orden_ejecucion"))
+  datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
+  localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON))
+  ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
+  localStorage.setItem("proceso", ejecutando_orden.length)
+
+  autorizar=JSON.parse(localStorage.getItem("autorizaciones"))
+  autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
+  //autorizar = JSON.parse(localStorage.getItem("autorizaciones"))
+  localStorage.setItem("autorizaciones", JSON.stringify(autorizar))
+
+/*   */
+
 
   function hayEspacioDisponible(yActual, espacioNecesario) {
     return yActual + espacioNecesario <= alturaPagina - 20;
@@ -153,15 +178,56 @@ async function generarPDF() {
   });
 
   // Técnico
-  const yTabla = 65 + altoDescripcion;
-  pdf.setFont("helvetica", "normal");
-  pdf.text(tecnico, margen, yTabla);
+  // TECNICO
 
+let yTabla = 70
+const tecnicoTexto = "TECNICO:";
+const tecnicoValor = localStorage.getItem("nombre");
+
+pdf.setFont("helvetica", "bold");
+pdf.text(tecnicoTexto, margen, yTabla);
+
+let anchoTexto = pdf.getTextWidth(tecnicoTexto) + 2;
+
+pdf.setFont("helvetica", "normal");
+pdf.text(tecnicoValor, margen + anchoTexto, yTabla);
+
+yTabla += 8;
+
+// EQUIPO
+const equipoTexto = "EQUIPO:";
+const equipoValor = localStorage.getItem("equipo");
+
+pdf.setFont("helvetica", "bold");
+pdf.text(equipoTexto, margen, yTabla);
+
+anchoTexto = pdf.getTextWidth(equipoTexto) + 2;
+
+pdf.setFont("helvetica", "normal");
+pdf.text(equipoValor, margen + anchoTexto, yTabla);
+
+yTabla += 8;
+
+// UBICACION
+const ubicacionTexto = "UBICACION:";
+const ubicacionValor = localStorage.getItem("ubicacion");
+
+pdf.setFont("helvetica", "bold");
+pdf.text(ubicacionTexto, margen, yTabla);
+
+anchoTexto = pdf.getTextWidth(ubicacionTexto) + 2;
+
+pdf.setFont("helvetica", "normal");
+pdf.text(ubicacionValor, margen + anchoTexto, yTabla);
+
+yTabla += 5;
+
+ // yTabla = yTabla + 5;
   // Tabla
   const headers = [["Item", "Actividad", "Tiempo Pro"]];
   const data = JSON.parse(localStorage.getItem("data_actividad"));
   pdf.autoTable({
-    startY: yTabla + 10,
+    startY: yTabla,
     head: headers,
     body: data,
     theme: "grid",
@@ -348,9 +414,23 @@ async function generarPDF() {
   await cerrar_orden();
   localStorage.removeItem("materiales_utilizados");
 
-  pdf.save(
-    "ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf"
-  );
+  pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
+
+// 1. Generar el blob del PDF
+/* const pdfBlob = pdf.output('blob');
+
+const blobUrl = URL.createObjectURL(new Blob([pdfBlob], { type: 'application/pdf' }));
+window.open(blobUrl, '_blank');
+const link = document.createElement('a');
+link.href = blobUrl;
+link.download = "ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf";
+document.body.appendChild(link);
+link.click();
+document.body.removeChild(link); // Limpieza */
+// 1. FIN Generar el blob del PDF
+
+
+  document.getElementById("loader-container").style.display = "none"; 
 
   window.location.href = "principal.html";
 }
