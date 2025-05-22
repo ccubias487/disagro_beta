@@ -95,7 +95,7 @@ document
 
       console.log("DEBUG")
       document.getElementById("loader-container").style.display = "flex";
-      //await generarPDF();
+      await generarPDF();
       //document.getElementById("loader-container").style.display = "none";
 
       const nuevoDato = {
@@ -137,7 +137,10 @@ document
           if (existe) {
             localStorage.removeItem("agregar_material");
             //aca
-            window.location.href = "ejecutando.html";
+             //window.location.href = "ejecutando.html";
+              setTimeout(() => {
+         window.location.href = "ejecutando.html";
+             }, 1000); 
           } else {
             const nuevoDato = {
               ORDEN: orden,
@@ -161,7 +164,10 @@ document
         // window.location.href = "autorizacion.html";
 
         localStorage.removeItem("agregar_material");
-        window.location.href = "ejecutando.html";
+        //await generarPDF()
+        setTimeout(() => {
+          window.location.href = "ejecutando.html";
+        }, 1000);
       } else {
         datosJSON = JSON.parse(material);
         console.log(datosJSON);
@@ -172,15 +178,16 @@ document
         //localStorage.setItem("autorizaciones",JSON.stringify(datosJSON))
         // window.location.href = "autorizacion.html";
 
-        //aca
+        //aca Redireccion requisiciones
         window.location.href = "ejecutando.html";
+        //await generarPDF()
+        setTimeout(() => {
+          window.location.href = "ejecutando.html";
+        }, 1000);
       }
       localStorage.removeItem("agregar_material")
-      await generarPDF()
-     setTimeout(() => {
-  window.location.href = "ejecutando.html";
-}, 1000);
-      
+    
+
     } else {
       const fechayhora = fecha_actual();
       let datosJSON = JSON.parse(localStorage.getItem("autorizaciones"));
@@ -208,7 +215,10 @@ document
 
         if (existe) {
           //aca
+          //window.location.href = "ejecutando.html";
+          setTimeout(() => {
           window.location.href = "ejecutando.html";
+        }, 1000);
         } else {
           const nuevoDato = {
             ORDEN: orden,
@@ -227,7 +237,10 @@ document
         }
       }
       //aca
-      window.location.href = "ejecutando.html";
+       //window.location.href = "ejecutando.html";
+       setTimeout(() => {
+          window.location.href = "ejecutando.html";
+        }, 1000);
     }
   });
 
