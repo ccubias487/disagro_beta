@@ -351,7 +351,7 @@ async function generarPDF() {
   await cerrar_orden();
   localStorage.removeItem("materiales_utilizados");
 
-//pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
+pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
 
 
 // 1. Generar el blob del PDF
