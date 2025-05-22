@@ -377,8 +377,8 @@ document.getElementById("reporte").addEventListener("click", async function(){
   await generarPDF()
 
   setTimeout(() => {
-          //window.location.href = "principal.html";
-          console.log("redireccionado")
+          window.location.href = "principal.html";
+          //console.log("redireccionado")
         }, 1000);
   
 
