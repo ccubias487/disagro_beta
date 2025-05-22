@@ -175,9 +175,10 @@ document
         //aca
         window.location.href = "ejecutando.html";
       }
+      localStorage.removeItem("agregar_material")
       await generarPDF()
       window.location.href = "ejecutando.html";
-      localStorage.removeItem("agregar_material")
+      
     } else {
       const fechayhora = fecha_actual();
       let datosJSON = JSON.parse(localStorage.getItem("autorizaciones"));
