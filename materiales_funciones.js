@@ -177,7 +177,9 @@ document
       }
       localStorage.removeItem("agregar_material")
       await generarPDF()
-      window.location.href = "ejecutando.html";
+     setTimeout(() => {
+  window.location.href = "ejecutando.html";
+}, 1000);
       
     } else {
       const fechayhora = fecha_actual();
