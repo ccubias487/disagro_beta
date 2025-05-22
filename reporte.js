@@ -314,7 +314,7 @@ async function generarPDF() {
   let x = margen;
   let y = pdf.lastAutoTable ? pdf.lastAutoTable.finalY + 25 : yActual + 25;
 
-  const fotos = JSON.parse(localStorage.getItem("fotos")) || [];
+  //const fotos = JSON.parse(localStorage.getItem("fotos")) || [];
 
   if (fotos.length > 0) {
     pdf.addPage();
@@ -335,6 +335,7 @@ async function generarPDF() {
       y = 20;
     }
 
+    //console.log(imagenComprimida)
     pdf.setFontSize(10);
     pdf.text(`Foto ${i + 1}`, x, y - 5);
     pdf.addImage(imagenComprimida, "JPEG", x, y, imgAncho, imgAlto);
