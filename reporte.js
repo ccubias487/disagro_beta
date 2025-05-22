@@ -432,7 +432,7 @@ document.body.removeChild(link); // Limpieza */
 
   document.getElementById("loader-container").style.display = "none"; 
 
-  window.location.href = "principal.html";
+  //window.location.href = "principal.html";
 }
 
 
