@@ -379,7 +379,7 @@ document.getElementById("reporte").addEventListener("click", async function(){
   setTimeout(() => {
           window.location.href = "principal.html";
           //console.log("redireccionado")
-        }, 1000);
+        }, 3000);
   
 
 })
