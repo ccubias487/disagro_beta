@@ -72,31 +72,31 @@ document
     await actualizar_pedido();
     let materiales_utilizados = [];
 
-if (localStorage.getItem("agregar_material") !== null) {
-  
+    if (localStorage.getItem("agregar_material") !== null) {
 
-  // Obtener lo que ya está en localStorage
-  const guardados = localStorage.getItem("materiales_utilizados");
-  if (guardados) {
-    materiales_utilizados = JSON.parse(guardados); // ✅ Convertir a array real
-  }
 
-  const nuevos_materiales = JSON.parse(localStorage.getItem("agregar_material"));
+      // Obtener lo que ya está en localStorage
+      const guardados = localStorage.getItem("materiales_utilizados");
+      if (guardados) {
+        materiales_utilizados = JSON.parse(guardados); // ✅ Convertir a array real
+      }
 
-  // Asegurarse que ambos son arrays
-  if (Array.isArray(nuevos_materiales)) {
-    materiales_utilizados = materiales_utilizados.concat(nuevos_materiales);
-  } else {
-    materiales_utilizados.push(nuevos_materiales);
-  }
+      const nuevos_materiales = JSON.parse(localStorage.getItem("agregar_material"));
 
-  // Guardar de nuevo en localStorage
-  localStorage.setItem("materiales_utilizados", JSON.stringify(materiales_utilizados));
+      // Asegurarse que ambos son arrays
+      if (Array.isArray(nuevos_materiales)) {
+        materiales_utilizados = materiales_utilizados.concat(nuevos_materiales);
+      } else {
+        materiales_utilizados.push(nuevos_materiales);
+      }
 
-  console.log("DEBUG")
-document.getElementById("loader-container").style.display = "flex";
- await generarPDF();
-//document.getElementById("loader-container").style.display = "none";
+      // Guardar de nuevo en localStorage
+      localStorage.setItem("materiales_utilizados", JSON.stringify(materiales_utilizados));
+
+      console.log("DEBUG")
+      document.getElementById("loader-container").style.display = "flex";
+      //await generarPDF();
+      //document.getElementById("loader-container").style.display = "none";
 
       const nuevoDato = {
         ORDEN: orden,
@@ -175,7 +175,9 @@ document.getElementById("loader-container").style.display = "flex";
         //aca
         window.location.href = "ejecutando.html";
       }
-        localStorage.removeItem("agregar_material")
+      await generarPDF()
+      window.location.href = "ejecutando.html";
+      localStorage.removeItem("agregar_material")
     } else {
       const fechayhora = fecha_actual();
       let datosJSON = JSON.parse(localStorage.getItem("autorizaciones"));
@@ -237,91 +239,91 @@ fetch(
       return parseInt(a.PRIORIDAD) - parseInt(b.PRIORIDAD);
     });
 
-function ventana_flotante(k) {
-  let fila = this.rowIndex - 1;
-  console.log(fila);
-materiales = JSON.parse(localStorage.getItem("agregar_material"));
-  localStorage.setItem("ventana_flotante", fila);
-  //document.getElementById("cantidad_insumo").value=""
-  const modal = document.getElementById("myModal");
-  const closeBtn = document.getElementById("closeBtn");
-  modal.style.display = "flex";
-  document.getElementById("producto").innerHTML = materiales[k].DESCRIPCION;
-  document.getElementById("existencia").innerHTML =
-    "EXISTENCIA: " + materiales[k].EXISTENCIA;
-    document.getElementById("cantidad_insumo").focus()
-  closeBtn.addEventListener("click", function () {
-    modal.style.display = "none";
-  });
-
-  window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      modal.style.display = "none";
-    }
-  });
-
-  document
-    .getElementById("boton_cancelar")
-    .addEventListener("click", function () {
-      modal.style.display = "none";
-    });
-
-  document
-    .getElementById("boton_eliminar")
-    .addEventListener("click", function () {
+    function ventana_flotante(k) {
+      let fila = this.rowIndex - 1;
+      console.log(fila);
       materiales = JSON.parse(localStorage.getItem("agregar_material"));
-      console.log("borrando: ", k);
-
-      const ordenesFiltradas = materiales.filter(
-        (item) => item.SAP !== materiales[k].SAP
-      );
-
-      localStorage.setItem(
-        "agregar_material",
-        JSON.stringify(ordenesFiltradas)
-      );
-     // location.reload();
-    });
-
-  document
-    .getElementById("boton_modificar")
-    .addEventListener("click", function () {
-      //venta_flotante(localStorage.getItem("ventana_flotante"))
-      materiales = JSON.parse(localStorage.getItem("agregar_material"));
-      //k = localStorage.getItem("ventana_flotante");
-      let orden = localStorage.getItem("iniciar_orden");
-      let datosJSON = [];
-      let material = "";
+      localStorage.setItem("ventana_flotante", fila);
+      //document.getElementById("cantidad_insumo").value=""
       const modal = document.getElementById("myModal");
-      const nuevoDato = {
-        ORDEN: orden,
-        SAP: materiales[k].SAP,
-        DESCRIPCION: materiales[k].DESCRIPCION,
-        CANTIDAD: document.getElementById("cantidad_insumo").value,
-        EXISTENCIA: materiales[k].EXISTENCIA,
-        VALOR_TOTAL: materiales[k].VALOR_TOTAL,
-      };
-      //const nuevoDato = {  ORDEN: jsondata[k].ORDEN, SAP: jsondata[k].SAP, DESCRIPCION: jsondata[k].DESCRIPCION, CANTIDAD: jsondata[k].CANTIDAD, EXISTENCIA: jsondata[k].EXISTENCIA, VALOR_TOTAL: jsondata[k].VALOR_TOTAL };
-
-      material = localStorage.getItem("agregar_material");
-
-      if (localStorage.getItem("agregar_material") == null) {
-        datosJSON.push(nuevoDato);
-        console.log("1 " + datosJSON);
-        localStorage.setItem("agregar_material", JSON.stringify(datosJSON));
+      const closeBtn = document.getElementById("closeBtn");
+      modal.style.display = "flex";
+      document.getElementById("producto").innerHTML = materiales[k].DESCRIPCION;
+      document.getElementById("existencia").innerHTML =
+        "EXISTENCIA: " + materiales[k].EXISTENCIA;
+      document.getElementById("cantidad_insumo").focus()
+      closeBtn.addEventListener("click", function () {
         modal.style.display = "none";
-      } else {
-        datosJSON = JSON.parse(material);
-        datosJSON = datosJSON.filter(
-          (item) => item.SAP !== materiales[k].SAP
-        );
-        datosJSON.push(nuevoDato);
-        localStorage.setItem("agregar_material", JSON.stringify(datosJSON));
-        modal.style.display = "none";
-      }
-      location.reload();
-    });
-}
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+
+      document
+        .getElementById("boton_cancelar")
+        .addEventListener("click", function () {
+          modal.style.display = "none";
+        });
+
+      document
+        .getElementById("boton_eliminar")
+        .addEventListener("click", function () {
+          materiales = JSON.parse(localStorage.getItem("agregar_material"));
+          console.log("borrando: ", k);
+
+          const ordenesFiltradas = materiales.filter(
+            (item) => item.SAP !== materiales[k].SAP
+          );
+
+          localStorage.setItem(
+            "agregar_material",
+            JSON.stringify(ordenesFiltradas)
+          );
+          // location.reload();
+        });
+
+      document
+        .getElementById("boton_modificar")
+        .addEventListener("click", function () {
+          //venta_flotante(localStorage.getItem("ventana_flotante"))
+          materiales = JSON.parse(localStorage.getItem("agregar_material"));
+          //k = localStorage.getItem("ventana_flotante");
+          let orden = localStorage.getItem("iniciar_orden");
+          let datosJSON = [];
+          let material = "";
+          const modal = document.getElementById("myModal");
+          const nuevoDato = {
+            ORDEN: orden,
+            SAP: materiales[k].SAP,
+            DESCRIPCION: materiales[k].DESCRIPCION,
+            CANTIDAD: document.getElementById("cantidad_insumo").value,
+            EXISTENCIA: materiales[k].EXISTENCIA,
+            VALOR_TOTAL: materiales[k].VALOR_TOTAL,
+          };
+          //const nuevoDato = {  ORDEN: jsondata[k].ORDEN, SAP: jsondata[k].SAP, DESCRIPCION: jsondata[k].DESCRIPCION, CANTIDAD: jsondata[k].CANTIDAD, EXISTENCIA: jsondata[k].EXISTENCIA, VALOR_TOTAL: jsondata[k].VALOR_TOTAL };
+
+          material = localStorage.getItem("agregar_material");
+
+          if (localStorage.getItem("agregar_material") == null) {
+            datosJSON.push(nuevoDato);
+            console.log("1 " + datosJSON);
+            localStorage.setItem("agregar_material", JSON.stringify(datosJSON));
+            modal.style.display = "none";
+          } else {
+            datosJSON = JSON.parse(material);
+            datosJSON = datosJSON.filter(
+              (item) => item.SAP !== materiales[k].SAP
+            );
+            datosJSON.push(nuevoDato);
+            localStorage.setItem("agregar_material", JSON.stringify(datosJSON));
+            modal.style.display = "none";
+          }
+          location.reload();
+        });
+    }
 
 
 
@@ -373,12 +375,12 @@ materiales = JSON.parse(localStorage.getItem("agregar_material"));
         }
       }
     }
-    
+
     datosJSON = JSON.parse(localStorage.getItem("agregar_material"));
     for (let j in datosJSON) {
       const div = document.createElement("div");
       div.id = "insumos" + j;
-        div.onclick = function(){ventana_flotante(j)}
+      div.onclick = function () { ventana_flotante(j) }
       div.className = "cuadro_resumen_insumos";
       div.innerHTML =
         '<div class="cuadro_resumen_ordenes_superpuesto"></div><div class="titulo_resumen_ordenes"><div class="titulo_resumen_ordenes">CODIGO: &nbsp &nbsp' +
@@ -391,11 +393,11 @@ materiales = JSON.parse(localStorage.getItem("agregar_material"));
         datosJSON[j].EXISTENCIA +
         "</div></div></div>";
 
-materiales_req=Number(datosJSON[j].EXISTENCIA)-Number(datosJSON[j].CANTIDAD)
+      materiales_req = Number(datosJSON[j].EXISTENCIA) - Number(datosJSON[j].CANTIDAD)
 
-if (materiales_req < 0) {
-      div.style.backgroundColor = "#d5383887";
-    }
+      if (materiales_req < 0) {
+        div.style.backgroundColor = "#d5383887";
+      }
 
       container.appendChild(div);
     }

@@ -159,8 +159,9 @@ console.log(fechaFormateada);
 
  document.getElementById("loader-container").style.display = "none"; 
              
+ 
             pdf.save("REQUISICION_"+localStorage.getItem("iniciar_orden")+fechaFormateada+".pdf");
-            window.location.href = "ejecutando.html"
+      
                   
           }
           
