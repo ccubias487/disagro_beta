@@ -1593,37 +1593,5 @@
     "TIEMPO": "10",
     "HOJARUTA": "1606",
     "PRIORIDAD": "B"
-  },
-  {
-    "ORDEN": "3002010451",
-    "DESCRIPCION": "INSTALACION DE LAMPARA DE EMERGENCIA",
-    "POSICION": "10",
-    "ACTIVIDAD": "INST LAMPARA DE EMERGENCIA EN PLANTA",
-    "COD": "200998",
-    "NOMBRE": "200998",
-    "TIEMPO": "0",
-    "EQUIPO_COD": "undefined",
-    "EQUIPO": "undefined",
-    "UBICACION": "COMPLEJO A-1",
-    "CENTRO": "3000000022",
-    "HOJA": "undefined",
-    "UNIDAD_TRABAJO": "undefined",
-    "PRIORIDAD": "A"
-  },
-  {
-    "ORDEN": "3002010451",
-    "DESCRIPCION": "INSTALACION DE LAMPARA DE EMERGENCIA",
-    "POSICION": "30",
-    "ACTIVIDAD": "INST LAMPARA DE EMERGENCIA BASCULA",
-    "COD": "undefined",
-    "NOMBRE": "undefined",
-    "TIEMPO": "1440",
-    "EQUIPO_COD": "undefined",
-    "EQUIPO": "undefined",
-    "UBICACION": "COMPLEJO A-1",
-    "CENTRO": "3000000022",
-    "HOJA": "undefined",
-    "UNIDAD_TRABAJO": "H",
-    "PRIORIDAD": "A"
   }
 ]
