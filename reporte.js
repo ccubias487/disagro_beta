@@ -111,6 +111,25 @@ function agregarFoto(dataURL) {
   galeria.appendChild(contenedor);
 }
 
+// Función para comprimir una imagen en base64
+async function comprimirImagen(base64, maxWidth = 600, quality = 0.6) {
+  return new Promise((resolve) => {
+    const img = new Image();
+    img.onload = function () {
+      const canvas = document.createElement("canvas");
+      const scaleFactor = maxWidth / img.width;
+      canvas.width = maxWidth;
+      canvas.height = img.height * scaleFactor;
+
+      const ctx = canvas.getContext("2d");
+      ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+      const compressedBase64 = canvas.toDataURL("image/jpeg", quality);
+      resolve(compressedBase64);
+    };
+    img.src = base64;
+  });
+}
+
 async function generarPDF() {
   document.getElementById("loader-container").style.display = "flex";
   const { jsPDF } = window.jspdf;
@@ -120,29 +139,22 @@ async function generarPDF() {
   const anchoPagina = pdf.internal.pageSize.getWidth();
   const alturaPagina = pdf.internal.pageSize.getHeight();
 
-
-  //***            DATOS TRASLADADOS                                   */
- let ejecutando=localStorage.getItem("realizadas")
-  if (ejecutando==null){
-    localStorage.setItem("realizadas","1")
-  }else{
-  
-  localStorage.setItem("realizadas",Number(ejecutando)+1)
+  let ejecutando = localStorage.getItem("realizadas");
+  if (ejecutando == null) {
+    localStorage.setItem("realizadas", "1");
+  } else {
+    localStorage.setItem("realizadas", Number(ejecutando) + 1);
   }
 
-  datosJSON=JSON.parse(localStorage.getItem("orden_ejecucion"))
-  datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
-  localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON))
-  ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"))
-  localStorage.setItem("proceso", ejecutando_orden.length)
+  let datosJSON = JSON.parse(localStorage.getItem("orden_ejecucion"));
+  datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden"));
+  localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON));
+  let ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"));
+  localStorage.setItem("proceso", ejecutando_orden.length);
 
-  autorizar=JSON.parse(localStorage.getItem("autorizaciones"))
-  autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden") );
-  //autorizar = JSON.parse(localStorage.getItem("autorizaciones"))
-  localStorage.setItem("autorizaciones", JSON.stringify(autorizar))
-
-/*   */
-
+  let autorizar = JSON.parse(localStorage.getItem("autorizaciones"));
+  autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden"));
+  localStorage.setItem("autorizaciones", JSON.stringify(autorizar));
 
   function hayEspacioDisponible(yActual, espacioNecesario) {
     return yActual + espacioNecesario <= alturaPagina - 20;
@@ -152,78 +164,48 @@ async function generarPDF() {
   const descripcion = localStorage.getItem("iniciar_orden_d");
   const tecnico = "TECNICO: " + localStorage.getItem("nombre");
 
-  // Logo
   if (typeof logo !== "undefined" && logo.length > 0) {
     pdf.addImage(logo, "PNG", 75, 1, (anchoPagina - 75) / 2, 50);
   }
 
-  // Título
   pdf.setFontSize(20);
   pdf.setFont("helvetica", "bold");
   pdf.text(titulo, (anchoPagina - pdf.getTextWidth(titulo)) / 2, 50);
 
-  // Descripción
   pdf.setFontSize(12);
-  const textoDividido = pdf.splitTextToSize(
-    descripcion,
-    anchoPagina - margen * 2
-  );
-  const altoDescripcion = textoDividido.length * 5;
+  const textoDividido = pdf.splitTextToSize(descripcion, anchoPagina - margen * 2);
   textoDividido.forEach((linea, index) => {
-    pdf.text(
-      linea,
-      (anchoPagina - pdf.getTextWidth(linea)) / 2,
-      60 + index * 5
-    );
+    pdf.text(linea, (anchoPagina - pdf.getTextWidth(linea)) / 2, 60 + index * 5);
   });
 
-  // Técnico
-  // TECNICO
+  let yTabla = 70;
+  const tecnicoTexto = "TECNICO:";
+  const tecnicoValor = localStorage.getItem("nombre");
+  pdf.setFont("helvetica", "bold");
+  pdf.text(tecnicoTexto, margen, yTabla);
+  let anchoTexto = pdf.getTextWidth(tecnicoTexto) + 2;
+  pdf.setFont("helvetica", "normal");
+  pdf.text(tecnicoValor, margen + anchoTexto, yTabla);
+  yTabla += 8;
 
-let yTabla = 70
-const tecnicoTexto = "TECNICO:";
-const tecnicoValor = localStorage.getItem("nombre");
+  const equipoTexto = "EQUIPO:";
+  const equipoValor = localStorage.getItem("equipo");
+  pdf.setFont("helvetica", "bold");
+  pdf.text(equipoTexto, margen, yTabla);
+  anchoTexto = pdf.getTextWidth(equipoTexto) + 2;
+  pdf.setFont("helvetica", "normal");
+  pdf.text(equipoValor, margen + anchoTexto, yTabla);
+  yTabla += 8;
 
-pdf.setFont("helvetica", "bold");
-pdf.text(tecnicoTexto, margen, yTabla);
+  const ubicacionTexto = "UBICACION:";
+  const ubicacionValor = localStorage.getItem("ubicacion");
+  pdf.setFont("helvetica", "bold");
+  pdf.text(ubicacionTexto, margen, yTabla);
+  anchoTexto = pdf.getTextWidth(ubicacionTexto) + 2;
+  pdf.setFont("helvetica", "normal");
+  pdf.text(ubicacionValor, margen + anchoTexto, yTabla);
+  yTabla += 5;
 
-let anchoTexto = pdf.getTextWidth(tecnicoTexto) + 2;
-
-pdf.setFont("helvetica", "normal");
-pdf.text(tecnicoValor, margen + anchoTexto, yTabla);
-
-yTabla += 8;
-
-// EQUIPO
-const equipoTexto = "EQUIPO:";
-const equipoValor = localStorage.getItem("equipo");
-
-pdf.setFont("helvetica", "bold");
-pdf.text(equipoTexto, margen, yTabla);
-
-anchoTexto = pdf.getTextWidth(equipoTexto) + 2;
-
-pdf.setFont("helvetica", "normal");
-pdf.text(equipoValor, margen + anchoTexto, yTabla);
-
-yTabla += 8;
-
-// UBICACION
-const ubicacionTexto = "UBICACION:";
-const ubicacionValor = localStorage.getItem("ubicacion");
-
-pdf.setFont("helvetica", "bold");
-pdf.text(ubicacionTexto, margen, yTabla);
-
-anchoTexto = pdf.getTextWidth(ubicacionTexto) + 2;
-
-pdf.setFont("helvetica", "normal");
-pdf.text(ubicacionValor, margen + anchoTexto, yTabla);
-
-yTabla += 5;
-
- // yTabla = yTabla + 5;
-  // Tabla
   const headers = [["Item", "Actividad", "Tiempo Pro"]];
   const data = JSON.parse(localStorage.getItem("data_actividad"));
   pdf.autoTable({
@@ -243,18 +225,14 @@ yTabla += 5;
   });
 
   let yActual = pdf.lastAutoTable.finalY + 10;
-  const tiempo_reportado =
-    "Tiempo estimado: " +
-    convertirMinutosAHoras(Number(localStorage.getItem("tiempo_estimado")));
-  const tiempo_orden =
-    "Tiempo de orden: " + localStorage.getItem("tiempo_orden");
+  const tiempo_reportado = "Tiempo estimado: " + convertirMinutosAHoras(Number(localStorage.getItem("tiempo_estimado")));
+  const tiempo_orden = "Tiempo de orden: " + localStorage.getItem("tiempo_orden");
   const observacion_local = localStorage.getItem("observacion");
   const observacion = "OBSERVACION: " + observacion_local;
 
   pdf.setFontSize(12);
   pdf.setFont("helvetica", "normal");
 
-  // Tiempo reportado
   if (!hayEspacioDisponible(yActual, 10)) {
     pdf.addPage();
     yActual = 20;
@@ -262,7 +240,6 @@ yTabla += 5;
   pdf.text(tiempo_reportado, margen, yActual);
   yActual += 10;
 
-  // Tiempo de orden
   if (!hayEspacioDisponible(yActual, 10)) {
     pdf.addPage();
     yActual = 20;
@@ -270,11 +247,9 @@ yTabla += 5;
   pdf.text(tiempo_orden, margen, yActual);
   yActual += 10;
 
-  // Observación
-  let alturaObservacion = 0;
   if (observacion_local !== null && observacion_local !== "") {
     const lineas = pdf.splitTextToSize(observacion, anchoPagina - margen * 2);
-    alturaObservacion = lineas.length * 5;
+    const alturaObservacion = lineas.length * 5;
     if (!hayEspacioDisponible(yActual, alturaObservacion)) {
       pdf.addPage();
       yActual = 20;
@@ -283,12 +258,8 @@ yTabla += 5;
     yActual += alturaObservacion + 10;
   }
 
-  // Firma
   const firma_img = localStorage.getItem("firma_user");
-  const firma =
-    "    " +
-    localStorage.getItem("nombre") +
-    "                                              ";
+  const firma = "    " + localStorage.getItem("nombre") + "                                              ";
   const alturaFirma = 55;
 
   if (!hayEspacioDisponible(yActual, alturaFirma)) {
@@ -297,51 +268,28 @@ yTabla += 5;
   }
 
   if (firma_img) {
-    pdf.addImage(
-      firma_img,
-      "PNG",
-      margen + 18,
-      yActual,
-      (anchoPagina - 75) / 2,
-      50
-    );
+    pdf.addImage(firma_img, "PNG", margen + 18, yActual, (anchoPagina - 75) / 2, 50);
   }
   pdf.text(firma, margen, yActual + 35);
   yActual += 65;
 
-  // Verificar espacio para fotos después de la firma
-  if (!hayEspacioDisponible(yActual, 20)) {
+  let materiales_req = JSON.parse(localStorage.getItem("materiales_utilizados"));
+  if (materiales_req !== null) {
     pdf.addPage();
     yActual = 20;
-  }
-
-  //**************************************************************************************//
-  materiales_req = JSON.parse(localStorage.getItem("materiales_utilizados"));
-  console.log(materiales_req);
-  if (materiales_req !== null) {
-    const descripcion2 =
-      "MATERIALES UTILIZADOS EN LA ODEN " +
-      localStorage.getItem("iniciar_orden");
+    const descripcion2 = "MATERIALES UTILIZADOS EN LA ORDEN " + localStorage.getItem("iniciar_orden");
     pdf.setFontSize(15);
     pdf.setFont("helvetica", "bold");
     pdf.text(descripcion2, 40, yActual);
-    data2 = [];
 
-    for (j = 0; j <= materiales_req.length - 1; j++) {
-      //console.log(j)
-      data2.push([
-        materiales_req[j].CANTIDAD,
-        materiales_req[j].DESCRIPCION,
-        localStorage.getItem("iniciar_orden_d"),
-        materiales_req[j].SAP,
-      ]);
-
-      //console.log(data2)
-      yActual2 = j * 25;
-    }
+    const data2 = materiales_req.map(item => [
+      item.CANTIDAD,
+      item.DESCRIPCION,
+      localStorage.getItem("iniciar_orden_d"),
+      item.SAP,
+    ]);
 
     const headers2 = [["CANT", "DESCRIPCION", "PARA USO EN", "DOC.MAT.SAP"]];
-    //const data = JSON.parse(localStorage.getItem("agregar_material"));
     pdf.autoTable({
       startY: yActual + 10,
       head: headers2,
@@ -357,52 +305,40 @@ yTabla += 5;
         fontStyle: "bold",
       },
     });
-    pdf.addPage();
-  } else {
-    yActual2 = yActual;
-  }
-  //**************************************************************************************//
-
-  if (!hayEspacioDisponible(yActual2, 20)) {
-    pdf.addPage();
-    yActual2 = 20;
   }
 
-  // Fotos
-  // Fotos en cuadrícula con validación de espacio
   const columnas = 2;
   const espacioEntreImagenes = 10;
   const imgAncho = 90;
   const imgAlto = 90;
-
   let x = margen;
-  let y = yActual2;
+  let y = pdf.lastAutoTable ? pdf.lastAutoTable.finalY + 25 : yActual + 25;
+
+  const fotos = JSON.parse(localStorage.getItem("fotos")) || [];
 
   if (fotos.length > 0) {
-    const descripcion3 =
-      "FOTOGRAFIAS DE LA ORDEN " + localStorage.getItem("iniciar_orden");
+    pdf.addPage();
+    y = 20;
+    const descripcion3 = "FOTOGRAFÍAS DE LA ORDEN " + localStorage.getItem("iniciar_orden");
     pdf.setFontSize(15);
     pdf.setFont("helvetica", "bold");
-    pdf.text(descripcion3, 50, yActual2 - 15);
+    pdf.text(descripcion3, 50, y);
+    y += 15;
   }
 
-  yActual2 = yActual2 + 25;
-
   for (let i = 0; i < fotos.length; i++) {
-    // Verificar si la imagen cabe en la hoja actual
+    const imagenComprimida = await comprimirImagen(fotos[i]);
+
     if (y + imgAlto > alturaPagina - margen) {
       pdf.addPage();
       x = margen;
       y = 20;
-      //r=yActual2+90
     }
 
-    // Agregar texto y foto
     pdf.setFontSize(10);
     pdf.text(`Foto ${i + 1}`, x, y - 5);
-    pdf.addImage(fotos[i], "PNG", x, y, imgAncho, imgAlto);
+    pdf.addImage(imagenComprimida, "JPEG", x, y, imgAncho, imgAlto);
 
-    // Actualizar posición para la siguiente imagen
     if ((i + 1) % columnas === 0) {
       x = margen;
       y += imgAlto + espacioEntreImagenes;
@@ -414,10 +350,11 @@ yTabla += 5;
   await cerrar_orden();
   localStorage.removeItem("materiales_utilizados");
 
-  pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
+//pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
+
 
 // 1. Generar el blob del PDF
-/* const pdfBlob = pdf.output('blob');
+ const pdfBlob = pdf.output('blob');
 
 const blobUrl = URL.createObjectURL(new Blob([pdfBlob], { type: 'application/pdf' }));
 window.open(blobUrl, '_blank');
@@ -426,13 +363,11 @@ link.href = blobUrl;
 link.download = "ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf";
 document.body.appendChild(link);
 link.click();
-document.body.removeChild(link); // Limpieza */
+document.body.removeChild(link); 
+// Limpieza */
 // 1. FIN Generar el blob del PDF
 
-
-  document.getElementById("loader-container").style.display = "none"; 
-
-  //window.location.href = "principal.html";
+  document.getElementById("loader-container").style.display = "none";
 }
 
 
@@ -441,7 +376,8 @@ document.getElementById("reporte").addEventListener("click", async function(){
   await generarPDF()
 
   setTimeout(() => {
-          window.location.href = "principal.html";
+          //window.location.href = "principal.html";
+          console.log("redireccionado")
         }, 1000);
   
 
