@@ -6845,7 +6845,7 @@
     "CENTRO": "3000000019",
     "HOJA": "undefined",
     "UNIDAD_TRABAJO": "undefined",
-    "PRIORIDAD": "undefined"
+    "PRIORIDAD": "A"
   },
   {
     "ORDEN": "3002010453",
@@ -6861,7 +6861,7 @@
     "CENTRO": "3000000019",
     "HOJA": "undefined",
     "UNIDAD_TRABAJO": "MIN",
-    "PRIORIDAD": "undefined"
+    "PRIORIDAD": "A"
   },
   {
     "ORDEN": "3002010453",
@@ -6877,7 +6877,7 @@
     "CENTRO": "3000000019",
     "HOJA": "undefined",
     "UNIDAD_TRABAJO": "MIN",
-    "PRIORIDAD": "undefined"
+    "PRIORIDAD": "A"
   },
   {
     "ORDEN": "3002010493",
