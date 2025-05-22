@@ -434,3 +434,15 @@ document.body.removeChild(link); // Limpieza */
 
   window.location.href = "principal.html";
 }
+
+
+document.getElementById("reporte").addEventListener("click", async function(){
+
+  await generarPDF()
+
+  setTimeout(() => {
+          window.location.href = "principal.html";
+        }, 1000);
+  
+
+})
