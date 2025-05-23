@@ -14,8 +14,8 @@ if (esDispositivoMovil()) {
     window.location.href = "mostrar_critico_mobile.html";
   }
 } else {
-  if (!urlActual.includes("importar_critico.html")) {
-    window.location.href = "importar_critico.html";
+  if (!urlActual.includes("mostrar_critico.html")) {
+    window.location.href = "mostrar_critico.html";
   }
 }
 
