@@ -4,7 +4,7 @@
 }
 
 document.getElementById("pais_region").innerHTML=localStorage.getItem("region")
-
+document.getElementById("region").innerHTML="REPUESTOS CRITICOS PLANTA "+localStorage.getItem("region")
 
 try {
   fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/base_critico_" + localStorage.getItem("mostrar_critico") + ".json")
@@ -34,16 +34,18 @@ try {
                 <th scope="col" width="80px">N° </th>
                 <th scope="col" width="80px">EQUIPO</th>
                 <th scope="col" width="200px">REPUESTO</th>
-                <th scope="col" width="200px">NUMERO DE PARTE</th>
+                <th scope="col" width="350px">NUMERO DE PARTE</th>
                 <th scope="col" width="80px">STOCK</th>
                 <th scope="col" width="80px">SOLICITAR</th>
-                <th scope="col" width="80px">ESTATUS</th>
-                <th scope="col" width="80px">CÓDIGO</th>
-                <th scope="col" width="50px">COSTO</th>
-                <th scope="col" width="50px">TOTAL</th>
+                <th scope="col" width="120px">ESTATUS</th>
+                <th scope="col" width="120px">CÓDIGO</th>
+                <th scope="col" width="80px">COSTO</th>
+                <th scope="col" width="80px">TOTAL</th>
                 <th scope="col" width="400px">OBSERVACIONES</th>
             </tr>
         </tbody>
+
+  
       `;
 
       document.getElementById("actualizacion").innerHTML = "Última actualización: " + jsondata[0].ACTUALIZACION;

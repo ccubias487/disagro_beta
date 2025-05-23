@@ -172,7 +172,7 @@ body {
 .page-header .admin-menu .menu-heading h3 {
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 12px;
+  /* font-size: 12px; */
   color: var(--page-header-headingColor);
 }
 
@@ -1126,8 +1126,8 @@ td {
   /*background-image: url("https://www.disagro.com.gt/wp-content/uploads/2022/02/logotipo-disagro-verde-300x135.png");*/
   background-image: url("./logotipo-disagro-verde-300x135.png");
   background-size: cover;
-  height: 80px;
-    width: 180px;
+  height: 110px;
+    width: 230px;
 }
 
 #alogo {
