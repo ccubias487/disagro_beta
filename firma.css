@@ -51,7 +51,7 @@ body, html {
     color: white;
     border: 2px solid rgb(102, 202, 92);
     height: 80px;
-    font-size: xx-large;
+    font-size: large; 
     font-weight: bold;
     margin: 15px;
     }
@@ -85,14 +85,14 @@ body, html {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    height: 250px;
+    height: 80px;
     width: 100%;
-    margin: 0.5rem;
+   /*  margin: 0.5rem; */
     margin-top: 1rem;
 }
 
 .logo_titulo{
-    font-size: 2.8rem;
+    font-size: 1.3rem;
     color: white;
     font-weight: bold;
 }
@@ -106,7 +106,7 @@ body, html {
       background-size:  contain;
       background-repeat: no-repeat;
       background-position: center;
-      height: 550px;
+      height: 180px;
       width: 100%;
 
 }
@@ -114,10 +114,12 @@ body, html {
 #input_login{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .titulo_input{
-  font-size: xx-large;
+  font-size: large;
   color: white;
   font-weight: bold;
   margin-top: 25px;
@@ -125,14 +127,14 @@ body, html {
 }
 
 .titulo_input2{
-  font-size: xx-large;
+  font-size: x-large;
   color: white;
   margin-top: 10px;
   
 }
 
 .input3{
-  width: 100%;
+  width: 40%;
   border-radius: 5px;
   border: 2px solid rgb(102, 202, 92);
   background: #5C5F5C;
@@ -140,8 +142,8 @@ body, html {
   text-transform: uppercase;
   padding: 5px;
   margin: 0.1rem;
-  height: 50px;
-  font-size: xx-large;
+  height: 30px;
+  font-size: large;
   font-weight: bold;
   margin-top: 15px;
   text-align: center;
@@ -152,9 +154,9 @@ body, html {
   }
 
   #bt-ingresar{
-    margin-top: 35px;
-    width: 200px;
-    height: 100px;
+    margin-top: 10px;
+    width: 120px;
+    height: 50px;
   }
 
   #contraseña{
