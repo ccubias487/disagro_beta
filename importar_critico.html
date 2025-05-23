@@ -226,13 +226,16 @@
     background-color: rgb(102, 202, 92);
     color: white;
     padding: 10px 20px;
-    font-size: 12px;
+    /* font-size: 12px; */
     border-radius: 5px;
     cursor: pointer;
     user-select: none;
     transition: background-color 0.3s;
-    height: 30px;
+    height: 50px;
     margin-top: 2.3px;
+        font-size: medium;
+        font-weight: bold;
+        margin-left: 15px;
   }
 
   .boton-personalizado:hover {
@@ -248,6 +251,20 @@
   }
 </style>
 
+
+
+<script>
+function descargarArchivo() {
+  const enlace = document.createElement('a');
+  enlace.href = 'https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/PLANTILLA_REPUESTOS_CRITICOS.xlsx';
+  enlace.download = 'Plantilla_Repuestos_Criticos.xls'; // Nombre sugerido para la descarga
+  document.body.appendChild(enlace);
+  enlace.click();
+  document.body.removeChild(enlace);
+}
+</script>
+
+<button onclick="descargarArchivo()" class="boton">Descargar Listado XLS</button>
 <label for="input-excel" class="boton-personalizado">Subir archivo Excel</label>
 <input type="file" class="boton" id="input-excel" accept=".xls,.xlsx" />
 

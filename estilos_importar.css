@@ -852,12 +852,14 @@ select {
 
 .boton {
   border-radius: 5px;
-  width: 105px;
+width: 135px;
   background: rgb(102, 202, 92);
   color: white;
   border: 2px solid rgb(102, 202, 92);
-  height: 30px;
+  height: 50px;
       margin-left: 15px;
+              font-size: medium;
+    font-weight: bold;
 }
 
 .light-mode .boton {
