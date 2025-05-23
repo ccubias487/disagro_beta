@@ -6,11 +6,7 @@ document.getElementById("bt-ingresar").addEventListener("click", function(){
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
-if (esDispositivoMovil()) {
-  window.location.href = "importar_critico.html";
-} else {
-  window.location.href = "mostrar_critico_mobile.html";
-}
+
 
     document.getElementById("imagen_login").style.backgroundImage ='url("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/consultando2.png")';
     document.getElementById("mensaje").innerHTML="Espere un momento estamos consultando los datos..."
@@ -34,7 +30,11 @@ if(data[i].USUARIO==usuario && data[i].CONTRASEÑA==password){
     localStorage.setItem("nombre_critico", data[i].NOMBRE)  
     localStorage.setItem("pais", data[i].PAIS) 
     localStorage.setItem("region", data[i].PLANTA) 
-    esDispositivoMovil()
+  if (esDispositivoMovil()) {
+  window.location.href = "importar_critico.html";
+} else {
+  window.location.href = "mostrar_critico_mobile.html";
+}
 }else{
     document.getElementById("imagen_login").style.backgroundImage ='url("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/empty1.png")';
     document.getElementById("mensaje").innerHTML="LOS DATOS INGRESADOS SON INCORRECTOS"
