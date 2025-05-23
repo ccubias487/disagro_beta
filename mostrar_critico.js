@@ -3,17 +3,23 @@
   window.location.href = "login_critico.html";
 }
 
-  function esDispositivoMovil() {
+function esDispositivoMovil() {
   return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 }
 
+const urlActual = window.location.pathname;
+
 if (esDispositivoMovil()) {
-  window.location.href = "importar_critico.html";
+  if (!urlActual.includes("mostrar_critico_mobile.html")) {
+    window.location.href = "mostrar_critico_mobile.html";
+  }
 } else {
-  window.location.href = "mostrar_critico_mobile.html";
+  if (!urlActual.includes("importar_critico.html")) {
+    window.location.href = "importar_critico.html";
+  }
 }
 
-esDispositivoMovil()
+
 
 document.getElementById("pais_region").innerHTML=localStorage.getItem("region")
 document.getElementById("region").innerHTML="REPUESTOS CRITICOS PLANTA "+localStorage.getItem("region")
