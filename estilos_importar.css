@@ -8,7 +8,7 @@
   --page-header-bgColor-hover: #1d2636;
   --page-header-txtColor: #dde9f8;
   --page-header-headingColor: #7889a4;
-  --page-header-width: 180px;
+  --page-header-width: 250px;
   --page-content-bgColor: #f0f1f6;
   --page-content-txtColor: #171616;
   --page-content-blockColor: #fff;
@@ -187,7 +187,7 @@ body {
 .page-header .admin-menu button {
   display: flex;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
 }
 
 .page-header .admin-menu a:hover,
@@ -687,7 +687,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 #encabezado_mantenimiento {
@@ -1231,3 +1231,4 @@ input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer
 #pais_region{
   text-align: center;
 }
+

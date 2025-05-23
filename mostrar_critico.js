@@ -34,7 +34,7 @@ try {
                 <th scope="col" width="80px">N° </th>
                 <th scope="col" width="80px">EQUIPO</th>
                 <th scope="col" width="200px">REPUESTO</th>
-                <th scope="col" width="480px">NUMERO DE PARTE</th>
+                <th scope="col" width="200px">NUMERO DE PARTE</th>
                 <th scope="col" width="80px">STOCK</th>
                 <th scope="col" width="80px">SOLICITAR</th>
                 <th scope="col" width="80px">ESTATUS</th>
