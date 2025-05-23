@@ -3,6 +3,18 @@
   window.location.href = "login_critico.html";
 }
 
+  function esDispositivoMovil() {
+  return /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+}
+
+if (esDispositivoMovil()) {
+  window.location.href = "importar_critico.html";
+} else {
+  window.location.href = "mostrar_critico_mobile.html";
+}
+
+esDispositivoMovil()
+
 document.getElementById("pais_region").innerHTML=localStorage.getItem("region")
 document.getElementById("region").innerHTML="REPUESTOS CRITICOS PLANTA "+localStorage.getItem("region")
 

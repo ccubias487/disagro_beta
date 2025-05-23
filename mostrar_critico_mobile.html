@@ -87,8 +87,9 @@
 
 
     <script>
-      function data(ubicacion){
+      function data(ubicacion, planta){
         localStorage.setItem("mostrar_critico",ubicacion)
+        localStorage.setItem("mostrar_critico",planta)
       }
 
        function cerrar_sesion(){
@@ -120,7 +121,7 @@
           <h3 id="pais_region">Pais</h3>
         </li>
         <li>
-          <a href="./mostrar_critico.html"  onclick="data('SV_A')" >
+          <a href="./mostrar_critico_mobile.html"  onclick="data('SV_A','EL SALVADOR / ACAJUTLA')" >
             <svg>
               <use xlink:href="#SV"></use>
             </svg>
@@ -128,7 +129,7 @@
           </a>
         </li>
         <li>
-          <a href="./mostrar_critico.html" onclick="data('SV_C')">
+          <a href="./mostrar_critico_mobile.html" onclick="data('SV_C', 'EL SALVADOR / CUTUCO')">
             <svg>
               <use xlink:href="#SV" ></use>
             </svg>
@@ -137,7 +138,7 @@
         </li>
 
         <li>
-          <a href="./mostrar_critico.html" onclick="data('HN_F')">
+          <a href="./mostrar_critico_mobile.html" onclick="data('HN_F', 'HONDURAS / FENORSA')">
             <svg>
               <use xlink:href="#HN" ></use>
             </svg>
@@ -146,7 +147,7 @@
         </li>
 
         <li>
-          <a href="./mostrar_critico.html" onclick="data('NI_S')">
+          <a href="./mostrar_critico_mobile.html" onclick="data('NI_S', 'NICARAGUA / SAGSA')">
             <svg>
               <use xlink:href="#NI" ></use>
             </svg>
@@ -155,7 +156,7 @@
         </li>
 
    <li style="display: none;">
-          <a href="./importar_critico.html">
+          <a href="./importar_critico_mobile.html">
             <svg>
               <use xlink:href="#update" ></use>
             </svg>
