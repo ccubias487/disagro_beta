@@ -32,10 +32,11 @@ document.getElementById("bt-ingresar").addEventListener("click", function () {
             localStorage.setItem("pais", data[i].PAIS)
             localStorage.setItem("region", data[i].PLANTA)
             ingreso = true
+            localStorage.setItem("region_critico_planta","EL SALVADOR / ACAJUTLA")
             if (esDispositivoMovil()) {
-              window.location.href = "importar_critico.html";
-            } else {
               window.location.href = "mostrar_critico_mobile.html";
+            } else {
+              window.location.href = "importar_critico.html";
             }
           } 
 
