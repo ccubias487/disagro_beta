@@ -22,7 +22,7 @@ if (esDispositivoMovil()) {
 
 
 document.getElementById("pais_region").innerHTML=localStorage.getItem("region")
-document.getElementById("region").innerHTML="REPUESTOS CRITICOS PLANTA "+localStorage.getItem("region")
+document.getElementById("region").innerHTML="REPUESTOS CRITICOS PLANTA "+localStorage.getItem("region_critico_planta")
 
 try {
   fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/base_critico_" + localStorage.getItem("mostrar_critico") + ".json")
