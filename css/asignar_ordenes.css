@@ -44,3 +44,10 @@ flex-direction: column;
   
 
 }
+
+ .cantidad_resumen{
+        width: 10%;
+        text-align: center;
+       }
+
+       
