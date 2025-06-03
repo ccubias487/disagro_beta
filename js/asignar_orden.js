@@ -192,10 +192,10 @@ const numeroOrden = `${año}${mes}${dia}${minutos}${segundos}`;
     POSICION: `${(index + 1) * 10}`,
     TIEMPO: actividad.tiempo,
     UNIDAD_TRABAJO: actividad.unidad.toUpperCase(),
-    COD: tecnico || "undefined",      // si no usas COD puedes quitar esta línea
-    NOMBRE: tecnico || "undefined",   // lo mismo aquí
-    EQUIPO: equipoCod,
-    EQUIPO_COD: equipoCod
+    COD: tecnico || "undefined",
+    NOMBRE: tecnico || "undefined",
+    EQUIPO: document.getElementById("descripcion").value,
+    EQUIPO_COD: document.getElementById("descripcion").value
   }));
 
   localStorage.setItem('jsonOrdenes', JSON.stringify(dataJSON, null, 2));
