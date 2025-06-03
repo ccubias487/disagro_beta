@@ -9,7 +9,7 @@
     {
         "USUARIO": "200826",
         "CONTRASEÑA": "DISAGRO",
-        "TIPO": "USER",
+        "TIPO": "ADMIN",
         "NOMBRE": "ANTONIO ADOLFO BLANCO RAUDA",
         "NICK": "ANTONIO RAUDA"
     },
@@ -28,9 +28,15 @@
         "NICK": "CARLOS GOMEZ"
     },
     {
-        "USUARIO": "200850",
+        "USUARIO": "200851",
         "CONTRASEÑA": "DISAGRO",
         "TIPO": "ADMIN",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NICK": "CARLOS ORTIZ"
+    }, {
+        "USUARIO": "200850",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
         "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "NICK": "CARLOS ORTIZ"
     },
