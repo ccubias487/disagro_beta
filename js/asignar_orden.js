@@ -194,8 +194,8 @@ const numeroOrden = `${año}${mes}${dia}${minutos}${segundos}`;
     UNIDAD_TRABAJO: actividad.unidad.toUpperCase(),
     COD: tecnico || "undefined",
     NOMBRE: tecnico || "undefined",
-    EQUIPO: document.getElementById("descripcion").value,
-    EQUIPO_COD: document.getElementById("descripcion").value
+    EQUIPO: document.getElementById("descripcion").value.toUpperCase(),
+    EQUIPO_COD: document.getElementById("descripcion").value.toUpperCase()
   }));
 
   localStorage.setItem('jsonOrdenes', JSON.stringify(dataJSON, null, 2));
