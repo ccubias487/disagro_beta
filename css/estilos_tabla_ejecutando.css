@@ -1,0 +1,21 @@
+td{
+        height: 55px;
+        }
+
+        .tabla_notificacions tr > td {
+    color: white;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+        padding: 15px;
+}
+
+table{
+        margin: 15px
+}
+.tabla_notificacions tbody tr > th {
+    color: white;
+    background: rgb(102, 202, 92);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
