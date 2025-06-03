@@ -2,38 +2,46 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilos_tabla.css" rel="stylesheet" type="text/css" />
   </head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ800MZ8V1');
+</script>
   <body>
     <section class="page-content">
       <section class="grid">
         <article id="contenido_tabla" class="articulo">
           <div id="encabezado_notificaciones_ordenes">
             <div class="logo_ordenes"></div>
-            <div class="logo_titulo" id="titulo_logo">
-              LISTADO DE ORDENES ASIGNADAS
-            </div>
-            <div class="logo_titulo" id="titulo_logo">
-              Actividades a realizar
+            <div class="logo_titulo">LISTADO DE ORDENES EN PROCESO</div>
+            <div id="prioridad_codigo_colores">
+              <div id="prioridad_alta">PRIORIDAD ALTA
+                <div id="prioridad_alta_color"></div>
+              </div>
+              <div id="prioridad_alta">PRIORIDAD MEDIA
+                <div id="prioridad_media_color"></div>
+              </div>
+              <div id="prioridad_alta">PRIORIDAD BAJA
+                <div id="prioridad_baja_color"></div>
+              </div>
+              
             </div>
           </div>
 
-          <div
-            class="caja_resumen_actividades"
-            id="actividades_asignadas"
-          ></div>
-          <div>
-            <button class="boton" id="actividades_siguiente">Siguiente</button>
-            <style> 
-              .boton{
-                margin-top: 30px;
-                margin-bottom: 200px;
-              }
-              #titulo_logo{
-                text-align: center;
-              }
-            </style>
+          <div class="caja_resumen" id="ordenes_asignadas">
           </div>
 
+          <style> 
+            #ordenes_asignadas{
+              padding-bottom: 200px;
+            }
+          </style>
           <div class="menu_app">
             <div class="menu_app_content">
               <div class="icono_menu_app" id="inicio">
@@ -221,7 +229,7 @@
                 <div class="titulo_menu">Horas</div>
               </div>
 
-              <div class="icono_menu_app">
+              <div class="icono_menu_app" id="cuenta">
                 <svg
                   width="140"
                   height="121"
@@ -297,9 +305,11 @@
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
     <!-- Aquí iría tu propio script o el bloque de inicialización -->
      <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-messaging-compat.js"></script>
+<script src="js/firebase.js"></script>
 
-     <script src="js/firebase.js"></script>
-      <script src="js/actividades_funciones.js"></script>
+
+      <script src="js/ordenes_proceso.js"></script>
+      <script src="js/actualizar_ordenes_proceso.js"></script>
     </section>
   </body>
 </html>

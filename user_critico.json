@@ -1,0 +1,42 @@
+[
+    {
+        "USUARIO": "GTVILMO",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "VILMO SANTINO RAMAZZINI LOPEZ",
+        "PAIS": "GT_Q",
+        "PLANTA": "GUATEMALA"
+    },{
+        "USUARIO": "SVCCUBIAS",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "PAIS": "SV_A",
+        "PLANTA": "EL SALVADOR / ACAJUTLA"
+    },
+    {
+        "USUARIO": "SVEMENJIVAR",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "ESTHER ABIGAIL MIRON MENJIVAR",
+        "PAIS": "SV_A",
+         "PLANTA": "EL SALVADOR / ACAJUTLA"
+    },
+    {
+        "USUARIO": "SVCCUBIASC",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "PAIS": "SV_C",
+        "PLANTA": "EL SALVADOR / CUTUCO"
+    },
+    {
+        "USUARIO": "SVEMENJIVARC",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "ESTHER ABIGAIL MIRON MENJIVAR",
+        "PAIS": "SV_C",
+         "PLANTA": "EL SALVADOR / CUTUCO"
+    }
+
+]

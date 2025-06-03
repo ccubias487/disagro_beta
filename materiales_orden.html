@@ -3,7 +3,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <section class="page-content">
@@ -334,11 +334,18 @@
         </article>
       </section>
       <footer class="page-footer"></footer>
-      <script src="materiales_funciones.js"></script>
-      <script src="actualizar_autorizacion.js"></script>
-      <script src="reporte_requisicion.js"></script>
-   
-
+  
+      
+       <!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
+    <!-- Agregar el SDK de Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
+    <!-- Aquí iría tu propio script o el bloque de inicialización -->
+     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-messaging-compat.js"></script>
+<script src="js/firebase.js"></script>
+    <script src="js/materiales_funciones.js"></script>
+      <script src="js/reporte_requisicion.js"></script>
+      <script src="js/actualizar_ordenes_proceso.js"></script>
 
 
     <div id="loader-container">
@@ -352,7 +359,7 @@
   </div>
 
   <!-- Texto -->
-  <p>Generando documentos, por favor espera...</p>
+  <p id="esperando">Generando documentos, por favor espera...</p>
 </div>
   </body>
 </html>
