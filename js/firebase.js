@@ -1,5 +1,5 @@
 // Configuración de Firebase
-const firebaseConfig = {
+/* const firebaseConfig = {
   apiKey: "AIzaSyCqafxFuN5Siu1HqqDdBHHsJQczarutnOw",
   authDomain: "disagroapp-a7fec.firebaseapp.com",
   databaseURL: "https://disagroapp-a7fec-default-rtdb.firebaseio.com",
@@ -8,50 +8,22 @@ const firebaseConfig = {
   messagingSenderId: "841529436199",
   appId: "1:841529436199:web:544f9a3fec62025f8d0602",
   measurementId: "G-EM53WMYF3T"
-};
-
+}; */
 
 //prueba
-/* const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyDRx5vSS9b0GW76f87_Xi01VaOYxxPby9Y",
   authDomain: "disagro-96de7.firebaseapp.com",
   databaseURL: "https://disagro-96de7-default-rtdb.firebaseio.com",
   projectId: "disagro-96de7",
   storageBucket: "disagro-96de7.firebasestorage.app",
-  messagingSenderId: "916169531441",
+  messagingSenderId: "916169531441", 
   appId: "1:916169531441:web:c38866b35dc35268273510"
-}; */
+};
 
-// Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
-
-
 const database = firebase.database();
 
-function solicitarPermiso() {
-  Notification.requestPermission().then((permiso) => {
-    if (permiso === 'granted') {
-      messaging.getToken({ vapidKey: 'BKnh82NuB0_Ni49Q2zLorbMWmw64zCQYOqYkU5Y6u_x-R4GLyAogHJMDA6Nx7U6tD86h2zeqvDQRWBnAi5eH9mM	' })
-        .then((token) => {
-          console.log('Token recibido:', token);
-          // Puedes guardar este token en Firebase Database o donde lo necesites
-        })
-        .catch((err) => {
-          console.error('Error al obtener el token:', err);
-        });
-    } else {
-      console.warn('Permiso de notificaciones no concedido');
-    }
-  });
-}
-
-//solicitarPermiso()
-
-
-
-
-
-// envio de arrays
 function agruparPorOrden(lista) {
   const resultado = {};
   lista.forEach(item => {
@@ -66,11 +38,18 @@ function guardarActividades(actividades) {
   const actualizaciones = {};
 
   for (const orden in agrupadas) {
-    actualizaciones[`ordenes_asignadas/${orden}`] = agrupadas[orden];
+    const actividadesOrden = agrupadas[orden];
+    actualizaciones[`ordenes_asignadas/${orden}`] = actividadesOrden;
+
+    actividadesOrden.forEach(act => {
+      if (act.COD) actualizaciones[`por_cod/${act.COD}/${orden}`] = true;
+      if (act.NOMBRE) actualizaciones[`por_empleado/${act.NOMBRE}/${orden}`] = true;
+      if (act.ESTATUS) actualizaciones[`por_estatus/${act.ESTATUS}/${orden}`] = true;
+    });
   }
 
   database.ref().update(actualizaciones)
-    .then(() => console.log("Actividades guardadas exitosamente."))
+    .then(() => console.log("Actividades y referencias guardadas."))
     .catch(err => console.log("Error al guardar: " + err.message));
 }
 
@@ -83,205 +62,131 @@ function guardarData(data) {
   }
 
   database.ref().update(actualizaciones)
-    .then(() => console.log("Actividades guardadas exitosamente."))
+    .then(() => console.log("Finalizadas guardadas exitosamente."))
     .catch(err => console.log("Error al guardar: " + err.message));
 }
 
 function agregarData(data) {
-  const agrupadas = agruparPorOrden(data);
-  const actualizaciones = {};
-
-  for (const orden in agrupadas) {
-    actualizaciones[`ordenes_asignadas/${orden}`] = agrupadas[orden];
-  }
-
-  database.ref().update(actualizaciones)
-    .then(() => console.log("Actividades guardadas exitosamente."))
-    .catch(err => console.log("Error al guardar: " + err.message));
+  guardarActividades(data); // ya maneja índices también
 }
+
 async function leerOrden(ordenId) {
   try {
     const snapshot = await database.ref(`ordenes_asignadas/${ordenId}`).get();
-    if (snapshot.exists()) {
-      return snapshot.val(); // Aquí retornas los datos correctamente
-    } else {
-      console.log("No se encontraron datos.");
-      return null;
-    }
+    return snapshot.exists() ? snapshot.val() : null;
   } catch (err) {
     console.log("Error al leer: " + err.message);
     return null;
   }
 }
-
 
 async function leerOrden_general() {
   try {
     const snapshot = await database.ref(`ordenes_asignadas`).get();
-    if (snapshot.exists()) {
-      return snapshot.val(); // Aquí retornas los datos correctamente
-    } else {
-      console.log("No se encontraron datos.");
-      return null;
-    }
+    return snapshot.exists() ? snapshot.val() : null;
   } catch (err) {
     console.log("Error al leer: " + err.message);
     return null;
   }
 }
 
-
 function actualizarOrden(ordenId, nuevasActividades) {
-  // Guardar directamente en la ruta de la orden
-  firebase.database().ref(`ordenes_asignadas/${ordenId}`).set(nuevasActividades)
-    .then(() => {
-      console.log(`Orden ${ordenId} actualizada correctamente`);
-    })
-    .catch((error) => {
-      console.error("Error al actualizar la orden:", error);
-    });
+  const actualizaciones = {
+    [`ordenes_asignadas/${ordenId}`]: nuevasActividades
+  };
+
+  nuevasActividades.forEach(act => {
+    if (act.COD) actualizaciones[`por_cod/${act.COD}/${ordenId}`] = true;
+    if (act.NOMBRE) actualizaciones[`por_empleado/${act.NOMBRE}/${ordenId}`] = true;
+    if (act.ESTATUS) actualizaciones[`por_estatus/${act.ESTATUS}/${ordenId}`] = true;
+  });
+
+  firebase.database().ref().update(actualizaciones)
+    .then(() => console.log(`Orden ${ordenId} actualizada correctamente`))
+    .catch((error) => console.error("Error al actualizar la orden:", error));
 }
-
-
-
-
-/* leerOrden(localStorage.getItem("iniciar_orden")).then(data => {
-  if (data) {
-    data.forEach(item => item.ESTATUS = "PAUSADA");
-    console.log(data);
-    guardarActividades(data); // << mover aquí, no afuera
-  } else {
-    console.warn("No se cargaron datos para modificar");
-  }
-}); */
-
-/* leerOrden_general().then(data => {
-  if (data) {
-    console.log(data);
-  } else {
-    console.warn("No se cargaron datos para modificar");
-  }
-}); 
- */
-
 
 async function buscarOrdenesPorCodEstructurado(codBuscado) {
-  try {
-    const snapshot = await database.ref('ordenes_asignadas').get();
+  const codRef = await database.ref(`por_cod/${codBuscado}`).get();
+  if (!codRef.exists()) return {};
 
-    if (!snapshot.exists()) {
-      console.log("No se encontraron datos.");
-      return {};
-    }
+  const ordenes = codRef.val();
+  const resultado = {};
 
-    const ordenes = snapshot.val();
-    const resultado = {};
-
-    for (const ordenId in ordenes) {
-      const actividades = ordenes[ordenId];
-
-      // Verifica si alguna actividad de esta orden tiene el COD buscado
-      const contieneCod = actividades.some(act => act.COD == codBuscado);
-
-      if (contieneCod) {
-        resultado[ordenId] = actividades; // Agrega toda la orden
-      }
-    }
-
-    console.log(`Se encontraron ${Object.keys(resultado).length} órdenes con actividades COD = ${codBuscado}`);
-    return resultado;
-
-  } catch (err) {
-    console.error("Error al buscar órdenes:", err.message);
-    return {};
+  for (const ordenId of Object.keys(ordenes)) {
+    const snapshot = await database.ref(`ordenes_asignadas/${ordenId}`).get();
+    if (snapshot.exists()) resultado[ordenId] = snapshot.val();
   }
+
+  return resultado;
 }
 
+async function buscarOrdenesPorEmpleado(nombreEmpleado) {
+  const empRef = await database.ref(`por_empleado/${nombreEmpleado}`).get();
+  if (!empRef.exists()) return {};
 
-/* buscarOrdenesPorCodEstructurado("200850").then(resultado => {
-  console.log("Órdenes encontradas:", resultado);
-});
- */
+  const ordenes = empRef.val();
+  const resultado = {
+    PENDIENTE: [],
+    EJECUTANDO: [],
+    PAUSADA: [],
+    FINALIZADA: []
+  };
 
-
-async function buscarOrdenesPorEmpleado(codEmpleado) {
-  try {
-    const snapshot = await database.ref('ordenes_asignadas').get();
-
-    if (!snapshot.exists()) {
-      console.log("No se encontraron datos.");
-      return {};
+  for (const ordenId of Object.keys(ordenes)) {
+    const snapshot = await database.ref(`ordenes_asignadas/${ordenId}`).get();
+    if (snapshot.exists()) {
+      const actividades = snapshot.val().filter(act => act.NOMBRE === nombreEmpleado);
+      const estatusSet = new Set(actividades.map(act => act.ESTATUS));
+      estatusSet.forEach(estatus => {
+        if (resultado[estatus]) {
+          resultado[estatus].push({ ordenId, actividades: actividades.filter(act => act.ESTATUS === estatus) });
+        }
+      });
     }
-console.log(codEmpleado)
-    const ordenes = snapshot.val();
-    const resultado = {
-      PENDIENTE: [],
-      EJECUTANDO: [],
-      PAUSADA: [],
-      FINALIZADA: []
-    };
-
-    for (const ordenId in ordenes) {
-      const actividades = ordenes[ordenId];
-
-      // Buscar si alguna actividad corresponde al empleado
-      const actividadesEmpleado = actividades.filter(act => act.NOMBRE == codEmpleado);
-
-      if (actividadesEmpleado.length > 0) {
-        // Agrupar por estatus
-        const estatusSet = new Set(actividadesEmpleado.map(act => act.ESTATUS));
-
-        estatusSet.forEach(estatus => {
-          if (resultado[estatus]) {
-            resultado[estatus].push({
-              ordenId,
-              actividades: actividadesEmpleado.filter(act => act.ESTATUS === estatus)
-            });
-          }
-        });
-      }
-    }
-
-    console.log("Órdenes del empleado:", resultado);
-    return resultado;
-
-  } catch (err) {
-    console.error("Error al buscar órdenes del empleado:", err.message);
-    return {};
   }
+  return resultado;
 }
 
+async function eliminarOrden(ordenId) {
+  const snapshot = await database.ref(`ordenes_asignadas/${ordenId}`).get();
+  if (!snapshot.exists()) return;
+
+  const actividades = snapshot.val();
+  const actualizaciones = {
+    [`ordenes_asignadas/${ordenId}`]: null
+  };
+
+  actividades.forEach(act => {
+    if (act.COD) actualizaciones[`por_cod/${act.COD}/${ordenId}`] = null;
+    if (act.NOMBRE) actualizaciones[`por_empleado/${act.NOMBRE}/${ordenId}`] = null;
+    if (act.ESTATUS) actualizaciones[`por_estatus/${act.ESTATUS}/${ordenId}`] = null;
+  });
+
+  await database.ref().update(actualizaciones);
+}
 
 async function eliminarOrdenesPendientes() {
-  try {
-    const snapshot = await database.ref('ordenes_asignadas').get();
+  const snapshot = await database.ref('ordenes_asignadas').get();
+  if (!snapshot.exists()) return;
 
-    if (!snapshot.exists()) {
-      console.log("No hay órdenes para revisar.");
-      return;
+  const ordenes = snapshot.val();
+  const actualizaciones = {};
+
+  for (const ordenId in ordenes) {
+    const actividades = ordenes[ordenId];
+    if (actividades.some(act => act.ESTATUS === "PENDIENTE")) {
+      actualizaciones[`ordenes_asignadas/${ordenId}`] = null;
+      actividades.forEach(act => {
+        if (act.COD) actualizaciones[`por_cod/${act.COD}/${ordenId}`] = null;
+        if (act.NOMBRE) actualizaciones[`por_empleado/${act.NOMBRE}/${ordenId}`] = null;
+        if (act.ESTATUS) actualizaciones[`por_estatus/${act.ESTATUS}/${ordenId}`] = null;
+      });
     }
+  }
 
-    const ordenes = snapshot.val();
-    const actualizaciones = {};
-
-    for (const ordenId in ordenes) {
-      const actividades = ordenes[ordenId];
-
-      // Si alguna actividad tiene estatus "PENDIENTE", se elimina toda la orden
-      const tienePendiente = actividades.some(act => act.ESTATUS === "PENDIENTE");
-
-      if (tienePendiente) {
-        actualizaciones[`ordenes_asignadas/${ordenId}`] = null; // Borrar la orden
-      }
-    }
-
-    if (Object.keys(actualizaciones).length > 0) {
-      await database.ref().update(actualizaciones);
-      console.log("Órdenes pendientes eliminadas exitosamente.");
-    } else {
-      console.log("No se encontraron órdenes con actividades PENDIENTES.");
-    }
-  } catch (err) {
-    console.error("Error al eliminar órdenes pendientes:", err.message);
+  if (Object.keys(actualizaciones).length > 0) {
+    await database.ref().update(actualizaciones);
+    console.log("Órdenes pendientes eliminadas exitosamente.");
   }
 }
