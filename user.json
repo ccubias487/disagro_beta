@@ -9,13 +9,6 @@
     {
         "USUARIO": "200826",
         "CONTRASEÑA": "DISAGRO",
-        "TIPO": "USER",
-        "NOMBRE": "ANTONIO ADOLFO BLANCO RAUDA",
-        "NICK": "ANTONIO RAUDA"
-    },
-    {
-        "USUARIO": "200826",
-        "CONTRASEÑA": "DISAGRO",
         "TIPO": "ADMIN",
         "NOMBRE": "ANTONIO ADOLFO BLANCO RAUDA",
         "NICK": "ANTONIO RAUDA"
