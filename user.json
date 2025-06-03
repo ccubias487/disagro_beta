@@ -33,6 +33,12 @@
         "TIPO": "USER",
         "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
         "NICK": "CARLOS ORTIZ"
+    },{
+        "USUARIO": "2008501",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "ADMIN",
+        "NOMBRE": "CARLOS ALEXANDER CUBIAS ORTIZ",
+        "NICK": "CARLOS ORTIZ"
     },
     {
         "USUARIO": "200472",
