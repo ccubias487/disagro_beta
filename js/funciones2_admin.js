@@ -10,7 +10,7 @@ document.getElementById("inventario").addEventListener("click", function () {
 
 document.getElementById("requisicion").addEventListener("click", function () {
 
-  window.location.href = "requisiciones.html";
+  window.location.href = "asignar_ordenes.html";
 })
 
 document.getElementById("equipos").addEventListener("click", function () {
