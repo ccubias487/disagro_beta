@@ -103,7 +103,7 @@ async function generar_orden_finalizadaPDF(orden) {
 
   data_actividad = []
   contador = 0
-  TIEMPO_ESTIMADO = 0
+  let TIEMPO_ESTIMADO = 0
   for (i = 0; i <= requisicion_finalizada.length - 1; i++) {
     console.log(i)
     console.log(Number(requisicion_finalizada[i].TIEMPO))
