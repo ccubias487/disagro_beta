@@ -120,6 +120,17 @@ async function generar_orden_finalizadaPDF(orden) {
     ]);
   }
 
+  function minutosAHHMMSS(minutos) {
+  const totalSegundos = minutos * 60;
+  const horas = Math.floor(totalSegundos / 3600);
+  const minutosRestantes = Math.floor((totalSegundos % 3600) / 60);
+  const segundos = totalSegundos % 60;
+
+  return `${String(horas).padStart(2, '0')}:${String(minutosRestantes).padStart(2, '0')}:${String(segundos).padStart(2, '0')}`;
+}
+
+
+
   const { jsPDF } = window.jspdf;
   const pdf = new jsPDF();
 
@@ -224,8 +235,10 @@ async function generar_orden_finalizadaPDF(orden) {
     },
   });
 
+  // Ejemplo
+
   let yActual = pdf.lastAutoTable.finalY + 10;
-  const tiempo_reportado ="Tiempo de estimado: " + TIEMPO_ESTIMADO;
+  const tiempo_reportado ="Tiempo de estimado: " + minutosAHHMMSS(TIEMPO_ESTIMADO);
   const tiempo_orden = "Tiempo de orden: " + requisicion_finalizada[0].TIEMPO_ORDEN;
   const observacion_local = requisicion_finalizada[0].OBSERVACION;
   const observacion = "OBSERVACION: " + observacion_local;
