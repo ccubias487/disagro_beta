@@ -97,22 +97,28 @@ async function comprimirImagen(base64, maxWidth = 600, quality = 0.6) {
 }
 
 async function generar_orden_finalizadaPDF(orden) {
-    
-  document.getElementById("loader-container").style.display = "flex";
-      let requisicion_finalizada = await leerOrden(orden);
 
-              data_actividad=[]
-        contador=0
-        TIEMPO_ESTIMADO=0
-for(i=0; i<=requisicion_finalizada.length -1; i++){
+  document.getElementById("loader-container").style.display = "flex";
+  let requisicion_finalizada = await leerOrden(orden);
+
+  data_actividad = []
+  contador = 0
+  TIEMPO_ESTIMADO = 0
+  for (i = 0; i <= requisicion_finalizada.length - 1; i++) {
     console.log(i)
-    TIEMPO_ESTIMADO= TIEMPO_ESTIMADO+Number(requisicion_finalizada[i].TIEMPO)
+    console.log(Number(requisicion_finalizada[i].TIEMPO))
+    const tiempo = Number(requisicion_finalizada[i].TIEMPO);
+    if (!isNaN(tiempo)) {
+      TIEMPO_ESTIMADO += tiempo;
+    } else {
+      console.warn(`Valor de TIEMPO inválido en la posición ${i}:`, requisicion_finalizada[i].TIEMPO);
+    }
     data_actividad.push([
-      contador.toString().padStart(3, "0"), 
-      requisicion_finalizada[i].ACTIVIDAD, 
+      contador.toString().padStart(3, "0"),
+      requisicion_finalizada[i].ACTIVIDAD,
       requisicion_finalizada[i].TIEMPO
     ]);
-}
+  }
 
   const { jsPDF } = window.jspdf;
   const pdf = new jsPDF();
@@ -128,15 +134,15 @@ for(i=0; i<=requisicion_finalizada.length -1; i++){
     localStorage.setItem("realizadas", Number(ejecutando) + 1);
   }
 
-/*   let datosJSON = JSON.parse(localStorage.getItem("orden_ejecucion"));
-  datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden")); */
-/*   localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON)); */
- /*  let ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"));
-  localStorage.setItem("proceso", ejecutando_orden.length); */
+  /*   let datosJSON = JSON.parse(localStorage.getItem("orden_ejecucion"));
+    datosJSON = datosJSON.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden")); */
+  /*   localStorage.setItem("orden_ejecucion", JSON.stringify(datosJSON)); */
+  /*  let ejecutando_orden = JSON.parse(localStorage.getItem("orden_ejecucion"));
+   localStorage.setItem("proceso", ejecutando_orden.length); */
 
-/*   let autorizar = JSON.parse(localStorage.getItem("autorizaciones"));
-  autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden"));
-  localStorage.setItem("autorizaciones", JSON.stringify(autorizar)); */
+  /*   let autorizar = JSON.parse(localStorage.getItem("autorizaciones"));
+    autorizar = autorizar.filter(item => item.ORDEN !== localStorage.getItem("iniciar_orden"));
+    localStorage.setItem("autorizaciones", JSON.stringify(autorizar)); */
 
   function hayEspacioDisponible(yActual, espacioNecesario) {
     return yActual + espacioNecesario <= alturaPagina - 20;
@@ -160,16 +166,16 @@ for(i=0; i<=requisicion_finalizada.length -1; i++){
     pdf.text(linea, (anchoPagina - pdf.getTextWidth(linea)) / 2, 60 + index * 5);
   });
 
-  if(requisicion_finalizada[0].EQUIPO!== "undefined"){
-equipo_orden= requisicion_finalizada[0].EQUIPO
-  }else{
-    equipo_orden= "EQUIPO NO ASIGNADO"
+  if (requisicion_finalizada[0].EQUIPO !== "undefined") {
+    equipo_orden = requisicion_finalizada[0].EQUIPO
+  } else {
+    equipo_orden = "EQUIPO NO ASIGNADO"
   }
 
-   if(requisicion_finalizada[0].UBICACION!== "undefined"){
-ubicacion_orden= requisicion_finalizada[0].UBICACION
-  }else{
-    ubicacion_orden= "UBICACION NO ASIGNADA"
+  if (requisicion_finalizada[0].UBICACION !== "undefined") {
+    ubicacion_orden = requisicion_finalizada[0].UBICACION
+  } else {
+    ubicacion_orden = "UBICACION NO ASIGNADA"
   }
 
   let yTabla = 70;
@@ -275,7 +281,7 @@ ubicacion_orden= requisicion_finalizada[0].UBICACION
     pdf.setFontSize(15);
     pdf.setFont("helvetica", "bold");
     pdf.text(descripcion2, 40, yActual);
-console.log(materiales_req)
+    console.log(materiales_req)
 
     const data2 = materiales_req.map(item => [
       item.CANTIDAD,
@@ -321,7 +327,7 @@ console.log(materiales_req)
     y += 15;
   }
 
-  let add_foto =[]
+  let add_foto = []
   for (let i = 0; i < fotos.length; i++) {
     const imagenComprimida = await comprimirImagen(fotos[i]);
 
@@ -335,7 +341,7 @@ console.log(materiales_req)
     pdf.setFontSize(10);
     pdf.text(`Foto ${i + 1}`, x, y - 5);
     pdf.addImage(imagenComprimida, "JPEG", x, y, imgAncho, imgAlto);
-add_foto.push(imagenComprimida)
+    add_foto.push(imagenComprimida)
     if ((i + 1) % columnas === 0) {
       x = margen;
       y += imgAlto + espacioEntreImagenes;
@@ -353,29 +359,28 @@ add_foto.push(imagenComprimida)
   localStorage.removeItem("tiempo_orden");
 
 
-//pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
+  //pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
 
 
-// 1. Generar el blob del PDF
-// 1. FIN Generar el blob del PDF
-const blobUrl = await pdf.output('bloburl');
+  // 1. Generar el blob del PDF
+  // 1. FIN Generar el blob del PDF
+  const blobUrl = await pdf.output('bloburl');
 
-// Abrir en una nueva pestaña
-window.open(blobUrl, '_blank');
+  // Abrir en una nueva pestaña
+  window.open(blobUrl, '_blank');
 
-// También crear el enlace de descarga (opcional)
-const link = document.createElement('a');
-link.href = blobUrl;
-link.download = "ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf";
-document.body.appendChild(link);
-link.click();
-document.body.removeChild(link);
+  // También crear el enlace de descarga (opcional)
+  const link = document.createElement('a');
+  link.href = blobUrl;
+  link.download = "ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
 
-// Limpieza */
-// 1. FIN Generar el blob del PDF
+  // Limpieza */
+  // 1. FIN Generar el blob del PDF
 
   document.getElementById("loader-container").style.display = "none";
 }
 
 
-      
