@@ -225,7 +225,7 @@ async function generar_orden_finalizadaPDF(orden) {
   });
 
   let yActual = pdf.lastAutoTable.finalY + 10;
-  const tiempo_reportado ="Tiempo de estimado: " + "TIEMPO_ESTIMADO";
+  const tiempo_reportado ="Tiempo de estimado: " + TIEMPO_ESTIMADO;
   const tiempo_orden = "Tiempo de orden: " + requisicion_finalizada[0].TIEMPO_ORDEN;
   const observacion_local = requisicion_finalizada[0].OBSERVACION;
   const observacion = "OBSERVACION: " + observacion_local;
