@@ -109,7 +109,7 @@ async function generar_orden_finalizadaPDF(orden) {
     console.log(Number(requisicion_finalizada[i].TIEMPO))
     const tiempo = Number(requisicion_finalizada[i].TIEMPO);
     if (!isNaN(tiempo)) {
-      TIEMPO_ESTIMADO += tiempo;
+      TIEMPO_ESTIMADO = TIEMPO_ESTIMADO + tiempo;
     } else {
       console.warn(`Valor de TIEMPO inválido en la posición ${i}:`, requisicion_finalizada[i].TIEMPO);
     }
@@ -225,7 +225,7 @@ async function generar_orden_finalizadaPDF(orden) {
   });
 
   let yActual = pdf.lastAutoTable.finalY + 10;
-  const tiempo_reportado = TIEMPO_ESTIMADO;
+  const tiempo_reportado ="Tiempo de estimado: " + "TIEMPO_ESTIMADO";
   const tiempo_orden = "Tiempo de orden: " + requisicion_finalizada[0].TIEMPO_ORDEN;
   const observacion_local = requisicion_finalizada[0].OBSERVACION;
   const observacion = "OBSERVACION: " + observacion_local;
