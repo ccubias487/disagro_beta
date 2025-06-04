@@ -103,8 +103,10 @@ async function generar_orden_finalizadaPDF(orden) {
 
               data_actividad=[]
         contador=0
+        TIEMPO_ESTIMADO=0
 for(i=0; i<=requisicion_finalizada.length -1; i++){
     console.log(i)
+    TIEMPO_ESTIMADO= TIEMPO_ESTIMADO+Number(requisicion_finalizada[i].TIEMPO)
     data_actividad.push([
       contador.toString().padStart(3, "0"), 
       requisicion_finalizada[i].ACTIVIDAD, 
@@ -217,7 +219,7 @@ ubicacion_orden= requisicion_finalizada[0].UBICACION
   });
 
   let yActual = pdf.lastAutoTable.finalY + 10;
-  const tiempo_reportado = "Tiempo estimado: " + convertirMinutosAHoras(Number(localStorage.getItem("tiempo_estimado")));
+  const tiempo_reportado = TIEMPO_ESTIMADO;
   const tiempo_orden = "Tiempo de orden: " + requisicion_finalizada[0].TIEMPO_ORDEN;
   const observacion_local = requisicion_finalizada[0].OBSERVACION;
   const observacion = "OBSERVACION: " + observacion_local;
