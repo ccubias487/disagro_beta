@@ -1,10 +1,13 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
+   
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -421,7 +424,7 @@
           </div>
 
           <div class="caja_resumen">
-            <div class="cuadro_resumen">
+            <div class="cuadro_resumen" id="cuadro_resumen_realizadas">
               <div class="titulo_resumen">ORDENES REALIZADAS</div>
               <div class="cantidad_resumen" id="realizadas">0</div>
               <div class="icono_resumen">
@@ -481,9 +484,9 @@
               </div>
             </div>
 
-            <div class="cuadro_resumen">
+            <div class="cuadro_resumen" id="cuadro_resumen_asignadas">
               <div class="titulo_resumen">ORDENES ASIGNADAS</div>
-              <div class="cantidad_resumen" id="asignadas"></div>
+              <div class="cantidad_resumen" id="asignadas">0</div>
               <div class="icono_resumen">
                 <svg
                   width="159"
@@ -636,9 +639,9 @@
               </div>
             </div>
 
-            <div class="cuadro_resumen">
+            <div class="cuadro_resumen" id="cuadro_resumen_proceso">
               <div class="titulo_resumen">ORDENES EN PROCESO</div>
-              <div class="cantidad_resumen" id="proceso"></div>
+              <div class="cantidad_resumen" id="proceso">0</div>
               <div class="icono_resumen">
                 <svg
                   width="171"
@@ -930,8 +933,8 @@
               </div>
             </div>
 
-            <div class="cuadro_resumen">
-              <div class="titulo_resumen">ORDENES NO FINALIZADAS</div>
+            <div class="cuadro_resumen" id="cuadro_resumen_no_finalizadas">
+              <div class="titulo_resumen">ORDENES EN PAUSA</div>
               <div class="cantidad_resumen" id="no_finalizadas">0</div>
               <div class="icono_resumen">
                 <svg
@@ -1095,7 +1098,7 @@
                 <div class="titulo_menu">Inicio</div>
               </div>
 
-              <div class="icono_menu_app">
+              <div class="icono_menu_app" id="horas">
                 <svg
                   width="181"
                   height="121"
@@ -1235,7 +1238,22 @@
         </article>
       </section>
       <footer class="page-footer"></footer>
-      <script src="funciones2.js"></script>
+      
+      
+       <!-- Scripts de Firebase -->
+
+    <!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
+
+    <!-- Agregar el SDK de Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
+
+    <!-- Aquí iría tu propio script o el bloque de inicialización -->
+     
+   <!--  <script src="js/database.js"></script> -->
+     <script src="js/firebase.js"></script>
+     <script src="js/funciones2.js"></script>
+
     </section>
   </body>
 </html>

@@ -1,0 +1,53 @@
+
+    body {
+      padding-bottom: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      background-color: #212e36;
+      color: white;
+    }
+    .actividad-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .actividad-row input, .actividad-row select {
+      flex: 1;
+      min-width: 220px;
+    }
+    .actividad-item {
+      margin-bottom: 0.5rem;
+    }
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mb-4, .mt-4{
+text-align: center;
+}
+
+.actividad-row{
+display: flex;
+flex-direction: column;
+}
+
+#logo{
+  
+    background-image: url(https://www.disagro.com.sv/wp-content/uploads/2023/07/logotipo-disagro-verde.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80px;
+    width: 100%;
+
+  
+
+}
+
+ .cantidad_resumen{
+        width: 10%;
+        text-align: center;
+       }
+
+       

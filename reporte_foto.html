@@ -5,7 +5,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="reporte.css" />
+    <link rel="stylesheet" type="text/css" href="css/reporte.css" />
     <style>
       video,
       canvas,
@@ -37,7 +37,8 @@
     <br />
     <button onclick="tomarFoto()" class="boton">📸 Tomar Foto</button>
     <button onclick="abrirGaleria()" class="boton">🖼️ Seleccionar </button>
-    <button onclick="generarPDF()" class="boton">📄 Generar PDF</button>
+    <button  id="reporte" class="boton">📄 Generar PDF</button>
+    <button  id="guardar" class="boton">💾 Guardar </button>
 
     <input
       type="file"
@@ -65,11 +66,18 @@
   </div>
 
   <!-- Texto -->
-  <p>Generando reporte PDF, por favor espera...</p>
+  <p id="esperando">Generando reporte PDF, por favor espera...</p>
 </div>
 
+<!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
+    <!-- Agregar el SDK de Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
+    <!-- Aquí iría tu propio script o el bloque de inicialización -->
+     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-messaging-compat.js"></script>
+      <script src="js/firebase.js"></script>
+    <script src="js/reporte.js"></script>
 
-    <script src="reporte.js"></script>
-    <script src="cerrar_orden.js"></script>
+    <script src="js/cerrar_orden.js"></script>
   </body>
 </html>
