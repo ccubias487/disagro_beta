@@ -377,7 +377,7 @@ leerOrden(localStorage.getItem("iniciar_orden")).then(data => {
 
 
   localStorage.removeItem("materiales_utilizados");
-  localStorage.removeItem("tiempo_orden");
+  //localStorage.removeItem("tiempo_orden");
 
 
 pdf.save("ORDEN_DE_TRABAJO_" + localStorage.getItem("iniciar_orden") + ".pdf");
