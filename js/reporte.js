@@ -434,7 +434,7 @@ document.getElementById("guardar").addEventListener("click", async function () {
         item.MATERIALES = materiales_req;
         item.FOTOS = add_foto;
         item.OBSERVACION = localStorage.getItem("observacion");
-        item.TIEMPO_ORDEN = localStorage.getItem("tiempo_orden")
+        item.TIEMPOORDEN = localStorage.getItem("tiempo_orden")
       item.TECNICO = localStorage.getItem("nombre")
       item.FIRMA= localStorage.getItem("firma_user")
       });
