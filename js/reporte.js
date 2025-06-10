@@ -360,7 +360,7 @@ leerOrden(localStorage.getItem("iniciar_orden")).then(data => {
       item.MATERIALES = materiales_req
       item.FOTOS = add_foto
       item.OBSERVACION = localStorage.getItem("observacion")
-      item.TIEMPO_ORDEN = tiempo_de_orden_e
+      item.TIEMPOORDEN = tiempo_de_orden_e
       item.TECNICO = localStorage.getItem("nombre")
       item.FIRMA= localStorage.getItem("firma_user")
 
