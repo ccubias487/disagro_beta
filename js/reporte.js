@@ -226,6 +226,7 @@ async function generarPDF() {
 
   let yActual = pdf.lastAutoTable.finalY + 10;
   const tiempo_reportado = "Tiempo estimado: " + convertirMinutosAHoras(Number(localStorage.getItem("tiempo_estimado")));
+  const tiempo_de_orden_e= localStorage.getItem("tiempo_orden")
   const tiempo_orden = "Tiempo de orden: " + localStorage.getItem("tiempo_orden");
   const observacion_local = localStorage.getItem("observacion");
   const observacion = "OBSERVACION: " + observacion_local;
@@ -359,7 +360,7 @@ leerOrden(localStorage.getItem("iniciar_orden")).then(data => {
       item.MATERIALES = materiales_req
       item.FOTOS = add_foto
       item.OBSERVACION = localStorage.getItem("observacion")
-      item.TIEMPO_ORDEN = localStorage.getItem("tiempo_orden")
+      item.TIEMPO_ORDEN = tiempo_de_orden_e
       item.TECNICO = localStorage.getItem("nombre")
       item.FIRMA= localStorage.getItem("firma_user")
 
