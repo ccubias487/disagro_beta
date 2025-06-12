@@ -1,0 +1,337 @@
+body, html {
+    background-color: #212e36;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  canvas {
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 5px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 1px 5px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: default;
+    position:relative;
+  }
+  
+  input, select, textarea { 
+    margin:0; 
+    padding: 2px 5px;
+    outline:none; 
+    font-family:inherit;
+    background-color: grey;
+    box-sizing:border-box; 
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+  }
+  
+  button {
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 6px 13px;
+    margin-bottom: 0;
+    font-size: 9px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .boton{
+    border-radius: 15px;
+    width: 175px;
+    background: rgb(102, 202, 92);
+    color: white;
+    border: 2px solid rgb(102, 202, 92);
+    height: 80px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 15px;
+    }
+
+  
+  .boton:hover{
+    box-shadow: 0 0 5px rgb(102, 202, 92),
+                0 0 25px rgb(102, 202, 92),
+                0 0 50px rgb(102, 202, 92),
+                0 0 200px rgb(102, 202, 92);
+    cursor: hand;
+    }
+  
+
+    .button2 {
+    color: white;
+    background-color: grey;
+    display: inline-block;
+    padding: 6px 13px;
+    
+    font-size: 9px;
+    font-weight: normal;
+    text-align: center;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+  }
+  
+  .boton2{
+    border-radius: 15px;
+    width: 275px;
+    background: rgb(102, 202, 92);
+    color: white;
+    border: 2px solid rgb(102, 202, 92);
+    height: 100px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 15px;
+    margin-bottom: 350px;
+    margin-top: 35px;
+    }
+
+  
+  .boton:hover2{
+    box-shadow: 0 0 5px rgb(102, 202, 92),
+                0 0 25px rgb(102, 202, 92),
+                0 0 50px rgb(102, 202, 92),
+                0 0 200px rgb(102, 202, 92);
+    cursor: hand;
+    }
+  .gui {
+    width: 100%;
+    text-align: right;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #color{
+    width: 100px;
+    height: 40px;
+  }
+
+  .logo_ordenes {
+    background-image: url(https://www.disagro.com.sv/wp-content/uploads/2023/07/logotipo-disagro-verde.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    margin: 0.5rem;
+    margin-top: 1rem;
+}
+
+.logo_titulo{
+    font-size: 2.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+#encabezado_notificaciones_ordenes{
+    margin-top: 5px;
+}
+
+#imagen_login{
+  background-image: url("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/escribiendo.png");  
+      background-size:  contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 550px;
+      width: 100%;
+
+}
+
+#input_login{
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_input{
+  font-size: xx-large;
+  color: white;
+  font-weight: bold;
+  margin-top: 25px;
+  
+}
+
+.titulo_input2{
+  font-size: xx-large;
+  color: white;
+  margin-top: 10px;
+  
+}
+
+.input3{
+  width: 100%;
+  border-radius: 5px;
+  border: 2px solid rgb(102, 202, 92);
+  background: #5C5F5C;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  margin: 0.1rem;
+  height: 50px;
+  font-size: xx-large;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+  }
+
+  #password{
+    margin-top: 25px;
+  }
+
+  #bt-ingresar{
+    margin-top: 35px;
+    width: 200px;
+    height: 100px;
+  }
+
+  #contraseña{
+    margin-top: 35px;
+  }
+
+  body{
+    font-family: sans-serif;
+  }
+
+  #contenido{
+    width: 90%;
+  }
+
+  #titulo_input_req{
+    margin-top: 125px;
+  }
+
+  table {
+  border-collapse: collapse;
+      font-size: x-large;
+}
+
+.tabla_notificacions tbody tr>th {
+  color: white;
+  background: rgb(102, 202, 92);
+}
+
+
+
+
+.tabla_busqueda {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.tabla_busqueda tbody tr>th {
+  color: white;
+  background: rgb(102, 202, 92);
+}
+
+.tabla_notificacions tr:nth-child(odd) {
+  background: rgba(241, 239, 236, 0.3);
+}
+
+.tabla_notificacions tr:hover {
+  background: rgb(102, 202, 92, 0.5);
+}
+
+.tabla_notificacions tr>td {
+  color: white;
+  text-align: center;
+}
+td {
+    height: 55px;
+}
+
+.tabla_busqueda tr:nth-child(odd) {
+  background: rgba(241, 239, 236, 0.3);
+}
+
+.tabla_busqueda tr:hover {
+  background: rgb(102, 202, 92, 0.5);
+}
+
+.tabla_busqueda tr>td {
+  color: white;
+  text-align: center;
+}
+#contenido_tabla {
+  border-radius: 5px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+font-family: sans-serif 
+}
+
+#producto, #agregar_texto, #existencia{
+  font-size: xx-large;
+}
+
+.modal-content {
+    background-color: rgb(54, 74, 108, 0.9);
+    padding: 20px;
+    border-radius: 25px;
+    width: 700px;
+    text-align: center;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.input33 {
+    width: 40%; 
+    border-radius: 5px;
+    border: 2px solid rgb(102, 202, 92);
+    background: #5C5F5C;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    margin: 0.1rem;
+    height: 50px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#mensaje{
+  font-size: xx-large;
+ color: white;
+ width: 100%;
+ margin-top: 35px;
+ background-color: "#d5383887";
+ background: #d5383887;
+}
+
+#log{
+  margin-top: 25px;
+}
+
+.boton22{
+    border-radius: 15px;
+    width: 175px;
+    background: rgb(102, 202, 92);
+    color: white;
+    border: 2px solid rgb(102, 202, 92);
+    height: 80px;
+    font-size: xx-large;
+    font-weight: bold;
+    margin: 55px;
+    }
+
+    #tabla{
+      margin-bottom: 255px;
+    }
