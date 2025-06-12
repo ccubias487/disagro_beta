@@ -3,8 +3,17 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <link href="css/estilos.css" rel="stylesheet" type="text/css" />
-  <link href="css/estilos_tabla_ejecutando.css" rel="stylesheet" type="text/css" />
+  <link href="css/estilos_tabla.css" rel="stylesheet" type="text/css" />
 </head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-LJ800MZ8V1');
+</script>
 
 <body>
   <section class="page-content">
@@ -12,125 +21,38 @@
       <article id="contenido_tabla" class="articulo">
         <div id="encabezado_notificaciones_ordenes">
           <div class="logo_ordenes"></div>
-          <div class="logo_titulo" id="titulo_logo">AUTORIZACIONES</div>
+          <div class="logo_titulo" id="tecnico_seleccionado">LISTADO DE PERSONAL </div>
+          <div id="prioridad_codigo_colores">
 
-          <div class="logo_titulo" id="subtitulo_logo">Autorizaciones</div>
 
-          <div class="logo_titulo" id="titulo_tiempo">
-            
-          </div>
-          <div class="contador_tiempo">
-            <div class="logo_titulo" id="tiempo">Iniciado...</div>
-            <div id="icono_reloj"><svg width="50" height="50" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.15"
-                  d="M6.25 21.5C6.25 21.6989 6.8558 21.8897 7.93414 22.0303C9.01247 22.171 10.475 22.25 12 22.25C13.525 22.25 14.9875 22.171 16.0659 22.0303C17.1442 21.8897 17.75 21.6989 17.75 21.5C17.75 21.3011 17.1442 21.1103 16.0659 20.9697C14.9875 20.829 13.525 20.75 12 20.75C10.475 20.75 9.01247 20.829 7.93414 20.9697C6.8558 21.1103 6.25 21.3011 6.25 21.5Z"
-                  fill="#45413C" />
-                <path d="M7.25 6H16.75V18H7.25V6Z" fill="#DAEDF7" stroke="#45413C" stroke-width="0.5"
-                  stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M8.5 3H15.5V21H8.5V3Z" fill="#656769" />
-                <path
-                  d="M14.68 3.00002H9.32002C9.21215 2.99935 9.10522 3.02011 9.00543 3.06108C8.90564 3.10206 8.81498 3.16243 8.73871 3.23871C8.66243 3.31498 8.60206 3.40564 8.56108 3.50543C8.52011 3.60522 8.49935 3.71215 8.50002 3.82002V5.07002C8.49935 4.96215 8.52011 4.85522 8.56108 4.75543C8.60206 4.65564 8.66243 4.56498 8.73871 4.48871C8.81498 4.41243 8.90564 4.35206 9.00543 4.31108C9.10522 4.27011 9.21215 4.24935 9.32002 4.25002H14.68C14.7879 4.24935 14.8948 4.27011 14.9946 4.31108C15.0944 4.35206 15.185 4.41243 15.2613 4.48871C15.3376 4.56498 15.398 4.65564 15.4389 4.75543C15.4799 4.85522 15.5007 4.96215 15.5 5.07002V3.82002C15.5007 3.71215 15.4799 3.60522 15.4389 3.50543C15.398 3.40564 15.3376 3.31498 15.2613 3.23871C15.185 3.16243 15.0944 3.10206 14.9946 3.06108C14.8948 3.02011 14.7879 2.99935 14.68 3.00002Z"
-                  fill="#87898C" />
-                <path d="M8.5 3H15.5V21H8.5V3Z" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path
-                  d="M17.5 10.5H18.5C18.6326 10.5 18.7598 10.5527 18.8536 10.6464C18.9473 10.7402 19 10.8674 19 11V13C19 13.1326 18.9473 13.2598 18.8536 13.3536C18.7598 13.4473 18.6326 13.5 18.5 13.5H17.5V10.5Z"
-                  fill="#DAEDF7" stroke="#45413C" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M6 12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18C13.5913 18 15.1174 17.3679 16.2426 16.2426C17.3679 15.1174 18 13.5913 18 12C18 10.4087 17.3679 8.88258 16.2426 7.75736C15.1174 6.63214 13.5913 6 12 6C10.4087 6 8.88258 6.63214 7.75736 7.75736C6.63214 8.88258 6 10.4087 6 12Z"
-                  fill="#DAEDF7" />
-                <path
-                  d="M12 7.31C13.4772 7.31102 14.9021 7.85692 16.0018 8.84316C17.1015 9.8294 17.7987 11.1867 17.96 12.655C17.9859 12.4376 17.9993 12.2189 18 12C18 10.4087 17.3679 8.88258 16.2426 7.75736C15.1174 6.63214 13.5913 6 12 6C10.4087 6 8.88258 6.63214 7.75736 7.75736C6.63214 8.88258 6 10.4087 6 12C6.00072 12.2189 6.01408 12.4376 6.04 12.655C6.20126 11.1867 6.89851 9.8294 7.99823 8.84316C9.09794 7.85692 10.5228 7.31102 12 7.31Z"
-                  fill="#E8F4FA" />
-                <path
-                  d="M6 12C6 13.5913 6.63214 15.1174 7.75736 16.2426C8.88258 17.3679 10.4087 18 12 18C13.5913 18 15.1174 17.3679 16.2426 16.2426C17.3679 15.1174 18 13.5913 18 12C18 10.4087 17.3679 8.88258 16.2426 7.75736C15.1174 6.63214 13.5913 6 12 6C10.4087 6 8.88258 6.63214 7.75736 7.75736C6.63214 8.88258 6 10.4087 6 12V12Z"
-                  stroke="#45413C" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M7.75 12C7.75 12.5581 7.85993 13.1108 8.07351 13.6264C8.28709 14.142 8.60015 14.6106 8.9948 15.0052C9.38944 15.3999 9.85796 15.7129 10.3736 15.9265C10.8892 16.1401 11.4419 16.25 12 16.25C12.5581 16.25 13.1108 16.1401 13.6264 15.9265C14.142 15.7129 14.6106 15.3999 15.0052 15.0052C15.3999 14.6106 15.7129 14.142 15.9265 13.6264C16.1401 13.1108 16.25 12.5581 16.25 12C16.25 11.4419 16.1401 10.8892 15.9265 10.3736C15.7129 9.85796 15.3999 9.38944 15.0052 8.9948C14.6106 8.60015 14.142 8.28709 13.6264 8.07351C13.1108 7.85993 12.5581 7.75 12 7.75C11.4419 7.75 10.8892 7.85993 10.3736 8.07351C9.85796 8.28709 9.38944 8.60015 8.9948 8.9948C8.60015 9.38944 8.28709 9.85796 8.07351 10.3736C7.85993 10.8892 7.75 11.4419 7.75 12Z"
-                  fill="white" />
-                <path
-                  d="M12 8.75C13.0402 8.7512 14.0439 9.1334 14.8215 9.82436C15.599 10.5153 16.0965 11.4672 16.22 12.5C16.22 12.335 16.25 12.17 16.25 12C16.25 10.8728 15.8022 9.79183 15.0052 8.9948C14.2082 8.19777 13.1272 7.75 12 7.75C10.8728 7.75 9.79183 8.19777 8.9948 8.9948C8.19777 9.79183 7.75 10.8728 7.75 12C7.75 12.17 7.75 12.335 7.78 12.5C7.90345 11.4672 8.40097 10.5153 9.17853 9.82436C9.95608 9.1334 10.9598 8.7512 12 8.75Z"
-                  fill="#E0E0E0" />
-                <path
-                  d="M7.75 12C7.75 12.5581 7.85993 13.1108 8.07351 13.6264C8.28709 14.142 8.60015 14.6106 8.9948 15.0052C9.38944 15.3999 9.85796 15.7129 10.3736 15.9265C10.8892 16.1401 11.4419 16.25 12 16.25C12.5581 16.25 13.1108 16.1401 13.6264 15.9265C14.142 15.7129 14.6106 15.3999 15.0052 15.0052C15.3999 14.6106 15.7129 14.142 15.9265 13.6264C16.1401 13.1108 16.25 12.5581 16.25 12C16.25 11.4419 16.1401 10.8892 15.9265 10.3736C15.7129 9.85796 15.3999 9.38944 15.0052 8.9948C14.6106 8.60015 14.142 8.28709 13.6264 8.07351C13.1108 7.85993 12.5581 7.75 12 7.75C11.4419 7.75 10.8892 7.85993 10.3736 8.07351C9.85796 8.28709 9.38944 8.60015 8.9948 8.9948C8.60015 9.38944 8.28709 9.85796 8.07351 10.3736C7.85993 10.8892 7.75 11.4419 7.75 12V12Z"
-                  stroke="#45413C" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path d="M12 9.25V12L13.5 11.25" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M12 7.75V8.25" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M12 15.75V16.25" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M9.875 8.32001L10.125 8.75001" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M13.875 15.25L14.125 15.68" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M8.32007 9.875L8.75007 10.125" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M15.25 13.875L15.68 14.125" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M7.75 12H8.25" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M15.75 12H16.25" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M8.32007 14.125L8.75007 13.875" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M15.25 10.125L15.68 9.875" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M9.875 15.68L10.125 15.25" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-                <path d="M13.875 8.75001L14.125 8.32001" stroke="#45413C" stroke-width="0.5" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </div>
           </div>
         </div>
 
-        <div class="caja_resumen_actividades" id="actividades_asignadas"></div>
-        <div class="mascota" id="no_encontrado"></div>
-        <div class="mascota" id="no_encontrado_texto"></div>
-        <div>
-          <div class="botones_vertical" id="caja_botones">
-            <button class="boton" id="boton_insumo">Agregar insumo</button>
-              <!--
-                <button class="boton" id="boton_actividad">
-                  Agregar Actividad
-                </button></div>
-                -->
-                <button class="boton" id="boton_pausar">Pausar orden</button>
-                
-              <button class="boton" id="boton_finalizar">
-                Finalizar orden
-              </button>
-            
-          </div>
-          <style>
-            #boton_insumo,
-            #boton_actividad,
-            #boton_pausar,
-            #boton_finalizar {
-              margin-top: 50px;
-              margin-left: 55px;
-              margin-right: 55px;
-              border-radius: 15px;
-              width: 285px;
-              background: rgb(102, 202, 92);
-              color: white;
-              border: 2px solid rgb(102, 202, 92);
-              height: 80px;
-              font-size: xx-large;
-              font-weight: bold;
-            }
+        <div class="caja_resumen">
 
-            #boton_agregar {
-              margin-top: 30px;
-            }
-
-            #titulo_logo {
-              text-align: center;
-            }
-          </style>
+          <div class="dashboard_card" id="asignadas"></div>
+          <div class="dashboard_card" id="realizadas"></div>
+        </div>
+        <div class="caja_resumen">
+        <div class="dashboard_card" id="proceso"></div>
+        <div class="dashboard_card" id="no_finalizadas"></div>
         </div>
 
+        <div class="semi-progress-wrapper">
+  <svg viewBox="0 0 100 50" class="semi-progress">
+    <path class="bg" d="M10,50 A40,40 0 0,1 90,50" />
+    <path class="progress" d="M10,50 A40,40 0 0,1 90,50" />
+  </svg>
+  <div class="progress-text" id="progress-text">0%</div>
+  <div id="texto_grafica">CUMPLIMIENTO DE ORDENES</div>
+</div>
+
+
+        <style>
+          #ordenes_asignadas {
+            padding-bottom: 200px;
+          }
+        </style>
         <div class="menu_app">
           <div class="menu_app_content">
             <div class="icono_menu_app" id="inicio">
@@ -230,7 +152,7 @@
               <div class="titulo_menu">Horas</div>
             </div>
 
-            <div class="icono_menu_app">
+            <div class="icono_menu_app" id="cuenta">
               <svg width="140" height="121" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.15"
                   d="M0.198746 43.5296C0.198746 43.7468 0.71092 43.9618 1.70603 44.1625C2.70113 44.3631 4.15968 44.5454 5.9984 44.699C7.83711 44.8525 10.02 44.9743 12.4224 45.0575C14.8248 45.1406 17.3997 45.1833 20 45.1833C22.6003 45.1833 25.1752 45.1406 27.5776 45.0575C29.98 44.9743 32.1629 44.8525 34.0016 44.699C35.8403 44.5454 37.2989 44.3631 38.294 44.1625C39.2891 43.9618 39.8012 43.7468 39.8012 43.5296C39.8012 43.3124 39.2891 43.0974 38.294 42.8967C37.2989 42.6961 35.8403 42.5138 34.0016 42.3602C32.1629 42.2066 29.98 42.0848 27.5776 42.0017C25.1752 41.9186 22.6003 41.8758 20 41.8758C17.3997 41.8758 14.8248 41.9186 12.4224 42.0017C10.02 42.0848 7.83711 42.2066 5.9984 42.3602C4.15968 42.5138 2.70113 42.6961 1.70603 42.8967C0.71092 43.0974 0.198746 43.3124 0.198746 43.5296Z"
@@ -275,17 +197,36 @@
         <label id="confirmacion"> </label>
       </article>
     </section>
+
+    <div id="loader-container">
+  <!-- Imagen personalizada -->
+  <img src="https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/imagenes_proyecto/consultando1.png" 
+       alt="Generando PDF..." class="loader-image" />
+
+  <!-- Animación con puntos -->
+  <div class="loader">
+    <span></span><span></span><span></span><span></span>
+  </div>
+
+  <!-- Texto -->
+  <p id="esperando">Consultando informacion, por favor espere...</p>
+</div>
     <footer class="page-footer"></footer>
+    <!-- Scripts de Firebase -->
+
     <!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
+
     <!-- Agregar el SDK de Realtime Database -->
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
+
     <!-- Aquí iría tu propio script o el bloque de inicialización -->
-     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-messaging-compat.js"></script>
-   <script src="js/firebase.js"></script>
-     <script src="js/ejecutando_funciones.js"></script>
-    <script src="js/actualizar_ordenes_proceso.js"></script>
-    
+
+    <!--  <script src="js/database.js"></script> -->
+
+    <script src="js/firebase.js"></script>
+    <script src="js/ordenes_funciones_admin_tecnico.js"></script>
+
   </section>
 </body>
 

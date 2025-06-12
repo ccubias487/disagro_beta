@@ -5,9 +5,6 @@
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.29/jspdf.plugin.autotable.min.js"></script>
-   
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -486,7 +483,7 @@
 
             <div class="cuadro_resumen" id="cuadro_resumen_asignadas">
               <div class="titulo_resumen">ORDENES ASIGNADAS</div>
-              <div class="cantidad_resumen" id="asignadas">0</div>
+              <div class="cantidad_resumen" id="asignadas"></div>
               <div class="icono_resumen">
                 <svg
                   width="159"
@@ -641,7 +638,7 @@
 
             <div class="cuadro_resumen" id="cuadro_resumen_proceso">
               <div class="titulo_resumen">ORDENES EN PROCESO</div>
-              <div class="cantidad_resumen" id="proceso">0</div>
+              <div class="cantidad_resumen" id="proceso"></div>
               <div class="icono_resumen">
                 <svg
                   width="171"
@@ -1239,21 +1236,16 @@
       </section>
       <footer class="page-footer"></footer>
       
-      
-       <!-- Scripts de Firebase -->
+      <script src="js/funciones2.js"></script>
 
     <!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
-
     <!-- Agregar el SDK de Realtime Database -->
     <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
-
     <!-- Aquí iría tu propio script o el bloque de inicialización -->
-     
-   <!--  <script src="js/database.js"></script> -->
-     <script src="js/firebase.js"></script>
-     <script src="js/funciones2.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-messaging-compat.js"></script>
 
+    <script src="js/database.js"></script>
     </section>
   </body>
 </html>

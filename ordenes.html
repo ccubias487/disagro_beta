@@ -1,7 +1,8 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <link href="css/estilos_tabla.css" rel="stylesheet" type="text/css" />
   </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ800MZ8V1"></script>
@@ -19,6 +20,18 @@
           <div id="encabezado_notificaciones_ordenes">
             <div class="logo_ordenes"></div>
             <div class="logo_titulo">LISTADO DE ORDENES ASIGNADAS</div>
+            <div id="prioridad_codigo_colores">
+              <div id="prioridad_alta">PRIORIDAD ALTA
+                <div id="prioridad_alta_color"></div>
+              </div>
+              <div id="prioridad_alta">PRIORIDAD MEDIA
+                <div id="prioridad_media_color"></div>
+              </div>
+              <div id="prioridad_alta">PRIORIDAD BAJA
+                <div id="prioridad_baja_color"></div>
+              </div>
+              
+            </div>
           </div>
 
           <div class="caja_resumen" id="ordenes_asignadas">
@@ -286,7 +299,21 @@
         </article>
       </section>
       <footer class="page-footer"></footer>
-      <script src="ordenes_funciones.js"></script>
+          <!-- Scripts de Firebase -->
+
+    <!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
+
+    <!-- Agregar el SDK de Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
+
+    <!-- Aquí iría tu propio script o el bloque de inicialización -->
+     
+   <!--  <script src="js/database.js"></script> -->
+   
+      <script src="js/firebase.js"></script>
+         <script src="js/ordenes_funciones.js"></script>
+
     </section>
   </body>
 </html>
