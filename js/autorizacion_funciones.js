@@ -133,6 +133,7 @@ function procesarAutorizacion(reqData) {
 
 // Función principal
 leerReq_general().then(data => {
+  try{
   const actividades = Object.values(data).flat().sort((a, b) => a.PRIORIDAD - b.PRIORIDAD);
   let datosJSON = JSON.parse(localStorage.getItem("autorizaciones")) || [];
 
@@ -197,4 +198,8 @@ leerReq_general().then(data => {
     texto.textContent = "NO SE ENCONTRARON INSUMOS PARA ESTA ORDEN";
     texto.style.cssText = "font-size: xx-large; font-weight: bold; color: white;";
   }
+}
+catch (error){
+  console.log("ocurrio un error: ", error)
+}
 });

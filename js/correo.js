@@ -6,9 +6,9 @@
 
   function enviarCorreo() {
     const params = {
-      nombre: "Juan Pérez",
-      correo: "juan@example.com",
-      mensaje: "Hola, este es un mensaje de prueba desde EmailJS con plantilla."
+      nombre: "",
+      correo: "",
+      mensaje: "ORDEN: " + localStorage.getItem("iniciar_orden")
     };
 
     // Reemplaza 'tu_service_id' y 'tu_template_id' con tus valores reales

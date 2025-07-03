@@ -4,6 +4,7 @@ if (localStorage.getItem("usuario") == null) {
 
 document.getElementById("titulo_logo").innerHTML =
   localStorage.getItem("iniciar_orden_d");
+
 let orden = localStorage.getItem("iniciar_orden");
 
 document.getElementById("inicio").addEventListener("click", function () {
@@ -24,28 +25,21 @@ document.getElementById("boton_agregar").addEventListener("click", function () {
 
 
 function abrirYCerrarPagina(url, tiempo = 5000) {
-// Abrir una nueva ventana/pestaña
-const nuevaVentana = window.open(url, '_blank');
+  // Abrir una nueva ventana/pestaña
+  const nuevaVentana = window.open(url, '_blank');
 
-if (!nuevaVentana) {
-console.log("El navegador bloqueó la ventana emergente.");
-return;
+  if (!nuevaVentana) {
+    console.log("El navegador bloqueó la ventana emergente.");
+    return;
+  }
+
+  // Simular alguna tarea que toma 'tiempo' milisegundos
+  setTimeout(() => {
+    // Cerrar la ventana después de que finalice la "tarea"
+    nuevaVentana.close();
+    console.log("La ventana ha sido cerrada.");
+  }, tiempo);
 }
-
-// Simular alguna tarea que toma 'tiempo' milisegundos
-setTimeout(() => {
-// Cerrar la ventana después de que finalice la "tarea"
-nuevaVentana.close();
-console.log("La ventana ha sido cerrada.");
-}, tiempo);
-}
-
-/* const numero = "79616814"; 
-const mensaje = "Hola, necesito autorización para la requisición de materiales.";
-const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)} https://ccubias487.github.io/disagro_beta/principal.html`;
-
-window.open(url, '_blank');  */
-
 
 
 function fecha_actual() {
@@ -96,23 +90,6 @@ document
   .getElementById("boton_siguiente")
   .addEventListener("click", async function () {
     document.getElementById("loader-container").style.display = "flex";
-    // await actualizar_pedido();
-
-    ////////////////////////////////////////////////
-    /*      try {
-       const response = await fetch("https://raw.githubusercontent.com/ccubias487/disagro_beta/disagro_beta1.0/ordenes_asignadas.json");
-       const data = await response.json();
-   
-       data.forEach(orden => {
-         if (orden.ORDEN === String(localStorage.getItem("iniciar_orden"))) {
-           orden.ESTATUS = "EJECUTANDO";
-         }
-       });
-   
-       await actualizar_ordenes_proceso_git(data);
-     } catch (error) {
-       console.error("Error al ejecutar orden:", error);
-     } */
 
 
     try {
@@ -134,7 +111,7 @@ document
           return `${dia}/${mes}/${año} ${horas}:${minutos}:${segundos}`;
         }
 
-        
+
 
 
         if (data) {
@@ -183,7 +160,6 @@ document
       console.log("DEBUG")
       document.getElementById("loader-container").style.display = "flex";
       //await generarPDF();
-      //document.getElementById("loader-container").style.display = "none";
 
       const nuevoDato = {
         ORDEN: orden,
@@ -248,7 +224,7 @@ document
 
         ///
         //actualizar_autorizacion()
-        
+
         window.location.href = "autorizacion.html";
 
         localStorage.removeItem("agregar_material");
@@ -266,7 +242,7 @@ document
         console.log(datosJSON);
         localStorage.setItem("autorizaciones", JSON.stringify(datosJSON))
 
- function actualizar_autorizacion() {
+        function actualizar_autorizacion() {
 
           function obtenerFechaFormato() {
             const ahora = new Date();
@@ -303,26 +279,26 @@ document
             nuevosObjetos.push(objeto);
           }
           console.log(nuevosObjetos)
-           guardarRequisicion(nuevosObjetos)
-           console.log(nuevosObjetos)
+          guardarRequisicion(nuevosObjetos)
+          console.log(nuevosObjetos)
         }
-if(localStorage.getItem("autorizaciones")==null){
- let datosJSON = [];
-        const nuevoDato = {
-          ORDEN: orden,
-          DETALLE: localStorage.getItem("iniciar_orden_d"),
-          STATUS: "AUTORIZADO",
-          INICIO: fecha_actual(),
-        };
-        console.log(nuevoDato);
-        datosJSON.push(nuevoDato);
-        datosJSON = datosJSON.sort((a, b) => {
-          return parseInt(a.ORDEN) - parseInt(b.ORDEN);
-        });
+        if (localStorage.getItem("autorizaciones") == null) {
+          let datosJSON = [];
+          const nuevoDato = {
+            ORDEN: orden,
+            DETALLE: localStorage.getItem("iniciar_orden_d"),
+            STATUS: "AUTORIZADO",
+            INICIO: fecha_actual(),
+          };
+          console.log(nuevoDato);
+          datosJSON.push(nuevoDato);
+          datosJSON = datosJSON.sort((a, b) => {
+            return parseInt(a.ORDEN) - parseInt(b.ORDEN);
+          });
 
-        localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
-      }else{
-         const nuevoDato = {
+          localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
+        } else {
+          const nuevoDato = {
             ORDEN: orden,
             DETALLE: localStorage.getItem("iniciar_orden_d"),
             STATUS: "AUTORIZADO",
@@ -336,16 +312,12 @@ if(localStorage.getItem("autorizaciones")==null){
             return Number(a.ORDEN) - Number(b.ORDEN);
           });
           localStorage.setItem("autorizaciones", JSON.stringify(datosJSON));
-      }
+        }
 
-await enviarCorreo()
-abrirYCerrarPagina("https://ccubias487.github.io/disagro_beta/materiales_orden_correo.html", 5000)
+        await enviarCorreo()
+        abrirYCerrarPagina("https://ccubias487.github.io/disagro_beta/materiales_orden_correo.html", 5000)
         await actualizar_autorizacion()
-        //window.location.href = "autorizacion.html";
 
-        //aca Redireccion requisiciones
-        //window.location.href = "ejecutando.html";
-        //await generarPDF()
         setTimeout(() => {
           window.location.href = "ejecutando.html";
         }, 1000);
@@ -633,8 +605,7 @@ buscarOrdenesPorCodEstructurado(localStorage.getItem("cod_empleado")).then(data 
     imagen.style.height = "0px";
     div.appendChild(imagen);
     document.getElementById("no_encontrado_texto").innerHTML = "";
-    /* document.getElementById("no_encontrado_texto"); */
+
   }
 });
 
-//abrirYCerrarPagina("https://ccubias487.github.io/disagro_beta/materiales_orden_correo.html", 1000)

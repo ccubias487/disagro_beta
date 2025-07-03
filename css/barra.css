@@ -1,0 +1,79 @@
+
+
+
+    .navbar {
+      position: relative;
+      background: #364a6cf2;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 150px;
+     /*      */
+   /*    border-radius: 20px 20px 0px 0px; */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      /* margin-bottom: 20px; */
+      padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .barra_navegacion{
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+   /*      height: 200px; */
+    }
+
+    .notch {
+      position: absolute;
+      top: -62px;
+      left: 10%;
+      transform: translateX(-43%); 
+
+
+      transition: left 0.4s ease;
+      z-index: 0;
+      
+    }
+
+    .nav-item {
+      position: relative;
+      color: #666789;
+      font-size: 28px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150x;
+      height: 150px;
+      z-index: 1;
+    }
+
+    .nav-item.active {
+        position: relative;
+      color: #7892f8;
+      top: -43px;
+      transition: top 4.9s ease;
+      height: 200px;
+      width: 200px;
+    }
+
+    .nav-item svg {
+      width: 126px;
+      height: 126px;
+      fill: #069a3e;
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+
+    .curva{
+        width: 15px;
+        background: #7a8ce6;
+        height: 15px;
+        border-radius: 50px;
+        position: absolute;
+        left: -11px;
+        bottom: 8px;
+         transform: rotate(18deg);
+    
+        
+    }
