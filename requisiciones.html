@@ -87,9 +87,19 @@
       <p id="esperando">Generando reporte PDF, por favor espera...</p>
     </div>
       <footer class="page-footer"></footer>
+         <!-- El SDK principal de Firebase SIEMPRE debe ir primero -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-app-compat.js"></script>
+
+    <!-- Agregar el SDK de Realtime Database -->
+    <script src="https://www.gstatic.com/firebasejs/11.8.1/firebase-database-compat.js"></script>
+
+    <!-- Aquí iría tu propio script o el bloque de inicialización -->
+            <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
       <script src="js/barra.js"></script>
+            <script src="js/firebase.js"></script>
       <script src="js/requisiciones.js"></script>
       <script src="js/reporte_requisicion.js"></script>
+      <script src="js/correo.js"></script>
     </section>
   </body>
 </html>
