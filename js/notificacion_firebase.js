@@ -17,31 +17,50 @@ firebase.initializeApp({
 // Inicializar messaging
 const messaging = firebase.messaging();
 
- // 3. Registrar el Service Worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/disagro_beta/firebase-messaging-sw.js')
-    .then(registration => {
-      console.log('Service Worker registrado correctamente:', registration);
 
-      // Para compatibilidad con Firebase Messaging v11+ compat
-      messaging.useServiceWorker(registration);
 
-      // 4. Pedir permiso de notificaciones
-      return Notification.requestPermission();
-    })
-    .then(permission => {
-      if (permission === 'granted') {
-        // 5. Obtener el token
-        return messaging.getToken({ vapidKey: 'BKnh82NuB0_Ni49Q2zLorbMWmw64zCQYOqYkU5Y6u_x-R4GLyAogHJMDA6Nx7U6tD86h2zeqvDQRWBnAi5eH9mM' });
-      } else {
-        throw new Error("Permiso de notificación denegado");
-      }
-    })
-    .then(token => {
-      console.log("Token de FCM:", token);
-      alert(token); // Puedes guardarlo en Firebase si deseas
-    })
-    .catch(err => {
-      console.error("Error durante el registro o al obtener el token:", err);
-    });
-}
+
+navigator.serviceWorker.register('/disagro_beta/firebase-messaging-sw.js')
+  .then(registration => {
+    console.log('Service Worker registrado correctamente:', registration);
+
+    // Ya no uses: messaging.useServiceWorker(registration); ❌
+
+    return Notification.requestPermission();
+  })
+  .then(permission => {
+    if (permission === 'granted') {
+      return messaging.getToken({
+        vapidKey: 'BKnh82NuB0_Ni49Q2zLorbMWmw64zCQYOqYkU5Y6u_x-R4GLyAogHJMDA6Nx7U6tD86h2zeqvDQRWBnAi5eH9mM'
+      });
+    } else {
+      throw new Error('Permiso de notificación denegado');
+    }
+  })
+  .then(token => {
+    console.log('Token FCM:', token);
+    alert(token);
+  })
+  .catch(err => {
+    console.error('Error durante el registro o al obtener el token:', err);
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
