@@ -129,6 +129,7 @@ function procesarAutorizacion(reqData) {
   eliminarReq(localStorage.getItem("requisicion_autorizar"))
 
   document.getElementById("myModal2").style.display = "none";
+  window.location.reload()
 }
 
 // Función principal
@@ -151,7 +152,9 @@ leerReq_general().then(data => {
   let contador = 0;
 
   datosJSON.forEach((item, i) => {
-    if ((item.STATUS === "PENDIENTE" || item.STATUS === "AUTORIZADO") && !ordenesAgregadas.has(item.ORDEN)) {
+/*     if ((item.STATUS === "PENDIENTE" || item.STATUS === "AUTORIZADO") && !ordenesAgregadas.has(item.ORDEN)) { */
+    if ((item.STATUS === "PENDIENTE" ) && !ordenesAgregadas.has(item.ORDEN)) {
+    
       const div = document.createElement("div");
       div.className = "cuadro_resumen_insumos";
       div.id = i;

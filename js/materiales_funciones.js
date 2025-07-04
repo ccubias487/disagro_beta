@@ -315,8 +315,8 @@ document
         }
 
         await enviarCorreo()
-        abrirYCerrarPagina("https://ccubias487.github.io/disagro_beta/materiales_orden_correo.html", 5000)
-        await actualizar_autorizacion()
+/*         abrirYCerrarPagina("https://ccubias487.github.io/disagro_beta/materiales_orden_correo.html", 5000)
+ */        await actualizar_autorizacion()
 
         setTimeout(() => {
           window.location.href = "ejecutando.html";

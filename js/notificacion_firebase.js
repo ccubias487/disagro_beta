@@ -1,35 +1,47 @@
+
+
+
+
+// Inicializar Firebase
+if (!firebase.apps.length) {
+firebase.initializeApp({
+  apiKey: "AIzaSyCqafxFuN5Siu1HqqDdBHHsJQczarutnOw",
+  authDomain: "disagroapp-a7fec.firebaseapp.com",
+  projectId: "disagroapp-a7fec",
+  messagingSenderId: "841529436199",
+  appId: "1:841529436199:web:544f9a3fec62025f8d0602",
+})} else {
+  firebase.app(); // usa la app ya inicializada
+};
+
+// Inicializar messaging
 const messaging = firebase.messaging();
 
-// Solicitar permiso
-messaging
-  .requestPermission()
-  .then(() => {
-    return messaging.getToken({
-      vapidKey: "TU_CLAVE_VAPID_PUBLICA", // Está en Firebase Console → Cloud Messaging
+ // 3. Registrar el Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/firebase-messaging-sw.js')
+    .then(registration => {
+      console.log('Service Worker registrado correctamente:', registration);
+
+      // Para compatibilidad con Firebase Messaging v11+ compat
+      messaging.useServiceWorker(registration);
+
+      // 4. Pedir permiso de notificaciones
+      return Notification.requestPermission();
+    })
+    .then(permission => {
+      if (permission === 'granted') {
+        // 5. Obtener el token
+        return messaging.getToken({ vapidKey: 'TU_VAPID_KEY' });
+      } else {
+        throw new Error("Permiso de notificación denegado");
+      }
+    })
+    .then(token => {
+      console.log("Token de FCM:", token);
+      alert(token); // Puedes guardarlo en Firebase si deseas
+    })
+    .catch(err => {
+      console.error("Error durante el registro o al obtener el token:", err);
     });
-  })
-  .then((currentToken) => {
-    if (currentToken) {
-      console.log("Token del navegador:", currentToken);
-      // Puedes enviarlo a tu backend o guardarlo en Firebase Realtime Database
-    } else {
-      console.log("No se obtuvo token.");
-    }
-  })
-  .catch((err) => {
-    console.error("Error al obtener token o permisos", err);
-  });
-
-
-  messaging.onMessage((payload) => {
-  console.log("Mensaje en primer plano:", payload);
-
-  new Notification(payload.notification.title, {
-    body: payload.notification.body,
-    icon: "/icon.png"
-  });
-});
-
-
-
-
+}

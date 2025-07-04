@@ -3,6 +3,7 @@
 
   const contenedor = document.getElementById("barra_navegacion");
 
+
 const barraHTML = `
   <div class="barra_navegacion">
     <div class="navbar">

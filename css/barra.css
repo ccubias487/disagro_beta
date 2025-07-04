@@ -4,6 +4,10 @@
     .navbar {
       position: relative;
       background: #364a6cf2;
+/* background: linear-gradient(to right, #364a6cf2 0%, #364a6c00 100%); */
+/* background: radial-gradient(ellipse at center, #364a6cf2 0%, #364a6c00 80%); */
+
+
       display: flex;
       justify-content: space-between;
       width: 100%;

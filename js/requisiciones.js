@@ -2,6 +2,8 @@ document.getElementById("boton_agregar_insumo").addEventListener("click", functi
   window.location.href = "existencias.html";
 });
 
+document.getElementById("boton_agregar_actividad").style.display="none"
+
 window.addEventListener("pageshow", (event) => {
   if (event.persisted) {
     // La página viene desde la caché, forzar recarga
@@ -189,5 +191,49 @@ document.getElementById("boton_enviar").addEventListener("click", function () {
     "usoen",
     document.getElementById("user").value.toUpperCase()
   );
-  generarPDF2();
+  //generarPDF2();
+
+  const data_local = JSON.parse(
+            localStorage.getItem("agregar_material") || "[]"
+          );
+          const nuevosObjetos = [];
+             function obtenerFechaFormato() {
+            const ahora = new Date();
+
+            const dia = String(ahora.getDate()).padStart(2, '0');
+            const mes = String(ahora.getMonth() + 1).padStart(2, '0'); // Meses van de 0 a 11
+            const año = ahora.getFullYear();
+            const horas = String(ahora.getHours()).padStart(2, '0');
+            const minutos = String(ahora.getMinutes()).padStart(2, '0');
+            const segundos = String(ahora.getSeconds()).padStart(2, '0');
+
+            return `${dia}${mes}${año}${horas}${minutos}${segundos}`;
+          }
+for (let i = 0; i < data_local.length; i++) {
+            const objeto = {
+              ORDEN: localStorage.getItem("cod_empleado") + obtenerFechaFormato(),
+              CODIGO: data_local[i].SAP,
+              DESCRIPCION: data_local[i].DESCRIPCION,
+              CANTIDAD: data_local[i].CANTIDAD,
+              DETALLE: localStorage.getItem("iniciar_orden_d"),
+              STATUS: "PENDIENTE",
+              FIRMASOLICITANTE: localStorage.getItem("firma_user"),
+              SOLICITANTE: localStorage.getItem("nombre"),
+              AUTORIZADO: "",
+              REQUISICION: localStorage.getItem("cod_empleado") + obtenerFechaFormato(),
+              VALIDADOR: localStorage.getItem("cod_empleado") + obtenerFechaFormato(),
+            };
+            nuevosObjetos.push(objeto);
+          }
+          console.log(nuevosObjetos)
+          guardarRequisicion(nuevosObjetos)
+          console.log(nuevosObjetos)
+
+
+
+
+
+
+  enviarCorreo()
+  localStorage.removeItem("agregar_material")
 });
