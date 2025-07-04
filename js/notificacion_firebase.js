@@ -19,7 +19,7 @@ const messaging = firebase.messaging();
 
  // 3. Registrar el Service Worker
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/firebase-messaging-sw.js')
+  navigator.serviceWorker.register('/disagro_beta/firebase-messaging-sw.js')
     .then(registration => {
       console.log('Service Worker registrado correctamente:', registration);
 
