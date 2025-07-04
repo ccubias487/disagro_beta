@@ -32,7 +32,7 @@ if ('serviceWorker' in navigator) {
     .then(permission => {
       if (permission === 'granted') {
         // 5. Obtener el token
-        return messaging.getToken({ vapidKey: 'TU_VAPID_KEY' });
+        return messaging.getToken({ vapidKey: 'BKnh82NuB0_Ni49Q2zLorbMWmw64zCQYOqYkU5Y6u_x-R4GLyAogHJMDA6Nx7U6tD86h2zeqvDQRWBnAi5eH9mM' });
       } else {
         throw new Error("Permiso de notificación denegado");
       }
