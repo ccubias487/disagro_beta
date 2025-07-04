@@ -298,3 +298,15 @@ async function eliminarOrdenesPendientes() {
     console.log("Órdenes pendientes eliminadas exitosamente.");
   }
 }
+
+
+function guardarTokenFCM(uid, token) {
+  firebase.database().ref('tokens/' + uid).set({
+    token: token,
+    timestamp: Date.now()
+  }).then(() => {
+    console.log('Token guardado en la base de datos');
+  }).catch(error => {
+    console.error('Error al guardar el token:', error);
+  });
+}

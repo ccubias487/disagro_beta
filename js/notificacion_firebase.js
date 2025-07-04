@@ -38,6 +38,8 @@ navigator.serviceWorker.register('/disagro_beta/firebase-messaging-sw.js')
   .then(token => {
     console.log('Token FCM:', token);
     alert(token);
+     const uid = localStorage.getItem("nombre") || "invitado";
+  guardarTokenFCM(uid, token);
   })
   .catch(err => {
     console.error('Error durante el registro o al obtener el token:', err);
