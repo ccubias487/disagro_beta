@@ -179,5 +179,12 @@
         "TIPO": "USER",
         "NOMBRE": "WILFREDO ELENILSON HERNANDEZ MORAN",
         "NICK": "WILFREDO MORAN"
+    },
+    {
+        "USUARIO": "200504",
+        "CONTRASEÑA": "DISAGRO",
+        "TIPO": "USER",
+        "NOMBRE": "HELDER HONDURAS",
+        "NICK": "HELDER HONDURAS"
     }
 ]
