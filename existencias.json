@@ -7354,9 +7354,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "12",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "243.72"
   },
   {
     "SAP": "1901100669",
@@ -16132,9 +16132,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "7",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "2.09"
+    "VALOR_TOTAL": "20.75"
   },
   {
     "SAP": "1901101467",
@@ -26582,9 +26582,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "188.88"
   },
   {
     "SAP": "1901102421",
@@ -28705,9 +28705,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "60",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "144.6"
   },
   {
     "SAP": "1901102614",
@@ -60693,9 +60693,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "2",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "932.26"
   },
   {
     "SAP": "1901105596",
@@ -70466,8 +70466,19 @@
     "VALOR_TOTAL": "0"
   },
   {
-    "SAP": "1901106722",
-    "DESCRIPCION": "BOLSA DE AIRE PARA MACK S-4771",
+    "SAP": "1901200379",
+    "DESCRIPCION": "PENDIENTE",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "N00",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901200380",
+    "DESCRIPCION": "ZZ-FILTRO DE AIRE SECUNDARIO 46515",
     "CENTRO": "3002",
     "ALMACEN": "14A0",
     "ALM": "",
@@ -70475,5 +70486,676 @@
     "EXISTENCIA": "0",
     "MONEDA": "USD",
     "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309923",
+    "DESCRIPCION": "SENSOR DE NIVEL G8007",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309924",
+    "DESCRIPCION": "CHUMACERA POSTERIOR G4156",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309925",
+    "DESCRIPCION": "ROTULA HEMBRA G28042",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309926",
+    "DESCRIPCION": "ACTUADOR NEUMATICO G37372",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309927",
+    "DESCRIPCION": "CHUMACERA FRONTAL SIN-FIN G14173",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309928",
+    "DESCRIPCION": "SENSOR DE PROXIM. INDUC. REDONDO G8019",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309929",
+    "DESCRIPCION": "CELDA DE CARGA G4184",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309930",
+    "DESCRIPCION": "ACTUADOR NEUMATICO VALVULA MARIP. G25041",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309931",
+    "DESCRIPCION": "ELECTROVALVULA MONOESTABLE G34054",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309932",
+    "DESCRIPCION": "ELECTROVALVULA MONOESTABLE G34057",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309933",
+    "DESCRIPCION": "ELECTROVALVULA G34077",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309934",
+    "DESCRIPCION": "BOBINA 24VDC G34074",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309935",
+    "DESCRIPCION": "CAJA DE TOMACORRIENTE G34001",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309936",
+    "DESCRIPCION": "CONEXIÃ“N FLEX TELA FILTRO TAPA G29622",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309937",
+    "DESCRIPCION": "CONEXIÃ“N FLEX TELA CHUTE DESCAR. G29600",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309938",
+    "DESCRIPCION": "CONEXIÃ“N FLEX. TELA MANGUILLA G29623",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309939",
+    "DESCRIPCION": "CPU BECKHOFF 9020 G6144",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309940",
+    "DESCRIPCION": "PANTALLA TACTIL 15.6\" PESAPACK G2112",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309941",
+    "DESCRIPCION": "MODULO SALI DIGIT BECKHOFF EL2869  G6140",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309942",
+    "DESCRIPCION": "MODULO ENTR DIGT BECKHOFF EL1809 G6042",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309943",
+    "DESCRIPCION": "MODULO FUENTE I/O BECKHOFF EL9110 G32007",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309944",
+    "DESCRIPCION": "MODULO BUS BECKHOFF EL9410 G32002",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309945",
+    "DESCRIPCION": "MODULO FUENT BASC BECKHOFF EL9510 G32006",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309946",
+    "DESCRIPCION": "MODULO ENTRAD BASC BECKHOFF EL3356 G6009",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309947",
+    "DESCRIPCION": "MODULO SAL ANALOGA BECKHOFF EL4124 G6050",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309948",
+    "DESCRIPCION": "ELECTROVALVULA G34106",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309949",
+    "DESCRIPCION": "BOBINA 24VDC G34093",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309950",
+    "DESCRIPCION": "CAJA DE TOMACORRIENTE G34067",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309951",
+    "DESCRIPCION": "CELDA CARGA UTILCELL MOD300-50KG G4171",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309952",
+    "DESCRIPCION": "CPU BECKHOFF CX5130",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901309953",
+    "DESCRIPCION": "SEW MOVIDRIVE MDX61800405A3400 G11105",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901400843",
+    "DESCRIPCION": "CUERDA DE VIDA PARA ARNES CON GANCHO",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403234",
+    "DESCRIPCION": "PAR DE ZAPATAS EQUIPOS PESADOS",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403235",
+    "DESCRIPCION": "CONTACTOR 115A 230VAC S6 3RT20471AL20",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403236",
+    "DESCRIPCION": "BOMBA AUXILIAR DELANTERA DER. ISUZU NPR",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403237",
+    "DESCRIPCION": "BOMBA AUXILIAR DELANTERA IZQ. ISUZU NPR",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403238",
+    "DESCRIPCION": "BOMBA AUXILIAR TRASERA IZQ. ISUZU NPR",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403239",
+    "DESCRIPCION": "BOMBA AUXILIAR TRASERA DER. ISUZU NPR",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403240",
+    "DESCRIPCION": "CAUCHO, SELLO MORDAZA ENSACADORA G16-003",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403241",
+    "DESCRIPCION": "BOOT SHAFT 2-7/16\" DIA. X 2'-7 1/2\" LONG",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403242",
+    "DESCRIPCION": "RELE 110V 5PINES",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403243",
+    "DESCRIPCION": " RELE 12V 5PINES",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403244",
+    "DESCRIPCION": "VALVULA DE PISTON 1\" NPT, NC INOX 200PSI",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403245",
+    "DESCRIPCION": "VALVULA SELENOIDE 5/2 1/4 NPT NC 110VAC",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403246",
+    "DESCRIPCION": "PLACA  DOBLE PARA TOMA RJ45 BLANCA",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403247",
+    "DESCRIPCION": "ELECTRODO REVEST DURO 5/32 DURMATIC H10",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "LB",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403248",
+    "DESCRIPCION": "PEDAL DE ACELERADOR VOE15190098",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403249",
+    "DESCRIPCION": "PEDAL DE FRENO VOE11707078",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403250",
+    "DESCRIPCION": "PALANCA SWITCH VOE17416725",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403251",
+    "DESCRIPCION": "MOTOR DE ARRANQUE VOE24040493",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403252",
+    "DESCRIPCION": "ALTERNADOR VOE17204355",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403253",
+    "DESCRIPCION": "BOMBA CEBADORA VOE54315950",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403254",
+    "DESCRIPCION": "SWITCH KIT VOE15095844",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403255",
+    "DESCRIPCION": "SWITCH VOE15146534",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403256",
+    "DESCRIPCION": "DEPOSITO VOE15010278",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403257",
+    "DESCRIPCION": "SENSOR Y VALVULA VOE20973777",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403258",
+    "DESCRIPCION": "JABON ESPUMA PARA MANOS",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "N00",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403259",
+    "DESCRIPCION": "DEGREASER AQUA DESENGRASANTE P/BAÃ‘OS",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "N00",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403260",
+    "DESCRIPCION": "DESINCRUSTANTE OXITIZE RC",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "N00",
+    "EXISTENCIA": "0",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901403261",
+    "DESCRIPCION": "PAPEL TOALLA DOBLE HOJA EN BOBINA",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "60",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "468.7"
+  },
+  {
+    "SAP": "1901403261",
+    "DESCRIPCION": "PAPEL TOALLA DOBLE HOJA EN BOBINA",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "60",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "468.7"
   }
 ]
