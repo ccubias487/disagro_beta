@@ -39,9 +39,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "M16",
-    "EXISTENCIA": "6",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "22.02"
+    "VALOR_TOTAL": "14.68"
   },
   {
     "SAP": "1901100022",
@@ -160,9 +160,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "10",
+    "EXISTENCIA": "9",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "20.34"
+    "VALOR_TOTAL": "18.31"
   },
   {
     "SAP": "1901100038",
@@ -537,6 +537,17 @@
     "EXISTENCIA": "12",
     "MONEDA": "USD",
     "VALOR_TOTAL": "24.18"
+  },
+  {
+    "SAP": "1901100149",
+    "DESCRIPCION": "BATERIA DE 100 AMP. 12V",
+    "CENTRO": "3002",
+    "ALMACEN": "14A0",
+    "ALM": "",
+    "UNIDAD": "U",
+    "EXISTENCIA": "3",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "403.32"
   },
   {
     "SAP": "1901100165",
@@ -3966,9 +3977,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "33",
+    "EXISTENCIA": "17",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "208.18"
+    "VALOR_TOTAL": "107.24"
   },
   {
     "SAP": "1901101499",
@@ -7783,9 +7794,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "34",
+    "EXISTENCIA": "33",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "241.06"
+    "VALOR_TOTAL": "233.97"
   },
   {
     "SAP": "1901102837",
@@ -8454,9 +8465,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "5",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "6.25"
+    "VALOR_TOTAL": "5"
   },
   {
     "SAP": "1901103112",
@@ -11204,9 +11215,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "16",
+    "EXISTENCIA": "13",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "128"
+    "VALOR_TOTAL": "104"
   },
   {
     "SAP": "1901104669",
@@ -11523,9 +11534,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "4",
+    "EXISTENCIA": "3",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "23.28"
+    "VALOR_TOTAL": "17.46"
   },
   {
     "SAP": "1901104841",
@@ -14064,9 +14075,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "28",
+    "EXISTENCIA": "26",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "77.52"
+    "VALOR_TOTAL": "71.98"
   },
   {
     "SAP": "1901106005",
