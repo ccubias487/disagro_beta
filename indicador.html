@@ -25,6 +25,11 @@ h2 { color: #333; }
   font-weight: bold;
   margin-top: 10px;
 }
+#entry {
+  font-size: 20px;
+  margin-top: 5px;
+  color: #444;
+}
 </style>
 </head>
 <body>
@@ -33,11 +38,13 @@ h2 { color: #333; }
 <h3 id="price">Precio: --</h3>
 <canvas id="gauge" width="400" height="250"></canvas>
 <div id="signal">Analizando...</div>
+<div id="entry">Esperando señal...</div>
 
 <script>
 let history = [];
 let smoothedValue = 50;
-let lastPrice = 0;
+let position = null; // 'LONG', 'SHORT', o null
+let entryPrice = 0;
 
 // --- Velocímetro ---
 function drawGauge(value){
@@ -51,27 +58,23 @@ function drawGauge(value){
     const cy = h*0.9;
     const radius = Math.min(w,h*2)/2*0.8;
 
-    // Fondo gris
     ctx.beginPath();
     ctx.arc(cx,cy,radius,Math.PI,0,false);
     ctx.lineWidth = 30;
     ctx.strokeStyle = '#e0e0e0';
     ctx.stroke();
 
-    // Gradiente de color
     const gradient = ctx.createLinearGradient(cx-radius,cy,cx+radius,cy);
     gradient.addColorStop(0,'#ff4c4c');
     gradient.addColorStop(0.5,'#ffd700');
     gradient.addColorStop(1,'#33cc33');
 
-    // Arco indicador
     ctx.beginPath();
     ctx.arc(cx,cy,radius,Math.PI,Math.PI + Math.PI*value/100,false);
     ctx.strokeStyle = gradient;
     ctx.lineWidth = 30;
     ctx.stroke();
 
-    // Aguja
     const angle = Math.PI + Math.PI*value/100;
     ctx.beginPath();
     ctx.moveTo(cx,cy);
@@ -80,7 +83,6 @@ function drawGauge(value){
     ctx.strokeStyle = '#222';
     ctx.stroke();
 
-    // Texto del valor
     ctx.font = '24px Arial';
     ctx.fillStyle = '#222';
     ctx.textAlign = 'center';
@@ -139,21 +141,44 @@ function calcADX(highs,lows,closes, period=14){
     return dx || 25;
 }
 
-// --- Señal visual ---
-function setSignalText(score, rsi, stoch, adx){
+// --- Señal visual + entradas/salidas ---
+function setSignalText(score, rsi, stoch, adx, price){
     const signal = document.getElementById('signal');
+    const entry = document.getElementById('entry');
     let text = "Analizando...";
     let color = "black";
 
-    if(rsi<30 && stoch.k<20 && adx>30){
-        text = "🟩 LONG probable (rebote)";
-        color = "green";
-    } else if(rsi>70 && stoch.k>80 && adx>30){
-        text = "🟥 SHORT probable (caída)";
-        color = "red";
-    } else {
-        text = "🟨 Zona neutra / Esperar confirmación";
-        color = "orange";
+    // --- Señales de entrada ---
+    if(!position){
+        if(rsi<30 && stoch.k<20 && adx>30){
+            position = 'LONG';
+            entryPrice = price;
+            text = "🟩 LONG probable (rebote)";
+            color = "green";
+            entry.innerText = `➡️ Entrar LONG en ${price.toFixed(2)} USDT`;
+        } else if(rsi>70 && stoch.k>80 && adx>30){
+            position = 'SHORT';
+            entryPrice = price;
+            text = "🟥 SHORT probable (caída)";
+            color = "red";
+            entry.innerText = `⬅️ Entrar SHORT en ${price.toFixed(2)} USDT`;
+        } else {
+            entry.innerText = "Esperando señal...";
+        }
+    }
+    // --- Señales de salida ---
+    else {
+        if(position === 'LONG' && (rsi>60 || stoch.k>70)){
+            text = "⚠️ Salir de LONG / Tomar ganancias";
+            color = "orange";
+            entry.innerText = `💰 Salida recomendada cerca de ${price.toFixed(2)} USDT`;
+            position = null;
+        } else if(position === 'SHORT' && (rsi<40 || stoch.k<30)){
+            text = "⚠️ Salir de SHORT / Tomar ganancias";
+            color = "orange";
+            entry.innerText = `💰 Salida recomendada cerca de ${price.toFixed(2)} USDT`;
+            position = null;
+        }
     }
 
     signal.innerText = text;
@@ -166,10 +191,7 @@ async function fetchData(){
         const priceRes = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT');
         const priceData = await priceRes.json();
         const price = parseFloat(priceData.price);
-        const priceElement = document.getElementById('price');
-
-        priceElement.innerText = "Precio: " + price.toFixed(2) + " USDT";
-        lastPrice = price;
+        document.getElementById('price').innerText = "Precio: " + price.toFixed(2) + " USDT";
 
         const res = await fetch('https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1m&limit=100');
         const data = await res.json();
@@ -185,7 +207,7 @@ async function fetchData(){
         const stableValue = smoothValue(rawScore);
 
         drawGauge(stableValue);
-        setSignalText(stableValue, rsi, stoch, adx);
+        setSignalText(stableValue, rsi, stoch, adx, price);
 
     }catch(err){
         console.error('Error obteniendo datos Binance:', err);
