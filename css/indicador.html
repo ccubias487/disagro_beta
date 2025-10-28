@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Velocímetro Tendencia ETH Real</title>
+<style>
+body { font-family: Arial; text-align:center; background:#f5f5f5; padding:20px; }
+canvas { background:#fff; border-radius:20px; box-shadow:0 4px 15px rgba(0,0,0,0.3); }
+h2 { color:#333; }
+#price { font-size: 24px; margin:10px 0; }
+#alert { font-size: 20px; margin:10px 0; color:blue; font-weight:bold; }
+</style>
+</head>
+<body>
+
+<h2>Velocímetro Tendencia ETH/USDT</h2>
+<h3 id="price">Precio: --</h3>
+<h3 id="alert">Esperando señal...</h3>
+<canvas id="gauge" width="400" height="250"></canvas>
+
+<script>
+let history = [];
+let smoothedValue = 50;
+let lastPrice = 0;
+let lastK = null;
+
+// --- Velocímetro ---
+function drawGauge(value){
+    const canvas = document.getElementById('gauge');
+    const ctx = canvas.getContext('2d');
+    const w = canvas.width;
+    const h = canvas.height;
+    ctx.clearRect(0,0,w,h);
+
+    const cx = w/2;
+    const cy = h*0.9;
+    const radius = Math.min(w,h*2)/2*0.8;
+
+    ctx.beginPath();
+    ctx.arc(cx,cy,radius,Math.PI,0,false);
+    ctx.lineWidth = 30;
+    ctx.strokeStyle = '#e0e0e0';
+    ctx.stroke();
+
+    const gradient = ctx.createLinearGradient(cx-radius,cy,cx+radius,cy);
+    gradient.addColorStop(0,'#ff4c4c');
+    gradient.addColorStop(0.5,'#ffd700');
+    gradient.addColorStop(1,'#33cc33');
+
+    ctx.beginPath();
+    ctx.arc(cx,cy,radius,Math.PI,Math.PI + Math.PI*value/100,false);
+    ctx.strokeStyle = gradient;
+    ctx.lineWidth = 30;
+    ctx.stroke();
+
+    const angle = Math.PI + Math.PI*value/100;
+    ctx.beginPath();
+    ctx.moveTo(cx,cy);
+    ctx.lineTo(cx + radius*Math.cos(angle), cy + radius*Math.sin(angle));
+    ctx.lineWidth = 6;
+    ctx.strokeStyle = '#222';
+    ctx.stroke();
+
+    ctx.font = '24px Arial';
+    ctx.fillStyle = '#222';
+    ctx.textAlign = 'center';
+    ctx.fillText('Tendencia: '+value.toFixed(1), cx, h*0.2);
+}
+
+// --- Suavizado ---
+function smoothValue(newValue){
+    history.push(newValue);
+    if(history.length>10) history.shift();
+    const avg = history.reduce((a,b)=>a+b,0)/history.length;
+    smoothedValue = smoothedValue*0.8 + avg*0.2;
+    return smoothedValue;
+}
+
+// --- RSI ---
+function calcRSI(values, period=14){
+    if(values.length<period) return 50;
+    let gains=0, losses=0;
+    for(let i=values.length-period;i<values.length;i++){
+        const diff = values[i]-values[i-1];
+        if(diff>0) gains+=diff;
+        else losses-=diff;
+    }
+    if(losses===0) return 100;
+    const rs = gains/losses;
+    return 100 - (100/(1+rs));
+}
+
+// --- Estocástico ---
+function calcStochastic(highs, lows, closes, period=14){
+    if(closes.length<period) return {k:50,d:50};
+    const recentHigh = Math.max(...highs.slice(-period));
+    const recentLow = Math.min(...lows.slice(-period));
+    const k = ((closes[closes.length-1]-recentLow)/(recentHigh-recentLow))*100;
+    const lastKs = closes.slice(-period).map((v,i)=>((v-recentLow)/(recentHigh-recentLow)*100));
+    const d = lastKs.slice(-3).reduce((a,b)=>a+b,0)/3;
+    return {k,d};
+}
+
+// --- ADX ---
+function calcADX(highs,lows,closes, period=14){
+    if(closes.length<period+1) return 25;
+    let tr=[], plusDM=[], minusDM=[];
+    for(let i=1;i<closes.length;i++){
+        const hDiff = highs[i]-highs[i-1];
+        const lDiff = lows[i-1]-lows[i];
+        plusDM.push(hDiff>lDiff&&hDiff>0?hDiff:0);
+        minusDM.push(lDiff>hDiff&&lDiff>0?lDiff:0);
+        tr.push(Math.max(highs[i]-lows[i], Math.abs(highs[i]-closes[i-1]), Math.abs(lows[i]-closes[i-1])));
+    }
+    const atr = tr.slice(-period).reduce((a,b)=>a+b,0)/period;
+    const plusDI = plusDM.slice(-period).reduce((a,b)=>a+b,0)/atr*100;
+    const minusDI = minusDM.slice(-period).reduce((a,b)=>a+b,0)/atr*100;
+    const dx = Math.abs(plusDI-minusDI)/(plusDI+minusDI)*100;
+    return dx || 25;
+}
+
+// --- Score combinado ---
+function computeScore(rsi,k,d,adx){
+    let rsiScore=50;
+    if(rsi<30) rsiScore=50+(30-rsi);
+    else if(rsi>70) rsiScore=50-(rsi-70);
+
+    let stochScore=50;
+    if(k<20 && k>d) stochScore+=20;
+    if(k>80 && k<d) stochScore-=20;
+
+    let adxFactor=1;
+    if(adx>40) adxFactor=1.5;
+    else if(adx<20) adxFactor=0.5;
+
+    return Math.max(0,Math.min(100,(rsiScore+stochScore)/2*adxFactor));
+}
+
+// --- Revisar alerta ---
+function checkAlert(rsi, k, d, adx){
+    const alertEl = document.getElementById('alert');
+    // Señal Long
+    if(rsi<30 && k>d && adx>20){
+        alertEl.innerText = "Señal LONG (Compra)";
+        alertEl.style.color = "green";
+    }
+    // Señal Short
+    else if(rsi>70 && k<d && adx>20){
+        alertEl.innerText = "Señal SHORT (Venta)";
+        alertEl.style.color = "red";
+    }
+    else{
+        alertEl.innerText = "Esperando señal...";
+        alertEl.style.color = "blue";
+    }
+}
+
+// --- Obtener datos Binance ---
+async function fetchData(){
+    try{
+        // Precio actual
+        const priceRes = await fetch('https://api.binance.com/api/v3/ticker/price?symbol=ETHUSDT');
+        const priceData = await priceRes.json();
+        const price = parseFloat(priceData.price);
+        const priceElement = document.getElementById('price');
+
+        // Velas para indicadores
+        const res = await fetch('https://api.binance.com/api/v3/klines?symbol=ETHUSDT&interval=1m&limit=100');
+        const data = await res.json();
+        const closes = data.map(c=>parseFloat(c[4]));
+        const highs = data.map(c=>parseFloat(c[2]));
+        const lows = data.map(c=>parseFloat(c[3]));
+
+        const rsi = calcRSI(closes);
+        const stoch = calcStochastic(highs,lows,closes);
+        const adx = calcADX(highs,lows,closes);
+
+        const rawScore = computeScore(rsi, stoch.k, stoch.d, adx);
+        const stableValue = smoothValue(rawScore);
+        drawGauge(stableValue);
+
+        // Color precio según tendencia
+        if(stableValue>60) priceElement.style.color='green';
+        else if(stableValue<40) priceElement.style.color='red';
+        else priceElement.style.color='orange';
+        priceElement.innerText = "Precio: " + price.toFixed(2) + " USDT";
+
+        // Revisar alerta
+        checkAlert(rsi, stoch.k, stoch.d, adx);
+
+    }catch(err){
+        console.error('Error obteniendo datos Binance:', err);
+    }
+}
+
+// --- Inicial ---
+fetchData();
+setInterval(fetchData,1000);
+
+</script>
+</body>
+</html>
