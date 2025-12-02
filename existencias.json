@@ -4802,9 +4802,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "3",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "10.5"
   },
   {
     "SAP": "1901100437",
@@ -16132,9 +16132,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "9.6"
   },
   {
     "SAP": "1901101467",
@@ -18411,7 +18411,7 @@
     "UNIDAD": "U",
     "EXISTENCIA": "85",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "3745.94"
+    "VALOR_TOTAL": "3748.62"
   },
   {
     "SAP": "1901101675",
@@ -26683,7 +26683,7 @@
     "UNIDAD": "U",
     "EXISTENCIA": "2",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "1085.52"
+    "VALOR_TOTAL": "1088.17"
   },
   {
     "SAP": "1901102430",
@@ -28980,9 +28980,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "10",
+    "EXISTENCIA": "34",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "15"
+    "VALOR_TOTAL": "55.32"
   },
   {
     "SAP": "1901102639",
@@ -31950,9 +31950,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "7.2"
   },
   {
     "SAP": "1901102912",
@@ -31961,9 +31961,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "3",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "1.84"
+    "VALOR_TOTAL": "3.94"
   },
   {
     "SAP": "1901102913",
@@ -38242,9 +38242,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "2",
+    "EXISTENCIA": "9",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0.7"
+    "VALOR_TOTAL": "9.73"
   },
   {
     "SAP": "1901103484",
@@ -45669,7 +45669,7 @@
     "UNIDAD": "U",
     "EXISTENCIA": "6",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "3925.37"
+    "VALOR_TOTAL": "3928.02"
   },
   {
     "SAP": "1901104159",
@@ -53479,7 +53479,7 @@
     "UNIDAD": "U",
     "EXISTENCIA": "3",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "7361.16"
+    "VALOR_TOTAL": "7363.81"
   },
   {
     "SAP": "1901104882",
@@ -53490,7 +53490,7 @@
     "UNIDAD": "U",
     "EXISTENCIA": "1",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "2692.52"
+    "VALOR_TOTAL": "2695.17"
   },
   {
     "SAP": "1901104883",
