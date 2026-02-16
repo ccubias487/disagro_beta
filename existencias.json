@@ -43302,9 +43302,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "0",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "1750"
+    "VALOR_TOTAL": "0"
   },
   {
     "SAP": "1901103944",
