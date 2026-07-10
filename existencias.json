@@ -4263,9 +4263,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "5",
+    "EXISTENCIA": "2",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "3.02"
+    "VALOR_TOTAL": "1.21"
   },
   {
     "SAP": "1901100387",
@@ -6598,6 +6598,17 @@
     "EXISTENCIA": "0",
     "MONEDA": "USD",
     "VALOR_TOTAL": "0"
+  },
+  {
+    "SAP": "1901100599",
+    "DESCRIPCION": "FUEL OIL (BUNKER)",
+    "CENTRO": "3002",
+    "ALMACEN": "16A0",
+    "ALM": "",
+    "UNIDAD": "N00",
+    "EXISTENCIA": "1082",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "2908.33"
   },
   {
     "SAP": "1901100600",
@@ -17831,6 +17842,17 @@
     "VALOR_TOTAL": "0"
   },
   {
+    "SAP": "1901101621",
+    "DESCRIPCION": "DIESEL",
+    "CENTRO": "3002",
+    "ALMACEN": "16A0",
+    "ALM": "",
+    "UNIDAD": "N00",
+    "EXISTENCIA": "284",
+    "MONEDA": "USD",
+    "VALOR_TOTAL": "811.14"
+  },
+  {
     "SAP": "1901101623",
     "DESCRIPCION": "CHALECO REFLECTIVO",
     "CENTRO": "3002",
@@ -18299,9 +18321,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "0",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "277.3"
+    "VALOR_TOTAL": "0"
   },
   {
     "SAP": "1901101666",
@@ -23931,9 +23953,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "173",
+    "EXISTENCIA": "155",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "573.08"
+    "VALOR_TOTAL": "513.45"
   },
   {
     "SAP": "1901102181",
@@ -29618,9 +29640,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "3",
+    "EXISTENCIA": "2",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "23.61"
+    "VALOR_TOTAL": "15.74"
   },
   {
     "SAP": "1901102701",
@@ -33248,9 +33270,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "10",
+    "EXISTENCIA": "8",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "3.6"
+    "VALOR_TOTAL": "2.88"
   },
   {
     "SAP": "1901103031",
@@ -36713,9 +36735,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N04",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "0",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "375"
+    "VALOR_TOTAL": "0"
   },
   {
     "SAP": "1901103346",
@@ -66292,9 +66314,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "9",
+    "EXISTENCIA": "7",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "40.63"
+    "VALOR_TOTAL": "31.6"
   },
   {
     "SAP": "1901106133",
