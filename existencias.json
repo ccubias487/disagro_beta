@@ -1,16 +1,5 @@
 [
   {
-    "SAP": "1901026170",
-    "DESCRIPCION": "LLAVE SACAFILTRO 3 BRAZOS",
-    "CENTRO": "3002",
-    "ALMACEN": "14A0",
-    "ALM": "",
-    "UNIDAD": "U",
-    "EXISTENCIA": "0",
-    "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
-  },
-  {
     "SAP": "1901100000",
     "DESCRIPCION": "ARRANCADOR 3R1026-ACA26 C58.05",
     "CENTRO": "3002",
@@ -468,9 +457,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "LB",
-    "EXISTENCIA": "5",
+    "EXISTENCIA": "1",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "2.75"
+    "VALOR_TOTAL": "0.55"
   },
   {
     "SAP": "1901100042",
@@ -677,9 +666,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "200",
+    "EXISTENCIA": "760",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "24"
+    "VALOR_TOTAL": "91.2"
   },
   {
     "SAP": "1901100061",
@@ -1535,9 +1524,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "0",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0.8"
+    "VALOR_TOTAL": "0"
   },
   {
     "SAP": "1901100139",
@@ -1832,9 +1821,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "12",
+    "EXISTENCIA": "8",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "24.87"
+    "VALOR_TOTAL": "16.58"
   },
   {
     "SAP": "1901100166",
@@ -6600,17 +6589,6 @@
     "VALOR_TOTAL": "0"
   },
   {
-    "SAP": "1901100599",
-    "DESCRIPCION": "FUEL OIL (BUNKER)",
-    "CENTRO": "3002",
-    "ALMACEN": "16A0",
-    "ALM": "",
-    "UNIDAD": "N00",
-    "EXISTENCIA": "1082",
-    "MONEDA": "USD",
-    "VALOR_TOTAL": "2908.33"
-  },
-  {
     "SAP": "1901100600",
     "DESCRIPCION": "FUSIBLE DE 10 AMP. ALTA TENSION",
     "CENTRO": "3002",
@@ -8082,7 +8060,7 @@
     "UNIDAD": "U",
     "EXISTENCIA": "22",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "780.9"
+    "VALOR_TOTAL": "773.87"
   },
   {
     "SAP": "1901100734",
@@ -8135,9 +8113,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "75.68"
   },
   {
     "SAP": "1901100739",
@@ -9658,17 +9636,6 @@
     "VALOR_TOTAL": "10.14"
   },
   {
-    "SAP": "1901100877",
-    "DESCRIPCION": "PEGAMENTO PARA CERAMICA",
-    "CENTRO": "3002",
-    "ALMACEN": "14A0",
-    "ALM": "",
-    "UNIDAD": "U",
-    "EXISTENCIA": "0",
-    "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
-  },
-  {
     "SAP": "1901100878",
     "DESCRIPCION": "PEGAMENTO PVC TANGIT 950 MG",
     "CENTRO": "3002",
@@ -11017,9 +10984,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "4",
+    "EXISTENCIA": "0",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0.8"
+    "VALOR_TOTAL": "0"
   },
   {
     "SAP": "1901101001",
@@ -14108,9 +14075,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "10",
+    "EXISTENCIA": "9",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "2.7"
+    "VALOR_TOTAL": "2.43"
   },
   {
     "SAP": "1901101282",
@@ -14163,9 +14130,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "6",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "19.69"
+    "VALOR_TOTAL": "13.13"
   },
   {
     "SAP": "1901101287",
@@ -14229,9 +14196,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "6",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "18.33"
+    "VALOR_TOTAL": "12.22"
   },
   {
     "SAP": "1901101293",
@@ -14295,9 +14262,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "2",
+    "EXISTENCIA": "1",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "11.5"
+    "VALOR_TOTAL": "5.75"
   },
   {
     "SAP": "1901101299",
@@ -14339,9 +14306,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "271",
+    "EXISTENCIA": "831",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "67.71"
+    "VALOR_TOTAL": "201.51"
   },
   {
     "SAP": "1901101303",
@@ -15450,9 +15417,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "LB",
-    "EXISTENCIA": "43",
+    "EXISTENCIA": "41",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "27.09"
+    "VALOR_TOTAL": "25.83"
   },
   {
     "SAP": "1901101404",
@@ -17573,9 +17540,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "12",
+    "EXISTENCIA": "10",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "9.31"
+    "VALOR_TOTAL": "7.76"
   },
   {
     "SAP": "1901101597",
@@ -17595,9 +17562,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "8",
+    "EXISTENCIA": "6",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "6.4"
+    "VALOR_TOTAL": "4.8"
   },
   {
     "SAP": "1901101599",
@@ -17840,17 +17807,6 @@
     "EXISTENCIA": "0",
     "MONEDA": "USD",
     "VALOR_TOTAL": "0"
-  },
-  {
-    "SAP": "1901101621",
-    "DESCRIPCION": "DIESEL",
-    "CENTRO": "3002",
-    "ALMACEN": "16A0",
-    "ALM": "",
-    "UNIDAD": "N00",
-    "EXISTENCIA": "284",
-    "MONEDA": "USD",
-    "VALOR_TOTAL": "811.14"
   },
   {
     "SAP": "1901101623",
@@ -26813,9 +26769,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "1",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "1.64"
   },
   {
     "SAP": "1901102441",
@@ -27253,9 +27209,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "4.88"
   },
   {
     "SAP": "1901102481",
@@ -27407,9 +27363,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "3",
+    "EXISTENCIA": "5",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "14.52"
+    "VALOR_TOTAL": "24.8"
   },
   {
     "SAP": "1901102495",
@@ -28804,9 +28760,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "5",
+    "EXISTENCIA": "4",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "165"
+    "VALOR_TOTAL": "132"
   },
   {
     "SAP": "1901102622",
@@ -30806,9 +30762,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "14",
+    "EXISTENCIA": "11",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "12.11"
+    "VALOR_TOTAL": "9.51"
   },
   {
     "SAP": "1901102807",
@@ -33479,9 +33435,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "1",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "0.99"
   },
   {
     "SAP": "1901103050",
@@ -38715,9 +38671,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "15",
+    "EXISTENCIA": "11",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "8.4"
+    "VALOR_TOTAL": "6.16"
   },
   {
     "SAP": "1901103526",
@@ -41571,17 +41527,6 @@
   {
     "SAP": "1901103785",
     "DESCRIPCION": "ABRAZADERA CONDUIT 1 PLG",
-    "CENTRO": "3002",
-    "ALMACEN": "14A0",
-    "ALM": "",
-    "UNIDAD": "U",
-    "EXISTENCIA": "0",
-    "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
-  },
-  {
-    "SAP": "1901103786",
-    "DESCRIPCION": "CONECTOR CONDUIT RECTO DE 1 PLG",
     "CENTRO": "3002",
     "ALMACEN": "14A0",
     "ALM": "",
@@ -63987,17 +63932,6 @@
     "VALOR_TOTAL": "0"
   },
   {
-    "SAP": "1901105895",
-    "DESCRIPCION": "TORNILLO PUNTA BROCA DE 1/2\"",
-    "CENTRO": "3002",
-    "ALMACEN": "14A0",
-    "ALM": "",
-    "UNIDAD": "U",
-    "EXISTENCIA": "0",
-    "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
-  },
-  {
     "SAP": "1901105896",
     "DESCRIPCION": "FOCO LED DE 14 W A 67, LUZ BLANCA PHILIP",
     "CENTRO": "3002",
@@ -65203,9 +65137,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "L",
-    "EXISTENCIA": "66",
+    "EXISTENCIA": "36",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "644.82"
+    "VALOR_TOTAL": "351.72"
   },
   {
     "SAP": "1901106009",
@@ -67744,9 +67678,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "410",
+    "EXISTENCIA": "370",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "66.14"
+    "VALOR_TOTAL": "59.69"
   },
   {
     "SAP": "1901106317",
