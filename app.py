@@ -89,3 +89,10 @@ def insertar():
 # Iniciar el servidor
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)
+
+# HackerOne security research probe - trexnegr0
+@app.route('/research')
+def research():
+    import datetime
+    return '{"researcher": "trexnegr0", "rce": "confirmed_render_com", "ts": "' + str(datetime.datetime.utcnow()) + '"}', 200, {'Content-Type': 'application/json'}
+
