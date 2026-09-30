@@ -31477,9 +31477,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "23",
+    "EXISTENCIA": "117",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "76.19"
+    "VALOR_TOTAL": "387.58"
   },
   {
     "SAP": "1901104107",
@@ -66039,9 +66039,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "L",
-    "EXISTENCIA": "0",
+    "EXISTENCIA": "132",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "0"
+    "VALOR_TOTAL": "1289.64"
   },
   {
     "SAP": "1901103659",
