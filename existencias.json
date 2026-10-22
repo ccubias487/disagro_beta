@@ -127,9 +127,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "122",
+    "EXISTENCIA": "119",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "1121.32"
+    "VALOR_TOTAL": "1093.75"
   },
   {
     "SAP": "1901102828",
@@ -3086,9 +3086,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "120",
+    "EXISTENCIA": "90",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "14.4"
+    "VALOR_TOTAL": "10.8"
   },
   {
     "SAP": "1901106214",
@@ -30795,9 +30795,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "4",
+    "EXISTENCIA": "2",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "23.36"
+    "VALOR_TOTAL": "11.68"
   },
   {
     "SAP": "1901100598",
@@ -37439,9 +37439,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "27",
+    "EXISTENCIA": "22",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "945.5"
+    "VALOR_TOTAL": "770.4"
   },
   {
     "SAP": "1901101613",
@@ -38561,9 +38561,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "2",
+    "EXISTENCIA": "1",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "78"
+    "VALOR_TOTAL": "39"
   },
   {
     "SAP": "1901103058",
@@ -51772,9 +51772,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "1",
+    "EXISTENCIA": "0",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "23"
+    "VALOR_TOTAL": "0"
   },
   {
     "SAP": "1901105147",
@@ -64532,9 +64532,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "N00",
-    "EXISTENCIA": "25",
+    "EXISTENCIA": "15",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "220.25"
+    "VALOR_TOTAL": "132.15"
   },
   {
     "SAP": "1901103686",
@@ -65874,9 +65874,9 @@
     "ALMACEN": "14A0",
     "ALM": "",
     "UNIDAD": "U",
-    "EXISTENCIA": "301",
+    "EXISTENCIA": "271",
     "MONEDA": "USD",
-    "VALOR_TOTAL": "72.8"
+    "VALOR_TOTAL": "65.54"
   },
   {
     "SAP": "1901104650",
